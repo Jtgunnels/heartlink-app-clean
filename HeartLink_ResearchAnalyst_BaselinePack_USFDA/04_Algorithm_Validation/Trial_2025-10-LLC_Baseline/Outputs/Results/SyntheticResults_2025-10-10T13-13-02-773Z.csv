@@ -1,0 +1,16 @@
+id,title,v36_category,v37_category,v36_score,v37_score,delta,direction
+1,"Stable baseline (all mild)",Green,Green,0,0,0,– same
+2,"Mild increase in shortness of breath",Yellow,Yellow,1.8,1.8,0,– same
+3,"Moderate SOB and mild edema",Orange,Orange,5.1,5.1,0,– same
+4,"Severe SOB and edema with hypotension",Red,Red,10,10,0,– same
+5,"Improvement from prior severe to moderate",Orange,Orange,5.1,5.1,0,– same
+6,"Weight gain only",Green,Green,0,0,0,– same
+7,"Fatigue moderate with stable vitals",Orange,Orange,2.9,2.9,0,– same
+8,"BP omitted, all mild symptoms",Yellow,Yellow,1.8,1.8,0,– same
+9,"Tachycardia with mild SOB",Orange,Orange,2.4,2.4,0,– same
+10,"Low BP, moderate SOB",Orange,Orange,4.7,4.7,0,– same
+11,"Stable advanced baseline (NYHA III)",Orange,Orange,6.7,6.7,0,– same
+12,"Rapid improvement",Green,Green,0,0,0,– same
+13,"Incomplete inputs (missing HR)",Yellow,Yellow,1.8,1.8,0,– same
+14,"Worsening edema only",Yellow,Yellow,2,2,0,– same
+15,"Severe symptoms with bradycardia",Red,Red,10,10,0,– same

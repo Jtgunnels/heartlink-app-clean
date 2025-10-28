@@ -1,0 +1,9 @@
+{
+  "total_cases": 500,
+  "exact_matches": 139,
+  "within1_category": 479,
+  "accuracy_pct": "27.8",
+  "tolerance_pct": "95.8",
+  "csv_path": "C:\\Users\\lorir\\OneDrive\\Desktop\\heart-failure-app\\HeartLink_ResearchAnalyst_BaselinePack_USFDA\\04_Algorithm_Validation\\04_Algorithm_Validation\\02_Validation\\Trial_v3_8_Validation\\large_study_v3_7_vs_v3_8.csv",
+  "timestamp": "2025-10-11T02:16:25.000Z"
+}

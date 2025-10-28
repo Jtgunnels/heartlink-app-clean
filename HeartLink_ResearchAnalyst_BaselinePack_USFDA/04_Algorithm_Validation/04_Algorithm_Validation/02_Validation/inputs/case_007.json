@@ -1,0 +1,7 @@
+{
+  "id": "case_007",
+  "name": "Weight gain 3 lb in 3 days",
+  "input": { "sob": "mild", "edema": "mild", "fatigue": "none", "weightChange": 3 },
+  "baseline": { "baselineSob": "none", "baselineEdema": "none", "baselineFatigue": "none", "weight": 180 },
+  "hist": { "weights": [180, 181, 182, 183] }
+}

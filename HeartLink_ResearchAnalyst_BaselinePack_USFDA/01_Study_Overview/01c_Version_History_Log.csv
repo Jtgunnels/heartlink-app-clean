@@ -1,0 +1,9 @@
+Date,File_Name,Version,Description_of_Change,Author,Reviewer,Approval_Status,Comments
+2025-10-10,Executive_Summary_for_Reviewers.md,0.1-Draft,Initial creation of baseline package,Joshua Gunnels,PA-C,QA Reviewer,Pending,First release for documentation readiness
+2025-10-10,03b_Intended_Use_Statement.md,0.1-Draft,Added intended use and contraindications per FDA wellness policy,Joshua Gunnels,PA-C,QA Reviewer,Pending,
+2025-10-10,03c_Software_Requirements_Specification.md,0.1-Draft,Defined functional and safety requirements,Joshua Gunnels,PA-C,QA Reviewer,Pending,
+2025-10-10,03d_Risk_Management_Plan.md,0.1-Draft,Outlined ISO 14971 risk process,Joshua Gunnels,PA-C,QA Reviewer,Pending,
+2025-10-10,03e_Risk_Register.csv,0.1-Draft,Populated initial hazards and mitigations,Joshua Gunnels,PA-C,QA Reviewer,Pending,
+2025-10-10,03f_Verification_Validation_Plan.md,0.1-Draft,Added verification & validation strategy,Joshua Gunnels,PA-C,QA Reviewer,Pending,
+2025-10-10,04a_Synthetic_Test_Methodology.md,0.1-Draft,Documented test procedure for algorithm v3.6→v3.7 comparison,Joshua Gunnels,PA-C,QA Reviewer,Pending,
+2025-10-10,04d_Test_Audit_Trail.csv,0.1-Draft,Logged baseline synthetic test results,Joshua Gunnels,PA-C,QA Reviewer,Pending,

@@ -1,0 +1,5 @@
+metric,value
+N_cases,500.0
+orthopnea_escalation_accuracy,0.0
+CI95_low,0.0
+CI95_high,0.008

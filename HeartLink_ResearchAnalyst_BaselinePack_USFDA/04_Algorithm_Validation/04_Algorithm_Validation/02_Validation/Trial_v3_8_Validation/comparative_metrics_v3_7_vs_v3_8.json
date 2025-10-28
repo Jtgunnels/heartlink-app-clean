@@ -1,0 +1,51 @@
+{
+  "metrics": {
+    "total_cases": 500,
+    "exact_concordance_pct": "27.8",
+    "within1_concordance_pct": "95.8",
+    "mean_delta_norm": "0.540",
+    "false_positive_reduction_pct": "60.4",
+    "false_negative_change_pct": "11.8",
+    "stability_index": "0.892",
+    "stableadvanced_recognition_pct": "3.8",
+    "adaptive_threshold_responsiveness_pct": "3.2",
+    "overall_net_improvement_score": "0.680"
+  },
+  "matrix": {
+    "Green": {
+      "Green": 64,
+      "Yellow": 40,
+      "Orange": 0,
+      "Red": 0,
+      "StableAdvanced": 0
+    },
+    "Yellow": {
+      "Green": 174,
+      "Yellow": 5,
+      "Orange": 0,
+      "Red": 0,
+      "StableAdvanced": 0
+    },
+    "Orange": {
+      "Green": 21,
+      "Yellow": 107,
+      "Orange": 29,
+      "Red": 0,
+      "StableAdvanced": 19
+    },
+    "Red": {
+      "Green": 0,
+      "Yellow": 0,
+      "Orange": 0,
+      "Red": 41,
+      "StableAdvanced": 0
+    },
+    "StableAdvanced": {
+      "Green": 0,
+      "Yellow": 0,
+      "Orange": 0,
+      "Red": 0,
+      "StableAdvanced": 0
+    }
+  }
+}

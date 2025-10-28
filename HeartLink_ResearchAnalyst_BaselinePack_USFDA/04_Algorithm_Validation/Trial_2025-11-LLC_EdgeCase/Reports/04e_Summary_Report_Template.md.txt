@@ -1,0 +1,43 @@
+
+---
+
+## 🧮 2️⃣ Edge-Case Summary Report Template  
+Save as  
+`04_Algorithm_Validation/Trial_2025-11-LLC_EdgeCase/Reports/04e_Summary_Report_Template.md`
+
+```md
+---
+Author: Joshua Gunnels, PA-C  
+Role: Founder & Clinical Developer, HeartLink LLC  
+Trial ID: LLC_EDGECASE_TRIAL_002  
+Date: 2025-11-XX  
+Reviewer: [QA Reviewer – TBD]  
+Approval Status: Pending  
+---
+
+# HeartLink Edge-Case Sensitivity Validation – Summary Report
+
+## 1. Trial Overview
+**Algorithm Versions:** v3.6 vs v3.7  
+**Scenarios:** 10 edge-case synthetic inputs  
+**Objective:** Confirm v3.7 responds appropriately to boundary conditions without false downgrades.
+
+## 2. Results
+| Metric | Result |
+|---------|---------|
+| Total Cases | 10 |
+| Concordant | [  ] |
+| More Conservative (v3.7) | [  ] |
+| Less Conservative (v3.7) | [  ] |
+| Validation Outcome | [ PASS / FAIL ] |
+
+## 3. Observations
+- [Insert notes about any boundary misclassifications or differences]  
+- [Include interpretation of v3.7 behavior]
+
+## 4. Conclusion
+Validation trial completed to confirm robust edge-case performance and safe category responses.  
+No data integrity issues observed.  
+
+**Prepared by:** Joshua Gunnels, PA-C  
+**Reviewed by:** ___________________ (QA Reviewer)

@@ -1,0 +1,33 @@
+---
+Author: Joshua Gunnels, PA-C
+Role: Independent Clinical Developer (HeartLink)
+Version: 0.1-Draft
+Date: 2025-10-10
+Reviewed by: [Regulatory QA Reviewer – TBD]
+Approval Status: Pending
+---
+
+# Software Requirements Specification (SRS)
+
+## 1. Overview
+Defines software requirements for HeartLink v3.6/v3.7 scoring engine and supporting mobile interface.
+
+## 2. Functional Requirements
+| ID | Requirement | Verification |
+|----|--------------|--------------|
+| FR-1 | App shall allow daily symptom and weight entry. | Manual test / unit test |
+| FR-2 | App shall compute a normalized score (0–1) and map to color category. | Synthetic scenario test |
+| FR-3 | v3.7 algorithm shall run in shadow mode and not affect visible output. | Log comparison |
+| FR-4 | Results stored locally; no PHI transmitted. | Code review |
+| FR-5 | UI shall display disclaimers on each recommendation screen. | Visual inspection |
+
+## 3. Non-Functional Requirements
+Performance, reliability, accessibility, privacy, and usability per FDA GSP.
+
+## 4. Safety Requirements
+Include visible emergency disclaimer and restrict any directive text.
+
+## 5. Traceability
+Each requirement maps to a validation test in `03g_Test_Traceability_Matrix.csv`.
+
+---

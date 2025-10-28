@@ -1,0 +1,59 @@
+{
+  "package_name": "HeartLink_ResearchAnalyst_BaselinePack_USFDA",
+  "author": "Joshua Gunnels, PA-C — Founder & Clinical Developer, HeartLink LLC",
+  "entity": "HeartLink LLC (Registered [Your State])",
+  "version": "0.3-Draft",
+  "date_created": "2025-10-10",
+  "regulatory_focus": "US FDA General Wellness → SaMD Transition Framework",
+  "structure": {
+    "01_Study_Overview": [
+      "01a_Objectives_and_Background.md",
+      "01b_Literature_Support_and_Regulations.md",
+      "01c_Version_History_Log.csv"
+    ],
+    "02_Regulatory_Position": [
+      "02a_Regulatory_Classification_Summary.md",
+      "02b_General_Wellness_to_SaMD_Transition_Triggers.md",
+      "02c_FDA_Guidance_References.md",
+      "02d_FDA_510k_Transition_Checklist.md"
+    ],
+    "03_Design_History_File": [
+      "03a_DHF_Index.md",
+      "03b_Intended_Use_Statement.md",
+      "03c_Software_Requirements_Specification.md",
+      "03d_Risk_Management_Plan.md",
+      "03e_Risk_Register.csv",
+      "03f_Verification_Validation_Plan.md",
+      "03g_Test_Traceability_Matrix.csv",
+      "03h_Validation_Report_Template.md",
+      "03i_IP_Assignment_HeartLinkLLC.pdf"
+    ],
+    "04_Algorithm_Validation": [
+      "04a_Synthetic_Test_Methodology.md",
+      "manifest.json",
+      "Trial_2025-10-LLC_Baseline/trial_manifest.json",
+      "Trial_2025-11-LLC_EdgeCase/trial_manifest.json"
+    ],
+    "05_Privacy_and_Security": [
+      "05a_Privacy_Impact_Assessment.md",
+      "05b_Data_Flow_Diagram.md",
+      "05c_Security_Controls_and_Access_Management.md"
+    ],
+    "06_Clinical_Correlation": [
+      "06a_Symptom_to_Guideline_Mapping_Table.csv",
+      "06b_Clinical_Rationale_Summary.md"
+    ],
+    "07_Publication_and_Dissemination": [
+      "07a_Manuscript_Template.docx",
+      "07b_Results_Summary_Table_Template.csv",
+      "07c_Author_Disclosure_and_Conflict_Form.docx",
+      "07d_Peer_Review_Response_Template.docx"
+    ]
+  },
+  "checksums": {
+    "04b_TestScenarios.json": "SHA256-placeholder",
+    "04b_TestScenarios_EdgeCases.json": "SHA256-placeholder",
+    "04c_RunSyntheticTest.js": "SHA256-placeholder"
+  },
+  "notes": "HeartLink LLC Baseline Pack initialized Oct 2025. Baseline Trial 001 archived; Edge-Case Trial 002 initiated for boundary-condition validation."
+}

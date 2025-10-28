@@ -1,0 +1,32 @@
+---
+Author: Joshua Gunnels, PA-C
+Role: Independent Clinical Developer (HeartLink)
+Version: 0.1-Draft
+Date: 2025-10-10
+Reviewed by: [Regulatory QA Reviewer – TBD]
+Approval Status: Pending
+---
+
+# Regulatory Classification Summary — HeartLink
+
+## 1. Current Status
+HeartLink qualifies as a **General Wellness Product** under the FDA’s “General Wellness: Policy for Low Risk Devices” (January 2023, CDRH).  
+It does not perform diagnosis, prediction, or treatment of any disease.  
+All outputs are educational and informational.
+
+## 2. Rationale for Exemption
+- No physiological sensors are used.
+- Data remain local to the user’s device.
+- Messaging language avoids diagnostic or triage terms.
+- Users are directed to consult their clinician for interpretation.
+
+## 3. Future Regulatory Transition
+If HeartLink adds functions that:
+- identify or prioritize users for clinical review, or
+- interface with clinical decision systems,
+then the product would enter the **Software as a Medical Device (SaMD)** domain under 21 CFR § 820 and require FDA clearance (likely Class II, 510(k) or De Novo).
+
+## 4. Next Steps
+This baseline documentation ensures all design controls are maintained now, so future submission will require only validation data and labeling updates rather than rebuilding compliance evidence.
+
+---

@@ -1,0 +1,11 @@
+caseId,name,v3.7_category,v3.8_category,v3.7_norm,v3.8_norm,deltaNorm,categoryChanged
+case_001,Baseline normal - all none,Green,Green,0,0,0,false
+case_002,Mild SOB only,Yellow,Green,1.8,1.5,-0.3,true
+case_003,Moderate SOB + mild edema,Orange,Yellow,4.5,3.7,-0.8,true
+case_004,Severe SOB critical override,Red,Red,10,10,0,false
+case_005,Mild orthopnea,Yellow,Green,0,1,1,true
+case_006,Severe orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_007,Weight gain 3 lb in 3 days,Orange,Yellow,2.7,2.9,0.2,true
+case_008,Moderate SOB + moderate edema + mild fatigue,Orange,Orange,6.1,5.1,-1,false
+case_009,StableAdvanced NYHA III baseline,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_010,Orange→Green recovery smoothing test,Green,Yellow,0,0,0,true

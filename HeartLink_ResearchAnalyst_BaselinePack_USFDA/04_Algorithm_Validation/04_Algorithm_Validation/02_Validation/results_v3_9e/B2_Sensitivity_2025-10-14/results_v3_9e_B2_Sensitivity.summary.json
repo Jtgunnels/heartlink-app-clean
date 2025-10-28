@@ -1,0 +1,9 @@
+[
+  {
+    "cohort": "RecoveryClampCheck_12Day_v6",
+    "daysSimulated": 12,
+    "FP_percent": 0,
+    "firstNonGreenDay": 1,
+    "clampOK": 0
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "overall": {
+    "total_cases": 2000,
+    "benign_cases": 1433,
+    "acute_cases": 567,
+    "FP": 416,
+    "FN": 399,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6
+  },
+  "perCoh": [
+    {
+      "trialGroup": "Borderline",
+      "total": 600,
+      "benign": 301,
+      "acute": 299,
+      "FP": 48,
+      "FN": 250,
+      "FP_rate_pct": 15.9,
+      "FN_rate_pct": 83.6,
+      "specificity_pct": 84.1,
+      "sensitivity_pct": 16.4
+    },
+    {
+      "trialGroup": "SingleMild",
+      "total": 400,
+      "benign": 400,
+      "acute": 0,
+      "FP": 0,
+      "FN": 0,
+      "FP_rate_pct": 0,
+      "FN_rate_pct": 0,
+      "specificity_pct": 100,
+      "sensitivity_pct": 100
+    },
+    {
+      "trialGroup": "Recovery",
+      "total": 300,
+      "benign": 300,
+      "acute": 0,
+      "FP": 300,
+      "FN": 0,
+      "FP_rate_pct": 100,
+      "FN_rate_pct": 0,
+      "specificity_pct": 0,
+      "sensitivity_pct": 100
+    },
+    {
+      "trialGroup": "Orthopnea",
+      "total": 250,
+      "benign": 86,
+      "acute": 164,
+      "FP": 0,
+      "FN": 80,
+      "FP_rate_pct": 0,
+      "FN_rate_pct": 48.8,
+      "specificity_pct": 100,
+      "sensitivity_pct": 51.2
+    },
+    {
+      "trialGroup": "FluidTrend",
+      "total": 300,
+      "benign": 196,
+      "acute": 104,
+      "FP": 45,
+      "FN": 69,
+      "FP_rate_pct": 23,
+      "FN_rate_pct": 66.3,
+      "specificity_pct": 77,
+      "sensitivity_pct": 33.7
+    },
+    {
+      "trialGroup": "AdaptiveNoise",
+      "total": 150,
+      "benign": 150,
+      "acute": 0,
+      "FP": 23,
+      "FN": 0,
+      "FP_rate_pct": 15.3,
+      "FN_rate_pct": 0,
+      "specificity_pct": 84.7,
+      "sensitivity_pct": 100
+    }
+  ]
+}

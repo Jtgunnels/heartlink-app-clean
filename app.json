@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "HeartLink Health",
+    "slug": "heartlink",
+    "owner": "jtgunnels",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logos/heartlink_full_light.png",
+    "splash": {
+      "image": "./assets/logos/heartlink_full_light.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFBF7"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.heartlink.health",
+      "buildNumber": "1"
+    },
+    "android": {
+      "package": "com.heartlink.health",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logos/heartlink_full_light.png",
+        "backgroundColor": "#FFFBF7"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c7a068dd-b92d-428b-a12c-8388a3bc8013"
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+metric,value
+N_days,25000.0
+false_alert_rate,0.0
+CI95_low,0.0
+CI95_high,0.0
+false_alerts,0.0

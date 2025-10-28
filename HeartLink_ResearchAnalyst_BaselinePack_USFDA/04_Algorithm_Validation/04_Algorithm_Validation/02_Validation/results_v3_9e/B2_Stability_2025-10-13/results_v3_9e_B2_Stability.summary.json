@@ -1,0 +1,37 @@
+[
+  {
+    "cohort": "Stable",
+    "daysSimulated": 6,
+    "FP_percent": 0,
+    "firstNonGreenDay": "",
+    "clampOK": 0
+  },
+  {
+    "cohort": "CyclicNoiseLow",
+    "daysSimulated": 6,
+    "FP_percent": 0,
+    "firstNonGreenDay": "",
+    "clampOK": 0
+  },
+  {
+    "cohort": "WeekendBounce",
+    "daysSimulated": 6,
+    "FP_percent": 66.67,
+    "firstNonGreenDay": 3,
+    "clampOK": 0
+  },
+  {
+    "cohort": "SlowDriftUp",
+    "daysSimulated": 11,
+    "FP_percent": 18.18,
+    "firstNonGreenDay": 7,
+    "clampOK": 0
+  },
+  {
+    "cohort": "SlowDriftDown",
+    "daysSimulated": 8,
+    "FP_percent": 0,
+    "firstNonGreenDay": "",
+    "clampOK": 0
+  }
+]

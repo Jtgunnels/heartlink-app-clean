@@ -1,0 +1,28 @@
+---
+Author: Joshua Gunnels, PA-C
+Role: Independent Clinical Developer (HeartLink)
+Version: 0.1-Draft
+Date: 2025-10-10
+Reviewed by: [Regulatory QA Reviewer – TBD]
+Approval Status: Pending
+---
+
+# Risk Management Plan — per ISO 14971
+
+## Objective
+To identify and control potential hazards associated with HeartLink’s use and algorithmic outputs.
+
+## Process Summary
+1. Identify foreseeable hazards (use errors, data entry errors, misinterpretation).
+2. Estimate severity and probability.
+3. Define risk controls (UI design, labeling, warnings).
+4. Verify risk control effectiveness.
+
+## Roles
+- **Risk Owner:** Joshua Gunnels, PA-C  
+- **Reviewer:** Regulatory QA Reviewer (TBD)
+
+## Risk Acceptability Criteria
+Low or Medium risks acceptable with implemented control; High requires redesign.
+
+---

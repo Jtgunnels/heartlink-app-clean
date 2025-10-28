@@ -1,0 +1,12 @@
+{
+  "total_cases": 2000,
+  "benign_cases": 1433,
+  "acute_cases": 567,
+  "FP": 416,
+  "FN": 399,
+  "FP_rate_pct": 29,
+  "FN_rate_pct": 70.4,
+  "specificity_pct": 71,
+  "sensitivity_pct": 29.6,
+  "csv_path": "C:\\Users\\lorir\\OneDrive\\Desktop\\heart-failure-app\\HeartLink_ResearchAnalyst_BaselinePack_USFDA\\04_Algorithm_Validation\\04_Algorithm_Validation\\02_Validation\\Trial_v3_8_Optimization_2025-10-11\\results_v3_8.csv"
+}

@@ -1,0 +1,20 @@
+{
+  "category": "Red",
+  "normalized": 10,
+  "score": 10,
+  "reasons": [
+    "Critical sign detected (SOB, HR, BP, or weight change)."
+  ],
+  "flags": {
+    "criticalOverride": true,
+    "version": "3.7"
+  },
+  "meta": {
+    "version": "3.7",
+    "sourceVersion": "3.6",
+    "orthopneaLevel": 0,
+    "baseCategory": "Red",
+    "escalationApplied": false,
+    "baselineUpdateApplied": false
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "category": "StableAdvanced",
+  "normalized": 4.9,
+  "score": 4.9,
+  "reasons": [
+    "Symptoms consistent with your usual advanced baseline."
+  ],
+  "flags": {
+    "criticalOverride": false
+  },
+  "meta": {
+    "version": "3.8",
+    "normalizedComponents": {
+      "sob": 2.6,
+      "edema": 1.4,
+      "fatigue": 0.9,
+      "orthopnea": 0
+    },
+    "fluidIndex": 2.5,
+    "cceScore": 0,
+    "trendConfidence": 0,
+    "stsi7": 1,
+    "thresholdsUsed": {
+      "GREEN_MAX": 2.5930014578777625,
+      "YELLOW_MAX": 4.893001457877762,
+      "ORANGE_MAX": 7.4
+    },
+    "baselineUpdateApplied": false
+  }
+}

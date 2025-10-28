@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "title": "Stable baseline (all mild)",
+    "description": "All symptom entries at baseline; expected Green category.",
+    "v36_category": "Green",
+    "v37_category": "Green",
+    "v36_score": 0,
+    "v37_score": 0,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 2,
+    "title": "Mild increase in shortness of breath",
+    "description": "Slight exertional dyspnea, otherwise stable; expect Yellow.",
+    "v36_category": "Yellow",
+    "v37_category": "Yellow",
+    "v36_score": 1.8,
+    "v37_score": 1.8,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 3,
+    "title": "Moderate SOB and mild edema",
+    "description": "Both symptoms up one level; expect Orange.",
+    "v36_category": "Orange",
+    "v37_category": "Orange",
+    "v36_score": 5.1,
+    "v37_score": 5.1,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 4,
+    "title": "Severe SOB and edema with hypotension",
+    "description": "Critical findings; expect Red.",
+    "v36_category": "Red",
+    "v37_category": "Red",
+    "v36_score": 10,
+    "v37_score": 10,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 5,
+    "title": "Improvement from prior severe to moderate",
+    "description": "Shows recovery trend; expect one-category downgrade.",
+    "v36_category": "Orange",
+    "v37_category": "Orange",
+    "v36_score": 5.1,
+    "v37_score": 5.1,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 6,
+    "title": "Weight gain only",
+    "description": "No symptoms but 4 lb weight increase; expect Yellow.",
+    "v36_category": "Green",
+    "v37_category": "Green",
+    "v36_score": 0,
+    "v37_score": 0,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 7,
+    "title": "Fatigue moderate with stable vitals",
+    "description": "Functional decline; expect Orange.",
+    "v36_category": "Orange",
+    "v37_category": "Orange",
+    "v36_score": 2.9,
+    "v37_score": 2.9,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 8,
+    "title": "BP omitted, all mild symptoms",
+    "description": "Tests null handling for vitals; expect Green/Yellow boundary.",
+    "v36_category": "Yellow",
+    "v37_category": "Yellow",
+    "v36_score": 1.8,
+    "v37_score": 1.8,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 9,
+    "title": "Tachycardia with mild SOB",
+    "description": "Heart rate 110 with mild SOB; expect Orange.",
+    "v36_category": "Orange",
+    "v37_category": "Orange",
+    "v36_score": 2.4,
+    "v37_score": 2.4,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 10,
+    "title": "Low BP, moderate SOB",
+    "description": "Tests hypotension handling; expect Orange/Red.",
+    "v36_category": "Orange",
+    "v37_category": "Orange",
+    "v36_score": 4.7,
+    "v37_score": 4.7,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 11,
+    "title": "Stable advanced baseline (NYHA III)",
+    "description": "Persistent moderate symptoms but unchanged baseline; expect StableAdvanced.",
+    "v36_category": "Orange",
+    "v37_category": "Orange",
+    "v36_score": 6.7,
+    "v37_score": 6.7,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 12,
+    "title": "Rapid improvement",
+    "description": "All symptoms drop from moderate to none; expect Green.",
+    "v36_category": "Green",
+    "v37_category": "Green",
+    "v36_score": 0,
+    "v37_score": 0,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 13,
+    "title": "Incomplete inputs (missing HR)",
+    "description": "Algorithm must handle null safely; expect same category as if HR normal.",
+    "v36_category": "Yellow",
+    "v37_category": "Yellow",
+    "v36_score": 1.8,
+    "v37_score": 1.8,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 14,
+    "title": "Worsening edema only",
+    "description": "Moderate edema with no other change; expect Orange.",
+    "v36_category": "Yellow",
+    "v37_category": "Yellow",
+    "v36_score": 2,
+    "v37_score": 2,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 15,
+    "title": "Severe symptoms with bradycardia",
+    "description": "Edge case — HR 40, all symptoms severe; expect Red.",
+    "v36_category": "Red",
+    "v37_category": "Red",
+    "v36_score": 10,
+    "v37_score": 10,
+    "delta": 0,
+    "direction": "– same"
+  }
+]

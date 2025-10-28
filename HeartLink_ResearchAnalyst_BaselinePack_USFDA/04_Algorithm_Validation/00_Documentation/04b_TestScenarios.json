@@ -1,0 +1,225 @@
+[
+  {
+    "id": 1,
+    "name": "Stable baseline (all mild)",
+    "description": "All symptom entries at baseline; expected Green category.",
+    "input": {
+      "sob": "none",
+      "edema": "none",
+      "fatigue": "none",
+      "weightChange": 0,
+      "bp": 120,
+      "hr": 78
+    },
+    "baseline": {},
+    "expected": "Green"
+  },
+  {
+    "id": 2,
+    "name": "Mild increase in shortness of breath",
+    "description": "Slight exertional dyspnea, otherwise stable; expect Yellow.",
+    "input": {
+      "sob": "mild",
+      "edema": "none",
+      "fatigue": "none",
+      "weightChange": 1,
+      "bp": 118,
+      "hr": 82
+    },
+    "baseline": {},
+    "expected": "Yellow"
+  },
+  {
+    "id": 3,
+    "name": "Moderate SOB and mild edema",
+    "description": "Both symptoms up one level; expect Orange.",
+    "input": {
+      "sob": "moderate",
+      "edema": "mild",
+      "fatigue": "mild",
+      "weightChange": 3,
+      "bp": 110,
+      "hr": 88
+    },
+    "baseline": {},
+    "expected": "Orange"
+  },
+  {
+    "id": 4,
+    "name": "Severe SOB and edema with hypotension",
+    "description": "Critical findings; expect Red.",
+    "input": {
+      "sob": "severe",
+      "edema": "severe",
+      "fatigue": "severe",
+      "weightChange": 7,
+      "bp": 85,
+      "hr": 110
+    },
+    "baseline": {},
+    "expected": "Red"
+  },
+  {
+    "id": 5,
+    "name": "Improvement from prior severe to moderate",
+    "description": "Shows recovery trend; expect one-category downgrade.",
+    "input": {
+      "sob": "moderate",
+      "edema": "mild",
+      "fatigue": "mild",
+      "weightChange": -1,
+      "bp": 115,
+      "hr": 86
+    },
+    "baseline": {},
+    "expected": "Yellow"
+  },
+  {
+    "id": 6,
+    "name": "Weight gain only",
+    "description": "No symptoms but 4 lb weight increase; expect Yellow.",
+    "input": {
+      "sob": "none",
+      "edema": "none",
+      "fatigue": "none",
+      "weightChange": 4,
+      "bp": 120,
+      "hr": 80
+    },
+    "baseline": {},
+    "expected": "Yellow"
+  },
+  {
+    "id": 7,
+    "name": "Fatigue moderate with stable vitals",
+    "description": "Functional decline; expect Orange.",
+    "input": {
+      "sob": "mild",
+      "edema": "none",
+      "fatigue": "moderate",
+      "weightChange": 0,
+      "bp": 118,
+      "hr": 90
+    },
+    "baseline": {},
+    "expected": "Orange"
+  },
+  {
+    "id": 8,
+    "name": "BP omitted, all mild symptoms",
+    "description": "Tests null handling for vitals; expect Green/Yellow boundary.",
+    "input": {
+      "sob": "mild",
+      "edema": "none",
+      "fatigue": "none",
+      "weightChange": 0,
+      "hr": 80
+    },
+    "baseline": {},
+    "expected": "Yellow"
+  },
+  {
+    "id": 9,
+    "name": "Tachycardia with mild SOB",
+    "description": "Heart rate 110 with mild SOB; expect Orange.",
+    "input": {
+      "sob": "mild",
+      "edema": "none",
+      "fatigue": "mild",
+      "weightChange": 0,
+      "bp": 118,
+      "hr": 110
+    },
+    "baseline": {},
+    "expected": "Orange"
+  },
+  {
+    "id": 10,
+    "name": "Low BP, moderate SOB",
+    "description": "Tests hypotension handling; expect Orange/Red.",
+    "input": {
+      "sob": "moderate",
+      "edema": "none",
+      "fatigue": "moderate",
+      "weightChange": 2,
+      "bp": 90,
+      "hr": 96
+    },
+    "baseline": {},
+    "expected": "Red"
+  },
+  {
+    "id": 11,
+    "name": "Stable advanced baseline (NYHA III)",
+    "description": "Persistent moderate symptoms but unchanged baseline; expect StableAdvanced.",
+    "input": {
+      "sob": "moderate",
+      "edema": "moderate",
+      "fatigue": "moderate",
+      "weightChange": 0,
+      "bp": 110,
+      "hr": 88
+    },
+    "baseline": { "nyha": "III" },
+    "expected": "StableAdvanced"
+  },
+  {
+    "id": 12,
+    "name": "Rapid improvement",
+    "description": "All symptoms drop from moderate to none; expect Green.",
+    "input": {
+      "sob": "none",
+      "edema": "none",
+      "fatigue": "none",
+      "weightChange": -3,
+      "bp": 122,
+      "hr": 78
+    },
+    "baseline": {},
+    "expected": "Green"
+  },
+  {
+    "id": 13,
+    "name": "Incomplete inputs (missing HR)",
+    "description": "Algorithm must handle null safely; expect same category as if HR normal.",
+    "input": {
+      "sob": "mild",
+      "edema": "none",
+      "fatigue": "none",
+      "weightChange": 1,
+      "bp": 115
+    },
+    "baseline": {},
+    "expected": "Yellow"
+  },
+  {
+    "id": 14,
+    "name": "Worsening edema only",
+    "description": "Moderate edema with no other change; expect Orange.",
+    "input": {
+      "sob": "none",
+      "edema": "moderate",
+      "fatigue": "none",
+      "weightChange": 2,
+      "bp": 118,
+      "hr": 84
+    },
+    "baseline": {},
+    "expected": "Orange"
+  },
+  {
+    "id": 15,
+    "name": "Severe symptoms with bradycardia",
+    "description": "Edge case — HR 40, all symptoms severe; expect Red.",
+    "input": {
+      "sob": "severe",
+      "edema": "severe",
+      "fatigue": "severe",
+      "weightChange": 8,
+      "bp": 80,
+      "hr": 40
+    },
+    "baseline": {},
+    "expected": "Red"
+  }
+]

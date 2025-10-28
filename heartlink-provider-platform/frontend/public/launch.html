@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open HeartLink</title>
+
+  <script>
+    // Parse providerID from the URL
+    const params = new URLSearchParams(window.location.search);
+    const providerID = params.get("providerID") || "UNKNOWN";
+
+    // Attempt to open the app first
+    const deepLink = `heartlink://pair?providerID=${encodeURIComponent(providerID)}`;
+    window.location.replace(deepLink);
+
+    // After a short delay, fallback to TestFlight or Play links
+    setTimeout(() => {
+      const ua = navigator.userAgent.toLowerCase();
+      if (/iphone|ipad|ipod/.test(ua)) {
+        window.location.replace("https://testflight.apple.com/join/YOUR_TESTFLIGHT_CODE");
+      } else if (/android/.test(ua)) {
+        window.location.replace("https://play.google.com/apps/testing/com.heartlink.health");
+      } else {
+        document.body.innerHTML = `
+          <p>Open the HeartLink app manually or install from TestFlight:</p>
+          <a href="https://testflight.apple.com/join/YOUR_TESTFLIGHT_CODE">Open TestFlight</a>
+        `;
+      }
+    }, 1500);
+  </script>
+</head>
+
+<body style="font-family: system-ui, sans-serif; text-align: center; padding: 40px;">
+  <h1 style="color:#0E2E4F;">Opening HeartLink...</h1>
+  <p>If you’re not redirected automatically, you can <a id="manual" href="#">tap here</a>.</p>
+  <script>
+    document.getElementById("manual").href = `heartlink://pair?providerID=${encodeURIComponent(providerID)}`;
+  </script>
+</body>
+</html>

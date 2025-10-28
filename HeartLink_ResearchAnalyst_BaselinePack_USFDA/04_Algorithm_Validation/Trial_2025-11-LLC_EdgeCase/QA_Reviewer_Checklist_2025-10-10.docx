@@ -1,0 +1,61 @@
+HEARTLINK LLC — QUALITY ASSURANCE VALIDATION CHECKLIST
+Trial ID: LLC_BASELINE_TRIAL_001
+Execution Date: 2025-10-10
+Algorithm Versions: v3.6 (active) vs v3.7 (shadow)
+Developer: Joshua Gunnels, PA-C
+Reviewer: ________________________________________
+Role: ☐ Independent Peer QA Reviewer   ☐ Clinical Oversight Reviewer
+
+-----------------------------------------------------------------------
+Section 1 — Documentation Integrity
+-----------------------------------------------------------------------
+☐ 1. All required validation files are present in trial folder:
+     - 04b_TestScenarios.json
+     - 04c_RunSyntheticTest.js
+     - Results (.json / .csv)
+     - 04d_Test_Audit_Trail.csv
+     - Reports/04e_Summary_Report_Template.md
+     - trial_manifest.json
+☐ 2. File naming conventions and timestamps match execution date.
+☐ 3. Manifest metadata (review_date, reviewer, status) completed.
+☐ 4. Developer and reviewer signatures present in Summary Report.
+
+-----------------------------------------------------------------------
+Section 2 — Execution Verification
+-----------------------------------------------------------------------
+☐ 5. Trial executed without runtime errors.
+☐ 6. All 15 test scenarios executed.
+☐ 7. Output files generated successfully.
+☐ 8. Audit Trail updated automatically with correct RUN-ID.
+☐ 9. Outputs trace back to their input scenario IDs.
+
+-----------------------------------------------------------------------
+Section 3 — Algorithm Equivalence Validation
+-----------------------------------------------------------------------
+☐ 10. v3.6 and v3.7 categories identical for all test cases.
+☐ 11. No unhandled or missing data values detected.
+☐ 12. Result deltas ≤ acceptable tolerance (0.01 normalized units).
+☐ 13. Summary report accurately reflects raw outputs.
+
+-----------------------------------------------------------------------
+Section 4 — Data Integrity & Security
+-----------------------------------------------------------------------
+☐ 14. No manual edits made to JSON or CSV results.
+☐ 15. Synthetic data used only (no PHI or patient identifiers).
+☐ 16. Trial folder access restricted to authorized personnel.
+☐ 17. Archive folder protected (read-only after sign-off).
+
+-----------------------------------------------------------------------
+Section 5 — Sign-Off
+-----------------------------------------------------------------------
+Reviewer Comments:
+______________________________________________________________________
+______________________________________________________________________
+______________________________________________________________________
+
+Overall QA Review Outcome:
+☐ PASS   ☐ PASS WITH COMMENTS   ☐ FAIL
+
+Reviewer Signature: ____________________________    Date: ________________
+Printed Name: __________________________________
+Title / Organization: ____________________________

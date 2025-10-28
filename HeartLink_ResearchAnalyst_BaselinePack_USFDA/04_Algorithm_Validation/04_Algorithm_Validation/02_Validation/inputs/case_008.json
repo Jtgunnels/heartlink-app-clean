@@ -1,0 +1,7 @@
+{
+  "id": "case_008",
+  "name": "Moderate SOB + moderate edema + mild fatigue",
+  "input": { "sob": "moderate", "edema": "moderate", "fatigue": "mild" },
+  "baseline": { "baselineSob": "mild", "baselineEdema": "none", "baselineFatigue": "none" },
+  "hist": {}
+}

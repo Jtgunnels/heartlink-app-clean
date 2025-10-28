@@ -1,0 +1,41 @@
+---
+Author: Joshua Gunnels, PA-C
+Role: Founder & Clinical Developer, HeartLink LLC
+Version: 0.1-Draft
+Date: 2025-10-10
+Reviewer: [QA Reviewer – TBD]
+---
+
+# HeartLink Synthetic Validation Summary Report
+
+## Trial ID: [e.g., LLC_BASELINE_TRIAL_001]
+**Algorithm Versions:** v3.6 vs v3.7  
+**Number of Scenarios:** 15  
+**Execution Date:** [Timestamp]  
+**Executed By:** Joshua Gunnels, PA-C  
+
+---
+
+### 1. Objective
+To verify that algorithm v3.7 (shadow mode) produces identical categorization to v3.6 baseline.
+
+### 2. Methods
+Synthetic scenarios representing common and edge cases of heart-failure symptom patterns were executed through both algorithms.  
+Outputs were compared for category and normalized score deltas.
+
+### 3. Results
+| Metric | Result |
+|--------|--------|
+| Total scenarios | 15 |
+| Concordant | 15 |
+| More conservative | 0 |
+| Less conservative | 0 |
+
+### 4. Conclusion
+No discrepancies were detected between v3.6 and v3.7 shadow outputs.  
+Algorithm validated as functionally equivalent for release readiness.
+
+---
+
+**Prepared by:** Joshua Gunnels, PA-C  
+**Reviewed by:** _____________________ (QA Reviewer)

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open HeartLink</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(#f9fbfc, #b7c9d8);
+      color: #0E2E4F;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1rem;
+      margin: 0.5rem 0 1.5rem;
+    }
+    a {
+      color: #2AA783;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    img {
+      width: 160px;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+
+  <script>
+    // Parse providerID from the URL
+    const params = new URLSearchParams(window.location.search);
+    const providerID = params.get("providerID") || "UNKNOWN";
+
+    // Construct the deep link (HeartLink app)
+    const deepLink = `heartlink://pair?providerID=${encodeURIComponent(providerID)}`;
+
+    // Try to open app immediately
+    window.location.replace(deepLink);
+
+    // Fallback after 1.5 seconds
+    setTimeout(() => {
+      const ua = navigator.userAgent.toLowerCase();
+  if (/iphone|ipad|ipod/.test(ua)) {
+  // Temporary placeholder while TestFlight build is not live
+  window.location.replace("https://example.com/testflight-placeholder");
+} else if (/android/.test(ua)) {
+  // Temporary placeholder while Play internal test is not live
+  window.location.replace("https://example.com/play-placeholder");
+} else {
+  // For desktop or unsupported platforms
+  document.getElementById("fallback").style.display = "block";
+}
+    }, 1500);
+  </script>
+</head>
+
+<body>
+  <img src="https://heartlink-launch.vercel.app/heartlink_full_light.png" alt="HeartLink Logo" />
+  <h1>Opening HeartLink…</h1>
+  <p>If you’re not redirected automatically, tap below to continue.</p>
+  <a id="manual" href="#">Open HeartLink</a>
+
+<div id="fallback" style="display:none;">
+  <p>HeartLink is currently in private testing. App store links will be available soon.</p>
+  <p>
+    <a href="https://example.com/testflight-placeholder">View iOS Placeholder</a> |
+    <a href="https://example.com/play-placeholder">View Android Placeholder</a>
+  </p>
+</div>
+
+  <script>
+    // Update the manual link dynamically
+    document.getElementById("manual").href = `heartlink://pair?providerID=${encodeURIComponent(providerID)}`;
+  </script>
+</body>
+</html>

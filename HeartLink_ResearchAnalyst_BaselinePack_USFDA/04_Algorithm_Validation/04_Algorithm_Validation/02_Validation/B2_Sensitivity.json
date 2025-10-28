@@ -1,0 +1,20 @@
+[
+  {
+    "cohort": "RecoveryClampCheck_12Day_v6",
+    "baseline": { "sob": 1.0, "edema": 1.0, "fatigue": 1.0, "orthopnea": false },
+    "inputSeries": [
+      { "sob": 6.0, "edema": 5.0, "fatigue": 4.5, "orthopnea": true },
+      { "sob": 5.7, "edema": 4.8, "fatigue": 4.3, "orthopnea": true },
+      { "sob": 5.4, "edema": 4.6, "fatigue": 4.1 },
+      { "sob": 5.1, "edema": 4.3, "fatigue": 3.9 },
+      { "sob": 4.7, "edema": 4.0, "fatigue": 3.7 },
+      { "sob": 4.3, "edema": 3.7, "fatigue": 3.4 },
+      { "sob": 3.8, "edema": 3.3, "fatigue": 3.1 },
+      { "sob": 3.3, "edema": 3.0, "fatigue": 2.8 },
+      { "sob": 2.8, "edema": 2.6, "fatigue": 2.4 },
+      { "sob": 2.2, "edema": 2.1, "fatigue": 2.0 },
+      { "sob": 1.5, "edema": 1.4, "fatigue": 1.4 },
+      { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 }
+    ]
+  }
+]

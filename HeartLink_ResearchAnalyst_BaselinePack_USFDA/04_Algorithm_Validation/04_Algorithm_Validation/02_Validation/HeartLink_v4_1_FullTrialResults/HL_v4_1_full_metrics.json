@@ -1,0 +1,120 @@
+{
+  "T1.0": {
+    "N_users": 10000,
+    "days": 30,
+    "mean_drift": 0.0,
+    "std_drift": 0.0,
+    "stable_within_pm_0_04": 1.0
+  },
+  "T1.1": {
+    "N_cases": 1000,
+    "unchanged_rate": 0.963,
+    "unchanged_rate_CI95_low": 0.949,
+    "unchanged_rate_CI95_high": 0.973
+  },
+  "T1.2": {
+    "N_cases": 500,
+    "orthopnea_escalation_accuracy": 0.0,
+    "CI95_low": 0.0,
+    "CI95_high": 0.008
+  },
+  "T1.3": {
+    "N_cases": 5000,
+    "fp_no_guard": 0,
+    "fp_guard": 0,
+    "false_alert_reduction": 0.0
+  },
+  "T1.4": {
+    "N_sequences": 500,
+    "clamp_hold_rate": 1.0,
+    "CI95_low": 0.992,
+    "CI95_high": 1.0,
+    "median_days_to_green": 6.0
+  },
+  "T1.5": {
+    "N_cases": 2000,
+    "accuracy": 0.587,
+    "accuracy_CI95_low": 0.565,
+    "accuracy_CI95_high": 0.608,
+    "auc_surrogate": 0.618,
+    "true_dist": {
+      "Green->Green": 1901,
+      "Green->Yellow": 0,
+      "Green->Orange": 0,
+      "Green->Red": 0,
+      "Yellow->Green": 0,
+      "Yellow->Yellow": 99,
+      "Yellow->Orange": 0,
+      "Yellow->Red": 0,
+      "Orange->Green": 0,
+      "Orange->Yellow": 0,
+      "Orange->Orange": 0,
+      "Orange->Red": 0,
+      "Red->Green": 0,
+      "Red->Yellow": 0,
+      "Red->Orange": 0,
+      "Red->Red": 0
+    },
+    "pred_dist": {
+      "Green->Green": 1174,
+      "Green->Yellow": 0,
+      "Green->Orange": 0,
+      "Green->Red": 0,
+      "Yellow->Green": 0,
+      "Yellow->Yellow": 449,
+      "Yellow->Orange": 0,
+      "Yellow->Red": 0,
+      "Orange->Green": 0,
+      "Orange->Yellow": 0,
+      "Orange->Orange": 377,
+      "Orange->Red": 0,
+      "Red->Green": 0,
+      "Red->Yellow": 0,
+      "Red->Orange": 0,
+      "Red->Red": 0
+    }
+  },
+  "T1.6": {
+    "N_days": 25000,
+    "false_alert_rate": 0.0,
+    "CI95_low": 0.0,
+    "CI95_high": 0.0,
+    "false_alerts": 0
+  },
+  "T1.7": {
+    "N_trajectories": 100,
+    "days": 60,
+    "mean_ping_pong_rate": 0.0,
+    "std": 0.0
+  },
+  "T1.8": {
+    "N_cases": 4000,
+    "mean_abs_drift": 0.0,
+    "within_pm_0_05": 1.0
+  },
+  "T1.9": {
+    "N_cases": 4800,
+    "accuracy": 0.772,
+    "accuracy_CI95_low": 0.76,
+    "accuracy_CI95_high": 0.784,
+    "auc_surrogate": 0.614,
+    "confusion": {
+      "Green->Green": 3376,
+      "Green->Yellow": 615,
+      "Green->Orange": 285,
+      "Green->Red": 0,
+      "Yellow->Green": 0,
+      "Yellow->Yellow": 329,
+      "Yellow->Orange": 195,
+      "Yellow->Red": 0,
+      "Orange->Green": 0,
+      "Orange->Yellow": 0,
+      "Orange->Orange": 0,
+      "Orange->Red": 0,
+      "Red->Green": 0,
+      "Red->Yellow": 0,
+      "Red->Orange": 0,
+      "Red->Red": 0
+    }
+  }
+}

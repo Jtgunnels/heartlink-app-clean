@@ -1,0 +1,24 @@
+{
+  "T1.9": {
+    "accuracy": 0.7833333333333333,
+    "auc_surrogate": 0.6156466949999119,
+    "confusion": {
+      "Green->Green": 861,
+      "Green->Yellow": 143,
+      "Green->Orange": 73,
+      "Green->Red": 0,
+      "Yellow->Green": 0,
+      "Yellow->Yellow": 79,
+      "Yellow->Orange": 44,
+      "Yellow->Red": 0,
+      "Orange->Green": 0,
+      "Orange->Yellow": 0,
+      "Orange->Orange": 0,
+      "Orange->Red": 0,
+      "Red->Green": 0,
+      "Red->Yellow": 0,
+      "Red->Orange": 0,
+      "Red->Red": 0
+    }
+  }
+}

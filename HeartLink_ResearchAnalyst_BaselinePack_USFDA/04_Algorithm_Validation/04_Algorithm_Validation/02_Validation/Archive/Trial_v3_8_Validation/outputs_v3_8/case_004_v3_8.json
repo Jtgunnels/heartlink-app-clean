@@ -1,0 +1,30 @@
+{
+  "category": "Red",
+  "normalized": 10,
+  "score": 10,
+  "reasons": [
+    "Severe shortness of breath or rapid weight gain."
+  ],
+  "flags": {
+    "criticalOverride": true
+  },
+  "meta": {
+    "version": "3.8",
+    "normalizedComponents": {
+      "sob": 3.9,
+      "edema": 0.7,
+      "fatigue": 0.4,
+      "orthopnea": 0
+    },
+    "fluidIndex": null,
+    "cceScore": 0,
+    "trendConfidence": 0,
+    "stsi7": null,
+    "thresholdsUsed": {
+      "GREEN_MAX": 2.6,
+      "YELLOW_MAX": 4.9,
+      "ORANGE_MAX": 7.4
+    },
+    "baselineUpdateApplied": false
+  }
+}

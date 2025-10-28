@@ -1,0 +1,7 @@
+{
+  "id": "case_005",
+  "name": "Mild orthopnea",
+  "input": { "sob": "none", "edema": "none", "fatigue": "none", "orthopnea": "mild" },
+  "baseline": { "baselineSob": "none", "baselineEdema": "none", "baselineFatigue": "none", "baselineOrthopnea": "none" },
+  "hist": {}
+}

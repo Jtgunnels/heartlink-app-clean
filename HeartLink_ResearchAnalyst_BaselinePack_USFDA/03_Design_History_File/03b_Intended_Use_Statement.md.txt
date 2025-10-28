@@ -1,0 +1,22 @@
+---
+Author: Joshua Gunnels, PA-C
+Role: Independent Clinical Developer (HeartLink)
+Version: 0.1-Draft
+Date: 2025-10-10
+Reviewed by: [Regulatory QA Reviewer – TBD]
+Approval Status: Pending
+---
+
+# Intended Use Statement — HeartLink (Wellness)
+
+**Intended User:** Adults (≥18 years) managing heart-failure–related symptoms.  
+**Environment of Use:** Personal mobile device (iOS/Android).  
+**Purpose:** To record and visualize self-reported symptoms and weight changes, and to provide educational trend summaries that encourage user awareness and communication with a healthcare provider.  
+
+HeartLink does **not** provide diagnostic, prognostic, or treatment guidance.  
+It is not intended for use in emergencies.
+
+# Future Intended Use (HeartLink Clinical)
+An FDA-cleared version may analyze patient-reported data and connected-device vitals to flag patients who may require provider review. It would not independently modify therapy or replace clinical judgment.
+
+---

@@ -1,0 +1,82 @@
+[
+  {
+    "cohort": "StepWorseningMid",
+    "baseline": { "sob": 1.0, "edema": 1.0, "fatigue": 1.0, "orthopnea": false },
+    "inputSeries": [
+      { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 },
+      { "sob": 1.1, "edema": 1.0, "fatigue": 1.0 },
+      { "sob": 1.3, "edema": 1.1, "fatigue": 1.0 },
+      { "sob": 1.5, "edema": 1.2, "fatigue": 1.1 },
+      { "sob": 1.7, "edema": 1.3, "fatigue": 1.2 },
+      { "sob": 1.8, "edema": 1.4, "fatigue": 1.3 },
+      { "sob": 2.0, "edema": 1.5, "fatigue": 1.4 },
+      { "sob": 2.2, "edema": 1.7, "fatigue": 1.5 },
+      { "sob": 2.3, "edema": 1.8, "fatigue": 1.7 },
+      { "sob": 2.5, "edema": 2.0, "fatigue": 1.8 },
+      { "sob": 2.8, "edema": 2.1, "fatigue": 2.0 },
+      { "sob": 3.0, "edema": 2.2, "fatigue": 2.1, "orthopnea": true },
+      { "sob": 3.1, "edema": 2.3, "fatigue": 2.2, "orthopnea": true },
+      { "sob": 3.0, "edema": 2.2, "fatigue": 2.1, "orthopnea": true },
+      { "sob": 2.8, "edema": 2.0, "fatigue": 2.0 },
+      { "sob": 2.4, "edema": 1.8, "fatigue": 1.9 },
+      { "sob": 2.0, "edema": 1.5, "fatigue": 1.7 },
+      { "sob": 1.7, "edema": 1.3, "fatigue": 1.5 },
+      { "sob": 1.4, "edema": 1.2, "fatigue": 1.3 },
+      { "sob": 1.2, "edema": 1.1, "fatigue": 1.1 }
+    ]
+  },
+  {
+    "cohort": "AdherenceLapse10to14",
+    "baseline": { "sob": 1.0, "edema": 1.0, "fatigue": 1.0, "orthopnea": false },
+    "inputSeries": [
+      { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 },
+      { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 },
+      { "sob": 1.1, "edema": 1.0, "fatigue": 1.0 },
+      { "sob": 1.2, "edema": 1.1, "fatigue": 1.0 },
+      { "sob": 1.3, "edema": 1.2, "fatigue": 1.1 },
+      { "sob": 1.5, "edema": 1.3, "fatigue": 1.2 },
+      { "sob": 1.7, "edema": 1.5, "fatigue": 1.3 },
+      { "sob": 1.8, "edema": 1.6, "fatigue": 1.5 },
+      { "sob": 1.9, "edema": 1.7, "fatigue": 1.6 },
+      { "sob": 2.1, "edema": 1.8, "fatigue": 1.8 },
+      { "sob": 2.3, "edema": 2.0, "fatigue": 1.9 },
+      { "sob": 2.4, "edema": 2.1, "fatigue": 2.0 },
+      { "sob": 2.2, "edema": 2.0, "fatigue": 1.9 },
+      { "sob": 1.9, "edema": 1.8, "fatigue": 1.7 },
+      { "sob": 1.5, "edema": 1.5, "fatigue": 1.4 },
+      { "sob": 1.3, "edema": 1.3, "fatigue": 1.2 },
+      { "sob": 1.1, "edema": 1.1, "fatigue": 1.0 }
+    ]
+  },
+  {
+    "cohort": "RecoveryClampCheck",
+    "baseline": { "sob": 2.5, "edema": 2.3, "fatigue": 2.0, "orthopnea": true },
+    "inputSeries": [
+      { "sob": 2.5, "edema": 2.3, "fatigue": 2.0, "orthopnea": true },
+      { "sob": 2.3, "edema": 2.1, "fatigue": 1.9, "orthopnea": true },
+      { "sob": 2.1, "edema": 1.9, "fatigue": 1.8 },
+      { "sob": 1.9, "edema": 1.7, "fatigue": 1.7 },
+      { "sob": 1.7, "edema": 1.5, "fatigue": 1.6 },
+      { "sob": 1.5, "edema": 1.4, "fatigue": 1.5 },
+      { "sob": 1.3, "edema": 1.3, "fatigue": 1.4 },
+      { "sob": 1.2, "edema": 1.2, "fatigue": 1.3 },
+      { "sob": 1.1, "edema": 1.1, "fatigue": 1.2 },
+      { "sob": 1.0, "edema": 1.0, "fatigue": 1.1 },
+      { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 }
+    ]
+  },
+  {
+    "cohort": "WeekendBounce",
+    "baseline": { "sob": 1.0, "edema": 1.0, "fatigue": 1.0, "orthopnea": false },
+    "inputSeries": [
+      { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 },
+      { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 },
+      { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 },
+      { "sob": 1.5, "edema": 1.3, "fatigue": 1.1 },
+      { "sob": 1.7, "edema": 1.5, "fatigue": 1.2 },
+      { "sob": 1.3, "edema": 1.2, "fatigue": 1.0 },
+      { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 },
+      { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "trial_id": "LLC_BASELINE_TRIAL_001",
+  "trial_name": "HeartLink v3.6 vs v3.7 Baseline Synthetic Validation",
+  "date_executed": "2025-10-10",
+  "executed_by": "Joshua Gunnels, PA-C",
+  "entity": "HeartLink LLC (Registered [Your State])",
+  "algorithm_versions": ["v3.6", "v3.7"],
+  "objective": "Confirm functional equivalence between v3.6 (production) and v3.7 (shadow) under representative symptom conditions.",
+  "environment": {
+    "os": "Windows 10/11 or macOS",
+    "node_version": ">=18",
+    "dependencies": ["calculateScore_v3_6.js", "calculateScore_v3_7.js"]
+  },
+  "inputs": {
+    "folder": "Inputs/",
+    "scenarios_file": "../../04b_TestScenarios.json",
+    "total_cases": 15
+  },
+  "outputs": {
+    "folder": "Outputs/Results/",
+    "json_results": "SyntheticResults_[timestamp].json",
+    "csv_results": "SyntheticResults_[timestamp].csv",
+    "audit_log": "../../04d_Test_Audit_Trail.csv",
+    "summary_report": "Reports/04e_Summary_Report_Template.md"
+  },
+  "results_summary": {
+    "concordant": 15,
+    "more_conservative": 0,
+    "less_conservative": 0,
+    "validation_status": "PASS"
+  },
+  "review": {
+    "qa_reviewer": "[Reviewer Name]",
+    "review_date": "2025-10-10",
+    "comments": "All 15 scenarios concordant between v3.6 and v3.7. Validation outcome: PASS."
+  },
+  "signatures": {
+    "developer": "Joshua Gunnels, PA-C",
+    "qa_reviewer": "[Reviewer Name]"
+  },
+  "status": "Completed – Reviewed",
+  "notes": "Baseline equivalence confirmed. Trial archived under /Archive/Trial_2025-10-LLC_Baseline."
+}

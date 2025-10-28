@@ -1,0 +1,47 @@
+module.exports = {
+  name: "HeartLink",
+  version: "1.0.0",
+  description: "Official HeartLink branding assets for React Expo project.",
+  assets: {
+    logos: {
+      light: require("./assets/logos/heartlink_full_light.png"),
+      // Add these once you have them:
+      // dark: require("./assets/logos/heartlink_full_dark.png"),
+      // icon: require("./assets/logos/heartlink_icon_square.png"),
+      // svg: require("./assets/logos/heartlink_master.svg")
+    },
+    fonts: {
+      // Replace paths once you drop the font files in /assets/fonts
+      Lato_Semibold: require("./assets/fonts/Lato_Semibold.ttf"),
+      Inter_Regular: require("./assets/fonts/Inter_Regular.ttf")
+    }
+  },
+  colors: {
+    navy: "#0E2E4F",
+    teal: "#2AA7B3",
+    backgroundStart: "#F9FBFC",
+    backgroundEnd: "#EAF3F4"
+  },
+  gradientDirection: "left-to-right",
+  lightTheme: {
+    background: "#F9FBFC",
+    surface: "#FFFFFF",
+    primary: "#0E2E4F",
+    secondary: "#2AA7B3",
+    textPrimary: "#0E2E4F",
+    textSecondary: "#5F6B7A",
+    accent: "#2AA7B3",
+    border: "#E0E6EA"
+  },
+  darkTheme: {
+    background: "#0E2E4F",
+    surface: "#1A3858",
+    primary: "#2AA7B3",
+    secondary: "#66C2C8",
+    textPrimary: "#FFFFFF",
+    textSecondary: "#C9D5E0",
+    accent: "#2AA7B3",
+    border: "#355A7D"
+  }
+};
+// © 2025 HeartLink. All rights reserved.

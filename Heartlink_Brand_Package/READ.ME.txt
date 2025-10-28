@@ -1,0 +1,74 @@
+HeartLink Brand Package — Version 1.0
+======================================
+
+Overview
+--------
+This package contains the official HeartLink brand assets for use in a React + Expo project.
+
+Directory
+---------
+/assets/logos
+  - heartlink_full_light.png
+  - heartlink_full_dark.png (optional)
+  - heartlink_master.svg (optional)
+  - heartlink_monochrome.png (optional)
+  - heartlink_icon_square.png (optional)
+
+/assets/ui
+  - heartlink_app_icon.png (optional)
+  - heartlink_favicon.ico (optional)
+  - heartlink_splash_screen.png (optional)
+
+/assets/fonts
+  - Lato_Semibold.ttf (add your licensed font file)
+  - Inter_Regular.ttf (add your licensed font file)
+
+/guide
+  - HeartLink_Brand_Guide.pdf (optional)
+  - README.txt (this file)
+
+manifest.json (JS import-ready module via CommonJS)
+
+Brand Colors
+------------
+Navy: #0E2E4F
+Teal: #2AA7B3
+Background Gradient: #F9FBFC → #EAF3F4 (Left → Right)
+
+Expo Setup (Fonts)
+------------------
+import * as Font from 'expo-font';
+await Font.loadAsync({
+  'Lato-Semibold': require('../assets/fonts/Lato_Semibold.ttf'),
+  'Inter-Regular': require('../assets/fonts/Inter_Regular.ttf'),
+});
+
+Expo app.json Snippet
+---------------------
+{
+  "expo": {
+    "name": "HeartLink",
+    "slug": "heartlink",
+    "icon": "./assets/ui/heartlink_app_icon.png",
+    "splash": {
+      "image": "./assets/ui/heartlink_splash_screen.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F9FBFC"
+    },
+    "assetBundlePatterns": ["**/*"]
+  }
+}
+
+Theme Usage
+-----------
+const brand = require('../HeartLink_Brand_Package/manifest.json');
+const theme = Appearance.getColorScheme() === 'dark' ? brand.darkTheme : brand.lightTheme;
+
+Notes
+-----
+• Maintain clear space around logo (>= height of 'H').
+• Minimum digital size: 24px high.
+• Approved backgrounds: light gradient, white, navy.
+• Do not modify proportions or recolor.
+
+© 2025 HeartLink. All rights reserved.

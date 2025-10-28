@@ -1,0 +1,7 @@
+{
+  "id": "case_002",
+  "name": "Mild SOB only",
+  "input": { "sob": "mild", "edema": "none", "fatigue": "none" },
+  "baseline": { "baselineSob": "none", "baselineEdema": "none", "baselineFatigue": "none" },
+  "hist": {}
+}

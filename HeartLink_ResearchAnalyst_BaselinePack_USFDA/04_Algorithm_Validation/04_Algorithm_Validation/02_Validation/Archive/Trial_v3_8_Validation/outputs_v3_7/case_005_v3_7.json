@@ -1,0 +1,21 @@
+{
+  "category": "Yellow",
+  "normalized": 0,
+  "score": 0,
+  "reasons": [
+    "Orthopnea noted (breathing worsens when lying flat) — escalated from Green to Yellow."
+  ],
+  "flags": {
+    "criticalOverride": false,
+    "orthopnea": true,
+    "version": "3.7"
+  },
+  "meta": {
+    "version": "3.7",
+    "sourceVersion": "3.6",
+    "orthopneaLevel": 1,
+    "baseCategory": "Green",
+    "escalationApplied": true,
+    "baselineUpdateApplied": false
+  }
+}

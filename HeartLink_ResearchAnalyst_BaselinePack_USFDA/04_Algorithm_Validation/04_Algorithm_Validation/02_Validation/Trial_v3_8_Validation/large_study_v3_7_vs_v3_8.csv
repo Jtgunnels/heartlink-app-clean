@@ -1,0 +1,501 @@
+id,name,trialGroup,v3_7_category,v3_8_category,v3_7_norm,v3_8_norm,Δnorm,changed
+case_001,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_002,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_003,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_004,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_005,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_006,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_007,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_008,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_009,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_010,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_011,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_012,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_013,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_014,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_015,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_016,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_017,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_018,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_019,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_020,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_021,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_022,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_023,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_024,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_025,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_026,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_027,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_028,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_029,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_030,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_031,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_032,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_033,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_034,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_035,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_036,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_037,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_038,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_039,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_040,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_041,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_042,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_043,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_044,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_045,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_046,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_047,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_048,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_049,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_050,Baseline normal,Baseline,Green,Green,0,0,0,false
+case_051,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_052,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_053,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_054,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_055,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_056,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_057,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_058,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_059,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_060,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_061,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_062,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_063,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_064,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_065,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_066,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_067,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_068,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_069,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_070,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_071,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_072,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_073,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_074,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_075,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_076,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_077,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_078,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_079,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_080,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_081,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_082,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_083,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_084,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_085,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_086,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_087,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_088,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_089,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_090,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_091,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_092,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_093,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_094,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_095,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_096,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_097,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_098,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_099,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_100,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_101,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_102,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_103,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_104,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_105,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_106,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_107,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_108,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_109,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_110,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_111,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_112,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_113,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_114,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_115,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_116,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_117,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_118,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_119,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_120,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_121,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_122,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_123,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_124,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_125,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_126,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_127,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_128,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_129,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_130,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_131,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_132,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_133,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_134,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_135,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_136,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_137,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_138,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_139,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_140,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_141,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_142,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_143,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_144,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_145,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_146,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_147,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_148,Mild single symptom (sob),Core_Mild,Yellow,Green,1.8,1.5,-0.3,true
+case_149,Mild single symptom (edema),Core_Mild,Yellow,Green,1,0.9,-0.1,true
+case_150,Mild single symptom (fatigue),Core_Mild,Yellow,Green,0.6,0.6,0,true
+case_151,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_152,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_153,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_154,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.5,3.7,-0.8,true
+case_155,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.5,3.7,-0.8,true
+case_156,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_157,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_158,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_159,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.5,3.7,-0.8,true
+case_160,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.5,3.7,-0.8,true
+case_161,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_162,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_163,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_164,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.5,3.7,-0.8,true
+case_165,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.5,3.7,-0.8,true
+case_166,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.5,3.7,-0.8,true
+case_167,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_168,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_169,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_170,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_171,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.5,3.7,-0.8,true
+case_172,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_173,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_174,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.5,3.7,-0.8,true
+case_175,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_176,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_177,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_178,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_179,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.5,3.7,-0.8,true
+case_180,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_181,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_182,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_183,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_184,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.5,3.7,-0.8,true
+case_185,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_186,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_187,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_188,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_189,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_190,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_191,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_192,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_193,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_194,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.5,3.7,-0.8,true
+case_195,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_196,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.5,3.7,-0.8,true
+case_197,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_198,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_199,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_200,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_201,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_202,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_203,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_204,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.5,3.7,-0.8,true
+case_205,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.5,3.7,-0.8,true
+case_206,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_207,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_208,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.5,3.7,-0.8,true
+case_209,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.5,3.7,-0.8,true
+case_210,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_211,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_212,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_213,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_214,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_215,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_216,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.5,3.7,-0.8,true
+case_217,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_218,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_219,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_220,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_221,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_222,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_223,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_224,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_225,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_226,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_227,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_228,Multi-domain moderate,Core_Moderate,Orange,Orange,6.1,5.1,-1,false
+case_229,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_230,Multi-domain moderate,Core_Moderate,Orange,Yellow,4.9,4.2,-0.7,true
+case_231,Critical rapid weight gain,Critical,Yellow,Green,1.8,2,0.2,true
+case_232,Critical rapid weight gain,Critical,Green,Green,0,0.4,0.4,false
+case_233,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_234,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_235,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_236,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_237,Critical rapid weight gain,Critical,Yellow,Yellow,1.8,2.6,0.8,false
+case_238,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_239,Critical rapid weight gain,Critical,Green,Green,0,1,1,false
+case_240,Critical rapid weight gain,Critical,Yellow,Green,1,2,1,true
+case_241,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_242,Critical rapid weight gain,Critical,Yellow,Green,1.8,2,0.2,true
+case_243,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_244,Critical rapid weight gain,Critical,Orange,Yellow,2.7,2.9,0.2,true
+case_245,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_246,Critical rapid weight gain,Critical,Green,Green,0,0.4,0.4,false
+case_247,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_248,Critical rapid weight gain,Critical,Yellow,Green,1,1.4,0.4,true
+case_249,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_250,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_251,Critical rapid weight gain,Critical,Yellow,Green,1,1.4,0.4,true
+case_252,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_253,Critical rapid weight gain,Critical,Yellow,Yellow,1.8,2.6,0.8,false
+case_254,Critical rapid weight gain,Critical,Orange,Yellow,2.7,2.9,0.2,true
+case_255,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_256,Critical rapid weight gain,Critical,Yellow,Green,1.8,2,0.2,true
+case_257,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_258,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_259,Critical rapid weight gain,Critical,Orange,Yellow,2.7,3.5,0.8,true
+case_260,Critical rapid weight gain,Critical,Yellow,Green,1,1.4,0.4,true
+case_261,Critical rapid weight gain,Critical,Yellow,Green,1,2,1,true
+case_262,Critical rapid weight gain,Critical,Yellow,Green,1,2,1,true
+case_263,Critical rapid weight gain,Critical,Orange,Yellow,2.7,3.5,0.8,true
+case_264,Critical rapid weight gain,Critical,Green,Green,0,1,1,false
+case_265,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_266,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_267,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_268,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_269,Critical rapid weight gain,Critical,Orange,Yellow,2.7,2.9,0.2,true
+case_270,Critical severe SOB,Critical,Red,Red,10,10,0,false
+case_271,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_272,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_273,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_274,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_275,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_276,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_277,Orthopnea mild,Orthopnea,Yellow,Green,0,1,1,true
+case_278,Orthopnea mild,Orthopnea,Yellow,Green,0,1,1,true
+case_279,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_280,Orthopnea mild,Orthopnea,Yellow,Green,0,1,1,true
+case_281,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_282,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_283,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_284,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_285,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_286,Orthopnea mild,Orthopnea,Yellow,Green,0,1,1,true
+case_287,Orthopnea mild,Orthopnea,Yellow,Green,0,1,1,true
+case_288,Orthopnea mild,Orthopnea,Yellow,Green,0,1,1,true
+case_289,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_290,Orthopnea mild,Orthopnea,Yellow,Green,0,1,1,true
+case_291,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_292,Orthopnea mild,Orthopnea,Yellow,Green,0,1,1,true
+case_293,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_294,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_295,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_296,Orthopnea mild,Orthopnea,Yellow,Green,0,1,1,true
+case_297,Orthopnea mild,Orthopnea,Yellow,Green,0,1,1,true
+case_298,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_299,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_300,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_301,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_302,Orthopnea mild,Orthopnea,Yellow,Green,0,1,1,true
+case_303,Orthopnea mild,Orthopnea,Yellow,Green,0,1,1,true
+case_304,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_305,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_306,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_307,Orthopnea mild,Orthopnea,Yellow,Green,0,1,1,true
+case_308,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_309,Orthopnea mild,Orthopnea,Yellow,Green,0,1,1,true
+case_310,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_311,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_312,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_313,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_314,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_315,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_316,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_317,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_318,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_319,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_320,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_321,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_322,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_323,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_324,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_325,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_326,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_327,Orthopnea moderate,Orthopnea,Yellow,Green,0,1.9,1.9,true
+case_328,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_329,Orthopnea severe,Orthopnea,Orange,Yellow,0,2.8,2.8,true
+case_330,Orthopnea mild,Orthopnea,Yellow,Green,0,1,1,true
+case_331,Weight trend (slow),FluidTrend,Orange,Green,2.4,2.5,0.1,true
+case_332,Weight trend (moderate),FluidTrend,Orange,Green,2.4,2.5,0.1,true
+case_333,Weight trend (slow),FluidTrend,Yellow,Green,1.8,1.9,0.1,true
+case_334,Weight trend (moderate),FluidTrend,Yellow,Green,1.8,2,0.2,true
+case_335,Weight trend (moderate),FluidTrend,Orange,Green,1.6,1.5,-0.1,true
+case_336,Weight trend (moderate),FluidTrend,Orange,Green,1.6,1.9,0.3,true
+case_337,Weight trend (moderate),FluidTrend,Yellow,Green,1,1.4,0.4,true
+case_338,Weight trend (moderate),FluidTrend,Yellow,Green,1.8,1.5,-0.3,true
+case_339,Weight trend (slow),FluidTrend,Yellow,Green,1.8,1.5,-0.3,true
+case_340,Weight trend (moderate),FluidTrend,Yellow,Green,0.6,1,0.4,true
+case_341,Weight trend (slow),FluidTrend,Orange,Green,2.7,2.4,-0.3,true
+case_342,Weight trend (moderate),FluidTrend,Green,Green,0,0.4,0.4,false
+case_343,Weight trend (moderate),FluidTrend,Orange,Yellow,2.7,2.8,0.1,true
+case_344,Weight trend (slow),FluidTrend,Orange,Yellow,3.3,3.5,0.2,true
+case_345,Weight trend (moderate),FluidTrend,Orange,Yellow,2.7,2.8,0.1,true
+case_346,Weight trend (moderate),FluidTrend,Green,Green,0,0.4,0.4,false
+case_347,Weight trend (moderate),FluidTrend,Orange,Yellow,3.3,3.6,0.3,true
+case_348,Weight trend (slow),FluidTrend,Yellow,Green,0.6,0.6,0,true
+case_349,Weight trend (moderate),FluidTrend,Orange,Yellow,2.4,2.6,0.2,true
+case_350,Weight trend (slow),FluidTrend,Green,Green,0,0.4,0.4,false
+case_351,Weight trend (moderate),FluidTrend,Orange,Yellow,2.7,2.8,0.1,true
+case_352,Weight trend (slow),FluidTrend,Orange,Green,2.4,2.5,0.1,true
+case_353,Weight trend (moderate),FluidTrend,Yellow,Green,0.6,0.6,0,true
+case_354,Weight trend (slow),FluidTrend,Yellow,Green,1.8,1.9,0.1,true
+case_355,Weight trend (slow),FluidTrend,Yellow,Green,0.6,1,0.4,true
+case_356,Weight trend (moderate),FluidTrend,Green,Green,0,0,0,false
+case_357,Weight trend (slow),FluidTrend,Yellow,Green,0.6,1,0.4,true
+case_358,Weight trend (moderate),FluidTrend,Green,Green,0,0.4,0.4,false
+case_359,Weight trend (moderate),FluidTrend,Orange,Green,1.6,1.5,-0.1,true
+case_360,Weight trend (moderate),FluidTrend,Orange,Yellow,3.3,3.5,0.2,true
+case_361,Weight trend (moderate),FluidTrend,Orange,Green,1.6,1.9,0.3,true
+case_362,Weight trend (slow),FluidTrend,Orange,Green,2.4,2.5,0.1,true
+case_363,Weight trend (slow),FluidTrend,Yellow,Green,1.8,1.9,0.1,true
+case_364,Weight trend (moderate),FluidTrend,Yellow,Green,1,1.4,0.4,true
+case_365,Weight trend (moderate),FluidTrend,Orange,Yellow,3.3,3.5,0.2,true
+case_366,Weight trend (moderate),FluidTrend,Yellow,Green,1,1.3,0.3,true
+case_367,Weight trend (moderate),FluidTrend,Orange,Yellow,3.3,3.1,-0.2,true
+case_368,Weight trend (moderate),FluidTrend,Orange,Green,2.4,2.5,0.1,true
+case_369,Weight trend (slow),FluidTrend,Orange,Green,1.6,1.5,-0.1,true
+case_370,Weight trend (slow),FluidTrend,Orange,Green,1.6,1.9,0.3,true
+case_371,Weight trend (slow),FluidTrend,Orange,Green,1.6,1.9,0.3,true
+case_372,Weight trend (moderate),FluidTrend,Orange,Green,1.6,2.1,0.5,true
+case_373,Weight trend (moderate),FluidTrend,Orange,Yellow,3.3,3.2,-0.1,true
+case_374,Weight trend (slow),FluidTrend,Yellow,Green,1.8,1.9,0.1,true
+case_375,Weight trend (moderate),FluidTrend,Orange,Green,2.4,2.2,-0.2,true
+case_376,Weight trend (slow),FluidTrend,Orange,Yellow,3.3,3.5,0.2,true
+case_377,Weight trend (slow),FluidTrend,Yellow,Green,1.8,1.9,0.1,true
+case_378,Weight trend (slow),FluidTrend,Yellow,Green,1.8,1.9,0.1,true
+case_379,Weight trend (slow),FluidTrend,Orange,Yellow,3.3,3.5,0.2,true
+case_380,Weight trend (moderate),FluidTrend,Yellow,Green,0.6,1,0.4,true
+case_381,Weight trend (moderate),FluidTrend,Orange,Yellow,2.4,2.6,0.2,true
+case_382,Weight trend (moderate),FluidTrend,Orange,Green,2.4,2.2,-0.2,true
+case_383,Weight trend (moderate),FluidTrend,Yellow,Green,1,1.3,0.3,true
+case_384,Weight trend (slow),FluidTrend,Yellow,Green,0.6,1,0.4,true
+case_385,Weight trend (slow),FluidTrend,Orange,Green,2.4,2.5,0.1,true
+case_386,Weight trend (slow),FluidTrend,Yellow,Green,1,1.3,0.3,true
+case_387,Weight trend (moderate),FluidTrend,Orange,Green,2.4,2.2,-0.2,true
+case_388,Weight trend (moderate),FluidTrend,Orange,Yellow,3.3,3.6,0.3,true
+case_389,Weight trend (slow),FluidTrend,Yellow,Green,1.8,1.9,0.1,true
+case_390,Weight trend (slow),FluidTrend,Orange,Green,2.4,2.5,0.1,true
+case_391,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_392,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_393,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_394,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_395,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_396,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_397,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_398,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_399,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_400,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_401,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_402,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_403,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_404,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_405,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_406,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_407,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_408,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_409,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_410,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_411,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_412,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_413,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_414,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_415,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_416,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_417,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_418,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_419,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_420,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_421,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_422,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_423,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_424,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_425,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_426,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_427,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_428,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_429,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_430,Recovery smoothing (OG test),Recovery,Green,Yellow,0,0,0,true
+case_431,StableAdvanced NYHA III,StableAdvanced,Red,Red,10,10,0,false
+case_432,StableAdvanced NYHA III,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_433,StableAdvanced NYHA IV,StableAdvanced,Red,Red,10,10,0,false
+case_434,StableAdvanced NYHA III,StableAdvanced,Red,Red,10,10,0,false
+case_435,StableAdvanced NYHA IV,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_436,StableAdvanced NYHA IV,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_437,StableAdvanced NYHA III,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_438,StableAdvanced NYHA III,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_439,StableAdvanced NYHA IV,StableAdvanced,Red,Red,10,10,0,false
+case_440,StableAdvanced NYHA IV,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_441,StableAdvanced NYHA IV,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_442,StableAdvanced NYHA III,StableAdvanced,Red,Red,10,10,0,false
+case_443,StableAdvanced NYHA III,StableAdvanced,Red,Red,10,10,0,false
+case_444,StableAdvanced NYHA IV,StableAdvanced,Red,Red,10,10,0,false
+case_445,StableAdvanced NYHA III,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_446,StableAdvanced NYHA III,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_447,StableAdvanced NYHA III,StableAdvanced,Red,Red,10,10,0,false
+case_448,StableAdvanced NYHA IV,StableAdvanced,Red,Red,10,10,0,false
+case_449,StableAdvanced NYHA IV,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_450,StableAdvanced NYHA IV,StableAdvanced,Red,Red,10,10,0,false
+case_451,StableAdvanced NYHA IV,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_452,StableAdvanced NYHA III,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_453,StableAdvanced NYHA III,StableAdvanced,Red,Red,10,10,0,false
+case_454,StableAdvanced NYHA III,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_455,StableAdvanced NYHA III,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_456,StableAdvanced NYHA III,StableAdvanced,Red,Red,10,10,0,false
+case_457,StableAdvanced NYHA III,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_458,StableAdvanced NYHA III,StableAdvanced,Red,Red,10,10,0,false
+case_459,StableAdvanced NYHA III,StableAdvanced,Red,Red,10,10,0,false
+case_460,StableAdvanced NYHA IV,StableAdvanced,Red,Red,10,10,0,false
+case_461,StableAdvanced NYHA III,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_462,StableAdvanced NYHA III,StableAdvanced,Red,Red,10,10,0,false
+case_463,StableAdvanced NYHA IV,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_464,StableAdvanced NYHA IV,StableAdvanced,Red,Red,10,10,0,false
+case_465,StableAdvanced NYHA III,StableAdvanced,Red,Red,10,10,0,false
+case_466,StableAdvanced NYHA IV,StableAdvanced,Red,Red,10,10,0,false
+case_467,StableAdvanced NYHA III,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_468,StableAdvanced NYHA IV,StableAdvanced,Red,Red,10,10,0,false
+case_469,StableAdvanced NYHA III,StableAdvanced,Orange,StableAdvanced,6.7,4.9,-1.8,true
+case_470,StableAdvanced NYHA IV,StableAdvanced,Red,Red,10,10,0,false
+case_471,Adaptive thresholds stress (noisy user),AdaptiveStress,Orange,Yellow,4.1,3.4,-0.7,true
+case_472,Adaptive thresholds stress (noisy user),AdaptiveStress,Green,Green,0,0,0,false
+case_473,Adaptive thresholds stress (noisy user),AdaptiveStress,Green,Green,0,0,0,false
+case_474,Adaptive thresholds stress (noisy user),AdaptiveStress,Orange,Yellow,5.1,4.4,-0.7,true
+case_475,Adaptive thresholds stress (noisy user),AdaptiveStress,Yellow,Yellow,3.5,2.8,-0.7,false
+case_476,Adaptive thresholds stress (noisy user),AdaptiveStress,Orange,Green,2.7,2.4,-0.3,true
+case_477,Adaptive thresholds stress (noisy user),AdaptiveStress,Orange,Yellow,3.3,3.1,-0.2,true
+case_478,Adaptive thresholds stress (noisy user),AdaptiveStress,Orange,Yellow,4.1,3.4,-0.7,true
+case_479,Adaptive thresholds stress (noisy user),AdaptiveStress,Orange,Yellow,4.5,3.7,-0.8,true
+case_480,Adaptive thresholds stress (noisy user),AdaptiveStress,Yellow,Green,1,0.9,-0.1,true
+case_481,Adaptive thresholds stress (noisy user),AdaptiveStress,Orange,Yellow,5.1,4.4,-0.7,true
+case_482,Adaptive thresholds stress (noisy user),AdaptiveStress,Orange,Yellow,3.3,3.1,-0.2,true
+case_483,Adaptive thresholds stress (noisy user),AdaptiveStress,Yellow,Yellow,3.5,2.8,-0.7,false
+case_484,Adaptive thresholds stress (noisy user),AdaptiveStress,Orange,Yellow,3.3,3.1,-0.2,true
+case_485,Adaptive thresholds stress (noisy user),AdaptiveStress,Orange,Green,1.6,1.5,-0.1,true
+case_486,Adaptive thresholds stress (noisy user),AdaptiveStress,Green,Green,0,0,0,false
+case_487,Adaptive thresholds stress (noisy user),AdaptiveStress,Orange,Yellow,4.1,3.4,-0.7,true
+case_488,Adaptive thresholds stress (noisy user),AdaptiveStress,Orange,Yellow,5.1,4.4,-0.7,true
+case_489,Adaptive thresholds stress (noisy user),AdaptiveStress,Orange,Yellow,4.1,3.4,-0.7,true
+case_490,Adaptive thresholds stress (noisy user),AdaptiveStress,Yellow,Green,1,0.9,-0.1,true
+case_491,Adaptive thresholds stress (noisy user),AdaptiveStress,Yellow,Green,0.6,0.6,0,true
+case_492,Adaptive thresholds stress (noisy user),AdaptiveStress,Orange,Yellow,4.5,3.7,-0.8,true
+case_493,Adaptive thresholds stress (noisy user),AdaptiveStress,Yellow,Yellow,3.5,2.8,-0.7,false
+case_494,Adaptive thresholds stress (noisy user),AdaptiveStress,Green,Green,0,0,0,false
+case_495,Adaptive thresholds stress (noisy user),AdaptiveStress,Orange,Yellow,5.1,4.4,-0.7,true
+case_496,Adaptive thresholds stress (noisy user),AdaptiveStress,Orange,Yellow,4.5,3.7,-0.8,true
+case_497,Adaptive thresholds stress (noisy user),AdaptiveStress,Yellow,Green,0.6,0.6,0,true
+case_498,Adaptive thresholds stress (noisy user),AdaptiveStress,Orange,Yellow,4.5,3.7,-0.8,true
+case_499,Adaptive thresholds stress (noisy user),AdaptiveStress,Yellow,Green,1,0.9,-0.1,true
+case_500,Adaptive thresholds stress (noisy user),AdaptiveStress,Green,Green,0,0,0,false

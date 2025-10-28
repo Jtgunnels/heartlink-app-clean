@@ -1,0 +1,18 @@
+{
+  "category": "Orange",
+  "normalized": 6.7,
+  "score": 6.7,
+  "reasons": [],
+  "flags": {
+    "criticalOverride": false,
+    "version": "3.7"
+  },
+  "meta": {
+    "version": "3.7",
+    "sourceVersion": "3.6",
+    "orthopneaLevel": 0,
+    "baseCategory": "Orange",
+    "escalationApplied": false,
+    "baselineUpdateApplied": false
+  }
+}

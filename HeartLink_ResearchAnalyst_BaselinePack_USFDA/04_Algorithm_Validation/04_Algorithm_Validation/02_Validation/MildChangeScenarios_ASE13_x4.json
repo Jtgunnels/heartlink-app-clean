@@ -1,0 +1,3602 @@
+[
+  {
+    "id": "mild_0001",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 8.4,
+      "edema": 8,
+      "fatigue": 7.2,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 6.8,
+      "edema": 6.8,
+      "fatigue": 7.2,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.73,
+        2.18
+      ],
+      "wsSeries": [
+        1.73,
+        2.18
+      ]
+    }
+  },
+  {
+    "id": "mild_0002",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 8.4,
+      "edema": 7.2,
+      "fatigue": 6.4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 6.4,
+      "edema": 5.2,
+      "fatigue": 6.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.5,
+        2.07
+      ],
+      "wsSeries": [
+        1.5,
+        2.07
+      ]
+    }
+  },
+  {
+    "id": "mild_0003",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.2,
+      "edema": 5.6,
+      "fatigue": 4.8,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 5.6,
+      "fatigue": 4.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.23,
+        1.49
+      ],
+      "wsSeries": [
+        1.23,
+        1.49
+      ]
+    }
+  },
+  {
+    "id": "mild_0004",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 4.8,
+      "edema": 6.8,
+      "fatigue": 6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 6.8,
+      "fatigue": 5.6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.4,
+        1.38
+      ],
+      "wsSeries": [
+        1.4,
+        1.38
+      ]
+    }
+  },
+  {
+    "id": "mild_0005",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 9.2,
+      "edema": 5.2,
+      "fatigue": 7.2,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 7.2,
+      "edema": 4.4,
+      "fatigue": 6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.47,
+        2.01
+      ],
+      "wsSeries": [
+        1.47,
+        2.01
+      ]
+    }
+  },
+  {
+    "id": "mild_0006",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.2,
+      "edema": 7.2,
+      "fatigue": 6.8,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.8,
+      "edema": 5.2,
+      "fatigue": 5.6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.47,
+        1.98
+      ],
+      "wsSeries": [
+        1.47,
+        1.98
+      ]
+    }
+  },
+  {
+    "id": "mild_0007",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6,
+      "edema": 7.6,
+      "fatigue": 8,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6,
+      "edema": 6.4,
+      "fatigue": 7.2,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.63,
+        1.9
+      ],
+      "wsSeries": [
+        1.63,
+        1.9
+      ]
+    }
+  },
+  {
+    "id": "mild_0008",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 4.8,
+      "edema": 4.4,
+      "fatigue": 7.6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 4,
+      "edema": 4,
+      "fatigue": 5.6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.13,
+        1.5
+      ],
+      "wsSeries": [
+        1.13,
+        1.5
+      ]
+    }
+  },
+  {
+    "id": "mild_0009",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.8,
+      "edema": 6.4,
+      "fatigue": 4.8,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6,
+      "edema": 4.8,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.27,
+        1.74
+      ],
+      "wsSeries": [
+        1.27,
+        1.74
+      ]
+    }
+  },
+  {
+    "id": "mild_0010",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.2,
+      "edema": 4.8,
+      "fatigue": 6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.8,
+      "edema": 4,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.27,
+        1.73
+      ],
+      "wsSeries": [
+        1.27,
+        1.73
+      ]
+    }
+  },
+  {
+    "id": "mild_0011",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.6,
+      "edema": 6.8,
+      "fatigue": 7.2,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 5.6,
+      "edema": 5.6,
+      "fatigue": 6.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.47,
+        1.8
+      ],
+      "wsSeries": [
+        1.47,
+        1.8
+      ]
+    }
+  },
+  {
+    "id": "mild_0012",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.2,
+      "edema": 7.2,
+      "fatigue": 6.8,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 6.8,
+      "edema": 5.6,
+      "fatigue": 6.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.6,
+        1.89
+      ],
+      "wsSeries": [
+        1.6,
+        1.89
+      ]
+    }
+  },
+  {
+    "id": "mild_0013",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.2,
+      "edema": 6,
+      "fatigue": 6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 6.4,
+      "edema": 5.6,
+      "fatigue": 6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.5,
+        1.79
+      ],
+      "wsSeries": [
+        1.5,
+        1.79
+      ]
+    }
+  },
+  {
+    "id": "mild_0014",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 4.8,
+      "edema": 6.8,
+      "fatigue": 5.2,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 5.2,
+      "fatigue": 5.2,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.23,
+        1.66
+      ],
+      "wsSeries": [
+        1.23,
+        1.66
+      ]
+    }
+  },
+  {
+    "id": "mild_0015",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.6,
+      "edema": 4.4,
+      "fatigue": 6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6,
+      "edema": 4.4,
+      "fatigue": 4.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.27,
+        1.63
+      ],
+      "wsSeries": [
+        1.27,
+        1.63
+      ]
+    }
+  },
+  {
+    "id": "mild_0016",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.2,
+      "edema": 6.4,
+      "fatigue": 4.8,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.8,
+      "edema": 6,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.43,
+        1.76
+      ],
+      "wsSeries": [
+        1.43,
+        1.76
+      ]
+    }
+  },
+  {
+    "id": "mild_0017",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.2,
+      "edema": 4.8,
+      "fatigue": 8,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 5.2,
+      "edema": 4.8,
+      "fatigue": 6.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.37,
+        1.94
+      ],
+      "wsSeries": [
+        1.37,
+        1.94
+      ]
+    }
+  },
+  {
+    "id": "mild_0018",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 4.8,
+      "edema": 6.4,
+      "fatigue": 6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 4.8,
+      "edema": 6,
+      "fatigue": 4.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.3,
+        1.57
+      ],
+      "wsSeries": [
+        1.3,
+        1.57
+      ]
+    }
+  },
+  {
+    "id": "mild_0019",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 8.4,
+      "edema": 5.6,
+      "fatigue": 6.4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.8,
+      "edema": 4.8,
+      "fatigue": 4.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.37,
+        1.92
+      ],
+      "wsSeries": [
+        1.37,
+        1.92
+      ]
+    }
+  },
+  {
+    "id": "mild_0020",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.4,
+      "edema": 6.4,
+      "fatigue": 6.4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 4.8,
+      "edema": 6.4,
+      "fatigue": 6.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.47,
+        1.66
+      ],
+      "wsSeries": [
+        1.47,
+        1.66
+      ]
+    }
+  },
+  {
+    "id": "mild_0021",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.2,
+      "edema": 6,
+      "fatigue": 5.6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6,
+      "edema": 6,
+      "fatigue": 4.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.4,
+        1.58
+      ],
+      "wsSeries": [
+        1.4,
+        1.58
+      ]
+    }
+  },
+  {
+    "id": "mild_0022",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.2,
+      "edema": 7.2,
+      "fatigue": 6.4,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 5.2,
+      "edema": 6.8,
+      "fatigue": 6.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.53,
+        1.6
+      ],
+      "wsSeries": [
+        1.53,
+        1.6
+      ]
+    }
+  },
+  {
+    "id": "mild_0023",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 4.4,
+      "edema": 5.6,
+      "fatigue": 7.2,
+      "sobCompare": "Same",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 5.6,
+      "fatigue": 7.2,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.43,
+        1.71
+      ],
+      "wsSeries": [
+        1.43,
+        1.71
+      ]
+    }
+  },
+  {
+    "id": "mild_0024",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.2,
+      "edema": 7.2,
+      "fatigue": 4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 4.8,
+      "edema": 6.4,
+      "fatigue": 4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.27,
+        1.38
+      ],
+      "wsSeries": [
+        1.27,
+        1.38
+      ]
+    }
+  },
+  {
+    "id": "mild_0025",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.4,
+      "edema": 5.2,
+      "fatigue": 4.4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 5.2,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.17,
+        1.26
+      ],
+      "wsSeries": [
+        1.17,
+        1.26
+      ]
+    }
+  },
+  {
+    "id": "mild_0026",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.2,
+      "edema": 4.8,
+      "fatigue": 5.6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.4,
+      "edema": 4.8,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.3,
+        1.48
+      ],
+      "wsSeries": [
+        1.3,
+        1.48
+      ]
+    }
+  },
+  {
+    "id": "mild_0027",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 8,
+      "edema": 7.6,
+      "fatigue": 6.4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.8,
+      "edema": 6.8,
+      "fatigue": 4.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.53,
+        1.84
+      ],
+      "wsSeries": [
+        1.53,
+        1.84
+      ]
+    }
+  },
+  {
+    "id": "mild_0028",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6,
+      "edema": 4.8,
+      "fatigue": 6,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6,
+      "edema": 4.8,
+      "fatigue": 4.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.3,
+        1.58
+      ],
+      "wsSeries": [
+        1.3,
+        1.58
+      ]
+    }
+  },
+  {
+    "id": "mild_0029",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.4,
+      "edema": 7.2,
+      "fatigue": 7.2,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.4,
+      "edema": 6.4,
+      "fatigue": 6.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.6,
+        1.65
+      ],
+      "wsSeries": [
+        1.6,
+        1.65
+      ]
+    }
+  },
+  {
+    "id": "mild_0030",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.2,
+      "edema": 7.2,
+      "fatigue": 7.6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 4.8,
+      "edema": 5.6,
+      "fatigue": 6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.37,
+        1.94
+      ],
+      "wsSeries": [
+        1.37,
+        1.94
+      ]
+    }
+  },
+  {
+    "id": "mild_0031",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.8,
+      "edema": 4.8,
+      "fatigue": 8.4,
+      "sobCompare": "Same",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.8,
+      "edema": 4.8,
+      "fatigue": 6.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.5,
+        1.91
+      ],
+      "wsSeries": [
+        1.5,
+        1.91
+      ]
+    }
+  },
+  {
+    "id": "mild_0032",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.2,
+      "edema": 7.2,
+      "fatigue": 5.6,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 7.2,
+      "edema": 5.6,
+      "fatigue": 5.6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.53,
+        1.93
+      ],
+      "wsSeries": [
+        1.53,
+        1.93
+      ]
+    }
+  },
+  {
+    "id": "mild_0033",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.8,
+      "edema": 7.2,
+      "fatigue": 6.8,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.8,
+      "edema": 5.2,
+      "fatigue": 6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.5,
+        1.99
+      ],
+      "wsSeries": [
+        1.5,
+        1.99
+      ]
+    }
+  },
+  {
+    "id": "mild_0034",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 4.8,
+      "edema": 6.4,
+      "fatigue": 4.4,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 4.8,
+      "edema": 4.4,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.13,
+        1.29
+      ],
+      "wsSeries": [
+        1.13,
+        1.29
+      ]
+    }
+  },
+  {
+    "id": "mild_0035",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 8.8,
+      "edema": 6,
+      "fatigue": 4.8,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 7.2,
+      "edema": 4.8,
+      "fatigue": 4.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.4,
+        1.75
+      ],
+      "wsSeries": [
+        1.4,
+        1.75
+      ]
+    }
+  },
+  {
+    "id": "mild_0036",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.6,
+      "edema": 6,
+      "fatigue": 6.8,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 5.6,
+      "edema": 4.4,
+      "fatigue": 4.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.23,
+        1.78
+      ],
+      "wsSeries": [
+        1.23,
+        1.78
+      ]
+    }
+  },
+  {
+    "id": "mild_0037",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6,
+      "edema": 4.8,
+      "fatigue": 4.8,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 5.2,
+      "edema": 4.8,
+      "fatigue": 4.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.23,
+        1.4
+      ],
+      "wsSeries": [
+        1.23,
+        1.4
+      ]
+    }
+  },
+  {
+    "id": "mild_0038",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.6,
+      "edema": 8,
+      "fatigue": 7.2,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 5.2,
+      "edema": 6.4,
+      "fatigue": 5.6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.43,
+        1.88
+      ],
+      "wsSeries": [
+        1.43,
+        1.88
+      ]
+    }
+  },
+  {
+    "id": "mild_0039",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.4,
+      "edema": 5.2,
+      "fatigue": 7.2,
+      "sobCompare": "Same",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.4,
+      "edema": 5.2,
+      "fatigue": 6.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.53,
+        1.66
+      ],
+      "wsSeries": [
+        1.53,
+        1.66
+      ]
+    }
+  },
+  {
+    "id": "mild_0040",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.6,
+      "edema": 6,
+      "fatigue": 7.6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 4.8,
+      "edema": 6,
+      "fatigue": 6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.4,
+        1.62
+      ],
+      "wsSeries": [
+        1.4,
+        1.62
+      ]
+    }
+  },
+  {
+    "id": "mild_0041",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 8,
+      "edema": 5.6,
+      "fatigue": 7.2,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 6.8,
+      "edema": 5.6,
+      "fatigue": 7.2,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.63,
+        1.95
+      ],
+      "wsSeries": [
+        1.63,
+        1.95
+      ]
+    }
+  },
+  {
+    "id": "mild_0042",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.2,
+      "edema": 7.6,
+      "fatigue": 4.8,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 5.2,
+      "edema": 6.8,
+      "fatigue": 4.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.4,
+        1.54
+      ],
+      "wsSeries": [
+        1.4,
+        1.54
+      ]
+    }
+  },
+  {
+    "id": "mild_0043",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.2,
+      "edema": 6,
+      "fatigue": 4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 4.8,
+      "edema": 6,
+      "fatigue": 4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.23,
+        1.29
+      ],
+      "wsSeries": [
+        1.23,
+        1.29
+      ]
+    }
+  },
+  {
+    "id": "mild_0044",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 4.8,
+      "edema": 6.4,
+      "fatigue": 6.8,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 4.8,
+      "fatigue": 5.2,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.2,
+        1.69
+      ],
+      "wsSeries": [
+        1.2,
+        1.69
+      ]
+    }
+  },
+  {
+    "id": "mild_0045",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.6,
+      "edema": 4.8,
+      "fatigue": 4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 7.2,
+      "edema": 4.8,
+      "fatigue": 4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.33,
+        1.41
+      ],
+      "wsSeries": [
+        1.33,
+        1.41
+      ]
+    }
+  },
+  {
+    "id": "mild_0046",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.6,
+      "edema": 4.4,
+      "fatigue": 4.4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 4.4,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.1,
+        1.19
+      ],
+      "wsSeries": [
+        1.1,
+        1.19
+      ]
+    }
+  },
+  {
+    "id": "mild_0047",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 8.4,
+      "edema": 6,
+      "fatigue": 4.8,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 6.4,
+      "edema": 6,
+      "fatigue": 4.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.43,
+        1.54
+      ],
+      "wsSeries": [
+        1.43,
+        1.54
+      ]
+    }
+  },
+  {
+    "id": "mild_0048",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6,
+      "edema": 5.2,
+      "fatigue": 8.4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 4.4,
+      "fatigue": 7.2,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.33,
+        1.92
+      ],
+      "wsSeries": [
+        1.33,
+        1.92
+      ]
+    }
+  },
+  {
+    "id": "mild_0049",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6,
+      "edema": 6.4,
+      "fatigue": 6.4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 5.6,
+      "edema": 6.4,
+      "fatigue": 5.6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.47,
+        1.73
+      ],
+      "wsSeries": [
+        1.47,
+        1.73
+      ]
+    }
+  },
+  {
+    "id": "mild_0050",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6,
+      "edema": 5.6,
+      "fatigue": 5.2,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 6,
+      "edema": 5.2,
+      "fatigue": 5.2,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.37,
+        1.53
+      ],
+      "wsSeries": [
+        1.37,
+        1.53
+      ]
+    }
+  },
+  {
+    "id": "mild_0051",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.8,
+      "edema": 6.8,
+      "fatigue": 8,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.4,
+      "edema": 4.8,
+      "fatigue": 6.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.47,
+        2.05
+      ],
+      "wsSeries": [
+        1.47,
+        2.05
+      ]
+    }
+  },
+  {
+    "id": "mild_0052",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 4.4,
+      "edema": 5.2,
+      "fatigue": 6.4,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 4.4,
+      "fatigue": 6.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.27,
+        1.36
+      ],
+      "wsSeries": [
+        1.27,
+        1.36
+      ]
+    }
+  },
+  {
+    "id": "mild_0053",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.2,
+      "edema": 4.4,
+      "fatigue": 5.2,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 4.4,
+      "fatigue": 5.2,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.17,
+        1.47
+      ],
+      "wsSeries": [
+        1.17,
+        1.47
+      ]
+    }
+  },
+  {
+    "id": "mild_0054",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6,
+      "edema": 6.8,
+      "fatigue": 8.8,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 5.2,
+      "edema": 4.8,
+      "fatigue": 6.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.4,
+        2.02
+      ],
+      "wsSeries": [
+        1.4,
+        2.02
+      ]
+    }
+  },
+  {
+    "id": "mild_0055",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.6,
+      "edema": 5.6,
+      "fatigue": 6.8,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 6.4,
+      "edema": 4,
+      "fatigue": 6.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.43,
+        1.91
+      ],
+      "wsSeries": [
+        1.43,
+        1.91
+      ]
+    }
+  },
+  {
+    "id": "mild_0056",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 4.4,
+      "edema": 6,
+      "fatigue": 6.8,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 5.6,
+      "fatigue": 6.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.4,
+        1.54
+      ],
+      "wsSeries": [
+        1.4,
+        1.54
+      ]
+    }
+  },
+  {
+    "id": "mild_0057",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.6,
+      "edema": 7.2,
+      "fatigue": 6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 5.6,
+      "edema": 6.8,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.4,
+        1.78
+      ],
+      "wsSeries": [
+        1.4,
+        1.78
+      ]
+    }
+  },
+  {
+    "id": "mild_0058",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 8.4,
+      "edema": 6.8,
+      "fatigue": 6.4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.4,
+      "edema": 6.8,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.47,
+        2.07
+      ],
+      "wsSeries": [
+        1.47,
+        2.07
+      ]
+    }
+  },
+  {
+    "id": "mild_0059",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.2,
+      "edema": 5.2,
+      "fatigue": 7.6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 4.8,
+      "edema": 4.4,
+      "fatigue": 6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.27,
+        1.52
+      ],
+      "wsSeries": [
+        1.27,
+        1.52
+      ]
+    }
+  },
+  {
+    "id": "mild_0060",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 4.4,
+      "edema": 6,
+      "fatigue": 4.8,
+      "sobCompare": "Same",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 6,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.23,
+        1.27
+      ],
+      "wsSeries": [
+        1.23,
+        1.27
+      ]
+    }
+  },
+  {
+    "id": "mild_0061",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 4,
+      "edema": 7.2,
+      "fatigue": 5.6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 4,
+      "edema": 6,
+      "fatigue": 5.6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.3,
+        1.39
+      ],
+      "wsSeries": [
+        1.3,
+        1.39
+      ]
+    }
+  },
+  {
+    "id": "mild_0062",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.6,
+      "edema": 7.2,
+      "fatigue": 6.4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 6.8,
+      "fatigue": 4.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.33,
+        1.84
+      ],
+      "wsSeries": [
+        1.33,
+        1.84
+      ]
+    }
+  },
+  {
+    "id": "mild_0063",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6,
+      "edema": 4.8,
+      "fatigue": 7.2,
+      "sobCompare": "Same",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6,
+      "edema": 4.8,
+      "fatigue": 5.6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.37,
+        1.45
+      ],
+      "wsSeries": [
+        1.37,
+        1.45
+      ]
+    }
+  },
+  {
+    "id": "mild_0064",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 4.8,
+      "edema": 6.8,
+      "fatigue": 5.6,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 4.8,
+      "edema": 6.4,
+      "fatigue": 5.6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.4,
+        1.5
+      ],
+      "wsSeries": [
+        1.4,
+        1.5
+      ]
+    }
+  },
+  {
+    "id": "mild_0065",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.2,
+      "edema": 4.8,
+      "fatigue": 6,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 5.2,
+      "edema": 4.4,
+      "fatigue": 5.6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.27,
+        1.57
+      ],
+      "wsSeries": [
+        1.27,
+        1.57
+      ]
+    }
+  },
+  {
+    "id": "mild_0066",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.4,
+      "edema": 7.2,
+      "fatigue": 4.4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.4,
+      "edema": 5.6,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.37,
+        1.67
+      ],
+      "wsSeries": [
+        1.37,
+        1.67
+      ]
+    }
+  },
+  {
+    "id": "mild_0067",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.8,
+      "edema": 7.2,
+      "fatigue": 7.6,
+      "sobCompare": "Same",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.8,
+      "edema": 7.2,
+      "fatigue": 6.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.73,
+        1.75
+      ],
+      "wsSeries": [
+        1.73,
+        1.75
+      ]
+    }
+  },
+  {
+    "id": "mild_0068",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.8,
+      "edema": 7.6,
+      "fatigue": 7.6,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.8,
+      "edema": 6.8,
+      "fatigue": 6.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.7,
+        2.1
+      ],
+      "wsSeries": [
+        1.7,
+        2.1
+      ]
+    }
+  },
+  {
+    "id": "mild_0069",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.4,
+      "edema": 6.8,
+      "fatigue": 6.8,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 5.2,
+      "edema": 6.8,
+      "fatigue": 5.2,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.43,
+        1.78
+      ],
+      "wsSeries": [
+        1.43,
+        1.78
+      ]
+    }
+  },
+  {
+    "id": "mild_0070",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.8,
+      "edema": 7.2,
+      "fatigue": 4.4,
+      "sobCompare": "Same",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 6.8,
+      "edema": 7.2,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.53,
+        1.46
+      ],
+      "wsSeries": [
+        1.53,
+        1.46
+      ]
+    }
+  },
+  {
+    "id": "mild_0071",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.2,
+      "edema": 6,
+      "fatigue": 4.4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 4,
+      "edema": 5.6,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.17,
+        1.51
+      ],
+      "wsSeries": [
+        1.17,
+        1.51
+      ]
+    }
+  },
+  {
+    "id": "mild_0072",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 8,
+      "edema": 6,
+      "fatigue": 5.6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.8,
+      "edema": 4.4,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.3,
+        1.69
+      ],
+      "wsSeries": [
+        1.3,
+        1.69
+      ]
+    }
+  },
+  {
+    "id": "mild_0073",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.2,
+      "edema": 6.4,
+      "fatigue": 5.6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6,
+      "edema": 5.2,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.3,
+        1.85
+      ],
+      "wsSeries": [
+        1.3,
+        1.85
+      ]
+    }
+  },
+  {
+    "id": "mild_0074",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6,
+      "edema": 7.2,
+      "fatigue": 7.6,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6,
+      "edema": 6.8,
+      "fatigue": 7.2,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.67,
+        1.66
+      ],
+      "wsSeries": [
+        1.67,
+        1.66
+      ]
+    }
+  },
+  {
+    "id": "mild_0075",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.2,
+      "edema": 8,
+      "fatigue": 4.4,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 7.2,
+      "edema": 7.2,
+      "fatigue": 4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.53,
+        1.89
+      ],
+      "wsSeries": [
+        1.53,
+        1.89
+      ]
+    }
+  },
+  {
+    "id": "mild_0076",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.6,
+      "edema": 6.8,
+      "fatigue": 5.2,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 7.2,
+      "edema": 6.8,
+      "fatigue": 5.2,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.6,
+        1.63
+      ],
+      "wsSeries": [
+        1.6,
+        1.63
+      ]
+    }
+  },
+  {
+    "id": "mild_0077",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.8,
+      "edema": 5.6,
+      "fatigue": 7.2,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 5.2,
+      "edema": 5.6,
+      "fatigue": 7.2,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.5,
+        1.72
+      ],
+      "wsSeries": [
+        1.5,
+        1.72
+      ]
+    }
+  },
+  {
+    "id": "mild_0078",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.8,
+      "edema": 5.6,
+      "fatigue": 6.4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 5.6,
+      "edema": 4,
+      "fatigue": 6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.3,
+        1.76
+      ],
+      "wsSeries": [
+        1.3,
+        1.76
+      ]
+    }
+  },
+  {
+    "id": "mild_0079",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.6,
+      "edema": 4.8,
+      "fatigue": 8,
+      "sobCompare": "Same",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 5.6,
+      "edema": 4.8,
+      "fatigue": 6.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.4,
+        1.76
+      ],
+      "wsSeries": [
+        1.4,
+        1.76
+      ]
+    }
+  },
+  {
+    "id": "mild_0080",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.8,
+      "edema": 4.4,
+      "fatigue": 7.6,
+      "sobCompare": "Same",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.8,
+      "edema": 4.4,
+      "fatigue": 6.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.5,
+        1.72
+      ],
+      "wsSeries": [
+        1.5,
+        1.72
+      ]
+    }
+  },
+  {
+    "id": "mild_0081",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 8.4,
+      "edema": 8.4,
+      "fatigue": 6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 7.2,
+      "edema": 7.2,
+      "fatigue": 6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.7,
+        2.03
+      ],
+      "wsSeries": [
+        1.7,
+        2.03
+      ]
+    }
+  },
+  {
+    "id": "mild_0082",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 8.4,
+      "edema": 7.2,
+      "fatigue": 6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 7.2,
+      "edema": 7.2,
+      "fatigue": 6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.7,
+        1.81
+      ],
+      "wsSeries": [
+        1.7,
+        1.81
+      ]
+    }
+  },
+  {
+    "id": "mild_0083",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.4,
+      "edema": 5.2,
+      "fatigue": 5.6,
+      "sobCompare": "Same",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.4,
+      "edema": 5.2,
+      "fatigue": 5.2,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.4,
+        1.43
+      ],
+      "wsSeries": [
+        1.4,
+        1.43
+      ]
+    }
+  },
+  {
+    "id": "mild_0084",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 4.4,
+      "edema": 6.8,
+      "fatigue": 6.8,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 5.2,
+      "fatigue": 6.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.37,
+        1.42
+      ],
+      "wsSeries": [
+        1.37,
+        1.42
+      ]
+    }
+  },
+  {
+    "id": "mild_0085",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.2,
+      "edema": 8.4,
+      "fatigue": 7.2,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 7.2,
+      "edema": 6.4,
+      "fatigue": 6.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.7,
+        1.91
+      ],
+      "wsSeries": [
+        1.7,
+        1.91
+      ]
+    }
+  },
+  {
+    "id": "mild_0086",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.2,
+      "edema": 4,
+      "fatigue": 5.2,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.4,
+      "edema": 4,
+      "fatigue": 4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.2,
+        1.64
+      ],
+      "wsSeries": [
+        1.2,
+        1.64
+      ]
+    }
+  },
+  {
+    "id": "mild_0087",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6,
+      "edema": 6,
+      "fatigue": 7.6,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6,
+      "edema": 4.4,
+      "fatigue": 6.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.4,
+        1.88
+      ],
+      "wsSeries": [
+        1.4,
+        1.88
+      ]
+    }
+  },
+  {
+    "id": "mild_0088",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 4.4,
+      "edema": 5.2,
+      "fatigue": 4.8,
+      "sobCompare": "Same",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 5.2,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.17,
+        1.29
+      ],
+      "wsSeries": [
+        1.17,
+        1.29
+      ]
+    }
+  },
+  {
+    "id": "mild_0089",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.8,
+      "edema": 6,
+      "fatigue": 7.2,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 5.6,
+      "edema": 6,
+      "fatigue": 6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.47,
+        1.73
+      ],
+      "wsSeries": [
+        1.47,
+        1.73
+      ]
+    }
+  },
+  {
+    "id": "mild_0090",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 4,
+      "edema": 6,
+      "fatigue": 6.4,
+      "sobCompare": "Same",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 4,
+      "edema": 6,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.2,
+        1.53
+      ],
+      "wsSeries": [
+        1.2,
+        1.53
+      ]
+    }
+  },
+  {
+    "id": "mild_0091",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.2,
+      "edema": 5.6,
+      "fatigue": 4.4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 4.8,
+      "edema": 5.6,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.23,
+        1.39
+      ],
+      "wsSeries": [
+        1.23,
+        1.39
+      ]
+    }
+  },
+  {
+    "id": "mild_0092",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.4,
+      "edema": 6.8,
+      "fatigue": 6,
+      "sobCompare": "Same",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 6.4,
+      "edema": 6.8,
+      "fatigue": 6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.6,
+        1.62
+      ],
+      "wsSeries": [
+        1.6,
+        1.62
+      ]
+    }
+  },
+  {
+    "id": "mild_0093",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.4,
+      "edema": 6.8,
+      "fatigue": 6.4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 6.4,
+      "fatigue": 6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.4,
+        1.58
+      ],
+      "wsSeries": [
+        1.4,
+        1.58
+      ]
+    }
+  },
+  {
+    "id": "mild_0094",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 6.8,
+      "edema": 6.8,
+      "fatigue": 6.4,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 6.8,
+      "edema": 6,
+      "fatigue": 5.2,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.5,
+        1.65
+      ],
+      "wsSeries": [
+        1.5,
+        1.65
+      ]
+    }
+  },
+  {
+    "id": "mild_0095",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 4.4,
+      "edema": 5.6,
+      "fatigue": 7.6,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 5.6,
+      "fatigue": 7.2,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.43,
+        1.49
+      ],
+      "wsSeries": [
+        1.43,
+        1.49
+      ]
+    }
+  },
+  {
+    "id": "mild_0096",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.6,
+      "edema": 6,
+      "fatigue": 8.4,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 5.6,
+      "edema": 4.4,
+      "fatigue": 6.8,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.4,
+        1.92
+      ],
+      "wsSeries": [
+        1.4,
+        1.92
+      ]
+    }
+  },
+  {
+    "id": "mild_0097",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 8,
+      "edema": 5.6,
+      "fatigue": 5.6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 6.4,
+      "edema": 5.6,
+      "fatigue": 5.6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.47,
+        1.52
+      ],
+      "wsSeries": [
+        1.47,
+        1.52
+      ]
+    }
+  },
+  {
+    "id": "mild_0098",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 4.4,
+      "edema": 5.6,
+      "fatigue": 6,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 4,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.07,
+        1.27
+      ],
+      "wsSeries": [
+        1.07,
+        1.27
+      ]
+    }
+  },
+  {
+    "id": "mild_0099",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 7.2,
+      "edema": 4.8,
+      "fatigue": 6.4,
+      "sobCompare": "Same",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 7.2,
+      "edema": 4.8,
+      "fatigue": 5.6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.47,
+        1.7
+      ],
+      "wsSeries": [
+        1.47,
+        1.7
+      ]
+    }
+  },
+  {
+    "id": "mild_0100",
+    "cohort": "MildChange",
+    "input": {
+      "sob": 5.2,
+      "edema": 6.8,
+      "fatigue": 6.8,
+      "sobCompare": "Same",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 5.2,
+      "edema": 6.8,
+      "fatigue": 5.6,
+      "baselineSavedAt": "2025-09-16T14:57:07.051Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow"
+      ],
+      "normalizedScores": [
+        1.47,
+        1.78
+      ],
+      "wsSeries": [
+        1.47,
+        1.78
+      ]
+    }
+  }
+]

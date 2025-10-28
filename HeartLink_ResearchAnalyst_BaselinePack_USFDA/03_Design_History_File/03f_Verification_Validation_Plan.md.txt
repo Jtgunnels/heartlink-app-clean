@@ -1,0 +1,29 @@
+---
+Author: Joshua Gunnels, PA-C
+Role: Independent Clinical Developer (HeartLink)
+Version: 0.1-Draft
+Date: 2025-10-10
+Reviewed by: [Regulatory QA Reviewer – TBD]
+Approval Status: Pending
+---
+
+# Verification & Validation (V&V) Plan
+
+## 1. Objective
+Verify that HeartLink meets all functional and safety requirements and validate that outputs behave as intended.
+
+## 2. Verification Activities
+- **Static code review** for algorithm correctness.
+- **Synthetic scenario testing** using curated JSON cases.
+- **Unit tests** for boundary conditions (null inputs, out-of-range values).
+
+## 3. Validation Activities
+- Compare v3.7 to v3.6 results across synthetic cases.
+- Confirm consistency of category classification.
+- Confirm no unexpected escalation or false reassurance.
+
+## 4. Acceptance Criteria
+≥ 95 % concordance between v3.6 and v3.7 shadow outputs.  
+All disclaimers displayed per design requirement.
+
+---

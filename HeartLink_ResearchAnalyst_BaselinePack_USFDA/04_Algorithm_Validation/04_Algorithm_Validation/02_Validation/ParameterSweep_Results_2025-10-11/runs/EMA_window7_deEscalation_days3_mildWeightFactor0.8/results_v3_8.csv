@@ -1,0 +1,2001 @@
+id,trialGroup,timestamp,expected_alert,category,normalized,predictedAlert,FP,FN,notes
+TS_0001,Borderline,2025-10-09T17:40:39.904Z,0,Green,1,0,0,0,near GY
+TS_0002,Borderline,2025-10-09T17:40:39.905Z,0,Green,1.6,0,0,0,near GY
+TS_0003,Borderline,2025-10-08T17:40:39.905Z,1,Green,1.6,0,0,1,near YO
+TS_0004,Borderline,2025-10-09T17:40:39.905Z,0,Green,0.6,0,0,0,near GY
+TS_0005,Borderline,2025-10-08T17:40:39.905Z,0,Green,1.5,0,0,0,near GY
+TS_0006,Borderline,2025-10-10T17:40:39.905Z,0,Green,0.9,0,0,0,near GY
+TS_0007,Borderline,2025-10-07T17:40:39.905Z,0,Green,0.9,0,0,0,near GY
+TS_0008,Borderline,2025-10-08T17:40:39.905Z,0,Green,0.9,0,0,0,near GY
+TS_0009,Borderline,2025-10-10T17:40:39.905Z,0,Green,1.6,0,0,0,near GY
+TS_0010,Borderline,2025-10-08T17:40:39.905Z,0,Green,0.6,0,0,0,near GY
+TS_0011,Borderline,2025-10-08T17:40:39.905Z,0,Green,1,0,0,0,near GY
+TS_0012,Borderline,2025-10-08T17:40:39.905Z,1,Green,1,0,0,1,near YO
+TS_0013,Borderline,2025-10-07T17:40:39.905Z,1,Yellow,2.8,1,0,0,near YO
+TS_0014,Borderline,2025-10-11T17:40:39.905Z,1,Green,1.6,0,0,1,near YO
+TS_0015,Borderline,2025-10-08T17:40:39.905Z,0,Green,1.6,0,0,0,near GY
+TS_0016,Borderline,2025-10-10T17:40:39.905Z,0,Green,0.6,0,0,0,near GY
+TS_0017,Borderline,2025-10-11T17:40:39.905Z,1,Green,0.6,0,0,1,near YO
+TS_0018,Borderline,2025-10-06T17:40:39.905Z,0,Green,0.6,0,0,0,near GY
+TS_0019,Borderline,2025-10-07T17:40:39.905Z,1,Green,1,0,0,1,near YO
+TS_0020,Borderline,2025-10-06T17:40:39.905Z,0,Green,1.5,0,0,0,near GY
+TS_0021,Borderline,2025-10-05T17:40:39.905Z,1,Green,1,0,0,1,near YO
+TS_0022,Borderline,2025-10-09T17:40:39.905Z,0,Green,1,0,0,0,near GY
+TS_0023,Borderline,2025-10-10T17:40:39.905Z,1,Green,0.6,0,0,1,near YO
+TS_0024,Borderline,2025-10-05T17:40:39.905Z,0,Yellow,2.8,1,1,0,near GY
+TS_0025,Borderline,2025-10-09T17:40:39.905Z,0,Yellow,2.8,1,1,0,near GY
+TS_0026,Borderline,2025-10-05T17:40:39.905Z,0,Green,0.6,0,0,0,near GY
+TS_0027,Borderline,2025-10-08T17:40:39.905Z,1,Green,0.6,0,0,1,near YO
+TS_0028,Borderline,2025-10-09T17:40:39.905Z,0,Green,0.9,0,0,0,near GY
+TS_0029,Borderline,2025-10-11T17:40:39.905Z,1,Green,1.5,0,0,1,near YO
+TS_0030,Borderline,2025-10-06T17:40:39.905Z,0,Green,1,0,0,0,near GY
+TS_0031,Borderline,2025-10-10T17:40:39.905Z,1,Green,1.5,0,0,1,near YO
+TS_0032,Borderline,2025-10-08T17:40:39.905Z,0,Green,0.9,0,0,0,near GY
+TS_0033,Borderline,2025-10-05T17:40:39.905Z,0,Green,0.6,0,0,0,near GY
+TS_0034,Borderline,2025-10-05T17:40:39.905Z,1,Green,0.9,0,0,1,near YO
+TS_0035,Borderline,2025-10-07T17:40:39.905Z,1,Green,1.6,0,0,1,near YO
+TS_0036,Borderline,2025-10-07T17:40:39.905Z,0,Green,0.6,0,0,0,near GY
+TS_0037,Borderline,2025-10-09T17:40:39.905Z,0,Yellow,2.8,1,1,0,near GY
+TS_0038,Borderline,2025-10-07T17:40:39.905Z,0,Green,1,0,0,0,near GY
+TS_0039,Borderline,2025-10-07T17:40:39.905Z,1,Green,1.5,0,0,1,near YO
+TS_0040,Borderline,2025-10-06T17:40:39.905Z,0,Green,0.9,0,0,0,near GY
+TS_0041,Borderline,2025-10-08T17:40:39.905Z,1,Green,1.5,0,0,1,near YO
+TS_0042,Borderline,2025-10-08T17:40:39.905Z,0,Green,1.5,0,0,0,near GY
+TS_0043,Borderline,2025-10-09T17:40:39.905Z,1,Green,1.5,0,0,1,near YO
+TS_0044,Borderline,2025-10-09T17:40:39.905Z,0,Yellow,2.8,1,1,0,near GY
+TS_0045,Borderline,2025-10-06T17:40:39.905Z,1,Yellow,2.8,1,0,0,near YO
+TS_0046,Borderline,2025-10-07T17:40:39.905Z,0,Green,1.6,0,0,0,near GY
+TS_0047,Borderline,2025-10-10T17:40:39.905Z,0,Green,1.5,0,0,0,near GY
+TS_0048,Borderline,2025-10-05T17:40:39.905Z,0,Green,1,0,0,0,near GY
+TS_0049,Borderline,2025-10-08T17:40:39.905Z,1,Green,1,0,0,1,near YO
+TS_0050,Borderline,2025-10-11T17:40:39.905Z,0,Green,1,0,0,0,near GY
+TS_0051,Borderline,2025-10-11T17:40:39.905Z,1,Yellow,2.8,1,0,0,near YO
+TS_0052,Borderline,2025-10-10T17:40:39.905Z,1,Green,0.6,0,0,1,near YO
+TS_0053,Borderline,2025-10-11T17:40:39.905Z,0,Green,0.9,0,0,0,near GY
+TS_0054,Borderline,2025-10-09T17:40:39.905Z,0,Green,0.6,0,0,0,near GY
+TS_0055,Borderline,2025-10-09T17:40:39.905Z,0,Yellow,2.8,1,1,0,near GY
+TS_0056,Borderline,2025-10-06T17:40:39.905Z,0,Green,1,0,0,0,near GY
+TS_0057,Borderline,2025-10-06T17:40:39.905Z,0,Green,0.6,0,0,0,near GY
+TS_0058,Borderline,2025-10-07T17:40:39.905Z,0,Green,1,0,0,0,near GY
+TS_0059,Borderline,2025-10-05T17:40:39.905Z,0,Yellow,2.8,1,1,0,near GY
+TS_0060,Borderline,2025-10-11T17:40:39.905Z,0,Green,0.6,0,0,0,near GY
+TS_0061,Borderline,2025-10-06T17:40:39.905Z,1,Green,1.6,0,0,1,near YO
+TS_0062,Borderline,2025-10-09T17:40:39.905Z,1,Green,0.9,0,0,1,near YO
+TS_0063,Borderline,2025-10-11T17:40:39.905Z,0,Green,1.6,0,0,0,near GY
+TS_0064,Borderline,2025-10-08T17:40:39.905Z,1,Green,1,0,0,1,near YO
+TS_0065,Borderline,2025-10-10T17:40:39.905Z,0,Yellow,2.8,1,1,0,near GY
+TS_0066,Borderline,2025-10-05T17:40:39.905Z,0,Green,0.6,0,0,0,near GY
+TS_0067,Borderline,2025-10-06T17:40:39.905Z,0,Green,0.6,0,0,0,near GY
+TS_0068,Borderline,2025-10-10T17:40:39.905Z,1,Green,0.6,0,0,1,near YO
+TS_0069,Borderline,2025-10-09T17:40:39.905Z,0,Green,0.6,0,0,0,near GY
+TS_0070,Borderline,2025-10-11T17:40:39.905Z,0,Yellow,2.8,1,1,0,near GY
+TS_0071,Borderline,2025-10-05T17:40:39.905Z,0,Green,0.9,0,0,0,near GY
+TS_0072,Borderline,2025-10-08T17:40:39.906Z,1,Green,0.9,0,0,1,near YO
+TS_0073,Borderline,2025-10-05T17:40:39.906Z,0,Green,1.6,0,0,0,near GY
+TS_0074,Borderline,2025-10-10T17:40:39.906Z,1,Green,1.5,0,0,1,near YO
+TS_0075,Borderline,2025-10-11T17:40:39.906Z,0,Green,0.9,0,0,0,near GY
+TS_0076,Borderline,2025-10-09T17:40:39.906Z,1,Green,0.9,0,0,1,near YO
+TS_0077,Borderline,2025-10-05T17:40:39.906Z,1,Yellow,2.8,1,0,0,near YO
+TS_0078,Borderline,2025-10-06T17:40:39.906Z,1,Green,1,0,0,1,near YO
+TS_0079,Borderline,2025-10-05T17:40:39.906Z,0,Green,1.6,0,0,0,near GY
+TS_0080,Borderline,2025-10-09T17:40:39.906Z,1,Green,0.6,0,0,1,near YO
+TS_0081,Borderline,2025-10-08T17:40:39.906Z,0,Green,1.6,0,0,0,near GY
+TS_0082,Borderline,2025-10-06T17:40:39.906Z,1,Green,1.5,0,0,1,near YO
+TS_0083,Borderline,2025-10-09T17:40:39.906Z,0,Green,1.6,0,0,0,near GY
+TS_0084,Borderline,2025-10-07T17:40:39.906Z,1,Yellow,2.8,1,0,0,near YO
+TS_0085,Borderline,2025-10-05T17:40:39.906Z,1,Green,0.6,0,0,1,near YO
+TS_0086,Borderline,2025-10-06T17:40:39.906Z,0,Green,0.6,0,0,0,near GY
+TS_0087,Borderline,2025-10-06T17:40:39.906Z,1,Green,1.6,0,0,1,near YO
+TS_0088,Borderline,2025-10-07T17:40:39.906Z,0,Green,1,0,0,0,near GY
+TS_0089,Borderline,2025-10-09T17:40:39.906Z,1,Green,1,0,0,1,near YO
+TS_0090,Borderline,2025-10-07T17:40:39.906Z,1,Green,0.9,0,0,1,near YO
+TS_0091,Borderline,2025-10-07T17:40:39.906Z,0,Green,1.6,0,0,0,near GY
+TS_0092,Borderline,2025-10-09T17:40:39.906Z,1,Green,1.6,0,0,1,near YO
+TS_0093,Borderline,2025-10-10T17:40:39.906Z,0,Green,1.5,0,0,0,near GY
+TS_0094,Borderline,2025-10-06T17:40:39.906Z,0,Green,1,0,0,0,near GY
+TS_0095,Borderline,2025-10-09T17:40:39.906Z,0,Green,0.9,0,0,0,near GY
+TS_0096,Borderline,2025-10-09T17:40:39.906Z,1,Green,1.6,0,0,1,near YO
+TS_0097,Borderline,2025-10-08T17:40:39.906Z,1,Green,1.6,0,0,1,near YO
+TS_0098,Borderline,2025-10-06T17:40:39.906Z,0,Green,0.9,0,0,0,near GY
+TS_0099,Borderline,2025-10-06T17:40:39.906Z,0,Yellow,2.8,1,1,0,near GY
+TS_0100,Borderline,2025-10-05T17:40:39.906Z,1,Green,0.6,0,0,1,near YO
+TS_0101,Borderline,2025-10-06T17:40:39.906Z,1,Green,1.5,0,0,1,near YO
+TS_0102,Borderline,2025-10-09T17:40:39.906Z,1,Green,1,0,0,1,near YO
+TS_0103,Borderline,2025-10-11T17:40:39.906Z,0,Green,0.9,0,0,0,near GY
+TS_0104,Borderline,2025-10-11T17:40:39.906Z,1,Yellow,2.8,1,0,0,near YO
+TS_0105,Borderline,2025-10-06T17:40:39.906Z,0,Green,1.5,0,0,0,near GY
+TS_0106,Borderline,2025-10-07T17:40:39.906Z,0,Green,1.5,0,0,0,near GY
+TS_0107,Borderline,2025-10-07T17:40:39.906Z,0,Green,0.6,0,0,0,near GY
+TS_0108,Borderline,2025-10-08T17:40:39.906Z,0,Green,0.9,0,0,0,near GY
+TS_0109,Borderline,2025-10-10T17:40:39.906Z,1,Yellow,2.8,1,0,0,near YO
+TS_0110,Borderline,2025-10-10T17:40:39.906Z,1,Green,1,0,0,1,near YO
+TS_0111,Borderline,2025-10-09T17:40:39.906Z,1,Green,0.9,0,0,1,near YO
+TS_0112,Borderline,2025-10-09T17:40:39.906Z,1,Green,1,0,0,1,near YO
+TS_0113,Borderline,2025-10-07T17:40:39.906Z,0,Yellow,2.8,1,1,0,near GY
+TS_0114,Borderline,2025-10-05T17:40:39.906Z,0,Green,0.6,0,0,0,near GY
+TS_0115,Borderline,2025-10-08T17:40:39.906Z,0,Green,1.5,0,0,0,near GY
+TS_0116,Borderline,2025-10-05T17:40:39.906Z,1,Green,1.5,0,0,1,near YO
+TS_0117,Borderline,2025-10-10T17:40:39.906Z,1,Green,1,0,0,1,near YO
+TS_0118,Borderline,2025-10-08T17:40:39.906Z,1,Green,1,0,0,1,near YO
+TS_0119,Borderline,2025-10-08T17:40:39.906Z,0,Green,1.6,0,0,0,near GY
+TS_0120,Borderline,2025-10-06T17:40:39.906Z,1,Green,0.6,0,0,1,near YO
+TS_0121,Borderline,2025-10-07T17:40:39.906Z,0,Green,1,0,0,0,near GY
+TS_0122,Borderline,2025-10-10T17:40:39.906Z,0,Green,1,0,0,0,near GY
+TS_0123,Borderline,2025-10-08T17:40:39.906Z,1,Green,1.6,0,0,1,near YO
+TS_0124,Borderline,2025-10-08T17:40:39.906Z,1,Green,1,0,0,1,near YO
+TS_0125,Borderline,2025-10-08T17:40:39.906Z,1,Yellow,2.8,1,0,0,near YO
+TS_0126,Borderline,2025-10-05T17:40:39.906Z,1,Yellow,2.8,1,0,0,near YO
+TS_0127,Borderline,2025-10-05T17:40:39.906Z,0,Green,1.6,0,0,0,near GY
+TS_0128,Borderline,2025-10-05T17:40:39.906Z,0,Green,1.6,0,0,0,near GY
+TS_0129,Borderline,2025-10-05T17:40:39.906Z,0,Green,0.6,0,0,0,near GY
+TS_0130,Borderline,2025-10-05T17:40:39.906Z,1,Yellow,2.8,1,0,0,near YO
+TS_0131,Borderline,2025-10-07T17:40:39.906Z,0,Green,1.5,0,0,0,near GY
+TS_0132,Borderline,2025-10-11T17:40:39.906Z,0,Yellow,2.8,1,1,0,near GY
+TS_0133,Borderline,2025-10-05T17:40:39.906Z,0,Yellow,2.8,1,1,0,near GY
+TS_0134,Borderline,2025-10-05T17:40:39.906Z,1,Yellow,2.8,1,0,0,near YO
+TS_0135,Borderline,2025-10-06T17:40:39.906Z,1,Yellow,2.8,1,0,0,near YO
+TS_0136,Borderline,2025-10-11T17:40:39.906Z,0,Green,1.6,0,0,0,near GY
+TS_0137,Borderline,2025-10-09T17:40:39.906Z,1,Yellow,2.8,1,0,0,near YO
+TS_0138,Borderline,2025-10-09T17:40:39.906Z,0,Green,1.5,0,0,0,near GY
+TS_0139,Borderline,2025-10-07T17:40:39.906Z,1,Yellow,2.8,1,0,0,near YO
+TS_0140,Borderline,2025-10-06T17:40:39.906Z,1,Green,1.5,0,0,1,near YO
+TS_0141,Borderline,2025-10-11T17:40:39.906Z,1,Green,0.6,0,0,1,near YO
+TS_0142,Borderline,2025-10-08T17:40:39.906Z,1,Yellow,2.8,1,0,0,near YO
+TS_0143,Borderline,2025-10-09T17:40:39.906Z,1,Green,1.5,0,0,1,near YO
+TS_0144,Borderline,2025-10-09T17:40:39.906Z,1,Green,1.5,0,0,1,near YO
+TS_0145,Borderline,2025-10-06T17:40:39.906Z,0,Green,0.9,0,0,0,near GY
+TS_0146,Borderline,2025-10-05T17:40:39.906Z,0,Green,0.6,0,0,0,near GY
+TS_0147,Borderline,2025-10-05T17:40:39.906Z,0,Green,0.9,0,0,0,near GY
+TS_0148,Borderline,2025-10-06T17:40:39.906Z,1,Green,1,0,0,1,near YO
+TS_0149,Borderline,2025-10-09T17:40:39.906Z,1,Green,0.6,0,0,1,near YO
+TS_0150,Borderline,2025-10-05T17:40:39.906Z,1,Yellow,2.8,1,0,0,near YO
+TS_0151,Borderline,2025-10-07T17:40:39.906Z,0,Green,1.6,0,0,0,near GY
+TS_0152,Borderline,2025-10-07T17:40:39.906Z,1,Green,1,0,0,1,near YO
+TS_0153,Borderline,2025-10-09T17:40:39.906Z,1,Green,1,0,0,1,near YO
+TS_0154,Borderline,2025-10-10T17:40:39.906Z,0,Green,0.9,0,0,0,near GY
+TS_0155,Borderline,2025-10-07T17:40:39.906Z,1,Green,0.9,0,0,1,near YO
+TS_0156,Borderline,2025-10-09T17:40:39.906Z,1,Yellow,2.8,1,0,0,near YO
+TS_0157,Borderline,2025-10-11T17:40:39.906Z,1,Green,1.6,0,0,1,near YO
+TS_0158,Borderline,2025-10-08T17:40:39.906Z,0,Green,1.6,0,0,0,near GY
+TS_0159,Borderline,2025-10-08T17:40:39.906Z,0,Green,0.6,0,0,0,near GY
+TS_0160,Borderline,2025-10-08T17:40:39.906Z,1,Green,1.5,0,0,1,near YO
+TS_0161,Borderline,2025-10-09T17:40:39.906Z,0,Green,1.6,0,0,0,near GY
+TS_0162,Borderline,2025-10-10T17:40:39.906Z,0,Green,0.6,0,0,0,near GY
+TS_0163,Borderline,2025-10-06T17:40:39.906Z,0,Green,1.6,0,0,0,near GY
+TS_0164,Borderline,2025-10-11T17:40:39.906Z,0,Green,0.9,0,0,0,near GY
+TS_0165,Borderline,2025-10-09T17:40:39.906Z,1,Green,1.6,0,0,1,near YO
+TS_0166,Borderline,2025-10-07T17:40:39.906Z,1,Green,1.6,0,0,1,near YO
+TS_0167,Borderline,2025-10-09T17:40:39.906Z,1,Green,1,0,0,1,near YO
+TS_0168,Borderline,2025-10-05T17:40:39.906Z,0,Green,0.6,0,0,0,near GY
+TS_0169,Borderline,2025-10-11T17:40:39.906Z,1,Green,1.5,0,0,1,near YO
+TS_0170,Borderline,2025-10-11T17:40:39.906Z,0,Green,1.6,0,0,0,near GY
+TS_0171,Borderline,2025-10-05T17:40:39.906Z,1,Yellow,2.8,1,0,0,near YO
+TS_0172,Borderline,2025-10-08T17:40:39.906Z,1,Green,1,0,0,1,near YO
+TS_0173,Borderline,2025-10-07T17:40:39.906Z,1,Green,0.9,0,0,1,near YO
+TS_0174,Borderline,2025-10-06T17:40:39.906Z,0,Yellow,2.8,1,1,0,near GY
+TS_0175,Borderline,2025-10-11T17:40:39.906Z,1,Yellow,2.8,1,0,0,near YO
+TS_0176,Borderline,2025-10-06T17:40:39.906Z,0,Green,1.6,0,0,0,near GY
+TS_0177,Borderline,2025-10-11T17:40:39.906Z,1,Green,0.9,0,0,1,near YO
+TS_0178,Borderline,2025-10-09T17:40:39.906Z,0,Green,1.6,0,0,0,near GY
+TS_0179,Borderline,2025-10-05T17:40:39.906Z,1,Green,1,0,0,1,near YO
+TS_0180,Borderline,2025-10-09T17:40:39.906Z,0,Green,0.6,0,0,0,near GY
+TS_0181,Borderline,2025-10-10T17:40:39.906Z,0,Green,0.6,0,0,0,near GY
+TS_0182,Borderline,2025-10-10T17:40:39.906Z,0,Green,1.6,0,0,0,near GY
+TS_0183,Borderline,2025-10-07T17:40:39.906Z,1,Green,1,0,0,1,near YO
+TS_0184,Borderline,2025-10-11T17:40:39.907Z,1,Green,0.6,0,0,1,near YO
+TS_0185,Borderline,2025-10-08T17:40:39.907Z,0,Green,1,0,0,0,near GY
+TS_0186,Borderline,2025-10-08T17:40:39.907Z,1,Green,1.6,0,0,1,near YO
+TS_0187,Borderline,2025-10-09T17:40:39.907Z,0,Green,1,0,0,0,near GY
+TS_0188,Borderline,2025-10-06T17:40:39.907Z,1,Green,1.5,0,0,1,near YO
+TS_0189,Borderline,2025-10-11T17:40:39.907Z,1,Green,0.6,0,0,1,near YO
+TS_0190,Borderline,2025-10-09T17:40:39.907Z,0,Green,1.5,0,0,0,near GY
+TS_0191,Borderline,2025-10-10T17:40:39.907Z,0,Green,0.9,0,0,0,near GY
+TS_0192,Borderline,2025-10-05T17:40:39.907Z,0,Green,1.5,0,0,0,near GY
+TS_0193,Borderline,2025-10-06T17:40:39.907Z,0,Green,0.9,0,0,0,near GY
+TS_0194,Borderline,2025-10-05T17:40:39.907Z,0,Green,1,0,0,0,near GY
+TS_0195,Borderline,2025-10-10T17:40:39.907Z,1,Green,1.5,0,0,1,near YO
+TS_0196,Borderline,2025-10-07T17:40:39.907Z,1,Green,0.6,0,0,1,near YO
+TS_0197,Borderline,2025-10-09T17:40:39.907Z,1,Green,1.5,0,0,1,near YO
+TS_0198,Borderline,2025-10-06T17:40:39.907Z,0,Green,1.6,0,0,0,near GY
+TS_0199,Borderline,2025-10-11T17:40:39.907Z,1,Green,1.5,0,0,1,near YO
+TS_0200,Borderline,2025-10-11T17:40:39.907Z,0,Yellow,2.8,1,1,0,near GY
+TS_0201,Borderline,2025-10-05T17:40:39.907Z,0,Green,1.6,0,0,0,near GY
+TS_0202,Borderline,2025-10-06T17:40:39.907Z,1,Green,0.6,0,0,1,near YO
+TS_0203,Borderline,2025-10-08T17:40:39.907Z,0,Green,0.9,0,0,0,near GY
+TS_0204,Borderline,2025-10-11T17:40:39.907Z,0,Green,1.6,0,0,0,near GY
+TS_0205,Borderline,2025-10-10T17:40:39.907Z,1,Green,1.5,0,0,1,near YO
+TS_0206,Borderline,2025-10-10T17:40:39.907Z,0,Green,1.6,0,0,0,near GY
+TS_0207,Borderline,2025-10-08T17:40:39.907Z,1,Green,0.9,0,0,1,near YO
+TS_0208,Borderline,2025-10-06T17:40:39.907Z,1,Green,1.5,0,0,1,near YO
+TS_0209,Borderline,2025-10-11T17:40:39.907Z,1,Green,0.6,0,0,1,near YO
+TS_0210,Borderline,2025-10-10T17:40:39.907Z,1,Green,1,0,0,1,near YO
+TS_0211,Borderline,2025-10-09T17:40:39.907Z,0,Green,0.6,0,0,0,near GY
+TS_0212,Borderline,2025-10-10T17:40:39.907Z,1,Green,1.6,0,0,1,near YO
+TS_0213,Borderline,2025-10-06T17:40:39.907Z,1,Green,1.6,0,0,1,near YO
+TS_0214,Borderline,2025-10-06T17:40:39.907Z,0,Yellow,2.8,1,1,0,near GY
+TS_0215,Borderline,2025-10-09T17:40:39.907Z,1,Green,0.6,0,0,1,near YO
+TS_0216,Borderline,2025-10-09T17:40:39.907Z,0,Yellow,2.8,1,1,0,near GY
+TS_0217,Borderline,2025-10-08T17:40:39.907Z,1,Green,0.9,0,0,1,near YO
+TS_0218,Borderline,2025-10-08T17:40:39.907Z,0,Green,1.6,0,0,0,near GY
+TS_0219,Borderline,2025-10-09T17:40:39.907Z,0,Yellow,2.8,1,1,0,near GY
+TS_0220,Borderline,2025-10-05T17:40:39.907Z,0,Yellow,2.8,1,1,0,near GY
+TS_0221,Borderline,2025-10-06T17:40:39.907Z,0,Yellow,2.8,1,1,0,near GY
+TS_0222,Borderline,2025-10-10T17:40:39.907Z,1,Green,1.5,0,0,1,near YO
+TS_0223,Borderline,2025-10-05T17:40:39.907Z,0,Green,1.6,0,0,0,near GY
+TS_0224,Borderline,2025-10-07T17:40:39.907Z,1,Green,0.9,0,0,1,near YO
+TS_0225,Borderline,2025-10-08T17:40:39.907Z,0,Green,0.6,0,0,0,near GY
+TS_0226,Borderline,2025-10-06T17:40:39.907Z,0,Green,0.6,0,0,0,near GY
+TS_0227,Borderline,2025-10-06T17:40:39.907Z,0,Green,1.5,0,0,0,near GY
+TS_0228,Borderline,2025-10-08T17:40:39.907Z,1,Green,0.6,0,0,1,near YO
+TS_0229,Borderline,2025-10-11T17:40:39.907Z,1,Green,0.6,0,0,1,near YO
+TS_0230,Borderline,2025-10-05T17:40:39.907Z,0,Green,1,0,0,0,near GY
+TS_0231,Borderline,2025-10-06T17:40:39.907Z,0,Yellow,2.8,1,1,0,near GY
+TS_0232,Borderline,2025-10-08T17:40:39.907Z,1,Green,1.6,0,0,1,near YO
+TS_0233,Borderline,2025-10-09T17:40:39.907Z,1,Green,1.6,0,0,1,near YO
+TS_0234,Borderline,2025-10-10T17:40:39.908Z,0,Green,1.5,0,0,0,near GY
+TS_0235,Borderline,2025-10-11T17:40:39.908Z,1,Green,0.6,0,0,1,near YO
+TS_0236,Borderline,2025-10-10T17:40:39.908Z,0,Green,0.9,0,0,0,near GY
+TS_0237,Borderline,2025-10-08T17:40:39.908Z,1,Green,0.6,0,0,1,near YO
+TS_0238,Borderline,2025-10-05T17:40:39.908Z,1,Green,1.6,0,0,1,near YO
+TS_0239,Borderline,2025-10-11T17:40:39.908Z,0,Green,1.6,0,0,0,near GY
+TS_0240,Borderline,2025-10-05T17:40:39.908Z,0,Yellow,2.8,1,1,0,near GY
+TS_0241,Borderline,2025-10-07T17:40:39.908Z,1,Green,0.6,0,0,1,near YO
+TS_0242,Borderline,2025-10-05T17:40:39.908Z,0,Yellow,2.8,1,1,0,near GY
+TS_0243,Borderline,2025-10-07T17:40:39.908Z,1,Yellow,2.8,1,0,0,near YO
+TS_0244,Borderline,2025-10-07T17:40:39.908Z,0,Green,1,0,0,0,near GY
+TS_0245,Borderline,2025-10-09T17:40:39.908Z,1,Green,1.5,0,0,1,near YO
+TS_0246,Borderline,2025-10-11T17:40:39.908Z,0,Green,1,0,0,0,near GY
+TS_0247,Borderline,2025-10-09T17:40:39.908Z,1,Green,0.6,0,0,1,near YO
+TS_0248,Borderline,2025-10-05T17:40:39.908Z,1,Green,0.6,0,0,1,near YO
+TS_0249,Borderline,2025-10-11T17:40:39.908Z,1,Yellow,2.8,1,0,0,near YO
+TS_0250,Borderline,2025-10-09T17:40:39.908Z,1,Green,0.9,0,0,1,near YO
+TS_0251,Borderline,2025-10-11T17:40:39.908Z,1,Green,1.5,0,0,1,near YO
+TS_0252,Borderline,2025-10-10T17:40:39.908Z,1,Green,0.6,0,0,1,near YO
+TS_0253,Borderline,2025-10-07T17:40:39.908Z,1,Green,1.6,0,0,1,near YO
+TS_0254,Borderline,2025-10-10T17:40:39.908Z,1,Green,1.6,0,0,1,near YO
+TS_0255,Borderline,2025-10-06T17:40:39.908Z,1,Green,1,0,0,1,near YO
+TS_0256,Borderline,2025-10-06T17:40:39.908Z,1,Green,1.6,0,0,1,near YO
+TS_0257,Borderline,2025-10-10T17:40:39.908Z,1,Green,0.9,0,0,1,near YO
+TS_0258,Borderline,2025-10-06T17:40:39.908Z,1,Green,0.9,0,0,1,near YO
+TS_0259,Borderline,2025-10-06T17:40:39.908Z,0,Green,1,0,0,0,near GY
+TS_0260,Borderline,2025-10-08T17:40:39.908Z,1,Green,1,0,0,1,near YO
+TS_0261,Borderline,2025-10-10T17:40:39.908Z,1,Green,1,0,0,1,near YO
+TS_0262,Borderline,2025-10-06T17:40:39.908Z,0,Yellow,2.8,1,1,0,near GY
+TS_0263,Borderline,2025-10-06T17:40:39.908Z,1,Green,1,0,0,1,near YO
+TS_0264,Borderline,2025-10-06T17:40:39.908Z,1,Green,1.5,0,0,1,near YO
+TS_0265,Borderline,2025-10-09T17:40:39.908Z,0,Green,1,0,0,0,near GY
+TS_0266,Borderline,2025-10-10T17:40:39.908Z,1,Green,1.5,0,0,1,near YO
+TS_0267,Borderline,2025-10-10T17:40:39.908Z,0,Yellow,2.8,1,1,0,near GY
+TS_0268,Borderline,2025-10-09T17:40:39.908Z,1,Yellow,2.8,1,0,0,near YO
+TS_0269,Borderline,2025-10-09T17:40:39.908Z,1,Yellow,2.8,1,0,0,near YO
+TS_0270,Borderline,2025-10-09T17:40:39.908Z,0,Green,1.6,0,0,0,near GY
+TS_0271,Borderline,2025-10-08T17:40:39.908Z,1,Green,1,0,0,1,near YO
+TS_0272,Borderline,2025-10-09T17:40:39.908Z,1,Yellow,2.8,1,0,0,near YO
+TS_0273,Borderline,2025-10-06T17:40:39.908Z,0,Green,0.9,0,0,0,near GY
+TS_0274,Borderline,2025-10-05T17:40:39.908Z,1,Yellow,2.8,1,0,0,near YO
+TS_0275,Borderline,2025-10-11T17:40:39.908Z,0,Green,1.5,0,0,0,near GY
+TS_0276,Borderline,2025-10-09T17:40:39.908Z,0,Green,0.9,0,0,0,near GY
+TS_0277,Borderline,2025-10-06T17:40:39.908Z,0,Green,0.6,0,0,0,near GY
+TS_0278,Borderline,2025-10-10T17:40:39.908Z,1,Green,0.6,0,0,1,near YO
+TS_0279,Borderline,2025-10-07T17:40:39.908Z,0,Green,1,0,0,0,near GY
+TS_0280,Borderline,2025-10-10T17:40:39.908Z,1,Green,1.6,0,0,1,near YO
+TS_0281,Borderline,2025-10-07T17:40:39.908Z,1,Green,1.6,0,0,1,near YO
+TS_0282,Borderline,2025-10-11T17:40:39.908Z,0,Green,1.6,0,0,0,near GY
+TS_0283,Borderline,2025-10-05T17:40:39.908Z,0,Green,1.5,0,0,0,near GY
+TS_0284,Borderline,2025-10-08T17:40:39.908Z,0,Green,1.6,0,0,0,near GY
+TS_0285,Borderline,2025-10-10T17:40:39.908Z,1,Green,1.6,0,0,1,near YO
+TS_0286,Borderline,2025-10-06T17:40:39.908Z,1,Green,0.6,0,0,1,near YO
+TS_0287,Borderline,2025-10-10T17:40:39.908Z,0,Green,0.9,0,0,0,near GY
+TS_0288,Borderline,2025-10-09T17:40:39.908Z,1,Yellow,2.8,1,0,0,near YO
+TS_0289,Borderline,2025-10-06T17:40:39.908Z,1,Green,1,0,0,1,near YO
+TS_0290,Borderline,2025-10-08T17:40:39.908Z,1,Yellow,2.8,1,0,0,near YO
+TS_0291,Borderline,2025-10-05T17:40:39.908Z,1,Yellow,2.8,1,0,0,near YO
+TS_0292,Borderline,2025-10-05T17:40:39.908Z,1,Green,1.5,0,0,1,near YO
+TS_0293,Borderline,2025-10-05T17:40:39.908Z,1,Green,1,0,0,1,near YO
+TS_0294,Borderline,2025-10-10T17:40:39.908Z,1,Yellow,2.8,1,0,0,near YO
+TS_0295,Borderline,2025-10-06T17:40:39.908Z,1,Green,1.5,0,0,1,near YO
+TS_0296,Borderline,2025-10-07T17:40:39.908Z,1,Green,0.6,0,0,1,near YO
+TS_0297,Borderline,2025-10-10T17:40:39.908Z,1,Green,1.5,0,0,1,near YO
+TS_0298,Borderline,2025-10-09T17:40:39.908Z,1,Green,0.9,0,0,1,near YO
+TS_0299,Borderline,2025-10-10T17:40:39.908Z,1,Green,0.6,0,0,1,near YO
+TS_0300,Borderline,2025-10-09T17:40:39.908Z,1,Green,1.5,0,0,1,near YO
+TS_0301,Borderline,2025-10-06T17:40:39.908Z,1,Green,0.9,0,0,1,near YO
+TS_0302,Borderline,2025-10-06T17:40:39.908Z,0,Green,1,0,0,0,near GY
+TS_0303,Borderline,2025-10-08T17:40:39.908Z,1,Green,1.6,0,0,1,near YO
+TS_0304,Borderline,2025-10-08T17:40:39.908Z,0,Yellow,2.8,1,1,0,near GY
+TS_0305,Borderline,2025-10-08T17:40:39.908Z,0,Green,1.5,0,0,0,near GY
+TS_0306,Borderline,2025-10-09T17:40:39.908Z,0,Green,1.5,0,0,0,near GY
+TS_0307,Borderline,2025-10-09T17:40:39.908Z,0,Yellow,2.8,1,1,0,near GY
+TS_0308,Borderline,2025-10-05T17:40:39.908Z,0,Yellow,2.8,1,1,0,near GY
+TS_0309,Borderline,2025-10-07T17:40:39.908Z,1,Green,1.5,0,0,1,near YO
+TS_0310,Borderline,2025-10-11T17:40:39.908Z,1,Green,0.6,0,0,1,near YO
+TS_0311,Borderline,2025-10-11T17:40:39.908Z,1,Green,1.5,0,0,1,near YO
+TS_0312,Borderline,2025-10-09T17:40:39.908Z,1,Green,1.5,0,0,1,near YO
+TS_0313,Borderline,2025-10-08T17:40:39.908Z,0,Green,0.6,0,0,0,near GY
+TS_0314,Borderline,2025-10-09T17:40:39.908Z,0,Green,0.9,0,0,0,near GY
+TS_0315,Borderline,2025-10-10T17:40:39.908Z,0,Green,0.6,0,0,0,near GY
+TS_0316,Borderline,2025-10-11T17:40:39.908Z,0,Green,1,0,0,0,near GY
+TS_0317,Borderline,2025-10-06T17:40:39.908Z,1,Green,1,0,0,1,near YO
+TS_0318,Borderline,2025-10-09T17:40:39.908Z,1,Green,1.5,0,0,1,near YO
+TS_0319,Borderline,2025-10-07T17:40:39.908Z,0,Green,0.9,0,0,0,near GY
+TS_0320,Borderline,2025-10-09T17:40:39.908Z,1,Green,0.9,0,0,1,near YO
+TS_0321,Borderline,2025-10-07T17:40:39.908Z,0,Green,0.9,0,0,0,near GY
+TS_0322,Borderline,2025-10-06T17:40:39.908Z,1,Green,1.5,0,0,1,near YO
+TS_0323,Borderline,2025-10-08T17:40:39.908Z,1,Green,0.6,0,0,1,near YO
+TS_0324,Borderline,2025-10-06T17:40:39.909Z,0,Green,1,0,0,0,near GY
+TS_0325,Borderline,2025-10-09T17:40:39.909Z,1,Green,0.6,0,0,1,near YO
+TS_0326,Borderline,2025-10-11T17:40:39.909Z,0,Green,1.6,0,0,0,near GY
+TS_0327,Borderline,2025-10-06T17:40:39.909Z,0,Green,0.9,0,0,0,near GY
+TS_0328,Borderline,2025-10-10T17:40:39.909Z,0,Green,1,0,0,0,near GY
+TS_0329,Borderline,2025-10-08T17:40:39.909Z,1,Green,0.6,0,0,1,near YO
+TS_0330,Borderline,2025-10-05T17:40:39.909Z,1,Green,1,0,0,1,near YO
+TS_0331,Borderline,2025-10-07T17:40:39.909Z,1,Yellow,2.8,1,0,0,near YO
+TS_0332,Borderline,2025-10-07T17:40:39.909Z,0,Green,1.5,0,0,0,near GY
+TS_0333,Borderline,2025-10-05T17:40:39.909Z,0,Green,1,0,0,0,near GY
+TS_0334,Borderline,2025-10-07T17:40:39.909Z,0,Green,1.5,0,0,0,near GY
+TS_0335,Borderline,2025-10-07T17:40:39.909Z,1,Green,1.5,0,0,1,near YO
+TS_0336,Borderline,2025-10-05T17:40:39.909Z,1,Green,1.6,0,0,1,near YO
+TS_0337,Borderline,2025-10-08T17:40:39.909Z,0,Green,0.9,0,0,0,near GY
+TS_0338,Borderline,2025-10-11T17:40:39.909Z,0,Green,1.6,0,0,0,near GY
+TS_0339,Borderline,2025-10-11T17:40:39.909Z,0,Green,0.6,0,0,0,near GY
+TS_0340,Borderline,2025-10-10T17:40:39.909Z,1,Green,0.9,0,0,1,near YO
+TS_0341,Borderline,2025-10-10T17:40:39.909Z,1,Green,1.5,0,0,1,near YO
+TS_0342,Borderline,2025-10-05T17:40:39.909Z,1,Green,1.5,0,0,1,near YO
+TS_0343,Borderline,2025-10-07T17:40:39.909Z,1,Green,1,0,0,1,near YO
+TS_0344,Borderline,2025-10-06T17:40:39.909Z,0,Green,1,0,0,0,near GY
+TS_0345,Borderline,2025-10-07T17:40:39.909Z,1,Green,1,0,0,1,near YO
+TS_0346,Borderline,2025-10-08T17:40:39.909Z,1,Green,1.5,0,0,1,near YO
+TS_0347,Borderline,2025-10-11T17:40:39.909Z,1,Green,0.6,0,0,1,near YO
+TS_0348,Borderline,2025-10-07T17:40:39.909Z,1,Yellow,2.8,1,0,0,near YO
+TS_0349,Borderline,2025-10-10T17:40:39.909Z,0,Green,0.9,0,0,0,near GY
+TS_0350,Borderline,2025-10-07T17:40:39.909Z,0,Green,0.6,0,0,0,near GY
+TS_0351,Borderline,2025-10-10T17:40:39.909Z,0,Green,1.5,0,0,0,near GY
+TS_0352,Borderline,2025-10-09T17:40:39.909Z,1,Green,0.6,0,0,1,near YO
+TS_0353,Borderline,2025-10-08T17:40:39.909Z,1,Green,1.6,0,0,1,near YO
+TS_0354,Borderline,2025-10-11T17:40:39.909Z,0,Green,1.5,0,0,0,near GY
+TS_0355,Borderline,2025-10-09T17:40:39.909Z,1,Green,1,0,0,1,near YO
+TS_0356,Borderline,2025-10-09T17:40:39.909Z,1,Green,0.9,0,0,1,near YO
+TS_0357,Borderline,2025-10-06T17:40:39.909Z,1,Green,0.6,0,0,1,near YO
+TS_0358,Borderline,2025-10-08T17:40:39.909Z,0,Green,0.6,0,0,0,near GY
+TS_0359,Borderline,2025-10-05T17:40:39.909Z,0,Green,1,0,0,0,near GY
+TS_0360,Borderline,2025-10-09T17:40:39.909Z,1,Green,0.9,0,0,1,near YO
+TS_0361,Borderline,2025-10-09T17:40:39.909Z,0,Green,1,0,0,0,near GY
+TS_0362,Borderline,2025-10-09T17:40:39.909Z,0,Green,1.6,0,0,0,near GY
+TS_0363,Borderline,2025-10-05T17:40:39.909Z,1,Green,0.6,0,0,1,near YO
+TS_0364,Borderline,2025-10-10T17:40:39.909Z,0,Green,0.6,0,0,0,near GY
+TS_0365,Borderline,2025-10-11T17:40:39.909Z,0,Green,1.6,0,0,0,near GY
+TS_0366,Borderline,2025-10-09T17:40:39.909Z,0,Green,0.6,0,0,0,near GY
+TS_0367,Borderline,2025-10-08T17:40:39.909Z,0,Yellow,2.8,1,1,0,near GY
+TS_0368,Borderline,2025-10-05T17:40:39.909Z,0,Yellow,2.8,1,1,0,near GY
+TS_0369,Borderline,2025-10-05T17:40:39.909Z,0,Green,1.6,0,0,0,near GY
+TS_0370,Borderline,2025-10-08T17:40:39.909Z,0,Green,1.6,0,0,0,near GY
+TS_0371,Borderline,2025-10-06T17:40:39.909Z,1,Green,1,0,0,1,near YO
+TS_0372,Borderline,2025-10-06T17:40:39.909Z,0,Green,1.5,0,0,0,near GY
+TS_0373,Borderline,2025-10-08T17:40:39.909Z,1,Yellow,2.8,1,0,0,near YO
+TS_0374,Borderline,2025-10-11T17:40:39.909Z,1,Green,1,0,0,1,near YO
+TS_0375,Borderline,2025-10-06T17:40:39.909Z,0,Green,1.6,0,0,0,near GY
+TS_0376,Borderline,2025-10-09T17:40:39.909Z,0,Green,0.9,0,0,0,near GY
+TS_0377,Borderline,2025-10-11T17:40:39.909Z,0,Green,0.6,0,0,0,near GY
+TS_0378,Borderline,2025-10-07T17:40:39.909Z,1,Green,1.6,0,0,1,near YO
+TS_0379,Borderline,2025-10-05T17:40:39.909Z,0,Green,0.9,0,0,0,near GY
+TS_0380,Borderline,2025-10-08T17:40:39.909Z,0,Green,0.6,0,0,0,near GY
+TS_0381,Borderline,2025-10-07T17:40:39.909Z,0,Green,1.5,0,0,0,near GY
+TS_0382,Borderline,2025-10-06T17:40:39.909Z,0,Green,0.9,0,0,0,near GY
+TS_0383,Borderline,2025-10-10T17:40:39.909Z,0,Green,0.9,0,0,0,near GY
+TS_0384,Borderline,2025-10-09T17:40:39.909Z,0,Green,0.6,0,0,0,near GY
+TS_0385,Borderline,2025-10-05T17:40:39.909Z,0,Green,1.6,0,0,0,near GY
+TS_0386,Borderline,2025-10-09T17:40:39.909Z,0,Green,0.6,0,0,0,near GY
+TS_0387,Borderline,2025-10-07T17:40:39.909Z,1,Green,1.5,0,0,1,near YO
+TS_0388,Borderline,2025-10-05T17:40:39.909Z,0,Green,0.9,0,0,0,near GY
+TS_0389,Borderline,2025-10-09T17:40:39.909Z,0,Green,0.6,0,0,0,near GY
+TS_0390,Borderline,2025-10-05T17:40:39.909Z,1,Green,1,0,0,1,near YO
+TS_0391,Borderline,2025-10-11T17:40:39.909Z,1,Green,0.6,0,0,1,near YO
+TS_0392,Borderline,2025-10-07T17:40:39.909Z,0,Green,0.6,0,0,0,near GY
+TS_0393,Borderline,2025-10-09T17:40:39.909Z,0,Green,0.9,0,0,0,near GY
+TS_0394,Borderline,2025-10-05T17:40:39.909Z,0,Green,0.6,0,0,0,near GY
+TS_0395,Borderline,2025-10-07T17:40:39.909Z,1,Yellow,2.8,1,0,0,near YO
+TS_0396,Borderline,2025-10-10T17:40:39.909Z,1,Green,1,0,0,1,near YO
+TS_0397,Borderline,2025-10-06T17:40:39.909Z,1,Green,1,0,0,1,near YO
+TS_0398,Borderline,2025-10-09T17:40:39.909Z,0,Green,1.5,0,0,0,near GY
+TS_0399,Borderline,2025-10-05T17:40:39.909Z,0,Green,1.5,0,0,0,near GY
+TS_0400,Borderline,2025-10-07T17:40:39.909Z,0,Green,0.9,0,0,0,near GY
+TS_0401,Borderline,2025-10-11T17:40:39.909Z,1,Green,1.6,0,0,1,near YO
+TS_0402,Borderline,2025-10-07T17:40:39.909Z,0,Green,0.6,0,0,0,near GY
+TS_0403,Borderline,2025-10-08T17:40:39.909Z,1,Green,1.5,0,0,1,near YO
+TS_0404,Borderline,2025-10-06T17:40:39.909Z,0,Green,1,0,0,0,near GY
+TS_0405,Borderline,2025-10-07T17:40:39.909Z,0,Green,1,0,0,0,near GY
+TS_0406,Borderline,2025-10-05T17:40:39.909Z,1,Green,1.5,0,0,1,near YO
+TS_0407,Borderline,2025-10-05T17:40:39.909Z,0,Green,1,0,0,0,near GY
+TS_0408,Borderline,2025-10-09T17:40:39.909Z,1,Yellow,2.8,1,0,0,near YO
+TS_0409,Borderline,2025-10-06T17:40:39.909Z,1,Green,1,0,0,1,near YO
+TS_0410,Borderline,2025-10-05T17:40:39.909Z,1,Green,0.6,0,0,1,near YO
+TS_0411,Borderline,2025-10-11T17:40:39.909Z,1,Green,1.5,0,0,1,near YO
+TS_0412,Borderline,2025-10-05T17:40:39.909Z,0,Yellow,2.8,1,1,0,near GY
+TS_0413,Borderline,2025-10-08T17:40:39.909Z,0,Green,1.6,0,0,0,near GY
+TS_0414,Borderline,2025-10-06T17:40:39.909Z,0,Yellow,2.8,1,1,0,near GY
+TS_0415,Borderline,2025-10-09T17:40:39.909Z,0,Green,1.6,0,0,0,near GY
+TS_0416,Borderline,2025-10-10T17:40:39.909Z,1,Green,0.9,0,0,1,near YO
+TS_0417,Borderline,2025-10-09T17:40:39.909Z,1,Green,0.9,0,0,1,near YO
+TS_0418,Borderline,2025-10-11T17:40:39.909Z,0,Green,0.6,0,0,0,near GY
+TS_0419,Borderline,2025-10-05T17:40:39.909Z,1,Yellow,2.8,1,0,0,near YO
+TS_0420,Borderline,2025-10-09T17:40:39.909Z,1,Green,1.5,0,0,1,near YO
+TS_0421,Borderline,2025-10-10T17:40:39.909Z,1,Green,1,0,0,1,near YO
+TS_0422,Borderline,2025-10-08T17:40:39.909Z,1,Green,1.6,0,0,1,near YO
+TS_0423,Borderline,2025-10-11T17:40:39.909Z,0,Green,1.6,0,0,0,near GY
+TS_0424,Borderline,2025-10-11T17:40:39.909Z,0,Green,1.5,0,0,0,near GY
+TS_0425,Borderline,2025-10-05T17:40:39.909Z,1,Green,1.6,0,0,1,near YO
+TS_0426,Borderline,2025-10-07T17:40:39.909Z,0,Yellow,2.8,1,1,0,near GY
+TS_0427,Borderline,2025-10-06T17:40:39.909Z,0,Yellow,2.8,1,1,0,near GY
+TS_0428,Borderline,2025-10-07T17:40:39.909Z,0,Green,1.5,0,0,0,near GY
+TS_0429,Borderline,2025-10-06T17:40:39.909Z,1,Green,0.9,0,0,1,near YO
+TS_0430,Borderline,2025-10-05T17:40:39.909Z,0,Yellow,2.8,1,1,0,near GY
+TS_0431,Borderline,2025-10-07T17:40:39.909Z,1,Green,1.6,0,0,1,near YO
+TS_0432,Borderline,2025-10-06T17:40:39.910Z,0,Green,0.6,0,0,0,near GY
+TS_0433,Borderline,2025-10-07T17:40:39.910Z,0,Green,1.6,0,0,0,near GY
+TS_0434,Borderline,2025-10-09T17:40:39.910Z,1,Green,0.9,0,0,1,near YO
+TS_0435,Borderline,2025-10-06T17:40:39.910Z,0,Green,1.6,0,0,0,near GY
+TS_0436,Borderline,2025-10-09T17:40:39.910Z,1,Green,1.5,0,0,1,near YO
+TS_0437,Borderline,2025-10-05T17:40:39.910Z,1,Green,0.9,0,0,1,near YO
+TS_0438,Borderline,2025-10-10T17:40:39.910Z,0,Green,0.9,0,0,0,near GY
+TS_0439,Borderline,2025-10-10T17:40:39.910Z,0,Green,1.6,0,0,0,near GY
+TS_0440,Borderline,2025-10-08T17:40:39.910Z,1,Green,0.6,0,0,1,near YO
+TS_0441,Borderline,2025-10-10T17:40:39.910Z,0,Yellow,2.8,1,1,0,near GY
+TS_0442,Borderline,2025-10-05T17:40:39.910Z,0,Yellow,2.8,1,1,0,near GY
+TS_0443,Borderline,2025-10-10T17:40:39.910Z,0,Green,1.6,0,0,0,near GY
+TS_0444,Borderline,2025-10-09T17:40:39.910Z,0,Green,1,0,0,0,near GY
+TS_0445,Borderline,2025-10-08T17:40:39.910Z,0,Green,1,0,0,0,near GY
+TS_0446,Borderline,2025-10-11T17:40:39.910Z,0,Green,0.6,0,0,0,near GY
+TS_0447,Borderline,2025-10-06T17:40:39.910Z,0,Green,1.5,0,0,0,near GY
+TS_0448,Borderline,2025-10-07T17:40:39.910Z,1,Green,0.9,0,0,1,near YO
+TS_0449,Borderline,2025-10-11T17:40:39.910Z,1,Green,0.9,0,0,1,near YO
+TS_0450,Borderline,2025-10-06T17:40:39.910Z,0,Green,1.6,0,0,0,near GY
+TS_0451,Borderline,2025-10-07T17:40:39.910Z,0,Green,0.9,0,0,0,near GY
+TS_0452,Borderline,2025-10-11T17:40:39.910Z,0,Yellow,2.8,1,1,0,near GY
+TS_0453,Borderline,2025-10-08T17:40:39.910Z,1,Green,1,0,0,1,near YO
+TS_0454,Borderline,2025-10-09T17:40:39.910Z,0,Green,1.6,0,0,0,near GY
+TS_0455,Borderline,2025-10-08T17:40:39.910Z,1,Green,1.6,0,0,1,near YO
+TS_0456,Borderline,2025-10-07T17:40:39.910Z,1,Green,1,0,0,1,near YO
+TS_0457,Borderline,2025-10-06T17:40:39.910Z,1,Green,1,0,0,1,near YO
+TS_0458,Borderline,2025-10-11T17:40:39.910Z,1,Yellow,2.8,1,0,0,near YO
+TS_0459,Borderline,2025-10-07T17:40:39.910Z,0,Yellow,2.8,1,1,0,near GY
+TS_0460,Borderline,2025-10-06T17:40:39.910Z,1,Yellow,2.8,1,0,0,near YO
+TS_0461,Borderline,2025-10-05T17:40:39.910Z,0,Green,0.9,0,0,0,near GY
+TS_0462,Borderline,2025-10-11T17:40:39.910Z,1,Green,1,0,0,1,near YO
+TS_0463,Borderline,2025-10-10T17:40:39.910Z,1,Green,1,0,0,1,near YO
+TS_0464,Borderline,2025-10-06T17:40:39.910Z,1,Green,1,0,0,1,near YO
+TS_0465,Borderline,2025-10-05T17:40:39.910Z,1,Green,0.9,0,0,1,near YO
+TS_0466,Borderline,2025-10-07T17:40:39.910Z,0,Yellow,2.8,1,1,0,near GY
+TS_0467,Borderline,2025-10-10T17:40:39.910Z,0,Green,1.6,0,0,0,near GY
+TS_0468,Borderline,2025-10-09T17:40:39.910Z,0,Green,0.6,0,0,0,near GY
+TS_0469,Borderline,2025-10-10T17:40:39.910Z,1,Yellow,2.8,1,0,0,near YO
+TS_0470,Borderline,2025-10-11T17:40:39.910Z,0,Green,0.9,0,0,0,near GY
+TS_0471,Borderline,2025-10-10T17:40:39.910Z,0,Green,1.6,0,0,0,near GY
+TS_0472,Borderline,2025-10-07T17:40:39.910Z,0,Green,0.9,0,0,0,near GY
+TS_0473,Borderline,2025-10-10T17:40:39.910Z,0,Green,0.9,0,0,0,near GY
+TS_0474,Borderline,2025-10-08T17:40:39.910Z,0,Green,1.6,0,0,0,near GY
+TS_0475,Borderline,2025-10-11T17:40:39.910Z,1,Green,1.5,0,0,1,near YO
+TS_0476,Borderline,2025-10-06T17:40:39.910Z,1,Green,0.6,0,0,1,near YO
+TS_0477,Borderline,2025-10-06T17:40:39.910Z,0,Green,0.9,0,0,0,near GY
+TS_0478,Borderline,2025-10-07T17:40:39.910Z,1,Green,1.6,0,0,1,near YO
+TS_0479,Borderline,2025-10-08T17:40:39.910Z,0,Yellow,2.8,1,1,0,near GY
+TS_0480,Borderline,2025-10-11T17:40:39.910Z,0,Green,0.9,0,0,0,near GY
+TS_0481,Borderline,2025-10-06T17:40:39.910Z,0,Green,1,0,0,0,near GY
+TS_0482,Borderline,2025-10-05T17:40:39.910Z,0,Green,1.6,0,0,0,near GY
+TS_0483,Borderline,2025-10-09T17:40:39.910Z,0,Green,1.5,0,0,0,near GY
+TS_0484,Borderline,2025-10-06T17:40:39.910Z,1,Green,1.6,0,0,1,near YO
+TS_0485,Borderline,2025-10-11T17:40:39.910Z,0,Yellow,2.8,1,1,0,near GY
+TS_0486,Borderline,2025-10-07T17:40:39.910Z,0,Green,1.6,0,0,0,near GY
+TS_0487,Borderline,2025-10-11T17:40:39.910Z,1,Green,1,0,0,1,near YO
+TS_0488,Borderline,2025-10-06T17:40:39.910Z,1,Yellow,2.8,1,0,0,near YO
+TS_0489,Borderline,2025-10-08T17:40:39.910Z,0,Green,1,0,0,0,near GY
+TS_0490,Borderline,2025-10-08T17:40:39.911Z,1,Green,1.6,0,0,1,near YO
+TS_0491,Borderline,2025-10-11T17:40:39.911Z,0,Green,1.6,0,0,0,near GY
+TS_0492,Borderline,2025-10-05T17:40:39.911Z,1,Green,0.6,0,0,1,near YO
+TS_0493,Borderline,2025-10-10T17:40:39.911Z,1,Green,1.6,0,0,1,near YO
+TS_0494,Borderline,2025-10-07T17:40:39.911Z,0,Green,1,0,0,0,near GY
+TS_0495,Borderline,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,near GY
+TS_0496,Borderline,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,near GY
+TS_0497,Borderline,2025-10-07T17:40:39.911Z,1,Yellow,2.8,1,0,0,near YO
+TS_0498,Borderline,2025-10-08T17:40:39.911Z,0,Green,1,0,0,0,near GY
+TS_0499,Borderline,2025-10-06T17:40:39.911Z,1,Green,0.9,0,0,1,near YO
+TS_0500,Borderline,2025-10-11T17:40:39.911Z,1,Green,1.5,0,0,1,near YO
+TS_0501,Borderline,2025-10-08T17:40:39.911Z,0,Green,1.6,0,0,0,near GY
+TS_0502,Borderline,2025-10-11T17:40:39.911Z,0,Green,1.6,0,0,0,near GY
+TS_0503,Borderline,2025-10-10T17:40:39.911Z,0,Green,0.6,0,0,0,near GY
+TS_0504,Borderline,2025-10-08T17:40:39.911Z,1,Green,0.6,0,0,1,near YO
+TS_0505,Borderline,2025-10-09T17:40:39.911Z,1,Green,1,0,0,1,near YO
+TS_0506,Borderline,2025-10-10T17:40:39.911Z,1,Green,1.6,0,0,1,near YO
+TS_0507,Borderline,2025-10-09T17:40:39.911Z,0,Yellow,2.8,1,1,0,near GY
+TS_0508,Borderline,2025-10-09T17:40:39.911Z,1,Green,1.6,0,0,1,near YO
+TS_0509,Borderline,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,near GY
+TS_0510,Borderline,2025-10-07T17:40:39.911Z,1,Green,1.5,0,0,1,near YO
+TS_0511,Borderline,2025-10-07T17:40:39.911Z,1,Green,0.9,0,0,1,near YO
+TS_0512,Borderline,2025-10-11T17:40:39.911Z,1,Green,1,0,0,1,near YO
+TS_0513,Borderline,2025-10-06T17:40:39.911Z,0,Green,1,0,0,0,near GY
+TS_0514,Borderline,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,near GY
+TS_0515,Borderline,2025-10-06T17:40:39.911Z,1,Green,1.6,0,0,1,near YO
+TS_0516,Borderline,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,near GY
+TS_0517,Borderline,2025-10-06T17:40:39.911Z,1,Green,1.5,0,0,1,near YO
+TS_0518,Borderline,2025-10-11T17:40:39.911Z,1,Green,1.6,0,0,1,near YO
+TS_0519,Borderline,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,near GY
+TS_0520,Borderline,2025-10-05T17:40:39.911Z,0,Green,1.6,0,0,0,near GY
+TS_0521,Borderline,2025-10-10T17:40:39.911Z,0,Green,1,0,0,0,near GY
+TS_0522,Borderline,2025-10-05T17:40:39.911Z,1,Green,1.6,0,0,1,near YO
+TS_0523,Borderline,2025-10-11T17:40:39.911Z,1,Green,1.6,0,0,1,near YO
+TS_0524,Borderline,2025-10-07T17:40:39.911Z,1,Green,0.6,0,0,1,near YO
+TS_0525,Borderline,2025-10-07T17:40:39.911Z,1,Yellow,2.8,1,0,0,near YO
+TS_0526,Borderline,2025-10-07T17:40:39.911Z,0,Green,1.6,0,0,0,near GY
+TS_0527,Borderline,2025-10-08T17:40:39.911Z,0,Yellow,2.8,1,1,0,near GY
+TS_0528,Borderline,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,near GY
+TS_0529,Borderline,2025-10-08T17:40:39.911Z,0,Green,1,0,0,0,near GY
+TS_0530,Borderline,2025-10-06T17:40:39.911Z,1,Yellow,2.8,1,0,0,near YO
+TS_0531,Borderline,2025-10-08T17:40:39.911Z,1,Yellow,2.8,1,0,0,near YO
+TS_0532,Borderline,2025-10-08T17:40:39.911Z,1,Green,0.9,0,0,1,near YO
+TS_0533,Borderline,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,near GY
+TS_0534,Borderline,2025-10-11T17:40:39.911Z,0,Green,1.6,0,0,0,near GY
+TS_0535,Borderline,2025-10-11T17:40:39.911Z,1,Green,0.9,0,0,1,near YO
+TS_0536,Borderline,2025-10-11T17:40:39.911Z,1,Green,1.6,0,0,1,near YO
+TS_0537,Borderline,2025-10-06T17:40:39.911Z,0,Green,1,0,0,0,near GY
+TS_0538,Borderline,2025-10-11T17:40:39.911Z,0,Green,1.6,0,0,0,near GY
+TS_0539,Borderline,2025-10-10T17:40:39.911Z,1,Green,1.5,0,0,1,near YO
+TS_0540,Borderline,2025-10-06T17:40:39.911Z,1,Yellow,2.8,1,0,0,near YO
+TS_0541,Borderline,2025-10-06T17:40:39.911Z,0,Yellow,2.8,1,1,0,near GY
+TS_0542,Borderline,2025-10-05T17:40:39.911Z,1,Green,1.6,0,0,1,near YO
+TS_0543,Borderline,2025-10-06T17:40:39.911Z,0,Green,0.9,0,0,0,near GY
+TS_0544,Borderline,2025-10-10T17:40:39.911Z,1,Green,1,0,0,1,near YO
+TS_0545,Borderline,2025-10-11T17:40:39.911Z,1,Yellow,2.8,1,0,0,near YO
+TS_0546,Borderline,2025-10-11T17:40:39.911Z,1,Green,0.9,0,0,1,near YO
+TS_0547,Borderline,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,near GY
+TS_0548,Borderline,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,near GY
+TS_0549,Borderline,2025-10-06T17:40:39.911Z,1,Green,1.6,0,0,1,near YO
+TS_0550,Borderline,2025-10-06T17:40:39.911Z,1,Green,1,0,0,1,near YO
+TS_0551,Borderline,2025-10-11T17:40:39.911Z,1,Green,1,0,0,1,near YO
+TS_0552,Borderline,2025-10-08T17:40:39.911Z,1,Green,1.6,0,0,1,near YO
+TS_0553,Borderline,2025-10-11T17:40:39.911Z,0,Green,1,0,0,0,near GY
+TS_0554,Borderline,2025-10-05T17:40:39.911Z,1,Green,0.9,0,0,1,near YO
+TS_0555,Borderline,2025-10-10T17:40:39.911Z,0,Green,0.6,0,0,0,near GY
+TS_0556,Borderline,2025-10-11T17:40:39.911Z,1,Green,1,0,0,1,near YO
+TS_0557,Borderline,2025-10-07T17:40:39.911Z,1,Green,1,0,0,1,near YO
+TS_0558,Borderline,2025-10-08T17:40:39.911Z,1,Green,0.6,0,0,1,near YO
+TS_0559,Borderline,2025-10-08T17:40:39.911Z,1,Green,0.6,0,0,1,near YO
+TS_0560,Borderline,2025-10-08T17:40:39.911Z,0,Green,1.5,0,0,0,near GY
+TS_0561,Borderline,2025-10-11T17:40:39.911Z,0,Yellow,2.8,1,1,0,near GY
+TS_0562,Borderline,2025-10-05T17:40:39.911Z,1,Green,1.5,0,0,1,near YO
+TS_0563,Borderline,2025-10-08T17:40:39.911Z,0,Yellow,2.8,1,1,0,near GY
+TS_0564,Borderline,2025-10-05T17:40:39.911Z,1,Green,0.6,0,0,1,near YO
+TS_0565,Borderline,2025-10-09T17:40:39.911Z,1,Green,1.6,0,0,1,near YO
+TS_0566,Borderline,2025-10-10T17:40:39.911Z,1,Green,0.6,0,0,1,near YO
+TS_0567,Borderline,2025-10-07T17:40:39.911Z,1,Green,1.5,0,0,1,near YO
+TS_0568,Borderline,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,near GY
+TS_0569,Borderline,2025-10-08T17:40:39.911Z,1,Green,1,0,0,1,near YO
+TS_0570,Borderline,2025-10-11T17:40:39.911Z,0,Green,1.5,0,0,0,near GY
+TS_0571,Borderline,2025-10-10T17:40:39.911Z,1,Yellow,2.8,1,0,0,near YO
+TS_0572,Borderline,2025-10-09T17:40:39.911Z,0,Green,1,0,0,0,near GY
+TS_0573,Borderline,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,near GY
+TS_0574,Borderline,2025-10-06T17:40:39.911Z,0,Yellow,2.8,1,1,0,near GY
+TS_0575,Borderline,2025-10-05T17:40:39.911Z,1,Green,1.6,0,0,1,near YO
+TS_0576,Borderline,2025-10-10T17:40:39.911Z,1,Green,1,0,0,1,near YO
+TS_0577,Borderline,2025-10-08T17:40:39.911Z,1,Green,1,0,0,1,near YO
+TS_0578,Borderline,2025-10-10T17:40:39.911Z,0,Green,1,0,0,0,near GY
+TS_0579,Borderline,2025-10-11T17:40:39.911Z,0,Green,1.6,0,0,0,near GY
+TS_0580,Borderline,2025-10-08T17:40:39.911Z,1,Green,0.9,0,0,1,near YO
+TS_0581,Borderline,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,near GY
+TS_0582,Borderline,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,near GY
+TS_0583,Borderline,2025-10-10T17:40:39.911Z,0,Green,1,0,0,0,near GY
+TS_0584,Borderline,2025-10-07T17:40:39.911Z,1,Green,1.6,0,0,1,near YO
+TS_0585,Borderline,2025-10-09T17:40:39.911Z,0,Green,0.9,0,0,0,near GY
+TS_0586,Borderline,2025-10-07T17:40:39.911Z,1,Yellow,2.8,1,0,0,near YO
+TS_0587,Borderline,2025-10-05T17:40:39.911Z,1,Yellow,2.8,1,0,0,near YO
+TS_0588,Borderline,2025-10-05T17:40:39.911Z,1,Green,0.6,0,0,1,near YO
+TS_0589,Borderline,2025-10-07T17:40:39.911Z,1,Green,1.6,0,0,1,near YO
+TS_0590,Borderline,2025-10-08T17:40:39.911Z,1,Green,1.5,0,0,1,near YO
+TS_0591,Borderline,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,near GY
+TS_0592,Borderline,2025-10-06T17:40:39.911Z,1,Green,1.5,0,0,1,near YO
+TS_0593,Borderline,2025-10-09T17:40:39.911Z,1,Green,0.6,0,0,1,near YO
+TS_0594,Borderline,2025-10-06T17:40:39.911Z,1,Yellow,2.8,1,0,0,near YO
+TS_0595,Borderline,2025-10-11T17:40:39.911Z,1,Green,0.9,0,0,1,near YO
+TS_0596,Borderline,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,near GY
+TS_0597,Borderline,2025-10-10T17:40:39.911Z,0,Yellow,2.8,1,1,0,near GY
+TS_0598,Borderline,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,near GY
+TS_0599,Borderline,2025-10-08T17:40:39.911Z,1,Green,1.5,0,0,1,near YO
+TS_0600,Borderline,2025-10-06T17:40:39.911Z,1,Green,0.9,0,0,1,near YO
+TS_0601,SingleMild,2025-10-11T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0602,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0603,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0604,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0605,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0606,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0607,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0608,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0609,SingleMild,2025-10-11T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0610,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0611,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0612,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0613,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0614,SingleMild,2025-10-05T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0615,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0616,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0617,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0618,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0619,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0620,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0621,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0622,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0623,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0624,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0625,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0626,SingleMild,2025-10-08T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0627,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0628,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0629,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0630,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0631,SingleMild,2025-10-11T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0632,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0633,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0634,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0635,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0636,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0637,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0638,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0639,SingleMild,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0640,SingleMild,2025-10-05T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0641,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0642,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0643,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0644,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0645,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0646,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0647,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0648,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0649,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0650,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0651,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0652,SingleMild,2025-10-05T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0653,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0654,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0655,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0656,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0657,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0658,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0659,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0660,SingleMild,2025-10-11T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0661,SingleMild,2025-10-05T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0662,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0663,SingleMild,2025-10-05T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0664,SingleMild,2025-10-08T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0665,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0666,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0667,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0668,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0669,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0670,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0671,SingleMild,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0672,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0673,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0674,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0675,SingleMild,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0676,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0677,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0678,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0679,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0680,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0681,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0682,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0683,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0684,SingleMild,2025-10-08T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0685,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0686,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0687,SingleMild,2025-10-11T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0688,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0689,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0690,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0691,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0692,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0693,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0694,SingleMild,2025-10-08T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0695,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0696,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0697,SingleMild,2025-10-08T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0698,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0699,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0700,SingleMild,2025-10-08T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0701,SingleMild,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0702,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0703,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0704,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0705,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0706,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0707,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0708,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0709,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0710,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0711,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0712,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0713,SingleMild,2025-10-05T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0714,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0715,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0716,SingleMild,2025-10-05T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0717,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0718,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0719,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0720,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0721,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0722,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0723,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0724,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0725,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0726,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0727,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0728,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0729,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0730,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0731,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0732,SingleMild,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0733,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0734,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0735,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0736,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0737,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0738,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0739,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0740,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0741,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0742,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0743,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0744,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0745,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0746,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0747,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0748,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0749,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0750,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0751,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0752,SingleMild,2025-10-11T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0753,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0754,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0755,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0756,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0757,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0758,SingleMild,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0759,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0760,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0761,SingleMild,2025-10-11T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0762,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0763,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0764,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0765,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0766,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0767,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0768,SingleMild,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0769,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0770,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0771,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0772,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0773,SingleMild,2025-10-05T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0774,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0775,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0776,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0777,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0778,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0779,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0780,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0781,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0782,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0783,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0784,SingleMild,2025-10-05T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0785,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0786,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0787,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0788,SingleMild,2025-10-08T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0789,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0790,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0791,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0792,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0793,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0794,SingleMild,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0795,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0796,SingleMild,2025-10-05T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0797,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0798,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0799,SingleMild,2025-10-08T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0800,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0801,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0802,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0803,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0804,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0805,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0806,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0807,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0808,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0809,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0810,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0811,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0812,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0813,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0814,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0815,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0816,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0817,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0818,SingleMild,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0819,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0820,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0821,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0822,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0823,SingleMild,2025-10-11T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0824,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0825,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0826,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0827,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0828,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0829,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0830,SingleMild,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0831,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0832,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0833,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0834,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0835,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0836,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0837,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0838,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0839,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0840,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0841,SingleMild,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0842,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0843,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0844,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0845,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0846,SingleMild,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0847,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0848,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0849,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0850,SingleMild,2025-10-08T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0851,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0852,SingleMild,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0853,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0854,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0855,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0856,SingleMild,2025-10-11T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0857,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0858,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0859,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0860,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0861,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0862,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0863,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0864,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0865,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0866,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0867,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0868,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0869,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0870,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0871,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0872,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0873,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0874,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0875,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0876,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0877,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0878,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0879,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0880,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0881,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0882,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0883,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0884,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0885,SingleMild,2025-10-11T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0886,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0887,SingleMild,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0888,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0889,SingleMild,2025-10-05T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0890,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0891,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0892,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0893,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0894,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0895,SingleMild,2025-10-08T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0896,SingleMild,2025-10-05T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0897,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0898,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0899,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0900,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0901,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0902,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0903,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0904,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0905,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0906,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0907,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0908,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0909,SingleMild,2025-10-05T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0910,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0911,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0912,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0913,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0914,SingleMild,2025-10-11T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0915,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0916,SingleMild,2025-10-08T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0917,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0918,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0919,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0920,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0921,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0922,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0923,SingleMild,2025-10-08T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0924,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0925,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0926,SingleMild,2025-10-05T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0927,SingleMild,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0928,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0929,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0930,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0931,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0932,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0933,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0934,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0935,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0936,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0937,SingleMild,2025-10-05T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0938,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0939,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0940,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0941,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0942,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0943,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0944,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0945,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0946,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0947,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0948,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0949,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0950,SingleMild,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0951,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0952,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0953,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0954,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0955,SingleMild,2025-10-05T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0956,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0957,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0958,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0959,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0960,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0961,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0962,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0963,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0964,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0965,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0966,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0967,SingleMild,2025-10-06T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0968,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0969,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0970,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0971,SingleMild,2025-10-06T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0972,SingleMild,2025-10-10T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0973,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0974,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0975,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0976,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0977,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0978,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0979,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0980,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0981,SingleMild,2025-10-05T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0982,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0983,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0984,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0985,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0986,SingleMild,2025-10-08T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0987,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0988,SingleMild,2025-10-05T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0989,SingleMild,2025-10-11T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0990,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0991,SingleMild,2025-10-09T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0992,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0993,SingleMild,2025-10-10T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0994,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0995,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0996,SingleMild,2025-10-09T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_0997,SingleMild,2025-10-08T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_0998,SingleMild,2025-10-07T17:40:39.911Z,0,Green,1.5,0,0,0,single mild sob
+TS_0999,SingleMild,2025-10-07T17:40:39.911Z,0,Green,0.9,0,0,0,single mild edema
+TS_1000,SingleMild,2025-10-11T17:40:39.911Z,0,Green,0.6,0,0,0,single mild fatigue
+TS_1001,Recovery,2025-10-07T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1002,Recovery,2025-10-05T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1003,Recovery,2025-10-08T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1004,Recovery,2025-10-09T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1005,Recovery,2025-10-07T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1006,Recovery,2025-10-07T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1007,Recovery,2025-10-05T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1008,Recovery,2025-10-11T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1009,Recovery,2025-10-05T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1010,Recovery,2025-10-09T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1011,Recovery,2025-10-08T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1012,Recovery,2025-10-07T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1013,Recovery,2025-10-07T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1014,Recovery,2025-10-09T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1015,Recovery,2025-10-09T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1016,Recovery,2025-10-05T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1017,Recovery,2025-10-05T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1018,Recovery,2025-10-09T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1019,Recovery,2025-10-05T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1020,Recovery,2025-10-05T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1021,Recovery,2025-10-07T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1022,Recovery,2025-10-06T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1023,Recovery,2025-10-06T17:40:39.911Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1024,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1025,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1026,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1027,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1028,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1029,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1030,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1031,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1032,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1033,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1034,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1035,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1036,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1037,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1038,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1039,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1040,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1041,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1042,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1043,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1044,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1045,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1046,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1047,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1048,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1049,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1050,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1051,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1052,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1053,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1054,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1055,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1056,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1057,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1058,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1059,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1060,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1061,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1062,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1063,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1064,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1065,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1066,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1067,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1068,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1069,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1070,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1071,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1072,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1073,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1074,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1075,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1076,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1077,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1078,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1079,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1080,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1081,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1082,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1083,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1084,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1085,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1086,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1087,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1088,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1089,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1090,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1091,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1092,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1093,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1094,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1095,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1096,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1097,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1098,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1099,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1100,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1101,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1102,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1103,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1104,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1105,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1106,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1107,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1108,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1109,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1110,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1111,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1112,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1113,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1114,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1115,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1116,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1117,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1118,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1119,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1120,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1121,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1122,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1123,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1124,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1125,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1126,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1127,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1128,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1129,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1130,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1131,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1132,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1133,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1134,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1135,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1136,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1137,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1138,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1139,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1140,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1141,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1142,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1143,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1144,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1145,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1146,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1147,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1148,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1149,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1150,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1151,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1152,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1153,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1154,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1155,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1156,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1157,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1158,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1159,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1160,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1161,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1162,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1163,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1164,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1165,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1166,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1167,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1168,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1169,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1170,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1171,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1172,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1173,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1174,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1175,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1176,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1177,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1178,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1179,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1180,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1181,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1182,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1183,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1184,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1185,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1186,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1187,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1188,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1189,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1190,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1191,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1192,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1193,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1194,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1195,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1196,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1197,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1198,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1199,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1200,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1201,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1202,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1203,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1204,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1205,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1206,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1207,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1208,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1209,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1210,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1211,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1212,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1213,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1214,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1215,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1216,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1217,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1218,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1219,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1220,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1221,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1222,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1223,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1224,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1225,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1226,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1227,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1228,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1229,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1230,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1231,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1232,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1233,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1234,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1235,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1236,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1237,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1238,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1239,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1240,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1241,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1242,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1243,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1244,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1245,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1246,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1247,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1248,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1249,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1250,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1251,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1252,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1253,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1254,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1255,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1256,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1257,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1258,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1259,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1260,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1261,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1262,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1263,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1264,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1265,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1266,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1267,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1268,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1269,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1270,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1271,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1272,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1273,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1274,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1275,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1276,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1277,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1278,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1279,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1280,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1281,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1282,Recovery,2025-10-09T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1283,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1284,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1285,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1286,Recovery,2025-10-11T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1287,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1288,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1289,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1290,Recovery,2025-10-06T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1291,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1292,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1293,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1294,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1295,Recovery,2025-10-07T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1296,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1297,Recovery,2025-10-10T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1298,Recovery,2025-10-05T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1299,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1300,Recovery,2025-10-08T17:40:39.912Z,0,Yellow,0,1,1,0,OG smoothing; should remain non-alert
+TS_1301,Orthopnea,2025-10-07T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1302,Orthopnea,2025-10-10T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1303,Orthopnea,2025-10-10T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1304,Orthopnea,2025-10-05T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1305,Orthopnea,2025-10-11T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1306,Orthopnea,2025-10-10T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1307,Orthopnea,2025-10-10T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1308,Orthopnea,2025-10-10T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1309,Orthopnea,2025-10-08T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1310,Orthopnea,2025-10-10T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1311,Orthopnea,2025-10-09T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1312,Orthopnea,2025-10-11T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1313,Orthopnea,2025-10-06T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1314,Orthopnea,2025-10-05T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1315,Orthopnea,2025-10-07T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1316,Orthopnea,2025-10-07T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1317,Orthopnea,2025-10-11T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1318,Orthopnea,2025-10-10T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1319,Orthopnea,2025-10-11T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1320,Orthopnea,2025-10-09T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1321,Orthopnea,2025-10-06T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1322,Orthopnea,2025-10-10T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1323,Orthopnea,2025-10-06T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1324,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1325,Orthopnea,2025-10-09T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1326,Orthopnea,2025-10-10T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1327,Orthopnea,2025-10-11T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1328,Orthopnea,2025-10-11T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1329,Orthopnea,2025-10-09T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1330,Orthopnea,2025-10-10T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1331,Orthopnea,2025-10-09T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1332,Orthopnea,2025-10-10T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1333,Orthopnea,2025-10-09T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1334,Orthopnea,2025-10-10T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1335,Orthopnea,2025-10-08T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1336,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1337,Orthopnea,2025-10-07T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1338,Orthopnea,2025-10-08T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1339,Orthopnea,2025-10-05T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1340,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1341,Orthopnea,2025-10-07T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1342,Orthopnea,2025-10-06T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1343,Orthopnea,2025-10-06T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1344,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1345,Orthopnea,2025-10-09T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1346,Orthopnea,2025-10-09T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1347,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1348,Orthopnea,2025-10-10T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1349,Orthopnea,2025-10-09T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1350,Orthopnea,2025-10-11T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1351,Orthopnea,2025-10-05T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1352,Orthopnea,2025-10-06T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1353,Orthopnea,2025-10-10T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1354,Orthopnea,2025-10-09T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1355,Orthopnea,2025-10-10T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1356,Orthopnea,2025-10-05T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1357,Orthopnea,2025-10-09T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1358,Orthopnea,2025-10-05T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1359,Orthopnea,2025-10-11T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1360,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1361,Orthopnea,2025-10-07T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1362,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1363,Orthopnea,2025-10-06T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1364,Orthopnea,2025-10-06T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1365,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1366,Orthopnea,2025-10-08T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1367,Orthopnea,2025-10-08T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1368,Orthopnea,2025-10-10T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1369,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1370,Orthopnea,2025-10-05T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1371,Orthopnea,2025-10-08T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1372,Orthopnea,2025-10-09T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1373,Orthopnea,2025-10-07T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1374,Orthopnea,2025-10-07T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1375,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1376,Orthopnea,2025-10-08T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1377,Orthopnea,2025-10-11T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1378,Orthopnea,2025-10-08T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1379,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1380,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1381,Orthopnea,2025-10-10T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1382,Orthopnea,2025-10-05T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1383,Orthopnea,2025-10-05T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1384,Orthopnea,2025-10-09T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1385,Orthopnea,2025-10-09T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1386,Orthopnea,2025-10-10T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1387,Orthopnea,2025-10-05T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1388,Orthopnea,2025-10-06T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1389,Orthopnea,2025-10-08T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1390,Orthopnea,2025-10-07T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1391,Orthopnea,2025-10-07T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1392,Orthopnea,2025-10-11T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1393,Orthopnea,2025-10-06T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1394,Orthopnea,2025-10-05T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1395,Orthopnea,2025-10-08T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1396,Orthopnea,2025-10-09T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1397,Orthopnea,2025-10-05T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1398,Orthopnea,2025-10-09T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1399,Orthopnea,2025-10-06T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1400,Orthopnea,2025-10-09T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1401,Orthopnea,2025-10-10T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1402,Orthopnea,2025-10-07T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1403,Orthopnea,2025-10-10T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1404,Orthopnea,2025-10-08T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1405,Orthopnea,2025-10-08T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1406,Orthopnea,2025-10-06T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1407,Orthopnea,2025-10-10T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1408,Orthopnea,2025-10-08T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1409,Orthopnea,2025-10-08T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1410,Orthopnea,2025-10-10T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1411,Orthopnea,2025-10-10T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1412,Orthopnea,2025-10-05T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1413,Orthopnea,2025-10-07T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1414,Orthopnea,2025-10-07T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1415,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1416,Orthopnea,2025-10-05T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1417,Orthopnea,2025-10-11T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1418,Orthopnea,2025-10-11T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1419,Orthopnea,2025-10-11T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1420,Orthopnea,2025-10-06T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1421,Orthopnea,2025-10-10T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1422,Orthopnea,2025-10-06T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1423,Orthopnea,2025-10-09T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1424,Orthopnea,2025-10-05T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1425,Orthopnea,2025-10-11T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1426,Orthopnea,2025-10-08T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1427,Orthopnea,2025-10-05T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1428,Orthopnea,2025-10-10T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1429,Orthopnea,2025-10-06T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1430,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1431,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1432,Orthopnea,2025-10-08T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1433,Orthopnea,2025-10-07T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1434,Orthopnea,2025-10-05T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1435,Orthopnea,2025-10-07T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1436,Orthopnea,2025-10-05T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1437,Orthopnea,2025-10-09T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1438,Orthopnea,2025-10-08T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1439,Orthopnea,2025-10-07T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1440,Orthopnea,2025-10-10T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1441,Orthopnea,2025-10-05T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1442,Orthopnea,2025-10-06T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1443,Orthopnea,2025-10-10T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1444,Orthopnea,2025-10-06T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1445,Orthopnea,2025-10-11T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1446,Orthopnea,2025-10-07T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1447,Orthopnea,2025-10-05T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1448,Orthopnea,2025-10-08T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1449,Orthopnea,2025-10-06T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1450,Orthopnea,2025-10-06T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1451,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1452,Orthopnea,2025-10-11T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1453,Orthopnea,2025-10-06T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1454,Orthopnea,2025-10-11T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1455,Orthopnea,2025-10-10T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1456,Orthopnea,2025-10-05T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1457,Orthopnea,2025-10-07T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1458,Orthopnea,2025-10-05T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1459,Orthopnea,2025-10-06T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1460,Orthopnea,2025-10-10T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1461,Orthopnea,2025-10-07T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1462,Orthopnea,2025-10-05T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1463,Orthopnea,2025-10-11T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1464,Orthopnea,2025-10-11T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1465,Orthopnea,2025-10-08T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1466,Orthopnea,2025-10-05T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1467,Orthopnea,2025-10-06T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1468,Orthopnea,2025-10-06T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1469,Orthopnea,2025-10-07T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1470,Orthopnea,2025-10-07T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1471,Orthopnea,2025-10-07T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1472,Orthopnea,2025-10-06T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1473,Orthopnea,2025-10-09T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1474,Orthopnea,2025-10-06T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1475,Orthopnea,2025-10-05T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1476,Orthopnea,2025-10-08T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1477,Orthopnea,2025-10-10T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1478,Orthopnea,2025-10-07T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1479,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1480,Orthopnea,2025-10-07T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1481,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1482,Orthopnea,2025-10-06T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1483,Orthopnea,2025-10-05T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1484,Orthopnea,2025-10-10T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1485,Orthopnea,2025-10-11T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1486,Orthopnea,2025-10-11T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1487,Orthopnea,2025-10-08T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1488,Orthopnea,2025-10-11T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1489,Orthopnea,2025-10-09T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1490,Orthopnea,2025-10-07T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1491,Orthopnea,2025-10-05T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1492,Orthopnea,2025-10-10T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1493,Orthopnea,2025-10-09T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1494,Orthopnea,2025-10-09T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1495,Orthopnea,2025-10-10T17:40:39.912Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1496,Orthopnea,2025-10-07T17:40:39.912Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1497,Orthopnea,2025-10-06T17:40:39.912Z,0,Green,1,0,0,0,orthopnea mild
+TS_1498,Orthopnea,2025-10-06T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1499,Orthopnea,2025-10-08T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1500,Orthopnea,2025-10-06T17:40:39.913Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1501,Orthopnea,2025-10-05T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1502,Orthopnea,2025-10-11T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1503,Orthopnea,2025-10-07T17:40:39.913Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1504,Orthopnea,2025-10-11T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1505,Orthopnea,2025-10-06T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1506,Orthopnea,2025-10-08T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1507,Orthopnea,2025-10-11T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1508,Orthopnea,2025-10-07T17:40:39.913Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1509,Orthopnea,2025-10-05T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1510,Orthopnea,2025-10-10T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1511,Orthopnea,2025-10-07T17:40:39.913Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1512,Orthopnea,2025-10-11T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1513,Orthopnea,2025-10-09T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1514,Orthopnea,2025-10-10T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1515,Orthopnea,2025-10-11T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1516,Orthopnea,2025-10-05T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1517,Orthopnea,2025-10-11T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1518,Orthopnea,2025-10-05T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1519,Orthopnea,2025-10-05T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1520,Orthopnea,2025-10-09T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1521,Orthopnea,2025-10-09T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1522,Orthopnea,2025-10-06T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1523,Orthopnea,2025-10-08T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1524,Orthopnea,2025-10-09T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1525,Orthopnea,2025-10-07T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1526,Orthopnea,2025-10-05T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1527,Orthopnea,2025-10-08T17:40:39.913Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1528,Orthopnea,2025-10-06T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1529,Orthopnea,2025-10-11T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1530,Orthopnea,2025-10-11T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1531,Orthopnea,2025-10-06T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1532,Orthopnea,2025-10-10T17:40:39.913Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1533,Orthopnea,2025-10-10T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1534,Orthopnea,2025-10-10T17:40:39.913Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1535,Orthopnea,2025-10-09T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1536,Orthopnea,2025-10-08T17:40:39.913Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1537,Orthopnea,2025-10-08T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1538,Orthopnea,2025-10-06T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1539,Orthopnea,2025-10-09T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1540,Orthopnea,2025-10-08T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1541,Orthopnea,2025-10-06T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1542,Orthopnea,2025-10-11T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1543,Orthopnea,2025-10-06T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1544,Orthopnea,2025-10-06T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1545,Orthopnea,2025-10-10T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1546,Orthopnea,2025-10-09T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1547,Orthopnea,2025-10-11T17:40:39.913Z,1,Yellow,2.8,1,0,0,orthopnea severe
+TS_1548,Orthopnea,2025-10-08T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1549,Orthopnea,2025-10-11T17:40:39.913Z,1,Green,1.9,0,0,1,orthopnea moderate
+TS_1550,Orthopnea,2025-10-07T17:40:39.913Z,0,Green,1,0,0,0,orthopnea mild
+TS_1551,FluidTrend,2025-10-07T17:40:39.913Z,0,Green,2.5,0,0,0,fluid slow
+TS_1552,FluidTrend,2025-10-08T17:40:39.913Z,0,Green,1.9,0,0,0,fluid moderate
+TS_1553,FluidTrend,2025-10-08T17:40:39.913Z,1,Green,1,0,0,1,fluid rapid
+TS_1554,FluidTrend,2025-10-07T17:40:39.913Z,0,Green,1,0,0,0,fluid moderate
+TS_1555,FluidTrend,2025-10-08T17:40:39.913Z,0,Yellow,2.8,1,1,0,fluid moderate
+TS_1556,FluidTrend,2025-10-11T17:40:39.913Z,0,Yellow,3.1,1,1,0,fluid moderate
+TS_1557,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,1.9,0,0,0,fluid moderate
+TS_1558,FluidTrend,2025-10-10T17:40:39.913Z,0,Green,2.4,0,0,0,fluid moderate
+TS_1559,FluidTrend,2025-10-08T17:40:39.913Z,0,Yellow,2.8,1,1,0,fluid moderate
+TS_1560,FluidTrend,2025-10-07T17:40:39.913Z,0,Green,0.4,0,0,0,fluid moderate
+TS_1561,FluidTrend,2025-10-07T17:40:39.913Z,1,Yellow,2.9,1,0,0,fluid rapid
+TS_1562,FluidTrend,2025-10-08T17:40:39.913Z,1,Green,0.4,0,0,1,fluid rapid
+TS_1563,FluidTrend,2025-10-07T17:40:39.913Z,1,Green,1.4,0,0,1,fluid rapid
+TS_1564,FluidTrend,2025-10-06T17:40:39.913Z,1,Green,1.1,0,0,1,fluid rapid
+TS_1565,FluidTrend,2025-10-08T17:40:39.913Z,0,Green,1,0,0,0,fluid slow
+TS_1566,FluidTrend,2025-10-07T17:40:39.913Z,1,Green,2,0,0,1,fluid rapid
+TS_1567,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,2.5,0,0,0,fluid moderate
+TS_1568,FluidTrend,2025-10-07T17:40:39.913Z,0,Green,0.9,0,0,0,fluid slow
+TS_1569,FluidTrend,2025-10-09T17:40:39.913Z,1,Yellow,2.6,1,0,0,fluid rapid
+TS_1570,FluidTrend,2025-10-11T17:40:39.913Z,0,Green,2.1,0,0,0,fluid slow
+TS_1571,FluidTrend,2025-10-08T17:40:39.913Z,1,Green,2,0,0,1,fluid rapid
+TS_1572,FluidTrend,2025-10-06T17:40:39.913Z,1,Green,2.1,0,0,1,fluid rapid
+TS_1573,FluidTrend,2025-10-07T17:40:39.913Z,0,Yellow,2.8,1,1,0,fluid moderate
+TS_1574,FluidTrend,2025-10-10T17:40:39.913Z,1,Green,0.4,0,0,1,fluid rapid
+TS_1575,FluidTrend,2025-10-11T17:40:39.913Z,0,Yellow,3.1,1,1,0,fluid moderate
+TS_1576,FluidTrend,2025-10-06T17:40:39.913Z,0,Green,1.3,0,0,0,fluid slow
+TS_1577,FluidTrend,2025-10-09T17:40:39.913Z,0,Yellow,2.8,1,1,0,fluid moderate
+TS_1578,FluidTrend,2025-10-07T17:40:39.913Z,0,Green,1.9,0,0,0,fluid slow
+TS_1579,FluidTrend,2025-10-11T17:40:39.913Z,1,Yellow,3.2,1,0,0,fluid rapid
+TS_1580,FluidTrend,2025-10-08T17:40:39.913Z,0,Yellow,3.5,1,1,0,fluid slow
+TS_1581,FluidTrend,2025-10-10T17:40:39.913Z,0,Yellow,2.8,1,1,0,fluid moderate
+TS_1582,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,1.9,0,0,0,fluid moderate
+TS_1583,FluidTrend,2025-10-05T17:40:39.913Z,1,Green,1,0,0,1,fluid rapid
+TS_1584,FluidTrend,2025-10-11T17:40:39.913Z,0,Green,2.5,0,0,0,fluid slow
+TS_1585,FluidTrend,2025-10-07T17:40:39.913Z,0,Green,1.9,0,0,0,fluid slow
+TS_1586,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,0.4,0,0,0,fluid slow
+TS_1587,FluidTrend,2025-10-05T17:40:39.913Z,1,Green,1.4,0,0,1,fluid rapid
+TS_1588,FluidTrend,2025-10-10T17:40:39.913Z,0,Green,0.6,0,0,0,fluid slow
+TS_1589,FluidTrend,2025-10-10T17:40:39.913Z,1,Green,0.7,0,0,1,fluid rapid
+TS_1590,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,1.3,0,0,0,fluid slow
+TS_1591,FluidTrend,2025-10-07T17:40:39.913Z,0,Green,1.9,0,0,0,fluid slow
+TS_1592,FluidTrend,2025-10-11T17:40:39.913Z,1,Green,2.1,0,0,1,fluid rapid
+TS_1593,FluidTrend,2025-10-11T17:40:39.913Z,0,Green,1.9,0,0,0,fluid slow
+TS_1594,FluidTrend,2025-10-11T17:40:39.913Z,1,Yellow,3.6,1,0,0,fluid rapid
+TS_1595,FluidTrend,2025-10-10T17:40:39.913Z,0,Green,2.5,0,0,0,fluid moderate
+TS_1596,FluidTrend,2025-10-11T17:40:39.913Z,1,Green,2.1,0,0,1,fluid rapid
+TS_1597,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,2.4,0,0,0,fluid moderate
+TS_1598,FluidTrend,2025-10-06T17:40:39.913Z,0,Green,0.9,0,0,0,fluid slow
+TS_1599,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,1.9,0,0,0,fluid moderate
+TS_1600,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,2.4,0,0,0,fluid slow
+TS_1601,FluidTrend,2025-10-11T17:40:39.913Z,0,Green,0,0,0,0,fluid slow
+TS_1602,FluidTrend,2025-10-07T17:40:39.913Z,0,Green,1.9,0,0,0,fluid moderate
+TS_1603,FluidTrend,2025-10-06T17:40:39.913Z,0,Yellow,2.8,1,1,0,fluid moderate
+TS_1604,FluidTrend,2025-10-07T17:40:39.913Z,1,Green,1.4,0,0,1,fluid rapid
+TS_1605,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,0.4,0,0,0,fluid slow
+TS_1606,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,1.3,0,0,0,fluid moderate
+TS_1607,FluidTrend,2025-10-10T17:40:39.913Z,1,Green,1.4,0,0,1,fluid rapid
+TS_1608,FluidTrend,2025-10-08T17:40:39.913Z,1,Green,2.2,0,0,1,fluid rapid
+TS_1609,FluidTrend,2025-10-06T17:40:39.913Z,0,Yellow,3.5,1,1,0,fluid slow
+TS_1610,FluidTrend,2025-10-08T17:40:39.913Z,0,Green,1.9,0,0,0,fluid slow
+TS_1611,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,1.5,0,0,0,fluid moderate
+TS_1612,FluidTrend,2025-10-07T17:40:39.913Z,0,Green,1.3,0,0,0,fluid moderate
+TS_1613,FluidTrend,2025-10-07T17:40:39.913Z,1,Yellow,3.6,1,0,0,fluid rapid
+TS_1614,FluidTrend,2025-10-07T17:40:39.913Z,1,Green,0.4,0,0,1,fluid rapid
+TS_1615,FluidTrend,2025-10-08T17:40:39.913Z,0,Yellow,3.5,1,1,0,fluid slow
+TS_1616,FluidTrend,2025-10-11T17:40:39.913Z,0,Green,1.5,0,0,0,fluid moderate
+TS_1617,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,1.9,0,0,0,fluid slow
+TS_1618,FluidTrend,2025-10-10T17:40:39.913Z,0,Green,1.9,0,0,0,fluid slow
+TS_1619,FluidTrend,2025-10-10T17:40:39.913Z,0,Green,0.9,0,0,0,fluid moderate
+TS_1620,FluidTrend,2025-10-06T17:40:39.913Z,0,Green,1.3,0,0,0,fluid moderate
+TS_1621,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,0.4,0,0,0,fluid slow
+TS_1622,FluidTrend,2025-10-10T17:40:39.913Z,0,Yellow,2.8,1,1,0,fluid moderate
+TS_1623,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,0.4,0,0,0,fluid slow
+TS_1624,FluidTrend,2025-10-06T17:40:39.913Z,0,Green,0.4,0,0,0,fluid slow
+TS_1625,FluidTrend,2025-10-07T17:40:39.913Z,0,Green,0.4,0,0,0,fluid moderate
+TS_1626,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,2.5,0,0,0,fluid moderate
+TS_1627,FluidTrend,2025-10-06T17:40:39.913Z,1,Yellow,3.6,1,0,0,fluid rapid
+TS_1628,FluidTrend,2025-10-08T17:40:39.913Z,0,Yellow,3.5,1,1,0,fluid moderate
+TS_1629,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,1.3,0,0,0,fluid slow
+TS_1630,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,2.1,0,0,0,fluid slow
+TS_1631,FluidTrend,2025-10-08T17:40:39.913Z,0,Yellow,2.8,1,1,0,fluid slow
+TS_1632,FluidTrend,2025-10-05T17:40:39.913Z,0,Yellow,2.8,1,1,0,fluid slow
+TS_1633,FluidTrend,2025-10-11T17:40:39.913Z,0,Green,1,0,0,0,fluid slow
+TS_1634,FluidTrend,2025-10-07T17:40:39.913Z,1,Green,1.4,0,0,1,fluid rapid
+TS_1635,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,1.9,0,0,0,fluid slow
+TS_1636,FluidTrend,2025-10-11T17:40:39.913Z,0,Green,1.9,0,0,0,fluid slow
+TS_1637,FluidTrend,2025-10-05T17:40:39.913Z,1,Green,2.1,0,0,1,fluid rapid
+TS_1638,FluidTrend,2025-10-08T17:40:39.913Z,0,Green,1.3,0,0,0,fluid slow
+TS_1639,FluidTrend,2025-10-06T17:40:39.913Z,1,Yellow,2.9,1,0,0,fluid rapid
+TS_1640,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,2.1,0,0,0,fluid slow
+TS_1641,FluidTrend,2025-10-05T17:40:39.913Z,1,Green,2,0,0,1,fluid rapid
+TS_1642,FluidTrend,2025-10-06T17:40:39.913Z,0,Green,1,0,0,0,fluid slow
+TS_1643,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,2.5,0,0,0,fluid moderate
+TS_1644,FluidTrend,2025-10-09T17:40:39.913Z,1,Yellow,2.6,1,0,0,fluid rapid
+TS_1645,FluidTrend,2025-10-08T17:40:39.913Z,0,Green,1.9,0,0,0,fluid slow
+TS_1646,FluidTrend,2025-10-05T17:40:39.913Z,1,Green,1.1,0,0,1,fluid rapid
+TS_1647,FluidTrend,2025-10-11T17:40:39.913Z,0,Green,1.3,0,0,0,fluid moderate
+TS_1648,FluidTrend,2025-10-10T17:40:39.913Z,0,Green,1.5,0,0,0,fluid slow
+TS_1649,FluidTrend,2025-10-05T17:40:39.913Z,1,Green,2.1,0,0,1,fluid rapid
+TS_1650,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,1,0,0,0,fluid slow
+TS_1651,FluidTrend,2025-10-07T17:40:39.913Z,1,Green,2,0,0,1,fluid rapid
+TS_1652,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,2.1,0,0,0,fluid moderate
+TS_1653,FluidTrend,2025-10-05T17:40:39.913Z,1,Green,2,0,0,1,fluid rapid
+TS_1654,FluidTrend,2025-10-11T17:40:39.913Z,0,Green,1.3,0,0,0,fluid slow
+TS_1655,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,1.3,0,0,0,fluid moderate
+TS_1656,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,2.5,0,0,0,fluid slow
+TS_1657,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,2.5,0,0,0,fluid moderate
+TS_1658,FluidTrend,2025-10-10T17:40:39.913Z,1,Yellow,3.6,1,0,0,fluid rapid
+TS_1659,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,1.3,0,0,0,fluid moderate
+TS_1660,FluidTrend,2025-10-07T17:40:39.913Z,1,Yellow,3.2,1,0,0,fluid rapid
+TS_1661,FluidTrend,2025-10-09T17:40:39.913Z,0,Yellow,2.8,1,1,0,fluid moderate
+TS_1662,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,1.9,0,0,0,fluid slow
+TS_1663,FluidTrend,2025-10-08T17:40:39.913Z,0,Green,2.5,0,0,0,fluid moderate
+TS_1664,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,1.5,0,0,0,fluid moderate
+TS_1665,FluidTrend,2025-10-07T17:40:39.913Z,0,Yellow,2.8,1,1,0,fluid slow
+TS_1666,FluidTrend,2025-10-06T17:40:39.913Z,1,Green,0,0,0,1,fluid rapid
+TS_1667,FluidTrend,2025-10-06T17:40:39.913Z,0,Green,1.5,0,0,0,fluid slow
+TS_1668,FluidTrend,2025-10-10T17:40:39.913Z,0,Yellow,3.5,1,1,0,fluid slow
+TS_1669,FluidTrend,2025-10-10T17:40:39.913Z,0,Green,1.9,0,0,0,fluid slow
+TS_1670,FluidTrend,2025-10-06T17:40:39.913Z,0,Yellow,2.8,1,1,0,fluid slow
+TS_1671,FluidTrend,2025-10-09T17:40:39.913Z,1,Green,1.1,0,0,1,fluid rapid
+TS_1672,FluidTrend,2025-10-06T17:40:39.913Z,0,Green,2.5,0,0,0,fluid slow
+TS_1673,FluidTrend,2025-10-08T17:40:39.913Z,1,Yellow,3.6,1,0,0,fluid rapid
+TS_1674,FluidTrend,2025-10-07T17:40:39.913Z,0,Green,2.5,0,0,0,fluid moderate
+TS_1675,FluidTrend,2025-10-09T17:40:39.913Z,1,Green,2,0,0,1,fluid rapid
+TS_1676,FluidTrend,2025-10-06T17:40:39.913Z,0,Green,2.5,0,0,0,fluid slow
+TS_1677,FluidTrend,2025-10-08T17:40:39.913Z,0,Green,1.3,0,0,0,fluid slow
+TS_1678,FluidTrend,2025-10-10T17:40:39.913Z,0,Green,2.5,0,0,0,fluid slow
+TS_1679,FluidTrend,2025-10-10T17:40:39.913Z,0,Green,0.4,0,0,0,fluid slow
+TS_1680,FluidTrend,2025-10-11T17:40:39.913Z,0,Green,0.4,0,0,0,fluid moderate
+TS_1681,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,1.9,0,0,0,fluid moderate
+TS_1682,FluidTrend,2025-10-07T17:40:39.913Z,1,Green,2.1,0,0,1,fluid rapid
+TS_1683,FluidTrend,2025-10-11T17:40:39.913Z,0,Green,1.9,0,0,0,fluid slow
+TS_1684,FluidTrend,2025-10-08T17:40:39.913Z,1,Green,1.4,0,0,1,fluid rapid
+TS_1685,FluidTrend,2025-10-08T17:40:39.913Z,1,Green,1.1,0,0,1,fluid rapid
+TS_1686,FluidTrend,2025-10-09T17:40:39.913Z,1,Green,1.4,0,0,1,fluid rapid
+TS_1687,FluidTrend,2025-10-09T17:40:39.913Z,1,Green,1.1,0,0,1,fluid rapid
+TS_1688,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,0.6,0,0,0,fluid slow
+TS_1689,FluidTrend,2025-10-10T17:40:39.913Z,1,Green,1.7,0,0,1,fluid rapid
+TS_1690,FluidTrend,2025-10-11T17:40:39.913Z,0,Green,1,0,0,0,fluid moderate
+TS_1691,FluidTrend,2025-10-05T17:40:39.913Z,1,Green,1.7,0,0,1,fluid rapid
+TS_1692,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,1.3,0,0,0,fluid moderate
+TS_1693,FluidTrend,2025-10-10T17:40:39.913Z,1,Green,1.4,0,0,1,fluid rapid
+TS_1694,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,1.3,0,0,0,fluid slow
+TS_1695,FluidTrend,2025-10-08T17:40:39.913Z,0,Green,0.4,0,0,0,fluid slow
+TS_1696,FluidTrend,2025-10-11T17:40:39.913Z,0,Yellow,2.8,1,1,0,fluid moderate
+TS_1697,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,2.5,0,0,0,fluid moderate
+TS_1698,FluidTrend,2025-10-09T17:40:39.913Z,1,Yellow,2.6,1,0,0,fluid rapid
+TS_1699,FluidTrend,2025-10-06T17:40:39.913Z,1,Green,0,0,0,1,fluid rapid
+TS_1700,FluidTrend,2025-10-11T17:40:39.913Z,1,Yellow,2.9,1,0,0,fluid rapid
+TS_1701,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,0.4,0,0,0,fluid moderate
+TS_1702,FluidTrend,2025-10-11T17:40:39.913Z,0,Green,0,0,0,0,fluid slow
+TS_1703,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,1,0,0,0,fluid moderate
+TS_1704,FluidTrend,2025-10-10T17:40:39.913Z,1,Green,2,0,0,1,fluid rapid
+TS_1705,FluidTrend,2025-10-06T17:40:39.913Z,1,Green,1.4,0,0,1,fluid rapid
+TS_1706,FluidTrend,2025-10-05T17:40:39.913Z,1,Green,2.5,0,0,1,fluid rapid
+TS_1707,FluidTrend,2025-10-06T17:40:39.913Z,1,Yellow,2.6,1,0,0,fluid rapid
+TS_1708,FluidTrend,2025-10-07T17:40:39.913Z,0,Green,2.4,0,0,0,fluid moderate
+TS_1709,FluidTrend,2025-10-09T17:40:39.913Z,1,Yellow,3.6,1,0,0,fluid rapid
+TS_1710,FluidTrend,2025-10-10T17:40:39.913Z,0,Green,1,0,0,0,fluid slow
+TS_1711,FluidTrend,2025-10-10T17:40:39.913Z,0,Green,0,0,0,0,fluid moderate
+TS_1712,FluidTrend,2025-10-06T17:40:39.913Z,1,Green,0.4,0,0,1,fluid rapid
+TS_1713,FluidTrend,2025-10-08T17:40:39.913Z,0,Green,2.4,0,0,0,fluid moderate
+TS_1714,FluidTrend,2025-10-11T17:40:39.913Z,0,Yellow,2.8,1,1,0,fluid moderate
+TS_1715,FluidTrend,2025-10-09T17:40:39.913Z,1,Yellow,2.9,1,0,0,fluid rapid
+TS_1716,FluidTrend,2025-10-08T17:40:39.913Z,0,Green,1.9,0,0,0,fluid moderate
+TS_1717,FluidTrend,2025-10-11T17:40:39.913Z,0,Green,0.9,0,0,0,fluid moderate
+TS_1718,FluidTrend,2025-10-08T17:40:39.913Z,0,Green,2.5,0,0,0,fluid moderate
+TS_1719,FluidTrend,2025-10-08T17:40:39.913Z,0,Green,1,0,0,0,fluid moderate
+TS_1720,FluidTrend,2025-10-06T17:40:39.913Z,1,Green,1.4,0,0,1,fluid rapid
+TS_1721,FluidTrend,2025-10-07T17:40:39.913Z,0,Green,1.5,0,0,0,fluid slow
+TS_1722,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,1,0,0,0,fluid moderate
+TS_1723,FluidTrend,2025-10-08T17:40:39.913Z,1,Green,0.4,0,0,1,fluid rapid
+TS_1724,FluidTrend,2025-10-08T17:40:39.913Z,1,Green,2.1,0,0,1,fluid rapid
+TS_1725,FluidTrend,2025-10-08T17:40:39.913Z,0,Green,2.1,0,0,0,fluid slow
+TS_1726,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,1.3,0,0,0,fluid moderate
+TS_1727,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,1.9,0,0,0,fluid slow
+TS_1728,FluidTrend,2025-10-09T17:40:39.913Z,0,Yellow,2.8,1,1,0,fluid slow
+TS_1729,FluidTrend,2025-10-08T17:40:39.913Z,1,Green,1,0,0,1,fluid rapid
+TS_1730,FluidTrend,2025-10-11T17:40:39.913Z,1,Yellow,2.6,1,0,0,fluid rapid
+TS_1731,FluidTrend,2025-10-11T17:40:39.913Z,1,Yellow,2.6,1,0,0,fluid rapid
+TS_1732,FluidTrend,2025-10-11T17:40:39.913Z,1,Green,1.1,0,0,1,fluid rapid
+TS_1733,FluidTrend,2025-10-11T17:40:39.913Z,1,Yellow,2.9,1,0,0,fluid rapid
+TS_1734,FluidTrend,2025-10-08T17:40:39.913Z,1,Green,2.1,0,0,1,fluid rapid
+TS_1735,FluidTrend,2025-10-10T17:40:39.913Z,0,Yellow,2.8,1,1,0,fluid moderate
+TS_1736,FluidTrend,2025-10-08T17:40:39.913Z,0,Green,0.6,0,0,0,fluid moderate
+TS_1737,FluidTrend,2025-10-09T17:40:39.913Z,1,Yellow,3.6,1,0,0,fluid rapid
+TS_1738,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,1.3,0,0,0,fluid moderate
+TS_1739,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,1.3,0,0,0,fluid moderate
+TS_1740,FluidTrend,2025-10-06T17:40:39.913Z,0,Green,1.9,0,0,0,fluid moderate
+TS_1741,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,1.9,0,0,0,fluid moderate
+TS_1742,FluidTrend,2025-10-11T17:40:39.913Z,0,Yellow,3.1,1,1,0,fluid slow
+TS_1743,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,1.3,0,0,0,fluid moderate
+TS_1744,FluidTrend,2025-10-06T17:40:39.913Z,0,Yellow,3.5,1,1,0,fluid slow
+TS_1745,FluidTrend,2025-10-05T17:40:39.913Z,1,Green,2,0,0,1,fluid rapid
+TS_1746,FluidTrend,2025-10-09T17:40:39.913Z,1,Green,1.4,0,0,1,fluid rapid
+TS_1747,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,2.4,0,0,0,fluid moderate
+TS_1748,FluidTrend,2025-10-09T17:40:39.913Z,0,Green,1.5,0,0,0,fluid slow
+TS_1749,FluidTrend,2025-10-08T17:40:39.913Z,0,Green,0,0,0,0,fluid moderate
+TS_1750,FluidTrend,2025-10-07T17:40:39.913Z,1,Yellow,2.9,1,0,0,fluid rapid
+TS_1751,FluidTrend,2025-10-05T17:40:39.913Z,1,Green,2.1,0,0,1,fluid rapid
+TS_1752,FluidTrend,2025-10-06T17:40:39.913Z,1,Yellow,2.9,1,0,0,fluid rapid
+TS_1753,FluidTrend,2025-10-05T17:40:39.913Z,1,Green,0.4,0,0,1,fluid rapid
+TS_1754,FluidTrend,2025-10-08T17:40:39.913Z,1,Green,2.5,0,0,1,fluid rapid
+TS_1755,FluidTrend,2025-10-05T17:40:39.913Z,0,Green,1,0,0,0,fluid moderate
+TS_1756,FluidTrend,2025-10-08T17:40:39.913Z,0,Green,2.5,0,0,0,fluid moderate
+TS_1757,FluidTrend,2025-10-11T17:40:39.913Z,0,Green,0.4,0,0,0,fluid slow
+TS_1758,FluidTrend,2025-10-10T17:40:39.913Z,0,Green,1.9,0,0,0,fluid slow
+TS_1759,FluidTrend,2025-10-10T17:40:39.913Z,1,Yellow,2.9,1,0,0,fluid rapid
+TS_1760,FluidTrend,2025-10-08T17:40:39.913Z,0,Green,1.9,0,0,0,fluid slow
+TS_1761,FluidTrend,2025-10-09T17:40:39.913Z,1,Yellow,2.9,1,0,0,fluid rapid
+TS_1762,FluidTrend,2025-10-11T17:40:39.913Z,1,Green,0.7,0,0,1,fluid rapid
+TS_1763,FluidTrend,2025-10-09T17:40:39.913Z,0,Yellow,2.8,1,1,0,fluid moderate
+TS_1764,FluidTrend,2025-10-11T17:40:39.913Z,0,Green,1.5,0,0,0,fluid slow
+TS_1765,FluidTrend,2025-10-06T17:40:39.913Z,0,Yellow,2.8,1,1,0,fluid slow
+TS_1766,FluidTrend,2025-10-06T17:40:39.914Z,0,Green,0.4,0,0,0,fluid moderate
+TS_1767,FluidTrend,2025-10-10T17:40:39.914Z,0,Green,0.4,0,0,0,fluid moderate
+TS_1768,FluidTrend,2025-10-07T17:40:39.914Z,0,Green,1.3,0,0,0,fluid moderate
+TS_1769,FluidTrend,2025-10-09T17:40:39.914Z,1,Yellow,3.6,1,0,0,fluid rapid
+TS_1770,FluidTrend,2025-10-07T17:40:39.914Z,0,Green,1,0,0,0,fluid moderate
+TS_1771,FluidTrend,2025-10-11T17:40:39.914Z,0,Green,1,0,0,0,fluid slow
+TS_1772,FluidTrend,2025-10-05T17:40:39.914Z,0,Green,1.3,0,0,0,fluid moderate
+TS_1773,FluidTrend,2025-10-06T17:40:39.914Z,1,Yellow,2.6,1,0,0,fluid rapid
+TS_1774,FluidTrend,2025-10-08T17:40:39.914Z,0,Yellow,3.5,1,1,0,fluid moderate
+TS_1775,FluidTrend,2025-10-06T17:40:39.914Z,0,Yellow,3.5,1,1,0,fluid moderate
+TS_1776,FluidTrend,2025-10-06T17:40:39.914Z,0,Yellow,2.8,1,1,0,fluid moderate
+TS_1777,FluidTrend,2025-10-11T17:40:39.914Z,0,Green,1,0,0,0,fluid slow
+TS_1778,FluidTrend,2025-10-11T17:40:39.914Z,1,Green,2.5,0,0,1,fluid rapid
+TS_1779,FluidTrend,2025-10-05T17:40:39.914Z,0,Yellow,2.8,1,1,0,fluid slow
+TS_1780,FluidTrend,2025-10-10T17:40:39.914Z,1,Green,2,0,0,1,fluid rapid
+TS_1781,FluidTrend,2025-10-11T17:40:39.914Z,1,Yellow,2.6,1,0,0,fluid rapid
+TS_1782,FluidTrend,2025-10-07T17:40:39.914Z,0,Green,0.9,0,0,0,fluid moderate
+TS_1783,FluidTrend,2025-10-06T17:40:39.914Z,1,Yellow,3.6,1,0,0,fluid rapid
+TS_1784,FluidTrend,2025-10-07T17:40:39.914Z,0,Green,1.5,0,0,0,fluid slow
+TS_1785,FluidTrend,2025-10-11T17:40:39.914Z,0,Green,1,0,0,0,fluid slow
+TS_1786,FluidTrend,2025-10-07T17:40:39.914Z,1,Green,0.4,0,0,1,fluid rapid
+TS_1787,FluidTrend,2025-10-10T17:40:39.914Z,0,Green,1.9,0,0,0,fluid moderate
+TS_1788,FluidTrend,2025-10-06T17:40:39.914Z,0,Green,2.5,0,0,0,fluid moderate
+TS_1789,FluidTrend,2025-10-10T17:40:39.914Z,0,Green,2.4,0,0,0,fluid slow
+TS_1790,FluidTrend,2025-10-08T17:40:39.914Z,1,Green,0.7,0,0,1,fluid rapid
+TS_1791,FluidTrend,2025-10-11T17:40:39.914Z,0,Yellow,2.8,1,1,0,fluid moderate
+TS_1792,FluidTrend,2025-10-06T17:40:39.914Z,1,Yellow,2.6,1,0,0,fluid rapid
+TS_1793,FluidTrend,2025-10-10T17:40:39.914Z,0,Yellow,2.8,1,1,0,fluid slow
+TS_1794,FluidTrend,2025-10-10T17:40:39.914Z,1,Green,0,0,0,1,fluid rapid
+TS_1795,FluidTrend,2025-10-10T17:40:39.914Z,0,Green,1.3,0,0,0,fluid moderate
+TS_1796,FluidTrend,2025-10-08T17:40:39.914Z,1,Green,2,0,0,1,fluid rapid
+TS_1797,FluidTrend,2025-10-06T17:40:39.914Z,1,Yellow,3.6,1,0,0,fluid rapid
+TS_1798,FluidTrend,2025-10-07T17:40:39.914Z,0,Green,1.9,0,0,0,fluid slow
+TS_1799,FluidTrend,2025-10-10T17:40:39.914Z,0,Green,2.4,0,0,0,fluid moderate
+TS_1800,FluidTrend,2025-10-09T17:40:39.914Z,0,Yellow,2.8,1,1,0,fluid slow
+TS_1801,FluidTrend,2025-10-09T17:40:39.914Z,0,Green,0.4,0,0,0,fluid moderate
+TS_1802,FluidTrend,2025-10-06T17:40:39.914Z,1,Yellow,3.6,1,0,0,fluid rapid
+TS_1803,FluidTrend,2025-10-10T17:40:39.914Z,1,Green,1.1,0,0,1,fluid rapid
+TS_1804,FluidTrend,2025-10-09T17:40:39.914Z,1,Green,0.4,0,0,1,fluid rapid
+TS_1805,FluidTrend,2025-10-05T17:40:39.914Z,0,Green,0.4,0,0,0,fluid moderate
+TS_1806,FluidTrend,2025-10-05T17:40:39.914Z,0,Green,1.3,0,0,0,fluid slow
+TS_1807,FluidTrend,2025-10-06T17:40:39.914Z,0,Green,1.5,0,0,0,fluid slow
+TS_1808,FluidTrend,2025-10-06T17:40:39.914Z,0,Green,1.9,0,0,0,fluid slow
+TS_1809,FluidTrend,2025-10-10T17:40:39.914Z,0,Yellow,3.5,1,1,0,fluid slow
+TS_1810,FluidTrend,2025-10-10T17:40:39.914Z,1,Green,1.4,0,0,1,fluid rapid
+TS_1811,FluidTrend,2025-10-07T17:40:39.914Z,0,Green,1.3,0,0,0,fluid slow
+TS_1812,FluidTrend,2025-10-09T17:40:39.914Z,0,Green,2.5,0,0,0,fluid slow
+TS_1813,FluidTrend,2025-10-08T17:40:39.914Z,0,Green,1.3,0,0,0,fluid slow
+TS_1814,FluidTrend,2025-10-11T17:40:39.914Z,0,Yellow,2.8,1,1,0,fluid moderate
+TS_1815,FluidTrend,2025-10-09T17:40:39.914Z,0,Green,2.4,0,0,0,fluid slow
+TS_1816,FluidTrend,2025-10-08T17:40:39.914Z,1,Green,2.1,0,0,1,fluid rapid
+TS_1817,FluidTrend,2025-10-11T17:40:39.914Z,1,Green,2,0,0,1,fluid rapid
+TS_1818,FluidTrend,2025-10-08T17:40:39.914Z,0,Green,0.4,0,0,0,fluid slow
+TS_1819,FluidTrend,2025-10-07T17:40:39.914Z,0,Yellow,3.1,1,1,0,fluid slow
+TS_1820,FluidTrend,2025-10-07T17:40:39.914Z,0,Green,1.9,0,0,0,fluid slow
+TS_1821,FluidTrend,2025-10-07T17:40:39.914Z,0,Green,1.9,0,0,0,fluid moderate
+TS_1822,FluidTrend,2025-10-11T17:40:39.914Z,0,Green,1.5,0,0,0,fluid moderate
+TS_1823,FluidTrend,2025-10-08T17:40:39.914Z,0,Green,1,0,0,0,fluid moderate
+TS_1824,FluidTrend,2025-10-11T17:40:39.914Z,0,Yellow,2.8,1,1,0,fluid moderate
+TS_1825,FluidTrend,2025-10-08T17:40:39.914Z,0,Yellow,3.1,1,1,0,fluid slow
+TS_1826,FluidTrend,2025-10-11T17:40:39.914Z,0,Yellow,3.5,1,1,0,fluid moderate
+TS_1827,FluidTrend,2025-10-06T17:40:39.914Z,1,Yellow,2.9,1,0,0,fluid rapid
+TS_1828,FluidTrend,2025-10-07T17:40:39.914Z,1,Green,0.4,0,0,1,fluid rapid
+TS_1829,FluidTrend,2025-10-09T17:40:39.914Z,0,Yellow,3.5,1,1,0,fluid slow
+TS_1830,FluidTrend,2025-10-11T17:40:39.914Z,1,Yellow,2.9,1,0,0,fluid rapid
+TS_1831,FluidTrend,2025-10-11T17:40:39.914Z,1,Green,1,0,0,1,fluid rapid
+TS_1832,FluidTrend,2025-10-06T17:40:39.914Z,0,Green,0,0,0,0,fluid slow
+TS_1833,FluidTrend,2025-10-10T17:40:39.914Z,0,Green,0.9,0,0,0,fluid moderate
+TS_1834,FluidTrend,2025-10-11T17:40:39.914Z,1,Green,2.5,0,0,1,fluid rapid
+TS_1835,FluidTrend,2025-10-10T17:40:39.914Z,1,Yellow,3.6,1,0,0,fluid rapid
+TS_1836,FluidTrend,2025-10-11T17:40:39.914Z,0,Green,0.4,0,0,0,fluid moderate
+TS_1837,FluidTrend,2025-10-07T17:40:39.914Z,0,Yellow,3.5,1,1,0,fluid moderate
+TS_1838,FluidTrend,2025-10-05T17:40:39.914Z,0,Green,2.5,0,0,0,fluid moderate
+TS_1839,FluidTrend,2025-10-09T17:40:39.914Z,0,Green,1.5,0,0,0,fluid moderate
+TS_1840,FluidTrend,2025-10-05T17:40:39.914Z,0,Green,0.4,0,0,0,fluid moderate
+TS_1841,FluidTrend,2025-10-10T17:40:39.914Z,0,Green,1.3,0,0,0,fluid slow
+TS_1842,FluidTrend,2025-10-05T17:40:39.914Z,0,Yellow,2.8,1,1,0,fluid slow
+TS_1843,FluidTrend,2025-10-09T17:40:39.914Z,1,Green,2,0,0,1,fluid rapid
+TS_1844,FluidTrend,2025-10-06T17:40:39.914Z,1,Yellow,2.9,1,0,0,fluid rapid
+TS_1845,FluidTrend,2025-10-07T17:40:39.914Z,0,Yellow,3.5,1,1,0,fluid moderate
+TS_1846,FluidTrend,2025-10-11T17:40:39.914Z,1,Green,2.1,0,0,1,fluid rapid
+TS_1847,FluidTrend,2025-10-10T17:40:39.914Z,0,Green,0.4,0,0,0,fluid slow
+TS_1848,FluidTrend,2025-10-10T17:40:39.914Z,0,Green,2.1,0,0,0,fluid moderate
+TS_1849,FluidTrend,2025-10-06T17:40:39.914Z,0,Yellow,2.8,1,1,0,fluid slow
+TS_1850,FluidTrend,2025-10-09T17:40:39.914Z,1,Green,1.4,0,0,1,fluid rapid
+TS_1851,AdaptiveNoise,2025-10-11T17:40:39.914Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1852,AdaptiveNoise,2025-10-05T17:40:39.914Z,0,Green,0.9,0,0,0,noisy benign
+TS_1853,AdaptiveNoise,2025-10-10T17:40:39.914Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1854,AdaptiveNoise,2025-10-11T17:40:39.914Z,0,Green,0.6,0,0,0,noisy benign
+TS_1855,AdaptiveNoise,2025-10-10T17:40:39.914Z,0,Green,0.6,0,0,0,noisy benign
+TS_1856,AdaptiveNoise,2025-10-06T17:40:39.914Z,0,Green,2.4,0,0,0,noisy benign
+TS_1857,AdaptiveNoise,2025-10-10T17:40:39.914Z,0,Green,2.4,0,0,0,noisy benign
+TS_1858,AdaptiveNoise,2025-10-08T17:40:39.914Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1859,AdaptiveNoise,2025-10-07T17:40:39.914Z,0,Green,1.5,0,0,0,noisy benign
+TS_1860,AdaptiveNoise,2025-10-06T17:40:39.914Z,0,Green,0.6,0,0,0,noisy benign
+TS_1861,AdaptiveNoise,2025-10-07T17:40:39.914Z,0,Green,1.5,0,0,0,noisy benign
+TS_1862,AdaptiveNoise,2025-10-08T17:40:39.914Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1863,AdaptiveNoise,2025-10-07T17:40:39.914Z,0,Green,0,0,0,0,noisy benign
+TS_1864,AdaptiveNoise,2025-10-06T17:40:39.914Z,0,Green,2.4,0,0,0,noisy benign
+TS_1865,AdaptiveNoise,2025-10-10T17:40:39.914Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1866,AdaptiveNoise,2025-10-11T17:40:39.914Z,0,Green,2.1,0,0,0,noisy benign
+TS_1867,AdaptiveNoise,2025-10-11T17:40:39.914Z,0,Green,1.5,0,0,0,noisy benign
+TS_1868,AdaptiveNoise,2025-10-05T17:40:39.914Z,0,Green,0,0,0,0,noisy benign
+TS_1869,AdaptiveNoise,2025-10-10T17:40:39.914Z,0,Green,2.4,0,0,0,noisy benign
+TS_1870,AdaptiveNoise,2025-10-08T17:40:39.914Z,0,Green,2.4,0,0,0,noisy benign
+TS_1871,AdaptiveNoise,2025-10-10T17:40:39.914Z,0,Green,0.6,0,0,0,noisy benign
+TS_1872,AdaptiveNoise,2025-10-09T17:40:39.914Z,0,Green,2.4,0,0,0,noisy benign
+TS_1873,AdaptiveNoise,2025-10-08T17:40:39.914Z,0,Green,2.1,0,0,0,noisy benign
+TS_1874,AdaptiveNoise,2025-10-09T17:40:39.914Z,0,Green,0.6,0,0,0,noisy benign
+TS_1875,AdaptiveNoise,2025-10-06T17:40:39.914Z,0,Green,2.1,0,0,0,noisy benign
+TS_1876,AdaptiveNoise,2025-10-06T17:40:39.914Z,0,Green,0.9,0,0,0,noisy benign
+TS_1877,AdaptiveNoise,2025-10-06T17:40:39.914Z,0,Green,1.5,0,0,0,noisy benign
+TS_1878,AdaptiveNoise,2025-10-09T17:40:39.914Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1879,AdaptiveNoise,2025-10-06T17:40:39.914Z,0,Green,0.6,0,0,0,noisy benign
+TS_1880,AdaptiveNoise,2025-10-11T17:40:39.914Z,0,Green,0.9,0,0,0,noisy benign
+TS_1881,AdaptiveNoise,2025-10-10T17:40:39.914Z,0,Green,2.4,0,0,0,noisy benign
+TS_1882,AdaptiveNoise,2025-10-10T17:40:39.914Z,0,Green,0.9,0,0,0,noisy benign
+TS_1883,AdaptiveNoise,2025-10-10T17:40:39.914Z,0,Green,2.4,0,0,0,noisy benign
+TS_1884,AdaptiveNoise,2025-10-11T17:40:39.914Z,0,Green,2.4,0,0,0,noisy benign
+TS_1885,AdaptiveNoise,2025-10-09T17:40:39.914Z,0,Green,0.9,0,0,0,noisy benign
+TS_1886,AdaptiveNoise,2025-10-06T17:40:39.914Z,0,Green,2.1,0,0,0,noisy benign
+TS_1887,AdaptiveNoise,2025-10-10T17:40:39.914Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1888,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,0.6,0,0,0,noisy benign
+TS_1889,AdaptiveNoise,2025-10-05T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1890,AdaptiveNoise,2025-10-08T17:40:39.915Z,0,Green,2.1,0,0,0,noisy benign
+TS_1891,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1892,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1893,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,2.4,0,0,0,noisy benign
+TS_1894,AdaptiveNoise,2025-10-08T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1895,AdaptiveNoise,2025-10-05T17:40:39.915Z,0,Green,0,0,0,0,noisy benign
+TS_1896,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Green,0,0,0,0,noisy benign
+TS_1897,AdaptiveNoise,2025-10-11T17:40:39.915Z,0,Green,2.1,0,0,0,noisy benign
+TS_1898,AdaptiveNoise,2025-10-11T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1899,AdaptiveNoise,2025-10-08T17:40:39.915Z,0,Green,0.6,0,0,0,noisy benign
+TS_1900,AdaptiveNoise,2025-10-07T17:40:39.915Z,0,Green,2.1,0,0,0,noisy benign
+TS_1901,AdaptiveNoise,2025-10-10T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1902,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1903,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1904,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,0.9,0,0,0,noisy benign
+TS_1905,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Green,2.4,0,0,0,noisy benign
+TS_1906,AdaptiveNoise,2025-10-07T17:40:39.915Z,0,Green,0.6,0,0,0,noisy benign
+TS_1907,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1908,AdaptiveNoise,2025-10-10T17:40:39.915Z,0,Green,2.1,0,0,0,noisy benign
+TS_1909,AdaptiveNoise,2025-10-10T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1910,AdaptiveNoise,2025-10-08T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1911,AdaptiveNoise,2025-10-11T17:40:39.915Z,0,Green,2.4,0,0,0,noisy benign
+TS_1912,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,0.9,0,0,0,noisy benign
+TS_1913,AdaptiveNoise,2025-10-10T17:40:39.915Z,0,Green,2.4,0,0,0,noisy benign
+TS_1914,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Green,0,0,0,0,noisy benign
+TS_1915,AdaptiveNoise,2025-10-08T17:40:39.915Z,0,Green,2.4,0,0,0,noisy benign
+TS_1916,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,2.4,0,0,0,noisy benign
+TS_1917,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Green,2.1,0,0,0,noisy benign
+TS_1918,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,2.4,0,0,0,noisy benign
+TS_1919,AdaptiveNoise,2025-10-05T17:40:39.915Z,0,Green,2.1,0,0,0,noisy benign
+TS_1920,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Green,0,0,0,0,noisy benign
+TS_1921,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Green,0.9,0,0,0,noisy benign
+TS_1922,AdaptiveNoise,2025-10-08T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1923,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Green,0.6,0,0,0,noisy benign
+TS_1924,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,2.4,0,0,0,noisy benign
+TS_1925,AdaptiveNoise,2025-10-07T17:40:39.915Z,0,Green,0,0,0,0,noisy benign
+TS_1926,AdaptiveNoise,2025-10-11T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1927,AdaptiveNoise,2025-10-05T17:40:39.915Z,0,Green,2.4,0,0,0,noisy benign
+TS_1928,AdaptiveNoise,2025-10-05T17:40:39.915Z,0,Green,2.4,0,0,0,noisy benign
+TS_1929,AdaptiveNoise,2025-10-10T17:40:39.915Z,0,Green,0,0,0,0,noisy benign
+TS_1930,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,0.9,0,0,0,noisy benign
+TS_1931,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,0,0,0,0,noisy benign
+TS_1932,AdaptiveNoise,2025-10-07T17:40:39.915Z,0,Green,2.4,0,0,0,noisy benign
+TS_1933,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Green,2.4,0,0,0,noisy benign
+TS_1934,AdaptiveNoise,2025-10-05T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1935,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Green,0,0,0,0,noisy benign
+TS_1936,AdaptiveNoise,2025-10-08T17:40:39.915Z,0,Green,0,0,0,0,noisy benign
+TS_1937,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,2.4,0,0,0,noisy benign
+TS_1938,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,2.4,0,0,0,noisy benign
+TS_1939,AdaptiveNoise,2025-10-05T17:40:39.915Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1940,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1941,AdaptiveNoise,2025-10-10T17:40:39.915Z,0,Green,0.9,0,0,0,noisy benign
+TS_1942,AdaptiveNoise,2025-10-10T17:40:39.915Z,0,Green,0.6,0,0,0,noisy benign
+TS_1943,AdaptiveNoise,2025-10-11T17:40:39.915Z,0,Green,0.9,0,0,0,noisy benign
+TS_1944,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,0.6,0,0,0,noisy benign
+TS_1945,AdaptiveNoise,2025-10-08T17:40:39.915Z,0,Green,0.6,0,0,0,noisy benign
+TS_1946,AdaptiveNoise,2025-10-11T17:40:39.915Z,0,Green,0.9,0,0,0,noisy benign
+TS_1947,AdaptiveNoise,2025-10-08T17:40:39.915Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1948,AdaptiveNoise,2025-10-11T17:40:39.915Z,0,Green,0.6,0,0,0,noisy benign
+TS_1949,AdaptiveNoise,2025-10-10T17:40:39.915Z,0,Green,0.9,0,0,0,noisy benign
+TS_1950,AdaptiveNoise,2025-10-10T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1951,AdaptiveNoise,2025-10-08T17:40:39.915Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1952,AdaptiveNoise,2025-10-07T17:40:39.915Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1953,AdaptiveNoise,2025-10-11T17:40:39.915Z,0,Green,2.1,0,0,0,noisy benign
+TS_1954,AdaptiveNoise,2025-10-05T17:40:39.915Z,0,Green,2.1,0,0,0,noisy benign
+TS_1955,AdaptiveNoise,2025-10-05T17:40:39.915Z,0,Green,0.9,0,0,0,noisy benign
+TS_1956,AdaptiveNoise,2025-10-10T17:40:39.915Z,0,Green,0,0,0,0,noisy benign
+TS_1957,AdaptiveNoise,2025-10-10T17:40:39.915Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1958,AdaptiveNoise,2025-10-11T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1959,AdaptiveNoise,2025-10-05T17:40:39.915Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1960,AdaptiveNoise,2025-10-05T17:40:39.915Z,0,Green,2.4,0,0,0,noisy benign
+TS_1961,AdaptiveNoise,2025-10-11T17:40:39.915Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1962,AdaptiveNoise,2025-10-05T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1963,AdaptiveNoise,2025-10-08T17:40:39.915Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1964,AdaptiveNoise,2025-10-11T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1965,AdaptiveNoise,2025-10-08T17:40:39.915Z,0,Green,2.1,0,0,0,noisy benign
+TS_1966,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1967,AdaptiveNoise,2025-10-08T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1968,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1969,AdaptiveNoise,2025-10-05T17:40:39.915Z,0,Green,2.1,0,0,0,noisy benign
+TS_1970,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1971,AdaptiveNoise,2025-10-05T17:40:39.915Z,0,Green,0.9,0,0,0,noisy benign
+TS_1972,AdaptiveNoise,2025-10-07T17:40:39.915Z,0,Green,2.1,0,0,0,noisy benign
+TS_1973,AdaptiveNoise,2025-10-11T17:40:39.915Z,0,Green,0.6,0,0,0,noisy benign
+TS_1974,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1975,AdaptiveNoise,2025-10-07T17:40:39.915Z,0,Green,0.9,0,0,0,noisy benign
+TS_1976,AdaptiveNoise,2025-10-08T17:40:39.915Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1977,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1978,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,0.6,0,0,0,noisy benign
+TS_1979,AdaptiveNoise,2025-10-05T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1980,AdaptiveNoise,2025-10-08T17:40:39.915Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1981,AdaptiveNoise,2025-10-07T17:40:39.915Z,0,Green,0.6,0,0,0,noisy benign
+TS_1982,AdaptiveNoise,2025-10-07T17:40:39.915Z,0,Green,0.6,0,0,0,noisy benign
+TS_1983,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,0.6,0,0,0,noisy benign
+TS_1984,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,2.4,0,0,0,noisy benign
+TS_1985,AdaptiveNoise,2025-10-11T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1986,AdaptiveNoise,2025-10-07T17:40:39.915Z,0,Green,0.6,0,0,0,noisy benign
+TS_1987,AdaptiveNoise,2025-10-10T17:40:39.915Z,0,Green,2.4,0,0,0,noisy benign
+TS_1988,AdaptiveNoise,2025-10-10T17:40:39.915Z,0,Green,0.6,0,0,0,noisy benign
+TS_1989,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,0.9,0,0,0,noisy benign
+TS_1990,AdaptiveNoise,2025-10-11T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1991,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1992,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1993,AdaptiveNoise,2025-10-11T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1994,AdaptiveNoise,2025-10-08T17:40:39.915Z,0,Green,0,0,0,0,noisy benign
+TS_1995,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Yellow,3.1,1,1,0,noisy benign
+TS_1996,AdaptiveNoise,2025-10-10T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1997,AdaptiveNoise,2025-10-07T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_1998,AdaptiveNoise,2025-10-06T17:40:39.915Z,0,Green,0.9,0,0,0,noisy benign
+TS_1999,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Green,1.5,0,0,0,noisy benign
+TS_2000,AdaptiveNoise,2025-10-09T17:40:39.915Z,0,Green,0.6,0,0,0,noisy benign

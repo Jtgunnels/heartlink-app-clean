@@ -1,0 +1,61 @@
+HEARTLINK LLC — QUALITY ASSURANCE REVIEW ATTESTATION
+Baseline Synthetic Validation Trial: LLC_BASELINE_TRIAL_001
+Date of Execution: 2025-10-10
+Algorithm Versions: v3.6 (active) vs v3.7 (shadow)
+
+-----------------------------------------------------------------------
+Reviewer Information
+-----------------------------------------------------------------------
+Name: ___________________________________________
+Credentials / Title: ________________________________
+Organization / Affiliation: __________________________
+Email / Contact: ___________________________________
+Role: ☐ Independent Peer QA Reviewer    ☐ Clinical Oversight Reviewer
+
+-----------------------------------------------------------------------
+Verification Summary
+-----------------------------------------------------------------------
+1. I have reviewed the following validation artifacts produced by Joshua Gunnels, PA-C:
+   - Test scenario definitions (04b_TestScenarios.json)
+   - Execution script (04c_RunSyntheticTest.js)
+   - JSON and CSV output files from the run (Results/SyntheticResults_*.json, *.csv)
+   - Audit trail (04d_Test_Audit_Trail.csv)
+   - Summary Report (Reports/04e_Summary_Report_Template.md)
+   - Trial Manifest (trial_manifest.json)
+
+2. I confirm that:
+   - The trial executed successfully on 2025-10-10 without errors.
+   - All 15 synthetic test cases were executed.
+   - Algorithm v3.7 produced category outputs identical to v3.6.
+   - No manual modification to data or results was detected.
+   - Documentation and results were stored in the HeartLink Design History File.
+
+-----------------------------------------------------------------------
+Attestation
+-----------------------------------------------------------------------
+I attest that I have independently reviewed the HeartLink LLC Baseline Synthetic
+Validation results and that the information above is accurate to the best of my knowledge.
+
+Reviewer Signature: ___________________________    Date: ________________
+Printed Name: ___________________________________
+Title: ___________________________________________
+Organization: ____________________________________
+Comments (optional): ________________________________________________________
+____________________________________________________________________________
+
+-----------------------------------------------------------------------
+Developer / Author Confirmation
+-----------------------------------------------------------------------
+I acknowledge receipt of this QA review and have archived all related documentation
+within the HeartLink LLC Design History File.
+
+Developer Signature: ___________________________    Date: ________________
+Name: Joshua Gunnels, PA-C
+Role: Founder & Clinical Developer, HeartLink LLC
+
+-----------------------------------------------------------------------
+File Reference
+-----------------------------------------------------------------------
+Stored at:
+HeartLink_ResearchAnalyst_BaselinePack_USFDA/04_Algorithm_Validation/
+Trial_2025-10-LLC_Baseline/QA_Reviewer_Attestation_2025-10-10.pdf

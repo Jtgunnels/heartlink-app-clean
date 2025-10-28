@@ -1,0 +1,13 @@
+{
+  "id": "case_009",
+  "name": "StableAdvanced NYHA III baseline",
+  "v3_7_category": "Orange",
+  "v3_8_category": "StableAdvanced",
+  "v3_7_norm": 6.7,
+  "v3_8_norm": 4.9,
+  "deltaNorm": -1.8,
+  "categoryChanged": true,
+  "v3_8_cceScore": 0,
+  "v3_8_fluidIndex": 2.5,
+  "v3_8_stsi7": 1
+}

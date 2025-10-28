@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "title": "Borderline weight gain only",
+    "description": "4.9 lb increase over 3 days, no other symptoms; expect Yellow.",
+    "v36_category": "Green",
+    "v37_category": "Green",
+    "v36_score": 0,
+    "v37_score": 0,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 2,
+    "title": "Hypotension with mild symptoms",
+    "description": "BP 88/58 mmHg, mild SOB; expect Orange or Red.",
+    "v36_category": "Yellow",
+    "v37_category": "Yellow",
+    "v36_score": 1.8,
+    "v37_score": 1.8,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 3,
+    "title": "Single severe symptom",
+    "description": "Severe SOB but all else normal; expect Red escalation.",
+    "v36_category": "Red",
+    "v37_category": "Red",
+    "v36_score": 10,
+    "v37_score": 10,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 4,
+    "title": "Conflicting trends",
+    "description": "Improving SOB but rising edema; expect Yellow–Orange boundary.",
+    "v36_category": "Orange",
+    "v37_category": "Orange",
+    "v36_score": 3.7,
+    "v37_score": 3.7,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 5,
+    "title": "Missing vitals",
+    "description": "No BP/HR entered, moderate SOB; algorithm must default safely; expect Orange.",
+    "v36_category": "Orange",
+    "v37_category": "Orange",
+    "v36_score": 4.5,
+    "v37_score": 4.5,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 6,
+    "title": "Rapid improvement case",
+    "description": "Yesterday severe, today mild; expect Yellow.",
+    "v36_category": "Yellow",
+    "v37_category": "Yellow",
+    "v36_score": 1.8,
+    "v37_score": 1.8,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 7,
+    "title": "NYHA III stable",
+    "description": "Moderate persistent symptoms, unchanged baseline; expect StableAdvanced.",
+    "v36_category": "Orange",
+    "v37_category": "Orange",
+    "v36_score": 6.7,
+    "v37_score": 6.7,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 8,
+    "title": "Tachycardia only",
+    "description": "HR 120 bpm, no symptoms; expect Yellow.",
+    "v36_category": "Green",
+    "v37_category": "Green",
+    "v36_score": 0,
+    "v37_score": 0,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 9,
+    "title": "Severe edema with normal SOB",
+    "description": "Edema severe, SOB none; expect Red.",
+    "v36_category": "Orange",
+    "v37_category": "Orange",
+    "v36_score": 3.5,
+    "v37_score": 3.5,
+    "delta": 0,
+    "direction": "– same"
+  },
+  {
+    "id": 10,
+    "title": "Fatigue increase only",
+    "description": "Fatigue from none → moderate; expect Orange.",
+    "v36_category": "Yellow",
+    "v37_category": "Yellow",
+    "v36_score": 1.2,
+    "v37_score": 1.2,
+    "delta": 0,
+    "direction": "– same"
+  }
+]

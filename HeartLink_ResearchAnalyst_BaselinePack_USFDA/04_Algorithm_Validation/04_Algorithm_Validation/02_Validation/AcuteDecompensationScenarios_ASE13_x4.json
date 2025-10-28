@@ -1,0 +1,322 @@
+[
+  {
+    "id": "acute_0001",
+    "cohort": "AcuteDecompensation",
+    "input": {
+      "sob": 10.8,
+      "edema": 9.6,
+      "fatigue": 8.8,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 4,
+      "edema": 4,
+      "fatigue": 4,
+      "baselineSavedAt": "2025-09-01T00:00:00Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow",
+        "Orange"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow",
+        "Orange"
+      ],
+      "normalizedScores": [
+        2.1,
+        3.8,
+        5.9
+      ],
+      "wsSeries": [
+        2.1,
+        3.8,
+        5.9
+      ]
+    }
+  },
+  {
+    "id": "acute_0002",
+    "cohort": "AcuteDecompensation",
+    "input": {
+      "sob": 12,
+      "edema": 10.4,
+      "fatigue": 11.2,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 4.8,
+      "edema": 4.8,
+      "fatigue": 4.4,
+      "baselineSavedAt": "2025-09-01T00:00:00Z"
+    },
+    "hist": {
+      "categories": [
+        "Yellow",
+        "Orange",
+        "Red"
+      ],
+      "cardCategories": [
+        "Yellow",
+        "Orange",
+        "Red"
+      ],
+      "normalizedScores": [
+        3.1,
+        5.4,
+        7.6
+      ],
+      "wsSeries": [
+        3.1,
+        5.4,
+        7.6
+      ]
+    }
+  },
+  {
+    "id": "acute_0003",
+    "cohort": "AcuteDecompensation",
+    "input": {
+      "sob": 11.2,
+      "edema": 7.2,
+      "fatigue": 9.6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 5.6,
+      "edema": 4.8,
+      "fatigue": 4.8,
+      "baselineSavedAt": "2025-09-01T00:00:00Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow",
+        "Orange"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow",
+        "Orange"
+      ],
+      "normalizedScores": [
+        2,
+        4.2,
+        5.8
+      ],
+      "wsSeries": [
+        2,
+        4.2,
+        5.8
+      ]
+    }
+  },
+  {
+    "id": "acute_0004",
+    "cohort": "AcuteDecompensation",
+    "input": {
+      "sob": 12,
+      "edema": 10,
+      "fatigue": 8,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 8,
+      "edema": 6.4,
+      "fatigue": 6,
+      "baselineSavedAt": "2025-09-01T00:00:00Z"
+    },
+    "hist": {
+      "categories": [
+        "Yellow",
+        "Orange",
+        "Red"
+      ],
+      "cardCategories": [
+        "Yellow",
+        "Orange",
+        "Red"
+      ],
+      "normalizedScores": [
+        3.3,
+        5.5,
+        8.1
+      ],
+      "wsSeries": [
+        3.3,
+        5.5,
+        8.1
+      ]
+    }
+  },
+  {
+    "id": "acute_0005",
+    "cohort": "AcuteDecompensation",
+    "input": {
+      "sob": 10.4,
+      "edema": 6.8,
+      "fatigue": 6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Same"
+    },
+    "baseline": {
+      "sob": 5.6,
+      "edema": 4,
+      "fatigue": 4,
+      "baselineSavedAt": "2025-09-01T00:00:00Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow",
+        "Orange"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow",
+        "Orange"
+      ],
+      "normalizedScores": [
+        1.9,
+        3.8,
+        5.4
+      ],
+      "wsSeries": [
+        1.9,
+        3.8,
+        5.4
+      ]
+    }
+  },
+  {
+    "id": "acute_0006",
+    "cohort": "AcuteDecompensation",
+    "input": {
+      "sob": 11.6,
+      "edema": 11.2,
+      "fatigue": 11.6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 4,
+      "edema": 4.8,
+      "fatigue": 4.8,
+      "baselineSavedAt": "2025-09-01T00:00:00Z"
+    },
+    "hist": {
+      "categories": [
+        "Yellow",
+        "Orange",
+        "Red"
+      ],
+      "cardCategories": [
+        "Yellow",
+        "Orange",
+        "Red"
+      ],
+      "normalizedScores": [
+        3.2,
+        5.9,
+        8.4
+      ],
+      "wsSeries": [
+        3.2,
+        5.9,
+        8.4
+      ]
+    }
+  },
+  {
+    "id": "acute_0007",
+    "cohort": "AcuteDecompensation",
+    "input": {
+      "sob": 8.8,
+      "edema": 8,
+      "fatigue": 9.6,
+      "sobCompare": "Worse",
+      "edemaCompare": "Same",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 5.6,
+      "edema": 5.6,
+      "fatigue": 4.8,
+      "baselineSavedAt": "2025-09-01T00:00:00Z"
+    },
+    "hist": {
+      "categories": [
+        "Green",
+        "Yellow",
+        "Orange"
+      ],
+      "cardCategories": [
+        "Green",
+        "Yellow",
+        "Orange"
+      ],
+      "normalizedScores": [
+        2.1,
+        3.9,
+        5.7
+      ],
+      "wsSeries": [
+        2.1,
+        3.9,
+        5.7
+      ]
+    }
+  },
+  {
+    "id": "acute_0008",
+    "cohort": "AcuteDecompensation",
+    "input": {
+      "sob": 12,
+      "edema": 11.2,
+      "fatigue": 12,
+      "sobCompare": "Worse",
+      "edemaCompare": "Worse",
+      "fatigueCompare": "Worse"
+    },
+    "baseline": {
+      "sob": 10,
+      "edema": 9.2,
+      "fatigue": 8.8,
+      "baselineSavedAt": "2025-09-01T00:00:00Z"
+    },
+    "hist": {
+      "categories": [
+        "Orange",
+        "Red",
+        "Red"
+      ],
+      "cardCategories": [
+        "Orange",
+        "Red",
+        "Red"
+      ],
+      "normalizedScores": [
+        5.2,
+        7.6,
+        8.9
+      ],
+      "wsSeries": [
+        5.2,
+        7.6,
+        8.9
+      ]
+    }
+  }
+]

@@ -1,0 +1,8 @@
+trialGroup,total,benign,acute,FP,FN,FP_rate_pct,FN_rate_pct,specificity_pct,sensitivity_pct
+Borderline,600,301,299,48,250,15.9,83.6,84.1,16.4
+SingleMild,400,400,0,0,0,0,0,100,100
+Recovery,300,300,0,300,0,100,0,0,100
+Orthopnea,250,86,164,0,80,0,48.8,100,51.2
+FluidTrend,300,196,104,45,69,23,66.3,77,33.7
+AdaptiveNoise,150,150,0,23,0,15.3,0,84.7,100
+OVERALL,2000,1433,567,416,399,29,70.4,71,29.6

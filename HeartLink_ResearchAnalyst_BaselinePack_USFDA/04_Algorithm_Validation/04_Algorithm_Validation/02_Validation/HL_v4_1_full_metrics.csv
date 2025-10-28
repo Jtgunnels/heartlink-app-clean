@@ -1,0 +1,11 @@
+Trial ID,mean_drift,std_drift,stable_within_pm_0_04,unchanged_rate,orthopnea_escalation_accuracy,false_alert_reduction,fp_no_guard,fp_guard,N,clamp_hold_rate,accuracy,auc_surrogate,false_alert_rate,fp,mean_ping_pong_rate,mean_abs_drift,within_pm_0_05,confusion
+T1.0,0.0,0.0,1.0,,,,,,,,,,,,,,,
+T1.1,,,,0.963,,,,,,,,,,,,,,
+T1.2,,,,,0.0,,,,,,,,,,,,,
+T1.3,,,,,,0.0,0.0,0.0,5000.0,,,,,,,,,
+T1.4,,,,,,,,,,1.0,,,,,,,,
+T1.5,,,,,,,,,,,0.587,0.617394,,,,,,
+T1.6,,,,,,,,,25000.0,,,,0.0,0.0,,,,
+T1.7,,,,,,,,,,,,,,,0.0,,,
+T1.8,,,,,,,,,,,,,,,,0.0,1.0,
+T1.9,,,,,,,,,,,0.771042,0.614685,,,,,,"{('Green', 'Green'): 3376, ('Green', 'Yellow'): 614, ('Green', 'Orange'): 286, ('Green', 'Red'): 0, ('Yellow', 'Green'): 0, ('Yellow', 'Yellow'): 325, ('Yellow', 'Orange'): 199, ('Yellow', 'Red'): 0, ('Orange', 'Green'): 0, ('Orange', 'Yellow'): 0, ('Orange', 'Orange'): 0, ('Orange', 'Red'): 0, ('Red', 'Green'): 0, ('Red', 'Yellow'): 0, ('Red', 'Orange'): 0, ('Red', 'Red'): 0}"

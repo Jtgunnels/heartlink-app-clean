@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Borderline weight gain only",
+    "description": "4.9 lb increase over 3 days, no other symptoms; expect Yellow.",
+    "input": { "sob": "none", "edema": "none", "fatigue": "none", "weightChange": 4.9, "bp": 122, "hr": 80 },
+    "baseline": {},
+    "expected": "Yellow"
+  },
+  {
+    "id": 2,
+    "name": "Hypotension with mild symptoms",
+    "description": "BP 88/58 mmHg, mild SOB; expect Orange or Red.",
+    "input": { "sob": "mild", "edema": "none", "fatigue": "none", "weightChange": 0, "bp": 88, "hr": 95 },
+    "baseline": {},
+    "expected": "Orange"
+  },
+  {
+    "id": 3,
+    "name": "Single severe symptom",
+    "description": "Severe SOB but all else normal; expect Red escalation.",
+    "input": { "sob": "severe", "edema": "none", "fatigue": "none", "weightChange": 1, "bp": 118, "hr": 92 },
+    "baseline": {},
+    "expected": "Red"
+  },
+  {
+    "id": 4,
+    "name": "Conflicting trends",
+    "description": "Improving SOB but rising edema; expect Yellow–Orange boundary.",
+    "input": { "sob": "mild", "edema": "moderate", "fatigue": "none", "weightChange": 3, "bp": 112, "hr": 84 },
+    "baseline": {},
+    "expected": "Orange"
+  },
+  {
+    "id": 5,
+    "name": "Missing vitals",
+    "description": "No BP/HR entered, moderate SOB; algorithm must default safely; expect Orange.",
+    "input": { "sob": "moderate", "edema": "mild", "fatigue": "none", "weightChange": 2 },
+    "baseline": {},
+    "expected": "Orange"
+  },
+  {
+    "id": 6,
+    "name": "Rapid improvement case",
+    "description": "Yesterday severe, today mild; expect Yellow.",
+    "input": { "sob": "mild", "edema": "none", "fatigue": "none", "weightChange": -3, "bp": 118, "hr": 80 },
+    "baseline": {},
+    "expected": "Yellow"
+  },
+  {
+    "id": 7,
+    "name": "NYHA III stable",
+    "description": "Moderate persistent symptoms, unchanged baseline; expect StableAdvanced.",
+    "input": { "sob": "moderate", "edema": "moderate", "fatigue": "moderate", "weightChange": 0, "bp": 110, "hr": 86 },
+    "baseline": { "nyha": "III" },
+    "expected": "StableAdvanced"
+  },
+  {
+    "id": 8,
+    "name": "Tachycardia only",
+    "description": "HR 120 bpm, no symptoms; expect Yellow.",
+    "input": { "sob": "none", "edema": "none", "fatigue": "none", "weightChange": 0, "bp": 118, "hr": 120 },
+    "baseline": {},
+    "expected": "Yellow"
+  },
+  {
+    "id": 9,
+    "name": "Severe edema with normal SOB",
+    "description": "Edema severe, SOB none; expect Red.",
+    "input": { "sob": "none", "edema": "severe", "fatigue": "mild", "weightChange": 6, "bp": 118, "hr": 88 },
+    "baseline": {},
+    "expected": "Red"
+  },
+  {
+    "id": 10,
+    "name": "Fatigue increase only",
+    "description": "Fatigue from none → moderate; expect Orange.",
+    "input": { "sob": "none", "edema": "none", "fatigue": "moderate", "weightChange": 0, "bp": 120, "hr": 82 },
+    "baseline": {},
+    "expected": "Orange"
+  }
+]

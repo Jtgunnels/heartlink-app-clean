@@ -1,0 +1,41 @@
+{
+  "trial_id": "LLC_BASELINE_TRIAL_001",
+  "trial_name": "HeartLink Baseline Synthetic Validation – LLC Formation",
+  "date_executed": "2025-10-10T10:00:00Z",
+  "executed_by": "Joshua Gunnels, PA-C",
+  "entity": "HeartLink LLC (Registered [Your State])",
+  "algorithm_versions": ["v3.6", "v3.7"],
+  "objective": "To validate algorithm v3.7 shadow mode equivalence against v3.6 baseline across 15 representative clinical scenarios prior to LLC launch.",
+  "environment": {
+    "os": "Windows 10/11 or macOS",
+    "node_version": ">=18",
+    "dependencies": ["calculateScore_v3_6.js", "calculateScore_v3_7.js"]
+  },
+  "inputs": {
+    "scenarios_file": "04b_TestScenarios.json",
+    "total_cases": 15,
+    "categories": ["Green", "Yellow", "Orange", "Red", "StableAdvanced"]
+  },
+  "outputs": {
+    "json_results": "Results/SyntheticResults_[timestamp].json",
+    "csv_results": "Results/SyntheticResults_[timestamp].csv",
+    "audit_log": "../04d_Test_Audit_Trail.csv",
+    "summary_report": "../04e_Summary_Report_Template.md"
+  },
+  "results_summary": {
+    "concordant": 15,
+    "more_conservative": 0,
+    "less_conservative": 0,
+    "validation_status": "Pass"
+  },
+  "review": {
+    "qa_reviewer": "[Reviewer Name]",
+    "review_date": "",
+    "comments": "Baseline LLC validation confirmed identical output between v3.6 and v3.7 shadow algorithms."
+  },
+  "signatures": {
+    "developer": "Joshua Gunnels, PA-C",
+    "qa_reviewer": ""
+  },
+  "notes": "This file documents the first official synthetic validation run owned by HeartLink LLC following legal entity formation. All raw results are archived under /Results."
+}

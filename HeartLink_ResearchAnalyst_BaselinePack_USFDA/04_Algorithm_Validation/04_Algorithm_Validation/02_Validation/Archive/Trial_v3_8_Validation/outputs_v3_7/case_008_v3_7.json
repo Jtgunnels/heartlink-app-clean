@@ -1,0 +1,20 @@
+{
+  "category": "Orange",
+  "normalized": 6.1,
+  "score": 6.1,
+  "reasons": [
+    "Several symptoms have worsened together and need attention."
+  ],
+  "flags": {
+    "criticalOverride": false,
+    "version": "3.7"
+  },
+  "meta": {
+    "version": "3.7",
+    "sourceVersion": "3.6",
+    "orthopneaLevel": 0,
+    "baseCategory": "Orange",
+    "escalationApplied": false,
+    "baselineUpdateApplied": false
+  }
+}

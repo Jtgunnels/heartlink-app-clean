@@ -1,0 +1,7 @@
+{
+  "id": "case_004",
+  "name": "Severe SOB critical override",
+  "input": { "sob": "severe", "edema": "mild", "fatigue": "mild" },
+  "baseline": { "baselineSob": "none", "baselineEdema": "none", "baselineFatigue": "none" },
+  "hist": {}
+}

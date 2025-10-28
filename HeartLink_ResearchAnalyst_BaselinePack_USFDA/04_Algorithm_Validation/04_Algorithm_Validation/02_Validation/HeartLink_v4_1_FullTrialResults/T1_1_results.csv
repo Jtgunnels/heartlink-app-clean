@@ -1,0 +1,5 @@
+metric,value
+N_cases,1000.0
+unchanged_rate,0.963
+unchanged_rate_CI95_low,0.949
+unchanged_rate_CI95_high,0.973

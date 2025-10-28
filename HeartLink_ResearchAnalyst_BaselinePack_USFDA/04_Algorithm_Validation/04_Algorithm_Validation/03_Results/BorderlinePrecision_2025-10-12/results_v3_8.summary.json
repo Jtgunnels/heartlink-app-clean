@@ -1,0 +1,12 @@
+{
+  "total_cases": 2000,
+  "FP": 995,
+  "FN": 0,
+  "benign": 995,
+  "acute": 1005,
+  "FP_rate_pct": 100,
+  "FN_rate_pct": 0,
+  "specificity_pct": 0,
+  "sensitivity_pct": 100,
+  "date": "2025-10-12"
+}

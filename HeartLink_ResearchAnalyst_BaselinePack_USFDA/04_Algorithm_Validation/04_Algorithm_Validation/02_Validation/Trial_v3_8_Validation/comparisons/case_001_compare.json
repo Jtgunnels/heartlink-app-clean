@@ -1,0 +1,13 @@
+{
+  "id": "case_001",
+  "name": "Baseline normal - all none",
+  "v3_7_category": "Green",
+  "v3_8_category": "Green",
+  "v3_7_norm": 0,
+  "v3_8_norm": 0,
+  "deltaNorm": 0,
+  "categoryChanged": false,
+  "v3_8_cceScore": 0,
+  "v3_8_fluidIndex": 0,
+  "v3_8_stsi7": 0.5
+}

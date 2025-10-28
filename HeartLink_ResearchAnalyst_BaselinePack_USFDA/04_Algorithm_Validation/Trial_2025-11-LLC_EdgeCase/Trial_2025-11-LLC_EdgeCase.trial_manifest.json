@@ -1,0 +1,43 @@
+{
+  "trial_id": "LLC_EDGECASE_TRIAL_002",
+  "trial_name": "HeartLink v3.6 vs v3.7 Edge-Case Sensitivity Validation",
+  "date_executed": "",
+  "executed_by": "Joshua Gunnels, PA-C",
+  "entity": "HeartLink LLC (Registered [Your State])",
+  "algorithm_versions": ["v3.6", "v3.7"],
+  "objective": "Validate algorithm response under boundary and missing-data conditions to confirm proportional severity weighting in v3.7.",
+  "environment": {
+    "os": "Windows 10/11 or macOS",
+    "node_version": ">=18",
+    "dependencies": ["calculateScore_v3_6.js", "calculateScore_v3_7.js"]
+  },
+  "inputs": {
+    "folder": "Inputs/",
+    "scenarios_file": "../../04b_TestScenarios_EdgeCases.json",
+    "total_cases": 10
+  },
+  "outputs": {
+    "folder": "Outputs/Results/",
+    "json_results": "SyntheticResults_[timestamp].json",
+    "csv_results": "SyntheticResults_[timestamp].csv",
+    "audit_log": "../../04d_Test_Audit_Trail.csv",
+    "summary_report": "Reports/04e_Summary_Report_Template.md"
+  },
+  "results_summary": {
+    "concordant": "",
+    "more_conservative": "",
+    "less_conservative": "",
+    "validation_status": "Pending"
+  },
+  "review": {
+    "qa_reviewer": "",
+    "review_date": "",
+    "comments": ""
+  },
+  "signatures": {
+    "developer": "Joshua Gunnels, PA-C",
+    "qa_reviewer": ""
+  },
+  "status": "In Progress",
+  "notes": "Trial created to assess boundary-condition performance and missing-data handling in v3.7. Execution scheduled after baseline archival."
+}

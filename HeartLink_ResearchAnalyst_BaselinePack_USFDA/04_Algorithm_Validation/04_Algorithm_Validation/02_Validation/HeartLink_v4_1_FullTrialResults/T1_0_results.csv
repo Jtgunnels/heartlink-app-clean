@@ -1,0 +1,6 @@
+metric,value
+N_users,10000.0
+days,30.0
+mean_drift,0.0
+std_drift,0.0
+stable_within_pm_0_04,1.0

@@ -1,0 +1,22 @@
+---
+Author: Joshua Gunnels, PA-C
+Role: Independent Clinical Developer (HeartLink)
+Version: 0.1-Draft
+Date: 2025-10-10
+Reviewed by: [Regulatory QA Reviewer – TBD]
+Approval Status: Pending
+---
+
+# Privacy Impact Assessment
+
+HeartLink (Wellness) stores all user input locally on the device.  
+No personal health information (PHI) is transmitted or retained on external servers.
+
+**Safeguards**
+- Local data encryption at rest.
+- No third-party analytics.
+- User consent presented during onboarding.
+
+Future clinical versions will implement HIPAA-compliant backend with Business Associate Agreements (BAAs).
+
+---

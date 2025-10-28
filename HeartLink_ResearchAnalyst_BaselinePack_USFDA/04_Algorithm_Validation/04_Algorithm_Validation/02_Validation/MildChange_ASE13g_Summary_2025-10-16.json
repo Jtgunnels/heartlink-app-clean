@@ -1,0 +1,8 @@
+{
+  "total_cases": 100,
+  "true_positives": 20,
+  "false_negatives": 80,
+  "sensitivity_pct": 20,
+  "version": "ASE-1.3g-FINAL-CL-2025-10-16",
+  "date": "2025-10-16"
+}

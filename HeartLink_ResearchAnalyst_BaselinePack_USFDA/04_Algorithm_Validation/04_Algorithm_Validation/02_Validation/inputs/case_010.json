@@ -1,0 +1,7 @@
+{
+  "id": "case_010",
+  "name": "Orange→Green recovery smoothing test",
+  "input": { "sob": "none", "edema": "none", "fatigue": "none" },
+  "baseline": { "baselineSob": "none", "baselineEdema": "none", "baselineFatigue": "none" },
+  "hist": { "categories": ["Orange", "Yellow", "Green"] }
+}

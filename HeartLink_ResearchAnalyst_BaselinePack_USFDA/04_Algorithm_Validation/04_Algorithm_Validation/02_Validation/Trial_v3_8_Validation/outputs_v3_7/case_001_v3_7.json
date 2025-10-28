@@ -1,0 +1,18 @@
+{
+  "category": "Green",
+  "normalized": 0,
+  "score": 0,
+  "reasons": [],
+  "flags": {
+    "criticalOverride": false,
+    "version": "3.7"
+  },
+  "meta": {
+    "version": "3.7",
+    "sourceVersion": "3.6",
+    "orthopneaLevel": 0,
+    "baseCategory": "Green",
+    "escalationApplied": false,
+    "baselineUpdateApplied": false
+  }
+}

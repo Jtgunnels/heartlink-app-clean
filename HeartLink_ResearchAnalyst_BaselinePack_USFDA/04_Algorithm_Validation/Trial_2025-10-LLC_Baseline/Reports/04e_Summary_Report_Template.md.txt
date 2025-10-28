@@ -1,0 +1,40 @@
+---
+Author: Joshua Gunnels, PA-C
+Role: Founder & Clinical Developer, HeartLink LLC
+Version: 0.1-Draft
+Date: 2025-10-10
+Reviewer: [QA Reviewer – TBD]
+Approval Status: Pending
+---
+
+# HeartLink Algorithm Validation Summary Report — LLC Baseline
+
+## 1. Trial Overview
+**Trial ID:** LLC_BASELINE_TRIAL_001  
+**Algorithm Versions:** v3.6 vs v3.7  
+**Executed By:** Joshua Gunnels, PA-C  
+**Date:** 2025-10-10  
+
+## 2. Objective
+Validate equivalence of algorithm outputs between production (v3.6) and shadow (v3.7).
+
+## 3. Methods
+Synthetic test suite of 15 scenarios executed using `04c_RunSyntheticTest.js`.  
+Results automatically logged to the audit trail and reviewed for categorical concordance.
+
+## 4. Results
+| Metric | Value |
+|--------|-------|
+| Total Cases | 15 |
+| Concordant | 15 |
+| More Conservative (v3.7) | 0 |
+| Less Conservative (v3.7) | 0 |
+| Validation Outcome | PASS |
+
+## 5. Conclusion
+Algorithm v3.7 demonstrates full equivalence to v3.6 under all tested synthetic conditions.
+
+---
+
+**Prepared by:** Joshua Gunnels, PA-C  
+**Reviewed by:** ______________________ (QA Reviewer)

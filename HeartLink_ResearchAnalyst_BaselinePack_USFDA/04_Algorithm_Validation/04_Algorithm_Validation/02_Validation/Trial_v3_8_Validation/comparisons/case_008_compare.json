@@ -1,0 +1,13 @@
+{
+  "id": "case_008",
+  "name": "Moderate SOB + moderate edema + mild fatigue",
+  "v3_7_category": "Orange",
+  "v3_8_category": "Orange",
+  "v3_7_norm": 6.1,
+  "v3_8_norm": 5.1,
+  "deltaNorm": -1,
+  "categoryChanged": false,
+  "v3_8_cceScore": 0.6,
+  "v3_8_fluidIndex": 2.5,
+  "v3_8_stsi7": 0.5
+}

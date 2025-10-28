@@ -1,0 +1,21 @@
+// src/components/Card.js
+// HeartLink — Pastel Card Component
+
+import React from "react";
+import { View, StyleSheet } from "react-native";
+import { theme } from "../theme";
+
+export default function Card({ children, style }) {
+  return <View style={[styles.card, style]}>{children}</View>;
+}
+
+const styles = StyleSheet.create({
+  card: {
+    backgroundColor: theme.colors.surface,
+    borderRadius: theme.radius.lg,
+    borderColor: theme.colors.border,
+    borderWidth: 1,
+    padding: theme.spacing.lg,
+    ...theme.shadowStyle,
+  },
+});

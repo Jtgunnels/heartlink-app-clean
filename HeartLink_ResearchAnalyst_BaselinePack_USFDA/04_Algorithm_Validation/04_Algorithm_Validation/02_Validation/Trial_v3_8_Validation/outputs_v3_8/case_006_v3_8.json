@@ -1,0 +1,30 @@
+{
+  "category": "Yellow",
+  "normalized": 2.8,
+  "score": 2.8,
+  "reasons": [
+    "Orthopnea higher than usual."
+  ],
+  "flags": {
+    "criticalOverride": false
+  },
+  "meta": {
+    "version": "3.8",
+    "normalizedComponents": {
+      "sob": 0,
+      "edema": 0,
+      "fatigue": 0,
+      "orthopnea": 2.6
+    },
+    "fluidIndex": 0,
+    "cceScore": 0.1,
+    "trendConfidence": 0.3,
+    "stsi7": 0.5,
+    "thresholdsUsed": {
+      "GREEN_MAX": 2.6,
+      "YELLOW_MAX": 4.9,
+      "ORANGE_MAX": 7.4
+    },
+    "baselineUpdateApplied": false
+  }
+}

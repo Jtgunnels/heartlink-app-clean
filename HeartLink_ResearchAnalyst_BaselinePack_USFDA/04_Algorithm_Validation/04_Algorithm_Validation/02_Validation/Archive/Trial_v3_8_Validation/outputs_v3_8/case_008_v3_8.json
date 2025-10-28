@@ -1,0 +1,33 @@
+{
+  "category": "Orange",
+  "normalized": 5.1,
+  "score": 5.1,
+  "reasons": [
+    "Multiple symptoms have worsened together.",
+    "SOB higher than usual.",
+    "Edema higher than usual.",
+    "Fatigue higher than usual."
+  ],
+  "flags": {
+    "criticalOverride": false
+  },
+  "meta": {
+    "version": "3.8",
+    "normalizedComponents": {
+      "sob": 2.6,
+      "edema": 1.4,
+      "fatigue": 0.4,
+      "orthopnea": 0
+    },
+    "fluidIndex": 2.5,
+    "cceScore": 0.6,
+    "trendConfidence": 0.9,
+    "stsi7": 0.5,
+    "thresholdsUsed": {
+      "GREEN_MAX": 2.6,
+      "YELLOW_MAX": 4.9,
+      "ORANGE_MAX": 7.4
+    },
+    "baselineUpdateApplied": false
+  }
+}

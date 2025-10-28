@@ -1,0 +1,15 @@
+{
+  "algorithms": [
+    "3.7",
+    "3.8"
+  ],
+  "run_date": "2025-10-10T19:23:36.604Z",
+  "total_cases": 10,
+  "output_dirs": {
+    "v3_7": "C:\\Users\\lorir\\OneDrive\\Desktop\\heart-failure-app\\HeartLink_ResearchAnalyst_BaselinePack_USFDA\\04_Algorithm_Validation\\02_Validation\\Trial_v3_8_Validation\\outputs_v3_7",
+    "v3_8": "C:\\Users\\lorir\\OneDrive\\Desktop\\heart-failure-app\\HeartLink_ResearchAnalyst_BaselinePack_USFDA\\04_Algorithm_Validation\\02_Validation\\Trial_v3_8_Validation\\outputs_v3_8",
+    "comparisons": "C:\\Users\\lorir\\OneDrive\\Desktop\\heart-failure-app\\HeartLink_ResearchAnalyst_BaselinePack_USFDA\\04_Algorithm_Validation\\02_Validation\\Trial_v3_8_Validation\\comparisons"
+  },
+  "summary_csv": "C:\\Users\\lorir\\OneDrive\\Desktop\\heart-failure-app\\HeartLink_ResearchAnalyst_BaselinePack_USFDA\\04_Algorithm_Validation\\02_Validation\\Trial_v3_8_Validation\\summary_v3_7_vs_v3_8.csv",
+  "notes": "Comparison between validated v3.7 and v3.8 algorithms. Data reflects post-migration re-validation set."
+}

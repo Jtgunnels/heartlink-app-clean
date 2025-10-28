@@ -1,0 +1,41 @@
+#!/bin/bash
+# -------------------------------------------------------------
+# HeartLink Provider Platform — Scaffold Builder
+# Creates backend + frontend folder structure and placeholder files
+# -------------------------------------------------------------
+
+echo "🚀 Building HeartLink Provider Platform folder structure..."
+
+# Root directories
+mkdir -p heartlink-provider-platform/{backend/src/{routes,controllers,models,utils,config,middleware},frontend/src/{components,pages,services,theme}}
+
+# Root files
+touch heartlink-provider-platform/README.md
+
+# Backend files
+touch heartlink-provider-platform/backend/{package.json,.env.example}
+touch heartlink-provider-platform/backend/src/{app.js,server.js}
+touch heartlink-provider-platform/backend/src/routes/{authRoutes.js,patientRoutes.js,checkinRoutes.js}
+touch heartlink-provider-platform/backend/src/controllers/{authController.js,patientController.js,checkinController.js}
+touch heartlink-provider-platform/backend/src/middleware/authMiddleware.js
+touch heartlink-provider-platform/backend/src/utils/jwtUtils.js
+touch heartlink-provider-platform/backend/src/config/db.js
+
+# Frontend files
+touch heartlink-provider-platform/frontend/{package.json,.env.example}
+touch heartlink-provider-platform/frontend/src/{App.js,index.js}
+touch heartlink-provider-platform/frontend/src/components/{HeroHeader.js,PatientCard.js}
+touch heartlink-provider-platform/frontend/src/pages/{LoginPage.js,DashboardPage.js,PatientDetailPage.js}
+touch heartlink-provider-platform/frontend/src/services/api.js
+touch heartlink-provider-platform/frontend/src/theme/{colors.js,theme.js}
+
+echo "✅ Folder structure created successfully!"
+echo ""
+echo "👉 Next steps:"
+echo "1. cd heartlink-provider-platform/backend && npm init -y"
+echo "2. npm install express cors dotenv morgan firebase-admin jsonwebtoken"
+echo "3. cd ../frontend && npm create vite@latest . -- --template react"
+echo "4. npm install axios react-router-dom"
+echo ""
+echo "Then paste in the provided backend/frontend code blocks to populate files."
+echo "-------------------------------------------------------------"

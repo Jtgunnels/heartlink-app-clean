@@ -1,0 +1,28 @@
+{
+  "validation_trials": [
+    {
+      "id": "LLC_BASELINE_TRIAL_001",
+      "folder": "Trial_2025-10-LLC_Baseline",
+      "title": "Baseline Synthetic Validation",
+      "execution_date": "2025-10-10",
+      "status": "Completed – Reviewed",
+      "qa_reviewer": "[Reviewer Name]",
+      "outcome": "PASS",
+      "notes": "15 synthetic cases run. All categories matched between v3.6 and v3.7."
+    },
+    {
+      "id": "LLC_EDGECASE_TRIAL_002",
+      "folder": "Trial_2025-11-LLC_EdgeCase",
+      "title": "Edge-Case Sensitivity Validation",
+      "execution_date": "",
+      "status": "In Progress",
+      "qa_reviewer": "",
+      "outcome": "",
+      "notes": "Boundary and missing-data validation trial initiated."
+    }
+  ],
+  "date_updated": "2025-10-10",
+  "entity": "HeartLink LLC",
+  "author": "Joshua Gunnels, PA-C",
+  "notes": "Algorithm validation index updated to include Edge-Case Trial 002. Root manifest cross-linked."
+}

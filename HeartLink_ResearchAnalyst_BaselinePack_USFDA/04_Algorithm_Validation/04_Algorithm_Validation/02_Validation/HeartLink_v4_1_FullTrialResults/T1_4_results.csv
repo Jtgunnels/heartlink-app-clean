@@ -1,0 +1,6 @@
+metric,value
+N_sequences,500.0
+clamp_hold_rate,1.0
+CI95_low,0.992
+CI95_high,1.0
+median_days_to_green,6.0

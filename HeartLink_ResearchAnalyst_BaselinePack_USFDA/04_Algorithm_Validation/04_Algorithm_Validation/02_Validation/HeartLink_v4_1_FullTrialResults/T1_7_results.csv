@@ -1,0 +1,5 @@
+metric,value
+N_trajectories,100.0
+days,60.0
+mean_ping_pong_rate,0.0
+std,0.0

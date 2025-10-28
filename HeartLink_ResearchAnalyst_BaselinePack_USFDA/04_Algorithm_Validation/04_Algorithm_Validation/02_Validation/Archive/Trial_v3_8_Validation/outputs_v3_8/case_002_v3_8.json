@@ -1,0 +1,31 @@
+{
+  "category": "Green",
+  "normalized": 1.5,
+  "score": 1.5,
+  "reasons": [
+    "At least one symptom is worse than usual today.",
+    "SOB higher than usual."
+  ],
+  "flags": {
+    "criticalOverride": false
+  },
+  "meta": {
+    "version": "3.8",
+    "normalizedComponents": {
+      "sob": 1.3,
+      "edema": 0,
+      "fatigue": 0,
+      "orthopnea": 0
+    },
+    "fluidIndex": 0,
+    "cceScore": 0.1,
+    "trendConfidence": 0.3,
+    "stsi7": 0.5,
+    "thresholdsUsed": {
+      "GREEN_MAX": 2.6,
+      "YELLOW_MAX": 4.9,
+      "ORANGE_MAX": 7.4
+    },
+    "baselineUpdateApplied": false
+  }
+}

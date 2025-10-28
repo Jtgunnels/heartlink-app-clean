@@ -1,0 +1,29 @@
+---
+Author: Joshua Gunnels, PA-C
+Role: Independent Clinical Developer (HeartLink)
+Version: 0.1-Draft
+Date: 2025-10-10
+Reviewed by: [Regulatory QA Reviewer – TBD]
+Approval Status: Pending
+---
+
+# Study Objectives and Background
+
+## 1. Purpose
+This document defines the primary objectives and rationale for HeartLink’s algorithm development and validation program.
+
+HeartLink is a clinician-developed mobile application designed to improve patient self-monitoring for heart-failure–related symptoms.  
+The system encourages daily symptom check-ins (shortness of breath, swelling, fatigue, and weight change) and uses an internal scoring algorithm to classify wellness zones for self-awareness and provider communication.
+
+## 2. Goals
+1. Support self-management and early recognition of symptom changes.
+2. Provide educational, non-diagnostic trend summaries for patients.
+3. Establish an FDA-compliant documentation baseline for potential future SaMD transition.
+
+## 3. Scope
+This baseline pack covers all design, regulatory, validation, and clinical-correlation documents necessary to demonstrate Good Software Practice (GSP) and 21 CFR 820.30 compliance.
+
+## 4. Rationale
+Current heart-failure management guidelines (AHA/ACC/HFSA 2022) emphasize patient engagement and early reporting of symptoms. HeartLink’s educational scoring model aims to facilitate these behaviors without performing automated clinical decision-making.
+
+---

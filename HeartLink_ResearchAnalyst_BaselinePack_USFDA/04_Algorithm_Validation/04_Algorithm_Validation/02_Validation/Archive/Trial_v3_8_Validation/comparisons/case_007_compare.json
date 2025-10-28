@@ -1,0 +1,13 @@
+{
+  "id": "case_007",
+  "name": "Weight gain 3 lb in 3 days",
+  "v3_7_category": "Orange",
+  "v3_8_category": "Yellow",
+  "v3_7_norm": 2.7,
+  "v3_8_norm": 2.9,
+  "deltaNorm": 0.2,
+  "categoryChanged": true,
+  "v3_8_cceScore": 0.5,
+  "v3_8_fluidIndex": 3.9,
+  "v3_8_stsi7": 0.5
+}

@@ -1,0 +1,8 @@
+Requirement_ID,Requirement_Description,Verification_Method,Validation_Method,Test_ID,Related_Risk_ID,Acceptance_Criteria,Result,Reviewer,Status
+FR-1,App shall allow daily symptom and weight entry,Manual functional test,User simulation,TC-01,R2,All fields record successfully,Pending,QA Reviewer,Open
+FR-2,App shall compute normalized score and map to color category,Synthetic test,Clinical scenario emulation,TC-02,R3,Score 0–1 range; correct category mapping,Pending,QA Reviewer,Open
+FR-3,v3.7 shall run in shadow mode unaffected output,Log comparison,Synthetic test,TC-03,R3,Identical visible outputs (100% concordance),Pending,QA Reviewer,Open
+FR-4,All data remain on device (no PHI transmission),Code inspection,Privacy review,TC-04,R5,No outbound network calls,Pending,QA Reviewer,Open
+FR-5,Display emergency disclaimer on each recommendation,Visual inspection,Labeling review,TC-05,R6,Disclaimer visible on all screens,Pending,QA Reviewer,Open
+NFR-1,Accessible layout and readable text,Accessibility check,User evaluation,TC-06,,Complies with WCAG contrast minimum,Pending,QA Reviewer,Open
+SR-1,Display "informational only" language,UI inspection,User feedback,TC-07,R1,All educational screens include disclaimer,Pending,QA Reviewer,Open

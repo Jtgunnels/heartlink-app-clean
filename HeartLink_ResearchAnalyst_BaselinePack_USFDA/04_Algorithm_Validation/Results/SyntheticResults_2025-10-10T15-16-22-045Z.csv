@@ -1,0 +1,11 @@
+id,title,v36_category,v37_category,v36_score,v37_score,delta,direction
+1,"Borderline weight gain only",Green,Green,0,0,0,– same
+2,"Hypotension with mild symptoms",Yellow,Yellow,1.8,1.8,0,– same
+3,"Single severe symptom",Red,Red,10,10,0,– same
+4,"Conflicting trends",Orange,Orange,3.7,3.7,0,– same
+5,"Missing vitals",Orange,Orange,4.5,4.5,0,– same
+6,"Rapid improvement case",Yellow,Yellow,1.8,1.8,0,– same
+7,"NYHA III stable",Orange,Orange,6.7,6.7,0,– same
+8,"Tachycardia only",Green,Green,0,0,0,– same
+9,"Severe edema with normal SOB",Orange,Orange,3.5,3.5,0,– same
+10,"Fatigue increase only",Yellow,Yellow,1.2,1.2,0,– same

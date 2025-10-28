@@ -1,0 +1,38 @@
+{
+  "total_cases": 1728,
+  "stable_cases": 1500,
+  "mild_cases": 100,
+  "acute_cases": 8,
+  "true_positives": 8,
+  "true_negatives": 1500,
+  "false_positives": 0,
+  "false_negatives": 100,
+  "sensitivity_pct": 7.41,
+  "specificity_pct": 100,
+  "false_positive_rate_pct": 0,
+  "accuracy_pct": 93.78,
+  "color_distribution_count": {
+    "Neutral": 0,
+    "Green": 1720,
+    "Yellow": 8,
+    "Orange": 0,
+    "Red": 0,
+    "Undefined": 0
+  },
+  "color_distribution_pct": {
+    "Neutral": 0,
+    "Green": 99.54,
+    "Yellow": 0.46,
+    "Orange": 0,
+    "Red": 0,
+    "Undefined": 0
+  },
+  "version": "ASE-1.3g-FINAL-CL-2025-10-16",
+  "date": "2025-10-16",
+  "source_files": [
+    "ChronicStabilityScenarios_ASE13_x4.json",
+    "MildChangeScenarios_ASE13_x4.json",
+    "AcuteDecompensationScenarios_ASE13_x4.json",
+    "HighDiversityScenarios_ASE13_x4.json"
+  ]
+}

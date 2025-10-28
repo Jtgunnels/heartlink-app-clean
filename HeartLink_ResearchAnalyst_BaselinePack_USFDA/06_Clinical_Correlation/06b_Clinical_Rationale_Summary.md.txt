@@ -1,0 +1,23 @@
+---
+Author: Joshua Gunnels, PA-C
+Role: Independent Clinical Developer (HeartLink)
+Version: 0.1-Draft
+Date: 2025-10-10
+Reviewed by: [Regulatory QA Reviewer – TBD]
+Approval Status: Pending
+---
+
+# Clinical Rationale Summary
+
+Each symptom tracked by HeartLink aligns with evidence-based markers of fluid retention and functional decline in heart failure.
+
+| Symptom | Clinical Reference | Rationale |
+|----------|-------------------|------------|
+| Weight gain | AHA/ACC/HFSA 2022 § 7.3 | Indicates possible fluid overload. |
+| Edema | AHA/ACC/HFSA 2022 § 7.2 | Correlates with volume status. |
+| Shortness of breath | AHA/ACC/HFSA 2022 § 6.1 | Reflects pulmonary congestion. |
+| Fatigue | AHA/ACC/HFSA 2022 § 6.2 | Reflects cardiac output and NYHA class progression. |
+
+Outputs are phrased to encourage user awareness and provider discussion, consistent with educational device language.
+
+---

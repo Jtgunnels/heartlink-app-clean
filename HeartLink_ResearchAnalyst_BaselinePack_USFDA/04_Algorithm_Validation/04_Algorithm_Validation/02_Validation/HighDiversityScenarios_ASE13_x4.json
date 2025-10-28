@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "highdiverse_0001",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.84,
+      "edema": 3.68,
+      "fatigue": 3.84
+    },
+    "baseline": {
+      "sob": 4.12,
+      "edema": 3.64,
+      "fatigue": 3.84
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0002",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.92,
+      "edema": 3.4,
+      "fatigue": 3.84
+    },
+    "baseline": {
+      "sob": 4.32,
+      "edema": 3.68,
+      "fatigue": 3.92
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0003",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.56,
+      "edema": 3.48,
+      "fatigue": 4.08
+    },
+    "baseline": {
+      "sob": 3.64,
+      "edema": 3.76,
+      "fatigue": 4.12
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0004",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.28,
+      "edema": 3.4,
+      "fatigue": 3.92
+    },
+    "baseline": {
+      "sob": 4.24,
+      "edema": 3.6,
+      "fatigue": 4.24
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0005",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.04,
+      "edema": 3.96,
+      "fatigue": 3.64
+    },
+    "baseline": {
+      "sob": 4.36,
+      "edema": 3.88,
+      "fatigue": 3.68
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0006",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.44,
+      "edema": 4,
+      "fatigue": 3.96
+    },
+    "baseline": {
+      "sob": 4.24,
+      "edema": 4.2,
+      "fatigue": 4.04
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0007",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.2,
+      "edema": 4.12,
+      "fatigue": 3.92
+    },
+    "baseline": {
+      "sob": 4.28,
+      "edema": 4.08,
+      "fatigue": 4.28
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0008",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.52,
+      "edema": 3.48,
+      "fatigue": 3.44
+    },
+    "baseline": {
+      "sob": 3.8,
+      "edema": 3.84,
+      "fatigue": 3.68
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0009",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.84,
+      "edema": 3.64,
+      "fatigue": 4.04
+    },
+    "baseline": {
+      "sob": 4.12,
+      "edema": 3.88,
+      "fatigue": 3.88
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0010",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.16,
+      "edema": 3.8,
+      "fatigue": 3.56
+    },
+    "baseline": {
+      "sob": 4.12,
+      "edema": 4.08,
+      "fatigue": 3.72
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0011",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.4,
+      "edema": 4.2,
+      "fatigue": 4.12
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 4.12,
+      "fatigue": 4.04
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0012",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.56,
+      "edema": 3.36,
+      "fatigue": 4
+    },
+    "baseline": {
+      "sob": 3.8,
+      "edema": 3.64,
+      "fatigue": 3.84
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0013",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.12,
+      "edema": 4,
+      "fatigue": 4
+    },
+    "baseline": {
+      "sob": 4.32,
+      "edema": 3.84,
+      "fatigue": 4.12
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0014",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.56,
+      "edema": 3.76,
+      "fatigue": 4.2
+    },
+    "baseline": {
+      "sob": 3.8,
+      "edema": 3.8,
+      "fatigue": 4.04
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0015",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.84,
+      "edema": 3.44,
+      "fatigue": 4.04
+    },
+    "baseline": {
+      "sob": 3.92,
+      "edema": 3.76,
+      "fatigue": 4.4
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0016",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.56,
+      "edema": 3.76,
+      "fatigue": 4.08
+    },
+    "baseline": {
+      "sob": 3.68,
+      "edema": 4.12,
+      "fatigue": 4.24
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0017",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.52,
+      "edema": 3.64,
+      "fatigue": 4.4
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 4.04,
+      "fatigue": 4.36
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0018",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.12,
+      "edema": 3.68,
+      "fatigue": 3.68
+    },
+    "baseline": {
+      "sob": 4.16,
+      "edema": 4.04,
+      "fatigue": 3.8
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0019",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.72,
+      "edema": 4.28,
+      "fatigue": 4
+    },
+    "baseline": {
+      "sob": 3.96,
+      "edema": 4.36,
+      "fatigue": 4.32
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0020",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.32,
+      "edema": 4.28,
+      "fatigue": 3.52
+    },
+    "baseline": {
+      "sob": 4.32,
+      "edema": 4.28,
+      "fatigue": 3.84
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0021",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.36,
+      "edema": 4.04,
+      "fatigue": 5.52
+    },
+    "baseline": {
+      "sob": 4.32,
+      "edema": 4.04,
+      "fatigue": 4.32
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0022",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.44,
+      "edema": 4.72,
+      "fatigue": 4.6
+    },
+    "baseline": {
+      "sob": 3.52,
+      "edema": 3.84,
+      "fatigue": 4.6
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0023",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.36,
+      "edema": 4.28,
+      "fatigue": 5.48
+    },
+    "baseline": {
+      "sob": 3.48,
+      "edema": 4.28,
+      "fatigue": 4.36
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0024",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.24,
+      "edema": 4.92,
+      "fatigue": 4.56
+    },
+    "baseline": {
+      "sob": 4.04,
+      "edema": 3.72,
+      "fatigue": 4.44
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0025",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.2,
+      "edema": 4.28,
+      "fatigue": 4.92
+    },
+    "baseline": {
+      "sob": 4.24,
+      "edema": 4.24,
+      "fatigue": 3.88
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0026",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.6,
+      "edema": 3.48,
+      "fatigue": 4.84
+    },
+    "baseline": {
+      "sob": 3.56,
+      "edema": 3.68,
+      "fatigue": 3.8
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0027",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 5.4,
+      "edema": 3.28,
+      "fatigue": 3.36
+    },
+    "baseline": {
+      "sob": 4.24,
+      "edema": 3.48,
+      "fatigue": 3.48
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0028",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.08,
+      "edema": 3.64,
+      "fatigue": 4.6
+    },
+    "baseline": {
+      "sob": 4.2,
+      "edema": 3.64,
+      "fatigue": 3.56
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0029",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.88,
+      "edema": 4.48,
+      "fatigue": 4.28
+    },
+    "baseline": {
+      "sob": 3.88,
+      "edema": 3.52,
+      "fatigue": 4.2
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0030",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.32,
+      "edema": 5.68,
+      "fatigue": 3.36
+    },
+    "baseline": {
+      "sob": 4.2,
+      "edema": 4.6,
+      "fatigue": 3.52
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0031",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.56,
+      "edema": 3.96,
+      "fatigue": 3.72
+    },
+    "baseline": {
+      "sob": 3.64,
+      "edema": 4.04,
+      "fatigue": 3.56
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0032",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 5,
+      "edema": 4.44,
+      "fatigue": 3.88
+    },
+    "baseline": {
+      "sob": 3.92,
+      "edema": 4.44,
+      "fatigue": 4.08
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0033",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.4,
+      "edema": 5.28,
+      "fatigue": 3.64
+    },
+    "baseline": {
+      "sob": 3.52,
+      "edema": 4.32,
+      "fatigue": 3.68
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0034",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.6,
+      "edema": 5.04,
+      "fatigue": 4.48
+    },
+    "baseline": {
+      "sob": 3.48,
+      "edema": 3.84,
+      "fatigue": 4.6
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0035",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.08,
+      "edema": 4.2,
+      "fatigue": 5.44
+    },
+    "baseline": {
+      "sob": 4.24,
+      "edema": 4.28,
+      "fatigue": 4.36
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0036",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.4,
+      "edema": 4.08,
+      "fatigue": 4.96
+    },
+    "baseline": {
+      "sob": 4.56,
+      "edema": 4.08,
+      "fatigue": 4.04
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0037",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.36,
+      "edema": 4.08,
+      "fatigue": 4.32
+    },
+    "baseline": {
+      "sob": 4.52,
+      "edema": 4.04,
+      "fatigue": 3.48
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0038",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.24,
+      "edema": 3.72,
+      "fatigue": 4.44
+    },
+    "baseline": {
+      "sob": 4.2,
+      "edema": 3.68,
+      "fatigue": 3.56
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0039",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4,
+      "edema": 5,
+      "fatigue": 3.92
+    },
+    "baseline": {
+      "sob": 3.92,
+      "edema": 4.12,
+      "fatigue": 4.04
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0040",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.04,
+      "edema": 5.36,
+      "fatigue": 3.56
+    },
+    "baseline": {
+      "sob": 3.88,
+      "edema": 4.2,
+      "fatigue": 3.76
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0041",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.04,
+      "edema": 4.24,
+      "fatigue": 4.4
+    },
+    "baseline": {
+      "sob": 4.16,
+      "edema": 4.08,
+      "fatigue": 3.52
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0042",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 5.44,
+      "edema": 4.48,
+      "fatigue": 3.76
+    },
+    "baseline": {
+      "sob": 4.44,
+      "edema": 4.44,
+      "fatigue": 3.84
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0043",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.52,
+      "edema": 4.44,
+      "fatigue": 5.16
+    },
+    "baseline": {
+      "sob": 4.6,
+      "edema": 4.36,
+      "fatigue": 4.04
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0044",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 5.64,
+      "edema": 3.44,
+      "fatigue": 3.44
+    },
+    "baseline": {
+      "sob": 4.52,
+      "edema": 3.56,
+      "fatigue": 3.52
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0045",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.56,
+      "edema": 4.8,
+      "fatigue": 4.4
+    },
+    "baseline": {
+      "sob": 3.64,
+      "edema": 3.8,
+      "fatigue": 4.24
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0046",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 5.68,
+      "edema": 6.28,
+      "fatigue": 4.68
+    },
+    "baseline": {
+      "sob": 3.88,
+      "edema": 4.56,
+      "fatigue": 4.8
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0047",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 6.64,
+      "edema": 4.52,
+      "fatigue": 5.64
+    },
+    "baseline": {
+      "sob": 4.68,
+      "edema": 4.48,
+      "fatigue": 4.32
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0048",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 5.32,
+      "edema": 6.2,
+      "fatigue": 6.44
+    },
+    "baseline": {
+      "sob": 3.84,
+      "edema": 4.24,
+      "fatigue": 4.48
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0049",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.04,
+      "edema": 6.04,
+      "fatigue": 6.56
+    },
+    "baseline": {
+      "sob": 3.84,
+      "edema": 4.24,
+      "fatigue": 4.6
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0050",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 5.44,
+      "edema": 5.92,
+      "fatigue": 4.88
+    },
+    "baseline": {
+      "sob": 4.08,
+      "edema": 4,
+      "fatigue": 4.76
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0051",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 6.12,
+      "edema": 5.88,
+      "fatigue": 4.84
+    },
+    "baseline": {
+      "sob": 4.28,
+      "edema": 4.6,
+      "fatigue": 4.68
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0052",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 6.2,
+      "edema": 5.8,
+      "fatigue": 6.28
+    },
+    "baseline": {
+      "sob": 4.84,
+      "edema": 4.08,
+      "fatigue": 4.76
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0053",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 6.08,
+      "edema": 5.16,
+      "fatigue": 6.72
+    },
+    "baseline": {
+      "sob": 4.12,
+      "edema": 3.88,
+      "fatigue": 4.72
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0054",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.96,
+      "edema": 6.8,
+      "fatigue": 5.68
+    },
+    "baseline": {
+      "sob": 4,
+      "edema": 4.96,
+      "fatigue": 4.12
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0055",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 6.76,
+      "edema": 5.16,
+      "fatigue": 5.04
+    },
+    "baseline": {
+      "sob": 5,
+      "edema": 3.92,
+      "fatigue": 4.88
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0056",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.28,
+      "edema": 6.4,
+      "fatigue": 6.16
+    },
+    "baseline": {
+      "sob": 4.44,
+      "edema": 4.68,
+      "fatigue": 4.68
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0057",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 5.64,
+      "edema": 6.56,
+      "fatigue": 6.32
+    },
+    "baseline": {
+      "sob": 4.16,
+      "edema": 4.8,
+      "fatigue": 4.68
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0058",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4,
+      "edema": 6.48,
+      "fatigue": 5.68
+    },
+    "baseline": {
+      "sob": 4.04,
+      "edema": 4.6,
+      "fatigue": 4.24
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0059",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 5.8,
+      "edema": 6.36,
+      "fatigue": 6.36
+    },
+    "baseline": {
+      "sob": 4.04,
+      "edema": 4.76,
+      "fatigue": 4.52
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0060",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 6.8,
+      "edema": 6.48,
+      "fatigue": 6.32
+    },
+    "baseline": {
+      "sob": 4.96,
+      "edema": 4.68,
+      "fatigue": 4.6
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0061",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 5.64,
+      "edema": 5.96,
+      "fatigue": 3.84
+    },
+    "baseline": {
+      "sob": 4.08,
+      "edema": 4.04,
+      "fatigue": 3.84
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0062",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 6.56,
+      "edema": 4.4,
+      "fatigue": 6.2
+    },
+    "baseline": {
+      "sob": 4.68,
+      "edema": 4.28,
+      "fatigue": 4.28
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0063",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 6.28,
+      "edema": 5.92,
+      "fatigue": 6.48
+    },
+    "baseline": {
+      "sob": 4.72,
+      "edema": 4.08,
+      "fatigue": 4.76
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0064",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 6.92,
+      "edema": 6.32,
+      "fatigue": 6.52
+    },
+    "baseline": {
+      "sob": 5,
+      "edema": 4.52,
+      "fatigue": 4.96
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0065",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 5.68,
+      "edema": 5.88,
+      "fatigue": 5.96
+    },
+    "baseline": {
+      "sob": 4.12,
+      "edema": 4.08,
+      "fatigue": 4.56
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0066",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 5.96,
+      "edema": 6.64,
+      "fatigue": 3.72
+    },
+    "baseline": {
+      "sob": 4.2,
+      "edema": 4.88,
+      "fatigue": 3.88
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0067",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.44,
+      "edema": 6.12,
+      "fatigue": 6.04
+    },
+    "baseline": {
+      "sob": 4.28,
+      "edema": 4.44,
+      "fatigue": 4.28
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0068",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.92,
+      "edema": 6.6,
+      "fatigue": 6.2
+    },
+    "baseline": {
+      "sob": 4.84,
+      "edema": 4.72,
+      "fatigue": 4.24
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0069",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 5.72,
+      "edema": 6.28,
+      "fatigue": 4.4
+    },
+    "baseline": {
+      "sob": 4.32,
+      "edema": 4.68,
+      "fatigue": 4.44
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0070",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 6.28,
+      "edema": 6.48,
+      "fatigue": 5.92
+    },
+    "baseline": {
+      "sob": 4.6,
+      "edema": 4.76,
+      "fatigue": 4.68
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0071",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.2,
+      "edema": 9.88,
+      "fatigue": 3.88
+    },
+    "baseline": {
+      "sob": 4.28,
+      "edema": 5,
+      "fatigue": 3.88
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0072",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.68,
+      "edema": 8.8,
+      "fatigue": 4.6
+    },
+    "baseline": {
+      "sob": 4.8,
+      "edema": 4.2,
+      "fatigue": 4.8
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0073",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.84,
+      "edema": 5.04,
+      "fatigue": 8.32
+    },
+    "baseline": {
+      "sob": 4.48,
+      "edema": 5.2,
+      "fatigue": 4.16
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0074",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.52,
+      "edema": 4.2,
+      "fatigue": 9.32
+    },
+    "baseline": {
+      "sob": 3.64,
+      "edema": 4,
+      "fatigue": 4.96
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0075",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.68,
+      "edema": 8.36,
+      "fatigue": 4.96
+    },
+    "baseline": {
+      "sob": 4.52,
+      "edema": 3.96,
+      "fatigue": 4.72
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0076",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 9.16,
+      "edema": 5.28,
+      "fatigue": 5.28
+    },
+    "baseline": {
+      "sob": 3.8,
+      "edema": 4.92,
+      "fatigue": 5.16
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0077",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 9.24,
+      "edema": 4.4,
+      "fatigue": 5.28
+    },
+    "baseline": {
+      "sob": 5.04,
+      "edema": 4.2,
+      "fatigue": 5.12
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0078",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.04,
+      "edema": 4.96,
+      "fatigue": 10.88
+    },
+    "baseline": {
+      "sob": 3.76,
+      "edema": 4.84,
+      "fatigue": 4.96
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0079",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 8.88,
+      "edema": 4.44,
+      "fatigue": 4.96
+    },
+    "baseline": {
+      "sob": 3.68,
+      "edema": 4.44,
+      "fatigue": 4.64
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0080",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 5,
+      "edema": 3.68,
+      "fatigue": 11.28
+    },
+    "baseline": {
+      "sob": 4.92,
+      "edema": 3.76,
+      "fatigue": 5.12
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0081",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4,
+      "edema": 4.52,
+      "fatigue": 10.6
+    },
+    "baseline": {
+      "sob": 3.88,
+      "edema": 4.44,
+      "fatigue": 4.64
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0082",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 10.28,
+      "edema": 4.64,
+      "fatigue": 4.36
+    },
+    "baseline": {
+      "sob": 4.28,
+      "edema": 4.76,
+      "fatigue": 4.04
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0083",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.08,
+      "edema": 9.16,
+      "fatigue": 4.56
+    },
+    "baseline": {
+      "sob": 4,
+      "edema": 4.36,
+      "fatigue": 4.56
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0084",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.6,
+      "edema": 10.28,
+      "fatigue": 3.96
+    },
+    "baseline": {
+      "sob": 4.4,
+      "edema": 4.16,
+      "fatigue": 4
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0085",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 3.76,
+      "edema": 5.08,
+      "fatigue": 8.72
+    },
+    "baseline": {
+      "sob": 3.6,
+      "edema": 5.12,
+      "fatigue": 3.72
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0086",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 8.6,
+      "edema": 4.68,
+      "fatigue": 4.52
+    },
+    "baseline": {
+      "sob": 4.36,
+      "edema": 4.72,
+      "fatigue": 4.32
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0087",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 4.48,
+      "edema": 4.68,
+      "fatigue": 9.2
+    },
+    "baseline": {
+      "sob": 4.08,
+      "edema": 4.52,
+      "fatigue": 4.36
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0088",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 8.44,
+      "edema": 4.24,
+      "fatigue": 3.96
+    },
+    "baseline": {
+      "sob": 4.16,
+      "edema": 4.32,
+      "fatigue": 4.08
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0089",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 10.24,
+      "edema": 4.8,
+      "fatigue": 4.04
+    },
+    "baseline": {
+      "sob": 4.44,
+      "edema": 4.8,
+      "fatigue": 3.88
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0090",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 9.52,
+      "edema": 4.56,
+      "fatigue": 5.16
+    },
+    "baseline": {
+      "sob": 4.8,
+      "edema": 4.56,
+      "fatigue": 5.16
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0091",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 9.24,
+      "edema": 8.8,
+      "fatigue": 9.96
+    },
+    "baseline": {
+      "sob": 5.12,
+      "edema": 4.2,
+      "fatigue": 4.08
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0092",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 9.04,
+      "edema": 9.76,
+      "fatigue": 9.12
+    },
+    "baseline": {
+      "sob": 5.04,
+      "edema": 5.2,
+      "fatigue": 4.16
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0093",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 10.28,
+      "edema": 9.76,
+      "fatigue": 8.52
+    },
+    "baseline": {
+      "sob": 4.56,
+      "edema": 5.56,
+      "fatigue": 4.4
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0094",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 9.08,
+      "edema": 10.56,
+      "fatigue": 11
+    },
+    "baseline": {
+      "sob": 4.8,
+      "edema": 4.92,
+      "fatigue": 5.08
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0095",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 8.96,
+      "edema": 9.6,
+      "fatigue": 10.12
+    },
+    "baseline": {
+      "sob": 4.12,
+      "edema": 4.4,
+      "fatigue": 4.88
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0096",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 9.84,
+      "edema": 9.8,
+      "fatigue": 10.32
+    },
+    "baseline": {
+      "sob": 5.24,
+      "edema": 4.6,
+      "fatigue": 5.44
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0097",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 9.12,
+      "edema": 9.64,
+      "fatigue": 10.8
+    },
+    "baseline": {
+      "sob": 4.92,
+      "edema": 4.08,
+      "fatigue": 5.52
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0098",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 9.52,
+      "edema": 8.44,
+      "fatigue": 9.2
+    },
+    "baseline": {
+      "sob": 4.44,
+      "edema": 4.12,
+      "fatigue": 4.4
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0099",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 9.68,
+      "edema": 9.32,
+      "fatigue": 9.76
+    },
+    "baseline": {
+      "sob": 5.12,
+      "edema": 4.76,
+      "fatigue": 4.04
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0100",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 9.68,
+      "edema": 9.56,
+      "fatigue": 10.04
+    },
+    "baseline": {
+      "sob": 4.12,
+      "edema": 4.36,
+      "fatigue": 4.44
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0101",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 8.6,
+      "edema": 8.72,
+      "fatigue": 8.64
+    },
+    "baseline": {
+      "sob": 4.32,
+      "edema": 4.2,
+      "fatigue": 4.36
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0102",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 9.76,
+      "edema": 11.12,
+      "fatigue": 9.84
+    },
+    "baseline": {
+      "sob": 4.08,
+      "edema": 5.28,
+      "fatigue": 4.96
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0103",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 9.28,
+      "edema": 9.56,
+      "fatigue": 9.52
+    },
+    "baseline": {
+      "sob": 4.76,
+      "edema": 4.48,
+      "fatigue": 4.64
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0104",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 10.16,
+      "edema": 9.48,
+      "fatigue": 9.64
+    },
+    "baseline": {
+      "sob": 4.96,
+      "edema": 5.44,
+      "fatigue": 5.16
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0105",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 9.12,
+      "edema": 10.92,
+      "fatigue": 10.6
+    },
+    "baseline": {
+      "sob": 5.08,
+      "edema": 5.36,
+      "fatigue": 4.92
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0106",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 6.64,
+      "edema": 7.12,
+      "fatigue": 6.96
+    },
+    "baseline": {
+      "sob": 9.04,
+      "edema": 8.84,
+      "fatigue": 6.84
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0107",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 8.08,
+      "edema": 7.84,
+      "fatigue": 5.36
+    },
+    "baseline": {
+      "sob": 10.32,
+      "edema": 7.92,
+      "fatigue": 7.4
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0108",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 7.96,
+      "edema": 7.92,
+      "fatigue": 8.2
+    },
+    "baseline": {
+      "sob": 8.12,
+      "edema": 9.44,
+      "fatigue": 8.36
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0109",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 9.8,
+      "edema": 9.16,
+      "fatigue": 7.12
+    },
+    "baseline": {
+      "sob": 9.68,
+      "edema": 9.16,
+      "fatigue": 8.36
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0110",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 7.32,
+      "edema": 8.24,
+      "fatigue": 6.04
+    },
+    "baseline": {
+      "sob": 8.84,
+      "edema": 8.4,
+      "fatigue": 7.6
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0111",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 9.88,
+      "edema": 7.96,
+      "fatigue": 4.6
+    },
+    "baseline": {
+      "sob": 10,
+      "edema": 7.96,
+      "fatigue": 6.48
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0112",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 5.72,
+      "edema": 9.68,
+      "fatigue": 6.8
+    },
+    "baseline": {
+      "sob": 7.48,
+      "edema": 9.56,
+      "fatigue": 8.6
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0113",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 8.08,
+      "edema": 7.4,
+      "fatigue": 8.92
+    },
+    "baseline": {
+      "sob": 8.08,
+      "edema": 9.08,
+      "fatigue": 8.76
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0114",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 9,
+      "edema": 7.4,
+      "fatigue": 6.28
+    },
+    "baseline": {
+      "sob": 8.84,
+      "edema": 9.2,
+      "fatigue": 8.48
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0115",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 6.24,
+      "edema": 5.76,
+      "fatigue": 7.84
+    },
+    "baseline": {
+      "sob": 8.12,
+      "edema": 7.36,
+      "fatigue": 7.8
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0116",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 8.84,
+      "edema": 7.8,
+      "fatigue": 4.96
+    },
+    "baseline": {
+      "sob": 8.92,
+      "edema": 7.84,
+      "fatigue": 7.16
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0117",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 6.72,
+      "edema": 6.16,
+      "fatigue": 7.52
+    },
+    "baseline": {
+      "sob": 8.52,
+      "edema": 7.4,
+      "fatigue": 7.52
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0118",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 7.88,
+      "edema": 7.8,
+      "fatigue": 8.64
+    },
+    "baseline": {
+      "sob": 9.08,
+      "edema": 9.2,
+      "fatigue": 8.48
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0119",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 10.36,
+      "edema": 4.4,
+      "fatigue": 6.04
+    },
+    "baseline": {
+      "sob": 10.32,
+      "edema": 6.64,
+      "fatigue": 8.28
+    },
+    "hist": {}
+  },
+  {
+    "id": "highdiverse_0120",
+    "cohort": "HighDiversity",
+    "input": {
+      "sob": 8,
+      "edema": 7.52,
+      "fatigue": 5.12
+    },
+    "baseline": {
+      "sob": 9.96,
+      "edema": 7.6,
+      "fatigue": 7.16
+    },
+    "hist": {}
+  }
+]

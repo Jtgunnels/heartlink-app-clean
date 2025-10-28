@@ -1,0 +1,405 @@
+[
+  {
+    "timestamp": "2025-10-12T00:37:12.159Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T00:37:24.803Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T00:41:36.847Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T00:46:03.307Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T00:46:35.892Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T00:52:41.520Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T00:58:22.273Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T01:20:52.516Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T01:40:35.519Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T01:49:13.440Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T01:55:18.643Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T02:00:25.029Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T02:01:02.378Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T02:01:12.295Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T02:04:44.725Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T02:04:58.228Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T02:07:29.878Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T02:10:31.049Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T02:11:28.790Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T02:21:13.487Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12",
+      "NOISE_THRESHOLD": 0.3,
+      "EXTENDED_EMA_WINDOW": 9,
+      "YELLOW_STICKINESS_DAYS": 2
+    }
+  },
+  {
+    "timestamp": "2025-10-12T02:23:22.585Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12",
+      "NOISE_THRESHOLD": 0.3,
+      "EXTENDED_EMA_WINDOW": 9,
+      "YELLOW_STICKINESS_DAYS": 2
+    }
+  },
+  {
+    "timestamp": "2025-10-12T02:23:38.106Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12",
+      "NOISE_THRESHOLD": 0.3,
+      "EXTENDED_EMA_WINDOW": 9,
+      "YELLOW_STICKINESS_DAYS": 2
+    }
+  },
+  {
+    "timestamp": "2025-10-12T02:24:58.046Z",
+    "status": "PASS",
+    "differences": [],
+    "reference": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12"
+    },
+    "current": {
+      "EMA_WINDOW_DAYS": 5,
+      "DEESCALATION_DAYS": 2,
+      "MILD_WEIGHT_FACTOR": 0.9,
+      "VERSION": "3.8.OPT2025-10-12",
+      "NOISE_THRESHOLD": 0.3,
+      "EXTENDED_EMA_WINDOW": 9,
+      "YELLOW_STICKINESS_DAYS": 2
+    }
+  }
+]

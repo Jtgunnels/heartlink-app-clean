@@ -1,0 +1,7 @@
+Risk_ID,Hazard_Description,Cause,Effect,Severity(1-5),Probability(1-5),Initial_Risk,Mitigation/Control,Residual_Risk,Verification_Method,Owner,Status
+R1,User misinterprets color category as medical directive,Ambiguous wording,Delay or inappropriate self-action,4,3,12,Clarify educational intent; add "informational only" disclaimer,4,UI review & copy audit,Joshua Gunnels,Open
+R2,Incorrect data entry (e.g. wrong weight),Manual input error,Inaccurate trend display,2,4,8,Allow editing + confirmation prompt,4,Functional test,Joshua Gunnels,Open
+R3,Algorithm misclassifies due to null/missing input,Incomplete form submission,False reassurance or false alert,3,3,9,Validate inputs; default to neutral output,3,Unit test,Joshua Gunnels,Open
+R4,App crash or data loss,Software exception,Loss of tracking continuity,3,2,6,Code review + error handling,3,Code verification,Joshua Gunnels,Open
+R5,Unauthorized data access,Insecure local storage,Privacy breach,5,1,5,Encrypt at rest; sandbox storage,2,Security audit,Joshua Gunnels,Open
+R6,User ignores serious symptoms believing app is diagnostic,Perceived authority bias,Worsened condition or delayed care,5,2,10,Add explicit emergency instructions,5,Labeling review,Joshua Gunnels,Open

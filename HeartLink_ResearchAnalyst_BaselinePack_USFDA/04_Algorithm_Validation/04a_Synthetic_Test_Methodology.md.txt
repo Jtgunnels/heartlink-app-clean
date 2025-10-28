@@ -1,0 +1,26 @@
+---
+Author: Joshua Gunnels, PA-C
+Role: Independent Clinical Developer (HeartLink)
+Version: 0.1-Draft
+Date: 2025-10-10
+Reviewed by: [Regulatory QA Reviewer – TBD]
+Approval Status: Pending
+---
+
+# Synthetic Test Methodology
+
+## 1. Purpose
+To confirm algorithmic stability and verify backward compatibility between HeartLink v3.6 and v3.7 scoring systems.
+
+## 2. Approach
+Fifteen clinically representative test scenarios were constructed, covering baseline, mild, moderate, and severe symptom profiles.  
+Each scenario was executed through both algorithm versions, and category concordance was measured.
+
+## 3. Outputs
+- JSON and CSV logs stored under `04d_Test_Audit_Trail.csv`
+- Summary report referencing validation acceptance criteria
+
+## 4. Analyst Oversight
+Testing executed by developer; reviewed by independent analyst prior to release.
+
+---

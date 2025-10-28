@@ -1,0 +1,13 @@
+{
+  "total_cases": 1000,
+  "FP": 600,
+  "FN": 0,
+  "benign": 600,
+  "acute": 400,
+  "FP_rate_pct": 100,
+  "FN_rate_pct": 0,
+  "specificity_pct": 0,
+  "sensitivity_pct": 100,
+  "version": "3.8.OPT2025-10-12",
+  "date": "2025-10-12"
+}

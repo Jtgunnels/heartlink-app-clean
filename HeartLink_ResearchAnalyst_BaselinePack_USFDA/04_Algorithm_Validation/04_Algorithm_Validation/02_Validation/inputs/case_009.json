@@ -1,0 +1,7 @@
+{
+  "id": "case_009",
+  "name": "StableAdvanced NYHA III baseline",
+  "input": { "sob": "moderate", "edema": "moderate", "fatigue": "moderate" },
+  "baseline": { "baselineSob": "moderate", "baselineEdema": "moderate", "baselineFatigue": "moderate", "nyha": "III" },
+  "hist": { "normalizedScores": [6.8, 6.7, 6.6, 6.7, 6.6, 6.7, 6.6] }
+}

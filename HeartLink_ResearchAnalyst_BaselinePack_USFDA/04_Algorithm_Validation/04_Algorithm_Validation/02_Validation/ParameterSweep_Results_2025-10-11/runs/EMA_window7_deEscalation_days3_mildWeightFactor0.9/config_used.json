@@ -1,0 +1,8 @@
+{
+  "TOTAL_CASES": 2000,
+  "EMA_window": 7,
+  "deEscalation_days": 3,
+  "mildWeightFactor": 0.9,
+  "orthopneaMultiplier": 1.2,
+  "seed": 123456
+}

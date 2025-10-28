@@ -1,0 +1,20 @@
+{
+  "category": "Yellow",
+  "normalized": 1.8,
+  "score": 1.8,
+  "reasons": [
+    "One symptom is slightly worse than usual today."
+  ],
+  "flags": {
+    "criticalOverride": false,
+    "version": "3.7"
+  },
+  "meta": {
+    "version": "3.7",
+    "sourceVersion": "3.6",
+    "orthopneaLevel": 0,
+    "baseCategory": "Yellow",
+    "escalationApplied": false,
+    "baselineUpdateApplied": false
+  }
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "EMA_window": 3,
+    "deEscalation_days": 2,
+    "mildWeightFactor": 0.8,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6,
+    "CompositeScore": 50.3
+  },
+  {
+    "EMA_window": 3,
+    "deEscalation_days": 2,
+    "mildWeightFactor": 0.9,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6,
+    "CompositeScore": 50.3
+  },
+  {
+    "EMA_window": 3,
+    "deEscalation_days": 2,
+    "mildWeightFactor": 1,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6,
+    "CompositeScore": 50.3
+  },
+  {
+    "EMA_window": 3,
+    "deEscalation_days": 3,
+    "mildWeightFactor": 0.8,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6,
+    "CompositeScore": 50.3
+  },
+  {
+    "EMA_window": 3,
+    "deEscalation_days": 3,
+    "mildWeightFactor": 0.9,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6,
+    "CompositeScore": 50.3
+  },
+  {
+    "EMA_window": 3,
+    "deEscalation_days": 3,
+    "mildWeightFactor": 1,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6,
+    "CompositeScore": 50.3
+  },
+  {
+    "EMA_window": 5,
+    "deEscalation_days": 2,
+    "mildWeightFactor": 0.8,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6,
+    "CompositeScore": 50.3
+  },
+  {
+    "EMA_window": 5,
+    "deEscalation_days": 2,
+    "mildWeightFactor": 0.9,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6,
+    "CompositeScore": 50.3
+  },
+  {
+    "EMA_window": 5,
+    "deEscalation_days": 2,
+    "mildWeightFactor": 1,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6,
+    "CompositeScore": 50.3
+  },
+  {
+    "EMA_window": 5,
+    "deEscalation_days": 3,
+    "mildWeightFactor": 0.8,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6,
+    "CompositeScore": 50.3
+  },
+  {
+    "EMA_window": 5,
+    "deEscalation_days": 3,
+    "mildWeightFactor": 0.9,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6,
+    "CompositeScore": 50.3
+  },
+  {
+    "EMA_window": 5,
+    "deEscalation_days": 3,
+    "mildWeightFactor": 1,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6,
+    "CompositeScore": 50.3
+  },
+  {
+    "EMA_window": 7,
+    "deEscalation_days": 2,
+    "mildWeightFactor": 0.8,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6,
+    "CompositeScore": 50.3
+  },
+  {
+    "EMA_window": 7,
+    "deEscalation_days": 2,
+    "mildWeightFactor": 0.9,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6,
+    "CompositeScore": 50.3
+  },
+  {
+    "EMA_window": 7,
+    "deEscalation_days": 2,
+    "mildWeightFactor": 1,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6,
+    "CompositeScore": 50.3
+  },
+  {
+    "EMA_window": 7,
+    "deEscalation_days": 3,
+    "mildWeightFactor": 0.8,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6,
+    "CompositeScore": 50.3
+  },
+  {
+    "EMA_window": 7,
+    "deEscalation_days": 3,
+    "mildWeightFactor": 0.9,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6,
+    "CompositeScore": 50.3
+  },
+  {
+    "EMA_window": 7,
+    "deEscalation_days": 3,
+    "mildWeightFactor": 1,
+    "FP_rate_pct": 29,
+    "FN_rate_pct": 70.4,
+    "specificity_pct": 71,
+    "sensitivity_pct": 29.6,
+    "CompositeScore": 50.3
+  }
+]

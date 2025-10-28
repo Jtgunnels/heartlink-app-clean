@@ -1,0 +1,30 @@
+[
+  {
+    "cohort": "StepWorseningMid",
+    "daysSimulated": 24,
+    "FP_percent": 0,
+    "firstNonGreenDay": 7,
+    "clampOK": 0
+  },
+  {
+    "cohort": "AdherenceLapse10to14",
+    "daysSimulated": 17,
+    "FP_percent": 0,
+    "firstNonGreenDay": 7,
+    "clampOK": 0
+  },
+  {
+    "cohort": "RapidOnset",
+    "daysSimulated": 9,
+    "FP_percent": 0,
+    "firstNonGreenDay": 2,
+    "clampOK": 0
+  },
+  {
+    "cohort": "RecoveryClampCheck",
+    "daysSimulated": 10,
+    "FP_percent": 0,
+    "firstNonGreenDay": 1,
+    "clampOK": 0
+  }
+]

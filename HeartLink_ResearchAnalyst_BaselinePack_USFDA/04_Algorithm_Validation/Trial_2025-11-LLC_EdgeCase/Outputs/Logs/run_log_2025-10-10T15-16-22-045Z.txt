@@ -1,0 +1,53 @@
+🧠 HeartLink Synthetic Validation — 2025-10-10T15-16-22-045Z
+Trial: Trial_2025-11-LLC_EdgeCase
+
+🩺 Case 1: Borderline weight gain only
+       v3.6 → Green (0)
+       v3.7 → Green (0)
+       Δ 0.000 | – same
+
+🩺 Case 2: Hypotension with mild symptoms
+       v3.6 → Yellow (1.8)
+       v3.7 → Yellow (1.8)
+       Δ 0.000 | – same
+
+🩺 Case 3: Single severe symptom
+       v3.6 → Red (10)
+       v3.7 → Red (10)
+       Δ 0.000 | – same
+
+🩺 Case 4: Conflicting trends
+       v3.6 → Orange (3.7)
+       v3.7 → Orange (3.7)
+       Δ 0.000 | – same
+
+🩺 Case 5: Missing vitals
+       v3.6 → Orange (4.5)
+       v3.7 → Orange (4.5)
+       Δ 0.000 | – same
+
+🩺 Case 6: Rapid improvement case
+       v3.6 → Yellow (1.8)
+       v3.7 → Yellow (1.8)
+       Δ 0.000 | – same
+
+🩺 Case 7: NYHA III stable
+       v3.6 → Orange (6.7)
+       v3.7 → Orange (6.7)
+       Δ 0.000 | – same
+
+🩺 Case 8: Tachycardia only
+       v3.6 → Green (0)
+       v3.7 → Green (0)
+       Δ 0.000 | – same
+
+🩺 Case 9: Severe edema with normal SOB
+       v3.6 → Orange (3.5)
+       v3.7 → Orange (3.5)
+       Δ 0.000 | – same
+
+🩺 Case 10: Fatigue increase only
+       v3.6 → Yellow (1.2)
+       v3.7 → Yellow (1.2)
+       Δ 0.000 | – same
+

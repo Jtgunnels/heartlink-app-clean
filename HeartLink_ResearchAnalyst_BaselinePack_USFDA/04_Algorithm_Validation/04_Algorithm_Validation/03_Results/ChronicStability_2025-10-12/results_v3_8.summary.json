@@ -1,0 +1,15 @@
+{
+  "total_cases": 1500,
+  "FP": 26,
+  "benign": 1500,
+  "FP_rate_pct": 1.73,
+  "specificity_pct": 98.27,
+  "unique_categories": [
+    "Green",
+    "Yellow"
+  ],
+  "avg_score": "0.69",
+  "version": "3.8.OPT2025-10-12",
+  "date": "2025-10-12",
+  "source": "C:\\Users\\lorir\\OneDrive\\Desktop\\heart-failure-app\\HeartLink_ResearchAnalyst_BaselinePack_USFDA\\04_Algorithm_Validation\\04_Algorithm_Validation\\02_Validation\\ChronicStabilityScenarios.json"
+}

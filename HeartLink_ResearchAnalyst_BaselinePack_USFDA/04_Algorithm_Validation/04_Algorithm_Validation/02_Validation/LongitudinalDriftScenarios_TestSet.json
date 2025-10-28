@@ -1,0 +1,64 @@
+[
+  {
+    "id": "stable_0001",
+    "cohort": "Stable",
+    "baseline": { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 },
+    "inputSeries": [
+      { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 },
+      { "sob": 1.1, "edema": 1.0, "fatigue": 1.0 },
+      { "sob": 1.0, "edema": 1.1, "fatigue": 1.0 },
+      { "sob": 1.0, "edema": 1.0, "fatigue": 1.1 },
+      { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 }
+    ]
+  },
+  {
+    "id": "worsen_mid_0001",
+    "cohort": "StepWorseningMid",
+    "baseline": { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 },
+    "inputSeries": [
+      { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 },
+      { "sob": 1.2, "edema": 1.1, "fatigue": 1.0 },
+      { "sob": 1.4, "edema": 1.3, "fatigue": 1.1 },
+      { "sob": 1.7, "edema": 1.6, "fatigue": 1.3 },
+      { "sob": 2.0, "edema": 1.8, "fatigue": 1.5 },
+      { "sob": 2.2, "edema": 2.0, "fatigue": 1.6 }
+    ]
+  },
+  {
+    "id": "adherence_lapse_001",
+    "cohort": "AdherenceLapse10-14",
+    "baseline": { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 },
+    "inputSeries": [
+      { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 },
+      { "sob": 1.1, "edema": 1.1, "fatigue": 1.0 },
+      { "sob": 1.3, "edema": 1.3, "fatigue": 1.1 },
+      { "sob": 1.5, "edema": 1.5, "fatigue": 1.3 },
+      { "sob": 1.7, "edema": 1.7, "fatigue": 1.4 },
+      { "sob": 1.9, "edema": 1.8, "fatigue": 1.6 }
+    ]
+  },
+  {
+    "id": "recovery_0001",
+    "cohort": "RecoveryClampCheck",
+    "baseline": { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 },
+    "inputSeries": [
+      { "sob": 2.0, "edema": 1.8, "fatigue": 1.7 },
+      { "sob": 1.8, "edema": 1.6, "fatigue": 1.5 },
+      { "sob": 1.6, "edema": 1.3, "fatigue": 1.3 },
+      { "sob": 1.4, "edema": 1.1, "fatigue": 1.1 },
+      { "sob": 1.2, "edema": 1.0, "fatigue": 1.0 }
+    ]
+  },
+  {
+    "id": "weekend_bounce_0001",
+    "cohort": "WeekendBounce",
+    "baseline": { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 },
+    "inputSeries": [
+      { "sob": 1.0, "edema": 1.0, "fatigue": 1.0 },
+      { "sob": 1.4, "edema": 1.3, "fatigue": 1.2 },
+      { "sob": 1.2, "edema": 1.1, "fatigue": 1.0 },
+      { "sob": 1.5, "edema": 1.4, "fatigue": 1.3 },
+      { "sob": 1.1, "edema": 1.0, "fatigue": 1.0 }
+    ]
+  }
+]
