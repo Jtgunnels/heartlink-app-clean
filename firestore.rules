@@ -1,0 +1,84 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    /** ─────────────────────────────
+     *  USERS COLLECTION
+     *  ─────────────────────────────
+     *  Patients: full access to their own profile
+     *  Providers: read access only if linked via provider_patient_links
+     *  Admins: unrestricted read
+     */
+    match /users/{userId} {
+      // Patients can read/write their own record
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+
+      // Providers can read linked patient profiles
+      allow read: if request.auth != null
+                  && request.auth.token.role == "provider"
+                  && exists(/databases/$(database)/documents/provider_patient_links/$(request.auth.uid + "_" + userId));
+
+      // Admins can read all users
+      allow read: if request.auth != null && request.auth.token.role == "admin";
+    }
+
+    /** ─────────────────────────────
+     *  PROVIDER–PATIENT LINKS
+     *  ─────────────────────────────
+     *  Used to determine which patients a provider can access
+     *  Only admin and provider can create or read these links
+     */
+    match /provider_patient_links/{linkId} {
+      allow read, write: if request.auth != null
+                         && request.auth.token.role in ["admin", "provider"];
+    }
+
+    /** ─────────────────────────────
+     *  AUDIT LOGS
+     *  ─────────────────────────────
+     *  Admin-only write; providers/patients cannot modify
+     */
+    match /audit_logs/{docId} {
+      allow write: if request.auth != null && request.auth.token.role == "admin";
+      allow read: if request.auth != null && request.auth.token.role in ["admin"];
+    }
+
+    /** ─────────────────────────────
+ *  BASELINE (subcollection of users)
+ *  ─────────────────────────────
+ *  Patients can read/write only their own baseline data
+ */
+match /users/{userId}/baseline/{docId} {
+  allow read, write: if request.auth != null && request.auth.uid == userId;
+}
+
+    /** ─────────────────────────────
+     *  CLINICAL NOTES
+     *  ─────────────────────────────
+     *  Providers can create; providers/admins can read
+     *  Patients cannot write provider notes
+     */
+    match /notes/{docId} {
+      allow create: if request.auth != null && request.auth.token.role == "provider";
+      allow read: if request.auth != null && request.auth.token.role in ["provider", "admin"];
+    }
+
+    /** ─────────────────────────────
+     *  SYSTEM CONFIG
+     *  ─────────────────────────────
+     *  Read-only for admins; no one can modify directly
+     */
+    match /system/{docId} {
+      allow read: if request.auth != null && request.auth.token.role == "admin";
+      allow write: if false;
+    }
+
+    /** ─────────────────────────────
+     *  DEFAULT: deny all other access
+     *  ─────────────────────────────
+     */
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

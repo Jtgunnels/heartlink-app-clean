@@ -1,0 +1,119 @@
+{
+  "users": {
+    "description": "Stores profile and account-level information for patients and providers",
+    "fields": {
+      "uid": "string (Firebase Authentication UID)",
+      "role": "string (patient | provider | admin)",
+      "firstName": "string",
+      "lastName": "string",
+      "email": "string",
+      "createdAt": "timestamp",
+      "updatedAt": "timestamp",
+      "lastLogin": "timestamp",
+      "baselineComplete": "boolean",
+      "linkedProviderId": "string (provider UID if applicable)",
+      "consentAcknowledged": "boolean",
+      "riskCategory": "string (low | moderate | high)",
+      "active": "boolean"
+    },
+    "indexes": ["email", "role"]
+  },
+
+  "symptomLogs": {
+    "description": "Patient-submitted symptom entries and daily check-ins",
+    "subcollections": {
+      "{logId}": {
+        "fields": {
+          "userId": "string (ref: users.uid)",
+          "date": "timestamp",
+          "symptoms": "map",
+          "symptoms.shortnessOfBreath": "string (none | mild | moderate | severe)",
+          "symptoms.orthopnea": "string (none | mild | moderate | severe)",
+          "symptoms.weightChange": "number (lbs)",
+          "symptoms.edema": "string (none | mild | moderate | severe)",
+          "symptoms.fatigue": "string (none | mild | moderate | severe)",
+          "notes": "string",
+          "submittedAt": "timestamp",
+          "score": "number (calculated ASE score)",
+          "trendCategory": "string (green | yellow | orange | red)"
+        },
+        "indexes": ["userId", "date", "trendCategory"]
+      }
+    }
+  },
+
+  "recommendations": {
+    "description": "Stores algorithm-driven recommendation summaries for each daily entry",
+    "subcollections": {
+      "{recommendationId}": {
+        "fields": {
+          "userId": "string (ref: users.uid)",
+          "sourceLogId": "string (ref: symptomLogs.logId)",
+          "dateGenerated": "timestamp",
+          "category": "string (baseline | mild_change | worsening | severe)",
+          "summary": "string",
+          "reasonSummary": "string (brief explanation for score classification)",
+          "algorithmVersion": "string (ASE 1.3)",
+          "reviewedByProvider": "boolean",
+          "providerNotes": "string (optional)"
+        },
+        "indexes": ["userId", "dateGenerated", "category"]
+      }
+    }
+  },
+
+  "progressMetrics": {
+    "description": "Aggregated trends and vitals used for patient progress screen visualization",
+    "fields": {
+      "userId": "string (ref: users.uid)",
+      "weekStart": "timestamp",
+      "symptomTrend": "map",
+      "averageScore": "number",
+      "daysInGreen": "number",
+      "daysInYellow": "number",
+      "daysInOrange": "number",
+      "daysInRed": "number",
+      "lastUpdated": "timestamp"
+    },
+    "indexes": ["userId", "weekStart"]
+  },
+
+  "providerNotes": {
+    "description": "Secure provider-entered comments or follow-ups",
+    "fields": {
+      "providerId": "string (ref: users.uid)",
+      "patientId": "string (ref: users.uid)",
+      "createdAt": "timestamp",
+      "note": "string",
+      "priority": "string (routine | urgent)",
+      "acknowledgedByPatient": "boolean"
+    },
+    "indexes": ["providerId", "patientId", "priority"]
+  },
+
+  "systemConfig": {
+    "description": "Global configuration and algorithm metadata",
+    "fields": {
+      "appVersion": "string",
+      "algorithmVersion": "string",
+      "EMA_WINDOW_DAYS": "number",
+      "DEESCALATION_DAYS": "number",
+      "MILD_WEIGHT_FACTOR": "number",
+      "updatedAt": "timestamp"
+    }
+  },
+
+  "auditLogs": {
+    "description": "Internal tracking for security and compliance",
+    "fields": {
+      "userId": "string (ref: users.uid)",
+      "action": "string",
+      "collection": "string",
+      "documentId": "string",
+      "timestamp": "timestamp",
+      "ipAddress": "string",
+      "deviceInfo": "string"
+    },
+    "indexes": ["userId", "timestamp", "collection"]
+  }
+}

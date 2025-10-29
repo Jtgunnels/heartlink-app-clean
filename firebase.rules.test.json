@@ -1,0 +1,135 @@
+{
+  "description": "HeartLink Firestore Security Rules Validation — Phase 0",
+  "tests": [
+    {
+      "description": "1. Patients can read/write their own user profile",
+      "request": {
+        "auth": { "uid": "patient_123", "token": { "role": "patient" } },
+        "path": "/users/patient_123",
+        "method": "set",
+        "resource": { "data": { "firstName": "John", "lastName": "Doe", "role": "patient" } }
+      },
+      "expect": "ALLOW"
+    },
+    {
+      "description": "2. Patients cannot read another patient’s user profile",
+      "request": {
+        "auth": { "uid": "patient_456", "token": { "role": "patient" } },
+        "path": "/users/patient_123",
+        "method": "get"
+      },
+      "expect": "DENY"
+    },
+    {
+      "description": "3. Provider can read linked patient’s symptom logs",
+      "request": {
+        "auth": { "uid": "provider_001", "token": { "role": "provider" } },
+        "path": "/symptomLogs/patient_123/log_20251028",
+        "method": "get"
+      },
+      "mockData": {
+        "/users/patient_123": {
+          "linkedProviderId": "provider_001"
+        },
+        "/symptomLogs/patient_123/log_20251028": {
+          "userId": "patient_123",
+          "symptoms": { "shortnessOfBreath": "mild" }
+        }
+      },
+      "expect": "ALLOW"
+    },
+    {
+      "description": "4. Provider cannot read symptom logs for unlinked patient",
+      "request": {
+        "auth": { "uid": "provider_002", "token": { "role": "provider" } },
+        "path": "/symptomLogs/patient_123/log_20251028",
+        "method": "get"
+      },
+      "mockData": {
+        "/users/patient_123": {
+          "linkedProviderId": "provider_001"
+        }
+      },
+      "expect": "DENY"
+    },
+    {
+      "description": "5. Patient can read their own recommendations (read-only)",
+      "request": {
+        "auth": { "uid": "patient_123", "token": { "role": "patient" } },
+        "path": "/recommendations/patient_123/reco_01",
+        "method": "get"
+      },
+      "mockData": {
+        "/recommendations/patient_123/reco_01": {
+          "userId": "patient_123",
+          "category": "mild_change",
+          "summary": "Monitor your weight daily."
+        }
+      },
+      "expect": "ALLOW"
+    },
+    {
+      "description": "6. Patient cannot write recommendations directly",
+      "request": {
+        "auth": { "uid": "patient_123", "token": { "role": "patient" } },
+        "path": "/recommendations/patient_123/reco_02",
+        "method": "set",
+        "resource": { "data": { "summary": "Trying to edit recommendations." } }
+      },
+      "expect": "DENY"
+    },
+    {
+      "description": "7. Provider can create note for patient",
+      "request": {
+        "auth": { "uid": "provider_001", "token": { "role": "provider" } },
+        "path": "/providerNotes/note_001",
+        "method": "set",
+        "resource": {
+          "data": {
+            "providerId": "provider_001",
+            "patientId": "patient_123",
+            "note": "Patient reports improved fatigue."
+          }
+        }
+      },
+      "expect": "ALLOW"
+    },
+    {
+      "description": "8. Patient cannot edit provider note",
+      "request": {
+        "auth": { "uid": "patient_123", "token": { "role": "patient" } },
+        "path": "/providerNotes/note_001",
+        "method": "update",
+        "resource": {
+          "data": { "note": "Trying to modify provider note." }
+        }
+      },
+      "expect": "DENY"
+    },
+    {
+      "description": "9. Admin can read all audit logs",
+      "request": {
+        "auth": { "uid": "admin_001", "token": { "role": "admin" } },
+        "path": "/auditLogs/log_123",
+        "method": "get"
+      },
+      "mockData": {
+        "/auditLogs/log_123": {
+          "userId": "patient_123",
+          "action": "read",
+          "timestamp": "2025-10-28T10:00:00Z"
+        }
+      },
+      "expect": "ALLOW"
+    },
+    {
+      "description": "10. Non-admin cannot read audit logs",
+      "request": {
+        "auth": { "uid": "provider_001", "token": { "role": "provider" } },
+        "path": "/auditLogs/log_123",
+        "method": "get"
+      },
+      "expect": "DENY"
+    }
+  ]
+}
