@@ -1,4 +1,10 @@
 {
+  "firestore": {
+    "rules": "heartlink-provider-platform/backend/firestore.rules",
+    "indexes": "heartlink-provider-platform/backend/firestore.indexes.json",
+    "data": "heartlink-provider-platform/backend/firestore_schema_heartlink_v4_1.json",
+    "persistence": "data/firestore"
+  },
   "emulators": {
     "firestore": {
       "host": "127.0.0.1",
@@ -6,13 +12,10 @@
     },
     "ui": {
       "enabled": true,
+      "host": "127.0.0.1",
       "port": 4001
     },
-    "hub": {
-      "port": 4401
-    },
-    "logging": {
-      "port": 4501
-    }
+    "hub": { "port": 4401 },
+    "logging": { "port": 4501 }
   }
 }
