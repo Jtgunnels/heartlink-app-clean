@@ -1,18 +1,71 @@
+import { db } from "../config/db.js";
+
+// GET /api/patients/:providerID
 export const getPatients = async (req, res) => {
-  const { providerID } = req.params;
-  // stubbed
-  res.json([
-    { code: "HL-4D8C92", category: "Yellow", lastCheckin: "2025-10-20", summary: "Mild SOB" },
-    { code: "HL-7B21D1", category: "Green", lastCheckin: "2025-10-19", summary: "Stable" }
-  ]);
+  try {
+    const { providerID } = req.params;
+    const snap = await db
+      .collection("providers")
+      .doc(providerID)
+      .collection("patients")
+      .get();
+
+    const patients = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
+    res.json(patients);
+  } catch (e) {
+    console.error("getPatients error:", e);
+    res.status(500).json({ error: "Failed to fetch patients" });
+  }
 };
 
+// GET /api/patients/code/:patientCode
 export const getPatientByCode = async (req, res) => {
-  const { patientCode } = req.params;
-  res.json({
-    code: patientCode,
-    trend: [2.1, 3.5, 4.0, 3.9],
-    lastCategory: "Yellow",
-    summary: "Slight increase in swelling"
-  });
+  try {
+    const { patientCode } = req.params;
+    const snap = await db
+      .collectionGroup("patients")
+      .where("code", "==", patientCode)
+      .limit(1)
+      .get();
+
+    if (snap.empty) return res.status(404).json({ error: "Not found" });
+    const doc = snap.docs[0];
+    res.json({ id: doc.id, ...doc.data(), providerID: doc.ref.parent.parent.id });
+  } catch (e) {
+    console.error("getPatientByCode error:", e);
+    res.status(500).json({ error: "Lookup failed" });
+  }
+};
+
+// POST /api/patients
+export const createPatient = async (req, res) => {
+  try {
+    const { providerID, code, baseline } = req.body;
+    if (!providerID || !code)
+      return res
+        .status(400)
+        .json({ error: "providerID and code required" });
+
+    const pRef = db
+      .collection("providers")
+      .doc(providerID)
+      .collection("patients")
+      .doc(code);
+
+    await pRef.set(
+      {
+        code,
+        baseline: baseline || {},
+        category: "Green",
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+      },
+      { merge: true }
+    );
+
+    res.status(201).json({ ok: true, code });
+  } catch (e) {
+  console.error("🔥 createPatient error:", e.message, e.stack);
+  res.status(500).json({ error: e.message || "Create failed" });
+}
 };

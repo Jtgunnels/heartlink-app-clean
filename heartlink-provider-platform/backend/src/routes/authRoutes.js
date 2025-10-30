@@ -1,5 +1,10 @@
 import express from "express";
-import { loginProvider } from "../controllers/authController.js";
+
 const router = express.Router();
-router.post("/login", loginProvider);
+
+// temporary placeholder route so app builds successfully
+router.get("/test", (req, res) => {
+  res.json({ ok: true, message: "Auth route placeholder" });
+});
+
 export default router;

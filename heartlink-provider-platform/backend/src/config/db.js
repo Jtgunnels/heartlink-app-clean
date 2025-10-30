@@ -1,44 +1,63 @@
 /**
- * HeartLink Firestore Configuration (Safe Toggle)
- * v4.1.5 — supports emulator & production with newline fix
+ * HeartLink Provider Platform — Firestore Configuration (Clean Final)
+ * Supports both EMULATOR (local dev) and PROD (service account) modes.
+ * Tested on Node 20.x and firebase-admin 12.x
  */
 
 import admin from "firebase-admin";
-import fs from "fs";
 import dotenv from "dotenv";
-
 dotenv.config();
 
-const mode = process.env.FIREBASE_MODE || "emulator";
+const mode = (process.env.FIREBASE_MODE || "emulator").toLowerCase();
 const projectId = process.env.FIREBASE_PROJECT_ID || "heartlink-emulator";
 
-let app;
+let db;
 
-if (mode === "emulator") {
-  console.log("🧩 Firestore Emulator Mode — Safe for testing");
-  app = admin.initializeApp({ projectId });
-} else if (mode === "prod") {
-  console.log("🔐 Production Mode — Live Firestore Connection");
+try {
+  if (mode === "emulator") {
+    // ✅ Local emulator mode — no credentials needed
+    if (!admin.apps.length) {
+      admin.initializeApp({ projectId });
+    }
 
-  const keyPath = process.env.FIREBASE_SERVICE_ACCOUNT_PATH;
-  if (!fs.existsSync(keyPath)) {
-    throw new Error(`❌ Service account file not found at ${keyPath}`);
+    db = admin.firestore();
+    db.settings({
+      host: process.env.FIREBASE_EMULATOR_HOST || "127.0.0.1:8081",
+      ssl: false,
+      ignoreUndefinedProperties: true,
+    });
+
+    console.log("🧩 Firestore connected to local emulator (127.0.0.1:8081)");
+  } else {
+    // ✅ Production mode — uses base64 encoded service account key
+    if (!process.env.FIREBASE_SERVICE_ACCOUNT) {
+      throw new Error("FIREBASE_SERVICE_ACCOUNT not set in environment");
+    }
+
+    const json = Buffer.from(
+      process.env.FIREBASE_SERVICE_ACCOUNT,
+      "base64"
+    ).toString("utf8");
+    const creds = JSON.parse(json);
+
+    if (creds.private_key) {
+      creds.private_key = creds.private_key.replace(/\\n/g, "\n");
+    }
+
+    if (!admin.apps.length) {
+      admin.initializeApp({
+        credential: admin.credential.cert(creds),
+        projectId,
+      });
+    }
+
+    db = admin.firestore();
+    db.settings({ ignoreUndefinedProperties: true });
+    console.log("🧩 Firestore initialized in PROD mode");
   }
-
-  const serviceAccount = JSON.parse(fs.readFileSync(keyPath, "utf8"));
-
-  // ✅ Ensure private key newlines are correct
-  if (serviceAccount.private_key && typeof serviceAccount.private_key === "string") {
-    serviceAccount.private_key = serviceAccount.private_key.replace(/\\n/g, "\n");
-  }
-
-  app = admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-    projectId,
-  });
-} else {
-  throw new Error(`❌ Invalid FIREBASE_MODE: ${mode}. Use "emulator" or "prod"`);
+} catch (e) {
+  console.error("🔥 Firestore initialization error:", e.message);
+  process.exit(1);
 }
 
-export const db = admin.firestore();
-console.log("✅ Firestore initialized in", mode.toUpperCase(), "mode");
+export { db };
