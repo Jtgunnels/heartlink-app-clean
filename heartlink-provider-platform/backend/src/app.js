@@ -7,6 +7,7 @@ import checkinRoutes from "./routes/checkinRoutes.js";
 import providerRoutes from "./routes/providerRoutes.js";
 import providerSummaryRoutes from "./routes/providerSummary.js";
 import helmet from "helmet";
+import summaryRoutes from "./routes/summaryRoutes.js";
 
 const app = express();
 app.use(cors());
@@ -22,5 +23,6 @@ app.use("/api/checkins", checkinRoutes);
 app.use("/api/providers", providerRoutes);
 app.use("/api/providers", providerSummaryRoutes);
 app.use("/api/checkins", checkinRoutes);
+app.use("/api/summary", summaryRoutes);
 
 export default app;
