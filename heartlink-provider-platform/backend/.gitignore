@@ -1,0 +1,33 @@
+# ---------------------------------------------------------
+# HeartLink Backend Git Ignore File
+# ---------------------------------------------------------
+
+# 🔐 Environment & Credentials
+.env
+.env.development
+.env.production
+heartlink-firebase-key.json
+
+# 🔧 Node & Dependency Folders
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 🧩 Build / Cache / Temp
+dist/
+tmp/
+.cache/
+
+# 💻 OS & Editor Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# 🚫 Firebase local emulators and exports
+firebase-debug.log
+firestore-debug.log
+storage-debug.log
+pubsub-debug.log
