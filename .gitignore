@@ -8,3 +8,5 @@ yarn-error.log*
 *.log
 build/
 dist/
+**/heartlink-firebase-key.json
+**/.env
