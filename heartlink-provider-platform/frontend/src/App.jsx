@@ -1,19 +1,37 @@
-import { Routes, Route, Link } from "react-router-dom";
-import HeroHeader from "./components/HeroHeader";
-import DashboardPage from "./pages/DashboardPage";
-import PatientDetailPage from "./pages/PatientDetailPage";
+// src/App.jsx
+// ---------------------------------------------
+// HeartLink Clinical Summary — Main Application Router
+// Handles page-level routing for provider-facing components.
+// ---------------------------------------------
 
-export default function App() {
+import React from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+
+// Pages
+import DashboardPage from "./pages/DashboardPage.jsx";
+// Future expansions can include:
+// import PatientsPage from "./pages/PatientsPage.jsx";
+// import ProgressPage from "./pages/ProgressPage.jsx";
+// import SettingsPage from "./pages/SettingsPage.jsx";
+
+function App() {
   return (
-    <div>
-      <HeroHeader />
-      <nav style={{ maxWidth: 900, margin: "8px auto 0", padding: "0 16px" }}>
-        <Link to="/" style={{ color: "#2AA783", fontWeight: 600, textDecoration: "none" }}>Dashboard</Link>
-      </nav>
+    <>
+      {/* App Routes */}
       <Routes>
+        {/* Default route → Dashboard */}
         <Route path="/" element={<DashboardPage />} />
-        <Route path="/patient/:code" element={<PatientDetailPage />} />
+
+        {/* Example of future expansion */}
+        {/* <Route path="/patients" element={<PatientsPage />} /> */}
+        {/* <Route path="/progress" element={<ProgressPage />} /> */}
+        {/* <Route path="/settings" element={<SettingsPage />} /> */}
+
+        {/* Catch-all → redirect to dashboard */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </div>
+    </>
   );
 }
+
+export default App;

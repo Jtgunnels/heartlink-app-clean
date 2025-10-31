@@ -1,9 +1,29 @@
-// HeartLink Typography – Optimized for 55–80 Age Group (High Readability)
+// --------------------------------------------
+// HeartLink Original Typography System
+// --------------------------------------------
 
 export const typography = {
-  h1: { fontSize: 30, fontWeight: "800", color: "#0E2E4F", lineHeight: 38 },
-  h2: { fontSize: 26, fontWeight: "700", color: "#0E2E4F", lineHeight: 34 },
-  h3: { fontSize: 22, fontWeight: "700", color: "#0E2E4F", lineHeight: 30 },
-  body: { fontSize: 20, fontWeight: "500", color: "#0E2E4F", lineHeight: 28 },
-  small: { fontSize: 17, color: "#4B5563", lineHeight: 24 },
+  // --- Font Families ---
+  primary: "System",
+  secondary: "System",
+
+  // --- Font Sizes ---
+  headline: 28,   // Large headers (e.g., "Your Daily Check-In")
+  title: 22,      // Section titles and hero headers
+  subtitle: 18,   // Card subtitles
+  body: 16,       // Main content text
+  small: 14,      // Secondary or supporting text
+  tiny: 12,       // Notes or disclaimers
+
+  // --- Font Weights ---
+  weightLight: "300",
+  weightRegular: "400",
+  weightMedium: "500",
+  weightSemiBold: "600",
+  weightBold: "700",
+
+  // --- Line Heights ---
+  lineTight: 1.2,
+  lineNormal: 1.4,
+  lineRelaxed: 1.6,
 };

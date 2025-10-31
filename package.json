@@ -48,8 +48,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
-    "babel-preset-expo": "~54.0.0",
-    "@firebase/rules-unit-testing": "^3.0.2"
+    "babel-preset-expo": "~54.0.0"
   },
   "private": true
 }

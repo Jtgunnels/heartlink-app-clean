@@ -1,0 +1,283 @@
+/* ============================================================
+   HeartLink Clinical Summary — Dashboard Styles (v1.0)
+   ============================================================ */
+
+/* ---------- CONTAINER ---------- */
+.dashboard-container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 1.5rem 4vw;
+  background-color: #F9FAFB;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+//* ---------- NAV BAR ---------- */
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.75rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* flex container that centers all three sections horizontally */
+.navbar-content {
+  display: flex;
+  justify-content: center; /* centers all three groups together */
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 34px;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.nav-center {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  color: #374151;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #19588f;
+}
+
+.user-name {
+  font-weight: 500;
+  color: #19588f;
+}
+
+
+/* ---------- HEADER ---------- */
+.dashboard-header {
+  text-align: center;
+  margin: 2.5rem auto 1rem auto;
+}
+
+.dashboard-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #16223a;
+  margin-bottom: 0.25rem;
+}
+
+.dashboard-subheader {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-top: 0;
+}
+
+
+/* ---------- SUMMARY CARDS ---------- */
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(240px, 1fr));
+  gap: 18px;
+  justify-content: center;
+  margin: 24px 0 28px;
+}
+
+.summary-card {
+  text-align: center;
+  border-radius: 12px;
+  padding: 16px 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  min-height: 120px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border 0.15s ease;
+  border: 2px solid transparent;
+}
+
+.summary-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: #1a2b49;
+}
+
+.summary-card .count {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 4px 0;
+  color: #1a1a1a;
+}
+
+.summary-card span {
+  font-size: 0.85rem;
+  color: #444;
+}
+
+/* ---------- CLICKABLE CARDS ---------- */
+.summary-card.clickable {
+  cursor: pointer;
+}
+
+.summary-card.clickable:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.summary-card.clickable:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary-card.active-filter {
+  border: 2px solid #19588f;
+}
+
+/* ---------- CONTROLS ---------- */
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 10px 0 16px;
+}
+
+.search-box {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #dcdfe4;
+  border-radius: 8px;
+}
+
+.filter-dropdown {
+  padding: 10px 12px;
+  border: 1px solid #dcdfe4;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* ---------- RESET FILTER BUTTON ---------- */
+.reset-filter-btn {
+  background-color: #19588f;
+  color: #fff;
+  border: none;
+  padding: 0.55rem 1.1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.reset-filter-btn:hover {
+  background-color: #144b7a;
+}
+
+.reset-filter-btn:active {
+  transform: scale(0.98);
+}
+
+/* ---------- PATIENT TABLE ---------- */
+.patient-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border: 1px solid #eceff3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.patient-table th {
+  text-align: left;
+  font-weight: 700;
+  padding: 12px 14px;
+  color: #2a2a2a;
+  border-bottom: 1px solid #eceff3;
+  background: #fafbfc;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.patient-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #f1f3f6;
+  vertical-align: middle;
+}
+
+/* alternating shading for readability */
+.patient-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.patient-table tbody tr:hover {
+  background-color: #f5f8fa;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+  transform: translateY(-1px);
+}
+
+/* Unreviewed rows bold */
+.unreviewed td {
+  font-weight: 700;
+}
+
+/* ---------- FOOTER ---------- */
+.dashboard-footer {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.4;
+}
+
+/* ---------- RESPONSIVE BEHAVIOR ---------- */
+@media (max-width: 960px) {
+  .summary-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .dashboard-title {
+    font-size: 1.7rem;
+  }
+}
+
+
+@media (max-width: 560px) {
+  .summary-cards {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-header .logo {
+    width: 100px;
+  }
+  .dashboard-title {
+    font-size: 1.5rem;
+  }
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .reset-filter-btn {
+    width: 100%;
+  }
+}
