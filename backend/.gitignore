@@ -23,3 +23,22 @@ package-lock.json
 *.sqlite
 .idea/
 .vscode/
+
+# Build outputs
+dist/
+provider-platform/dist/
+node_modules/
+backend/functions/node_modules/
+.vite/
+
+# Env / secrets
+*.env
+.env.local
+firebase-debug.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+provider-platform/.env.production
+provider-platform/.env.local
