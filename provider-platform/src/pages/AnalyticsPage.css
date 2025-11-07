@@ -1,0 +1,57 @@
+.analytics-container {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.analytics-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #19588f; /* your primary HeartLink blue */
+}
+
+.analytics-subtitle {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.analytics-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.analytics-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  width: 180px;
+  padding: 16px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.analytics-card h3 {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.analytics-card p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #19588f;
+  margin: 0;
+}
+
+.analytics-chart {
+  margin-top: 40px;
+  background: #fafafa;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}

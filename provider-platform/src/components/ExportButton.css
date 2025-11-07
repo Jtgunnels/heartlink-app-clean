@@ -1,0 +1,50 @@
+/* ———————————————————————————————————————
+   HEARTLINK PROVIDER PLATFORM
+   SILVER TIER — EXPORT BUTTON STYLING
+   ——————————————————————————————————————— */
+
+.export-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.export-select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: border 0.2s;
+}
+
+.export-select:hover {
+  border-color: #19588f;
+}
+
+.export-button {
+  background-color: #19588f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.export-button:hover {
+  background-color: #1b6aa8;
+  transform: translateY(-1px);
+}
+
+.export-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

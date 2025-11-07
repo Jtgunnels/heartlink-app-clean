@@ -1,0 +1,215 @@
+/* ——————————————————————————————————————————
+   HEARTLINK PROVIDER PLATFORM NAVBAR
+   Responsive with mobile dropdown
+   —————————————————————————————————————————— */
+
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left: Logo */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo {
+  height: 38px;
+  object-fit: contain;
+}
+
+/* Center: Links */
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  gap: 32px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #19588f;
+  font-weight: 500;
+  transition: color 0.2s, border-bottom 0.2s ease;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-link.active {
+  color: #19588f;
+  font-weight: 600;
+  border-bottom: 2px solid #19588f;
+}
+
+.nav-link:hover {
+  color: #1b6aa8;
+}
+
+.nav-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  background: #f26868;
+  color: #ffffff;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Right: Tier badge + menu toggle */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.tier-badge {
+  padding: 6px 14px;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.logout-btn {
+  border: none;
+  background: #19588f;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: #144974;
+  transform: translateY(-1px);
+}
+
+.logout-btn:focus-visible {
+  outline: 2px solid #19588f;
+  outline-offset: 2px;
+}
+
+/* Tier colors */
+.tier-bronze {
+  background-color: #cd7f32;
+  color: #fff;
+}
+
+.tier-silver {
+  background-color: #c0c0c0;
+  color: #333;
+}
+
+.tier-gold {
+  background-color: #ffd700;
+  color: #333;
+}
+
+.tier-platinum {
+  background-color: #e5e4e2;
+  color: #333;
+}
+
+.tier-diamond {
+  background-color: #b9f2ff;
+  color: #222;
+}
+
+/* ——————————————————————————————————————————
+   MOBILE VIEW
+   —————————————————————————————————————————— */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.bar {
+  width: 24px;
+  height: 2px;
+  background-color: #19588f;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger to "X" animation */
+.menu-toggle.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Dropdown mobile menu */
+@media (max-width: 900px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 20px;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    margin-top: 10px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .tier-badge {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+}

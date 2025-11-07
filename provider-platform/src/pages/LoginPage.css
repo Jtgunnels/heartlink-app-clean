@@ -1,0 +1,120 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #dfeef4 0%, #f4f9fb 100%);
+  padding: 24px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 2.5rem 2.25rem;
+  box-shadow: 0 18px 44px rgba(25, 88, 143, 0.15);
+  text-align: center;
+  border: 1px solid rgba(25, 88, 143, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-logo {
+  width: 84px;
+  margin: 0 auto 0.5rem;
+}
+
+.login-card h1 {
+  margin: 0;
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #19588f;
+}
+
+.login-subtitle {
+  color: #7a8c99;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid #dce9f1;
+  background: #f8fbfd;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #19588f;
+  box-shadow: 0 0 0 3px rgba(25, 88, 143, 0.15);
+  background: #ffffff;
+}
+
+.login-card .hl-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #19588f 0%, #1e6fa7 100%);
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.85rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 12px 28px rgba(25, 88, 143, 0.2);
+}
+.login-card .hl-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 32px rgba(25, 88, 143, 0.24);
+}
+
+.login-card .hl-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.login-error {
+  color: #f26868;
+  margin: 0;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.login-disclaimer {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: #7a8c99;
+  margin-top: 1rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 2rem 1.5rem;
+  }
+}

@@ -1,0 +1,419 @@
+/* === HeartLink Provider Platform — ReportsPage.css (vFinal++) === */
+/* Unified layout for "HeartLink Program Insights" */
+
+/* === Root Container === */
+.reports-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+}
+
+/* === Header === */
+.reports-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding-bottom: 16px;
+  margin-bottom: 28px;
+}
+
+.reports-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #19588f;
+}
+
+.reports-subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 0;
+  max-width: 760px;
+  line-height: 1.5;
+}
+
+/* === Header Controls === */
+.reports-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.centered {
+  justify-content: center;
+  text-align: center;
+}
+
+/* === Select & Buttons === */
+.hl-select {
+  appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #fff;
+  min-width: 160px;
+  font-size: 14px;
+}
+
+.toggle-group {
+  display: inline-flex;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.toggle {
+  padding: 8px 12px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.toggle.active {
+  background: #19588f;
+  color: #fff;
+}
+
+/* === KPI Summary === */
+.kpi-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin: 28px 0 32px 0;
+}
+
+.kpi-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+  padding: 20px 24px;
+  min-width: 220px;
+  max-width: 250px;
+  text-align: center;
+  transition: box-shadow 0.2s ease;
+}
+
+.kpi-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.kpi-label {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.kpi-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* === Vertical Stack for Reports === */
+.vertical-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.chart-card-wide {
+  width: 100%;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 20px 18px 28px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease;
+}
+
+.chart-card-wide:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.report-title {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.chart-desc {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: -2px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.centered-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+}
+
+.centered-card .chart-shell,
+.centered-card .chart-wrapper {
+  width: 100%;
+  align-self: stretch;
+}
+
+.chart-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #19588f;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.chart-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 16px;
+  text-align: center;
+  max-width: 90%;
+}
+
+.chart-wrapper {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.chart-wrapper > .recharts-responsive-container {
+  width: 100% !important;
+  height: 100%;
+  position: relative;
+}
+
+.enrollment-dual-card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  padding: 24px;
+}
+
+.enrollment-chart {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+}
+
+.enrollment-chart .chart-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donut-center-label {
+  font-size: 20px;
+  font-weight: 700;
+  fill: #111827;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.panel-state,
+.panel-error {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #f4f9fb;
+  color: #19588f;
+  font-weight: 600;
+}
+
+.panel-error {
+  background: rgba(242, 104, 104, 0.12);
+  color: #a12a2a;
+}
+
+/* === Misc Utilities === */
+.error-box {
+  border: 1px solid #ef4444;
+  background: #fef2f2;
+  color: #991b1b;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.06) 25%,
+    rgba(0, 0, 0, 0.03) 37%,
+    rgba(0, 0, 0, 0.06) 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.2s ease-in-out infinite;
+  border-radius: 12px;
+}
+@keyframes shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+
+.skeleton-director { height: 100px; }
+.skeleton-block { height: 220px; }
+.skeleton-row { height: 44px; }
+
+/* === Footer === */
+.reports-footer {
+  margin-top: 24px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.disclaimer {
+  max-width: 720px;
+  margin: 0 auto;
+  color: #6b7280;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 960px) {
+  .analytics-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .analytics-controls {
+    justify-content: flex-start;
+  }
+  .reports-header {
+    padding-bottom: 12px;
+  }
+  .reports-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .enrollment-dual-card {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 720px) {
+  .analytics-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .range-select {
+    width: 100%;
+  }
+  .retention-badge {
+    width: 100%;
+    align-items: center;
+  }
+  .metrics-row {
+    flex-direction: column;
+  }
+}
+/* === Hidden (Screen Reader Only) === */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+.chart-shell {
+  margin-top: 12px;
+  margin-bottom: 28px;
+  position: relative;
+  width: 100%;
+}
+
+.chart-card-wide {
+  margin-bottom: 32px;
+}
+
+.report-title {
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.chart-desc {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.report-patient-highlight {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(25, 88, 143, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.report-patient-header h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #19588f;
+}
+
+.report-patient-header p {
+  margin: 4px 0 0;
+  color: #495c68;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.report-patient-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.report-patient-state,
+.report-patient-error {
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.report-patient-state {
+  background: rgba(25, 88, 143, 0.05);
+  color: #19588f;
+}
+
+.report-patient-error {
+  background: rgba(242, 104, 104, 0.12);
+  color: #b42318;
+}
+
+.recharts-wrapper {
+  width: 100% !important;
+}
