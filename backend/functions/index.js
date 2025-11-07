@@ -7,7 +7,7 @@
 
 import admin from "firebase-admin";
 import { onDocumentCreated } from "firebase-functions/v2/firestore";
-import calculateScore_v41CL from "./algorithms/calculateScore.js";
+import calculateScore from "./algorithms/calculateScore.js";
 
 // ✅ Initialize Firebase Admin correctly for ESM (Node 22)
 admin.initializeApp();
@@ -32,7 +32,7 @@ export const onCheckInCreated = onDocumentCreated("checkIns/{checkInId}", async 
     };
 
     // 🧮 Run ASE 1.3 scoring
-    const { ssi, category } = calculateScore_v41CL(checkIn, baseline, hist);
+    const { ssi, category } = calculateScore (checkIn, baseline, hist);
 
     // 🕒 Prepare updated patient data
     const updatedData = {

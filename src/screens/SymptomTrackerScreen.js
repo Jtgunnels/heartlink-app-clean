@@ -6,6 +6,7 @@
 // ---------------------------------------------------------------------------
 
 import React, { useState, useMemo, useRef } from "react";
+import { addCheckIn } from "../utils/addCheckin";
 import {
   View,
   Text,
@@ -85,87 +86,76 @@ export default function SymptomTrackerScreen({ navigation }) {
   const progressText = `Step ${step + 1} of ${totalSteps}`;
 
   // ---------- Submit ----------
-  async function handleSubmit() {
-    try {
-      const entry = {
-        sobLevel: sob,
-        edemaLevel: edema,
-        fatigueLevel: fatigue,
-        orthopnea: orthopnea === "Yes",
+async function handleSubmit() {
+  try {
+    const entry = {
+      sobLevel: sob,
+      edemaLevel: edema,
+      fatigueLevel: fatigue,
+      orthopnea: orthopnea === "Yes",
+      sobTrend: sobTrend ? sobTrend.toLowerCase() : null,
+      edemaTrend: edemaTrend ? edemaTrend.toLowerCase() : null,
+      fatigueTrend: fatigueTrend ? fatigueTrend.toLowerCase() : null,
+      weight: weight ? parseFloat(weight) : null,          // legacy/readability
+      weightToday: weight ? parseFloat(weight) : null,   
+      heartRate: heartRate ? Number(heartRate) : null,
+      sbp: sbp ? Number(sbp) : null,
+      dbp: dbp ? Number(dbp) : null,
+      lowUrine: lowUrine === "Yes",
+      appetiteLoss: appetiteLoss === "Yes",
+      date: new Date().toISOString(),
+    };
 
-        // 🆕 include trend selections (lowercase)
-        sobTrend: sobTrend ? sobTrend.toLowerCase() : null,
-        edemaTrend: edemaTrend ? edemaTrend.toLowerCase() : null,
-        fatigueTrend: fatigueTrend ? fatigueTrend.toLowerCase() : null,
+    // Save locally (keep your existing history logic)
+    const stored = await AsyncStorage.getItem("checkInHistory");
+    const history = stored ? JSON.parse(stored) : [];
 
-        weight: weight ? parseFloat(weight) : null,
-        weightToday: weight ? parseFloat(weight) : null,   // ✅ safeguard: ignore blank weight
-        heartRate: heartRate ? Number(heartRate) : null,
-        sbp: sbp ? Number(sbp) : null,
-        dbp: dbp ? Number(dbp) : null,                     // ✅ include diastolic value
-        lowUrine: lowUrine === "Yes",
-        appetiteLoss: appetiteLoss === "Yes",
-        date: new Date().toISOString(),
-      };
+    const calcInput = {
+      sob: entry.sobLevel,
+      edema: entry.edemaLevel,
+      fatigue: entry.fatigueLevel,
+      orthopnea: entry.orthopnea,
+      sobTrend: entry.sobTrend,
+      edemaTrend: entry.edemaTrend,
+      fatigueTrend: entry.fatigueTrend,
+      heartRate: entry.heartRate,
+      sbp: entry.sbp,
+      dbp: entry.dbp,
+      weightToday: entry.weight,
+      weight: entry.weight,
+    };
 
-      const stored = await AsyncStorage.getItem("checkInHistory");
-      const history = stored ? JSON.parse(stored) : [];
+    const calcBaseline = {
+      sob: baseline.baselineSob ?? baseline.sobLevel ?? baseline.sob ?? null,
+      edema: baseline.baselineEdema ?? baseline.edemaLevel ?? baseline.edema ?? null,
+      fatigue: baseline.baselineFatigue ?? baseline.fatigueLevel ?? baseline.fatigue ?? null,
+      orthopnea: typeof baseline.orthopnea === "boolean" ? baseline.orthopnea : false,
+      baselineWeight: baseline.baselineWeight,
+    };
 
-      // 🛠️ Surgical change: normalize keys for calculateScore without altering saved entry shape
-      const calcInput = {
-        // expected by some scorer versions
-        sob: entry.sobLevel,
-        edema: entry.edemaLevel,
-        fatigue: entry.fatigueLevel,
-        orthopnea: entry.orthopnea,
+    const score = calculateScore(calcInput, calcBaseline, {
+      categories: history.map((h) => h.category),
+      wsSeries: history.map((h) => h.weightedSymptoms ?? 0),
+      normalizedScores: history.map((h) => h.normalized ?? 0),
+    });
 
-        // 🆕 pass trend fields straight through
-        sobTrend: entry.sobTrend,
-        edemaTrend: entry.edemaTrend,
-        fatigueTrend: entry.fatigueTrend,
+    const newEntry = { ...entry, ...score };
+    history.push(newEntry);
+    await AsyncStorage.setItem("checkInHistory", JSON.stringify(history));
+    await AsyncStorage.setItem("latestScore", JSON.stringify(score));
 
-        // include vitals/weight if used by scorer
-        heartRate: entry.heartRate,
-        sbp: entry.sbp,
-        dbp: entry.dbp,
-        weightToday: entry.weightToday,
-        weight: entry.weightToday,
+    // 🆕 Firestore sync  -------------------------------------------
+    const patientId = "PAT001"; // later replace with Auth or real ID
+    await addCheckIn(patientId, newEntry);
+    // --------------------------------------------------------------
 
-        // also pass original style in case scorer supports both
-        sobLevel: entry.sobLevel,
-        edemaLevel: entry.edemaLevel,
-        fatigueLevel: entry.fatigueLevel,
-      };
-
-      const calcBaseline = {
-        sob: baseline.baselineSob ?? baseline.sobLevel ?? baseline.sob ?? null,
-        edema: baseline.baselineEdema ?? baseline.edemaLevel ?? baseline.edema ?? null,
-        fatigue: baseline.baselineFatigue ?? baseline.fatigueLevel ?? baseline.fatigue ?? null,
-        orthopnea: typeof baseline.orthopnea === "boolean" ? baseline.orthopnea : false,
-        // pass through baseline weight variants just in case scorer reads it
-        baselineWeight: baseline.baselineWeight,
-        weightToday: baseline.weightToday,
-      };
-
-      const score = calculateScore(calcInput, calcBaseline, {
-        categories: history.map((h) => h.category),
-        wsSeries: history.map((h) => h.weightedSymptoms ?? 0),
-        normalizedScores: history.map((h) => h.normalized ?? 0),
-      });
-
-      const newEntry = { ...entry, ...score };
-      history.push(newEntry);
-      await AsyncStorage.setItem("checkInHistory", JSON.stringify(history));
-      await AsyncStorage.setItem("latestScore", JSON.stringify(score));
-
-      Alert.alert("Check-In Submitted", "Your daily check-in was saved successfully.");
-      navigation.navigate("Recommendations", { score });
-    } catch (e) {
-      console.log("Save error:", e);
-      Alert.alert("Error", "Unable to save your check-in.");
-    }
+    Alert.alert("Check-In Submitted", "Your daily check-in was saved successfully.");
+    navigation.navigate("Recommendations", { score });
+  } catch (e) {
+    console.log("Save error:", e);
+    Alert.alert("Error", "Unable to save your check-in.");
   }
-
+}
   const handleNext = () => {
     // Required fields on SOB/EDEMA/FATIGUE
     const requiredStep = steps[step];

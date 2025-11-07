@@ -2,7 +2,6 @@
   "name": "heart-failure-app",
   "version": "1.0.0",
   "description": "HeartLink — Heart Failure Symptom Tracker built with Expo SDK 54 (React 19).",
-  "type": "module",
   "main": "expo/AppEntry",
   "scripts": {
     "start": "expo start",

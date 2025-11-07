@@ -42,3 +42,103 @@ Thumbs.db
 
 provider-platform/.env.production
 provider-platform/.env.local
+
+# ────────────────
+# ⚙️  Core Node / JS
+# ────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+
+# ────────────────
+# 🔐 Environment & Secrets
+# ────────────────
+.env
+.env.*
+!.env.example      # allow a redacted sample env
+firebase-key.json
+*.pem
+*.p12
+*.key
+*.crt
+*.enc
+*.bak
+
+# ────────────────
+# 🧠 Build Outputs (Frontend / Backend)
+# ────────────────
+dist/
+build/
+.cache/
+.expo/
+.expo-shared/
+coverage/
+.tmp/
+*.tgz
+
+# ────────────────
+# 📱 React Native / Expo
+# ────────────────
+android/
+ios/
+*.keystore
+*.jks
+*.mobileprovision
+*.ipa
+*.apk
+*.aab
+
+# ────────────────
+# 🧩 Firebase & Functions
+# ────────────────
+firebase-debug.log
+.firebaserc.local
+backend/functions/node_modules/
+backend/functions/lib/
+backend/functions/.env
+backend/functions/.env.*
+
+# ────────────────
+# 💻 Provider Platform
+# ────────────────
+provider-platform/node_modules/
+provider-platform/dist/
+provider-platform/.env
+provider-platform/.env.*
+
+# ────────────────
+# 🧱 Backend (Render / Express)
+# ────────────────
+backend/node_modules/
+backend/dist/
+backend/.env
+backend/.env.*
+
+# ────────────────
+# 🧾 Logs & Local Data
+# ────────────────
+*.log
+*.pid
+*.seed
+*.local
+.DS_Store
+Thumbs.db
+
+# ────────────────
+# ⚡ VSCode / JetBrains
+# ────────────────
+.vscode/
+.idea/
+*.iml
+
+# ────────────────
+# 🧰 System / Misc
+# ────────────────
+*.swp
+*.swo
+*~
+__pycache__/
+*.py[cod]

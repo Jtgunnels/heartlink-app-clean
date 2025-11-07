@@ -1,3 +1,4 @@
+// DashboardPage.jsx
 import React, { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./DashboardPage.css";
@@ -89,8 +90,15 @@ export default function DashboardPage() {
         let resolvedSnapshots = [];
 
         if (Array.isArray(snapshotData) && snapshotData.length > 0) {
+          // ✅ Normalize Firestore 'category' → UI 'aseCategory'
           resolvedSnapshots = snapshotData.map((snapshot) => ({
             ...snapshot,
+            aseCategory:
+              snapshot.aseCategory ||
+              snapshot.category || // <-- new check-in field
+              snapshot.aseStatus ||
+              snapshot.statusCategory ||
+              "Unknown",
             detail: lookup.get(snapshot.id) || {},
           }));
           setUsingFallback(escalated.length === 0);

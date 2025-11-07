@@ -1,3 +1,4 @@
+// PatientsPage.jsx
 import React, {
   useCallback,
   useEffect,
@@ -59,7 +60,12 @@ export default function PatientsPage() {
         name,
         patientCode: meta.patientCode || snapshot.patientCode || snapshot.id,
         status: meta.status || snapshot.status || "Active",
-        aseCategory: snapshot.aseCategory || meta.aseCategory || "Stable",
+        // ✅ Normalize Firestore 'category' → UI 'aseCategory'
+        aseCategory:
+          snapshot.aseCategory ||
+          snapshot.category || // <-- new check-in field
+          meta.aseCategory ||
+          "Stable",
       };
     });
   }, []);

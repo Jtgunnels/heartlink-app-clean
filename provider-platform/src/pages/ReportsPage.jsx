@@ -1,4 +1,4 @@
-// src/pages/ReportsPage.jsx — Finalized Narrative Flow: Enrollment → Engagement → Wellness → Stability
+// ReportsPage.jsx — Finalized Narrative Flow: Enrollment → Engagement → Wellness → Stability
 // HeartLink Provider Platform — "HeartLink Program Insights" Page
 
 import React, { useEffect, useMemo, useState, useCallback, Suspense } from "react";
@@ -152,7 +152,20 @@ export default function ReportsPage() {
     setSnapshotError(null);
     try {
       const snapshots = await getPatientSnapshots(activeIds, timeRange);
-      setSnapshotPatients(Array.isArray(snapshots) ? snapshots : []);
+      // ✅ Normalize 'category' → 'aseCategory' for downstream components
+      const normalized =
+        Array.isArray(snapshots)
+          ? snapshots.map((p) => ({
+              ...p,
+              aseCategory:
+                p.aseCategory ||
+                p.category || // <-- new check-in field
+                p.aseStatus ||
+                p.statusCategory ||
+                "Stable",
+            }))
+          : [];
+      setSnapshotPatients(normalized);
     } catch (err) {
       console.error("ReportsPage snapshot fetch error", err);
       setSnapshotError(err?.message || "Unable to load patient highlights.");
