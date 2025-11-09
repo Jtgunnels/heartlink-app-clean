@@ -10,3 +10,4 @@ build/
 dist/
 **/heartlink-firebase-key.json
 **/.env
+serviceAccountKey.json
