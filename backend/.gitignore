@@ -144,3 +144,4 @@ __pycache__/
 *.py[cod]
 
 heartlink-firebase-key.json
+serviceAccountKey.json
