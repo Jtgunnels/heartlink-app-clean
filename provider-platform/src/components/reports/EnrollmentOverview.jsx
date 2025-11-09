@@ -12,9 +12,9 @@ import {
   Area,
 } from "recharts";
 import {
-  getActiveCompositionData,
+  getEnrollmentAnalytics, // ✅ keeps the correct export
   getEnrollmentTrend,
-} from "../../utils/fetchReportData";
+} from "../../utils/fetchReportData"; // ✅ removed getActiveCompositionData import
 import { useContainerWidth } from "../../hooks/useContainerWidth";
 
 const COLORS = ["#19588F", "#45B8A1"];
@@ -36,12 +36,31 @@ export default function EnrollmentOverview({ timeRange = 90 }) {
     let cancelled = false;
     (async () => {
       try {
+        // ✅ replaced getActiveCompositionData with getEnrollmentAnalytics
         const [comp, trendData] = await Promise.all([
-          getActiveCompositionData(numericRange),
+          getEnrollmentAnalytics(numericRange),
           getEnrollmentTrend(numericRange),
         ]);
         if (cancelled) return;
-        setComposition(comp || []);
+
+        // getEnrollmentAnalytics historically returned an array of slices
+        // but newer implementations may return an object with totals.
+        // Normalize both shapes to an array so callers can safely use .find/.filter.
+        let normalizedComp = [];
+        if (Array.isArray(comp)) {
+          normalizedComp = comp;
+        } else if (comp && typeof comp === "object") {
+          normalizedComp = [
+            {
+              label: "Active",
+              value: comp.active ?? 0,
+              total: comp.total ?? comp.active ?? 0,
+            },
+            { label: "Discharged", value: comp.discharged ?? 0 },
+          ];
+        }
+
+        setComposition(normalizedComp);
         setTrend(trendData || []);
       } catch (err) {
         console.warn("EnrollmentOverview fetch error:", err);

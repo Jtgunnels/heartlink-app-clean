@@ -119,7 +119,14 @@ export default function DashboardPatientTable({ onViewReviews }) {
     let mounted = true;
     (async () => {
       try {
-        const data = await fetchPatients("demoProvider");
+        const providerId = localStorage.getItem("providerId") || sessionStorage.getItem("providerId");
+        if (!providerId) {
+          console.warn("DashboardPatientTable: no providerId in storage — aborting fetchPatients");
+          if (mounted) setPatients([]);
+          return;
+        }
+
+        const data = await fetchPatients(providerId);
         if (!mounted) return;
 
         const enriched = (data || []).map((p) => {

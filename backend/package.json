@@ -3,21 +3,23 @@
   "version": "1.0.0",
   "type": "module",
   "description": "HeartLink Provider Backend",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node src/config/db.js",
-    "start:emu": "cross-env FIREBASE_MODE=emulator node src/config/db.js",
-    "start:prod": "cross-env FIREBASE_MODE=prod node src/config/db.js"
+    "start": "node src/server.js",
+    "start:dev": "nodemon src/server.js",
+    "start:emu": "cross-env FIREBASE_MODE=emulator node src/server.js",
+    "start:prod": "cross-env FIREBASE_MODE=prod node src/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
-    "firebase-admin": "^13.5.0",
+    "firebase-admin": "^13.6.0",
     "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.2",
-    "morgan": "^1.10.1"
+    "morgan": "^1.10.1",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"

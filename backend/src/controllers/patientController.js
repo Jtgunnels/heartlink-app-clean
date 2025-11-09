@@ -1,10 +1,10 @@
-import { db } from "../config/db.js";
+// src/controllers/patientController.js
+import { adminDB } from "../../firebaseAdmin.js"; // ✅ two levels up
 
-// GET /api/patients/:providerID
 export const getPatients = async (req, res) => {
   try {
     const { providerID } = req.params;
-    const snap = await db
+    const snap = await adminDB
       .collection("providers")
       .doc(providerID)
       .collection("patients")
@@ -18,11 +18,10 @@ export const getPatients = async (req, res) => {
   }
 };
 
-// GET /api/patients/code/:patientCode
 export const getPatientByCode = async (req, res) => {
   try {
     const { patientCode } = req.params;
-    const snap = await db
+    const snap = await adminDB
       .collectionGroup("patients")
       .where("code", "==", patientCode)
       .limit(1)
@@ -37,16 +36,13 @@ export const getPatientByCode = async (req, res) => {
   }
 };
 
-// POST /api/patients
 export const createPatient = async (req, res) => {
   try {
     const { providerID, code, baseline } = req.body;
     if (!providerID || !code)
-      return res
-        .status(400)
-        .json({ error: "providerID and code required" });
+      return res.status(400).json({ error: "providerID and code required" });
 
-    const pRef = db
+    const pRef = adminDB
       .collection("providers")
       .doc(providerID)
       .collection("patients")
@@ -65,7 +61,7 @@ export const createPatient = async (req, res) => {
 
     res.status(201).json({ ok: true, code });
   } catch (e) {
-  console.error("🔥 createPatient error:", e.message, e.stack);
-  res.status(500).json({ error: e.message || "Create failed" });
-}
+    console.error("🔥 createPatient error:", e.message, e.stack);
+    res.status(500).json({ error: e.message || "Create failed" });
+  }
 };

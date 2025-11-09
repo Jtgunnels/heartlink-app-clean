@@ -12,7 +12,7 @@ import {
   getPopulationWellnessData,
   getFourBandStabilityTrend,
   getEnrollmentTrend,
-  getPatientSnapshots,
+  getPatientSnapshotData,
 } from "../utils/fetchReportData";
 
 import CheckInAdherenceReport from "../components/reports/CheckInAdherenceReport.jsx";
@@ -94,12 +94,13 @@ export default function ReportsPage() {
       });
 
       setPopData({
-        overview,
-        adherenceRows,
-        wellnessRows,
-        stabilityRows,
-        enrollmentTrend,
-      });
+  overview,
+  adherenceRows: Array.isArray(adherenceRows) ? adherenceRows : [],
+  wellnessRows: Array.isArray(wellnessRows) ? wellnessRows : [],
+  stabilityRows: Array.isArray(stabilityRows) ? stabilityRows : [],
+  enrollmentTrend: Array.isArray(enrollmentTrend) ? enrollmentTrend : [],
+});
+
     } catch (err) {
       setPopError(err?.message || "Failed to load population reports.");
     } finally {
@@ -151,7 +152,7 @@ export default function ReportsPage() {
     setSnapshotLoading(true);
     setSnapshotError(null);
     try {
-      const snapshots = await getPatientSnapshots(activeIds, timeRange);
+      const snapshots = await getPatientSnapshotData(activeIds, timeRange);
       // ✅ Normalize 'category' → 'aseCategory' for downstream components
       const normalized =
         Array.isArray(snapshots)
@@ -383,7 +384,7 @@ export default function ReportsPage() {
                   </p>
                   <CheckInAdherenceReport
                     timeRange={timeRange}
-                    rowsProp={popData?.adherenceRows || []}
+                    rowsProp={Array.isArray(popData?.adherenceRows) ? popData.adherenceRows : []}
                     hideTable={true}
                   />
                   {renderPatientHighlight(
@@ -401,7 +402,7 @@ export default function ReportsPage() {
                   </p>
                   <PopulationWellnessIndex
                     timeRange={timeRange}
-                    rowsProp={popData?.wellnessRows || []}
+                    rowsProp={Array.isArray(popData?.adherenceRows) ? popData.adherenceRows : []}
                     hideTable={true}
                   />
                   {renderPatientHighlight(
@@ -419,7 +420,7 @@ export default function ReportsPage() {
                   </p>
                   <PatientStabilityReport
                     timeRange={timeRange}
-                    rowsProp={popData?.stabilityRows || []}
+                    rowsProp={Array.isArray(popData?.adherenceRows) ? popData.adherenceRows : []}
                     hideTable={true}
                   />
                   {renderPatientHighlight(

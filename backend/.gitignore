@@ -142,3 +142,5 @@ Thumbs.db
 *~
 __pycache__/
 *.py[cod]
+
+heartlink-firebase-key.json

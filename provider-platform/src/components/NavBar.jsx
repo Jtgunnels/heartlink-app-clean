@@ -5,14 +5,14 @@ import { useAuth } from "../context/AuthProvider";
 import heartlinkLogo from "/heartlink_full_light.png";
 import "./NavBar.css";
 import { collection, onSnapshot, query, where } from "firebase/firestore";
-import { db } from "../config/firebase";
+import { db } from "../utils/firebaseConfig";
 
 export default function NavBar() {
   const location = useLocation();
   const navigate = useNavigate();
   const { tier } = useTier();
   const [menuOpen, setMenuOpen] = useState(false);
-  const { logout } = useAuth();
+  const { logout, user } = useAuth();
 
   // Tier-based access control
   const REPORTS_LABEL = "Reports & Analytics";
@@ -27,19 +27,25 @@ export default function NavBar() {
 
   const [reviewCount, setReviewCount] = useState(0);
 
+  
+
   useEffect(() => {
+    // Only subscribe to Firestore listeners when a user is signed in.
+    if (!user) {
+      setReviewCount(0);
+      return () => {};
+    }
     const STATUSES = ["Review Recommended", "Needs Immediate Review"];
     const filters = [
       where("status", "==", "Active"),
       where("aseCategory", "in", STATUSES),
     ];
 
-    const providerRef = collection(
-      db,
-      "providers",
-      "demoProvider",
-      "patients"
-    );
+    // Use providerId from storage (set at login). If missing, skip provider-scoped listener.
+    const providerId = sessionStorage.getItem("providerId") || localStorage.getItem("providerId");
+
+    const providerRef = providerId ? collection(db, "providers", providerId, "patients") : null;
+
     const rootRef = collection(db, "patients");
 
     let providerCount = null;
@@ -63,18 +69,24 @@ export default function NavBar() {
       }
     };
 
-    const unsubscribeProvider = onSnapshot(
-      query(providerRef, ...filters),
-      (snapshot) => {
-        providerCount = snapshot.size;
-        applyCount();
-      },
-      (error) => {
-        console.warn("Provider review listener failed", error);
-        providerCount = null;
-        applyCount();
-      }
-    );
+  let unsubscribeProvider = null;
+    if (providerRef) {
+      unsubscribeProvider = onSnapshot(
+        query(providerRef, ...filters),
+        (snapshot) => {
+          providerCount = snapshot.size;
+          applyCount();
+        },
+        (error) => {
+          console.warn("Provider review listener failed", error);
+          providerCount = null;
+          applyCount();
+        }
+      );
+    } else {
+      // no providerId available; treat provider scoped count as null so fallback is used
+      providerCount = null;
+    }
 
     const unsubscribeFallback = onSnapshot(
       query(rootRef, ...filters),
@@ -93,7 +105,7 @@ export default function NavBar() {
       unsubscribeProvider?.();
       unsubscribeFallback?.();
     };
-  }, []);
+  }, [user]);
 
   const pages = [
     { name: "Dashboard", to: { pathname: "/dashboard" }, badge: reviewCount },

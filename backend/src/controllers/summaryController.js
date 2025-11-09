@@ -1,17 +1,16 @@
-import { db } from "../config/db.js";
+// src/controllers/summaryController.js
+import { adminDB } from "../../firebaseAdmin.js"; // ✅ two levels up
 
-// Utility: get timestamp X days ago
 const daysAgo = (num) => {
   const d = new Date();
   d.setDate(d.getDate() - num);
   return d.toISOString();
 };
 
-// GET /api/summary/:providerID
 export const getSummary = async (req, res) => {
   try {
     const { providerID } = req.params;
-    const providerRef = db.collection("providers").doc(providerID);
+    const providerRef = adminDB.collection("providers").doc(providerID);
     const patientsSnap = await providerRef.collection("patients").get();
 
     const now = new Date().toISOString();
@@ -33,15 +32,8 @@ export const getSummary = async (req, res) => {
         .doc(patientCode)
         .collection("checkins");
 
-      // last 7 days
-      const checkins7 = await checkinsRef
-        .where("timestamp", ">=", sevenDaysAgo)
-        .get();
-
-      // last 30 days
-      const checkins30 = await checkinsRef
-        .where("timestamp", ">=", thirtyDaysAgo)
-        .get();
+      const checkins7 = await checkinsRef.where("timestamp", ">=", sevenDaysAgo).get();
+      const checkins30 = await checkinsRef.where("timestamp", ">=", thirtyDaysAgo).get();
 
       const countByCategory = (snap) => {
         const counts = { green: 0, yellow: 0, orange: 0, red: 0 };
@@ -55,18 +47,12 @@ export const getSummary = async (req, res) => {
       const counts7 = countByCategory(checkins7);
       const counts30 = countByCategory(checkins30);
 
-      // Add to provider totals
       for (const k of Object.keys(summary.totals7)) {
         summary.totals7[k] += counts7[k];
         summary.totals30[k] += counts30[k];
       }
 
-      // Last update
-      const latest = await checkinsRef
-        .orderBy("timestamp", "desc")
-        .limit(1)
-        .get();
-
+      const latest = await checkinsRef.orderBy("timestamp", "desc").limit(1).get();
       const latestData = latest.empty ? null : latest.docs[0].data();
 
       summary.patientSummaries.push({

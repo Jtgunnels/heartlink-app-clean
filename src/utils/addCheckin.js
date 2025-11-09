@@ -1,21 +1,22 @@
-// src/utils/addCheckIn.js
-import { db } from "../firebaseConfig";
 import { addDoc, collection, Timestamp } from "firebase/firestore";
+import { db } from "../firebaseConfig";
+import { getAuth } from "firebase/auth";
 
-/**
- * Saves a patient check-in to Firestore.
- * @param {string} patientId - The patient’s unique ID.
- * @param {object} data - The form or symptom data.
- */
-export async function addCheckIn(patientId, data) {
-  try {
-    const docRef = await addDoc(collection(db, "checkins"), {
-      patientId,
-      ...data,
-      timestamp: Timestamp.now(),
-    });
-    console.log("✅ Check-in saved with ID:", docRef.id);
-  } catch (error) {
-    console.error("❌ Error adding check-in:", error);
-  }
+export async function addCheckIn({ patientId, category, sobLevel, edemaLevel, fatigueLevel, ssi }) {
+  const auth = getAuth();
+  const token = await auth.currentUser.getIdTokenResult(true);
+  const providerId = token.claims.provider_id;
+  if (!providerId) throw new Error("Missing provider_id claim");
+
+  const doc = {
+    patientId,
+    category,
+    sobLevel,
+    edemaLevel,
+    fatigueLevel,
+    ssi: typeof ssi === "number" ? ssi : null,
+    timestamp: Timestamp.now(),
+  };
+
+  await addDoc(collection(db, `providers/${providerId}/checkins`), doc);
 }

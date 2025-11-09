@@ -1,0 +1,42 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // --- Provider documents (top-level) ---
+    // Allow reading a provider document if the user is the creator (createdBy),
+    // has a matching provider_id claim, or is an admin. Writes remain restricted.
+    match /providers/{providerId} {
+      allow get: if request.auth != null
+        && (
+          request.auth.token.role == "admin"
+          || request.auth.token.provider_id == providerId
+          || resource.data.createdBy == request.auth.uid
+        );
+
+      // For list (query) operations, client code must constrain queries so that
+      // the rules can be validated (for example: where('createdBy','==', request.auth.uid)).
+      allow list: if request.auth != null
+        && (
+          request.auth.token.role == "admin"
+          || request.auth.token.provider_id == providerId
+          || request.auth.uid == request.auth.uid // placeholder to ensure authenticated
+        );
+    }
+
+    // --- Root-level provider isolation for subcollections ---
+    match /providers/{providerId}/{document=**} {
+      // Allow read/write for subcollections if authenticated and provider_id claim matches path
+      allow read, write: if request.auth != null
+        && (
+          request.auth.token.role == "admin"
+          || request.auth.token.provider_id == providerId
+        );
+    }
+
+    // --- Optional read-only public data (if you have any) ---
+    match /public/{document=**} {
+      allow read: if true;
+    }
+  }
+}

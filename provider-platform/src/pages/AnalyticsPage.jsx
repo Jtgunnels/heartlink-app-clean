@@ -1,3 +1,6 @@
+// src/pages/AnalyticsPage.jsx
+// HeartLink Provider Platform — Analytics Overview (Provider-Scoped)
+
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import {
@@ -21,14 +24,30 @@ export default function AnalyticsPage() {
   useEffect(() => {
     const fetchAnalytics = async () => {
       try {
+        // ✅ Get current providerId from localStorage or sessionStorage
+        const providerId =
+          localStorage.getItem("providerId") ||
+          sessionStorage.getItem("providerId");
+
+        if (!providerId) {
+          throw new Error("No providerId found — please log in again.");
+        }
+
+        // ✅ Determine base URL (auto-switch between local + production)
+        const baseURL =
+          import.meta.env.VITE_API_BASE_URL ||
+          "https://us-central1-heartlink-provider-platform.cloudfunctions.net";
+
+        // ✅ Request provider-scoped analytics summary from backend
         const res = await axios.get(
-          "http://localhost:5050/api/analytics/summary?providerID=demoProvider"
+          `${baseURL}/api/analytics/summary?providerID=${providerId}`
         );
+
         setAnalytics(res.data);
-        setLoading(false);
       } catch (err) {
         console.error("Error fetching analytics:", err);
-        setError("Failed to load analytics data");
+        setError("Failed to load analytics data.");
+      } finally {
         setLoading(false);
       }
     };
@@ -36,13 +55,22 @@ export default function AnalyticsPage() {
     fetchAnalytics();
   }, []);
 
-  if (loading) return <div className="analytics-loading">Loading analytics...</div>;
+  // Loading / error states
+  if (loading)
+    return <div className="analytics-loading">Loading analytics...</div>;
   if (error) return <div className="analytics-error">{error}</div>;
 
-  const { totalPatients, improved, worsened, stable, avgStability, trend30d } =
-    analytics;
+  // Destructure API response
+  const {
+    totalPatients = 0,
+    improved = 0,
+    worsened = 0,
+    stable = 0,
+    avgStability,
+    trend30d,
+  } = analytics || {};
 
-  // Build chart data — simulate 30 days if not included in backend yet
+  // Build chart data (fallback placeholder if trend array missing)
   const chartData =
     trend30d && trend30d.length > 0
       ? trend30d.map((value, i) => ({
@@ -51,7 +79,7 @@ export default function AnalyticsPage() {
         }))
       : Array.from({ length: 10 }, (_, i) => ({
           day: `Day ${i + 1}`,
-          stability: Math.random() * 0.2 + 0.7, // placeholder if no data
+          stability: Math.random() * 0.2 + 0.7,
         }));
 
   return (
@@ -61,22 +89,23 @@ export default function AnalyticsPage() {
         Provider performance and patient stability summary
       </p>
 
+      {/* === Summary Cards === */}
       <div className="analytics-cards">
         <div className="analytics-card">
           <h3>Total Patients</h3>
-          <p>{totalPatients || 0}</p>
+          <p>{totalPatients}</p>
         </div>
         <div className="analytics-card">
           <h3>Improved</h3>
-          <p>{improved || 0}</p>
+          <p>{improved}</p>
         </div>
         <div className="analytics-card">
           <h3>Worsened</h3>
-          <p>{worsened || 0}</p>
+          <p>{worsened}</p>
         </div>
         <div className="analytics-card">
           <h3>Stable</h3>
-          <p>{stable || 0}</p>
+          <p>{stable}</p>
         </div>
         <div className="analytics-card">
           <h3>Avg Stability</h3>
@@ -84,13 +113,20 @@ export default function AnalyticsPage() {
         </div>
       </div>
 
+      {/* === 30-Day Trend Chart === */}
       <div className="analytics-chart">
         <h2>30-Day Stability Trend</h2>
         <ResponsiveContainer width="100%" height={300}>
-          <LineChart data={chartData} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+          <LineChart
+            data={chartData}
+            margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+          >
             <CartesianGrid strokeDasharray="3 3" stroke={colors.lightGray} />
             <XAxis dataKey="day" />
-            <YAxis domain={[0.6, 1]} tickFormatter={(v) => `${(v * 100).toFixed(0)}%`} />
+            <YAxis
+              domain={[0.6, 1]}
+              tickFormatter={(v) => `${(v * 100).toFixed(0)}%`}
+            />
             <Tooltip
               formatter={(v) => `${(v * 100).toFixed(1)}%`}
               labelStyle={{ color: colors.textDark }}

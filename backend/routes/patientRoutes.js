@@ -4,7 +4,7 @@
 
 import express from "express";
 import fetch from "node-fetch";
-import { db } from "../server.js";
+import { db } from "../src/config/db.js";
 
 const router = express.Router();
 

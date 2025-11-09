@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./ClinicalReviewHub.css";
-import { getPatientsList, getPatientSnapshots } from "../utils/fetchReportData";
+import { getPatientsList, getPatientSnapshotData } from "../utils/fetchReportData";
 import { exportAsCSV } from "../utils/reportExports";
 import PatientSnapshotCard from "../components/patients/PatientSnapshotCard.jsx";
 
@@ -44,7 +44,7 @@ export default function ClinicalReviewHub({ embedded = false }) {
         return;
       }
 
-      const snapshots = await getPatientSnapshots(reviewIds, 14);
+      const snapshots = await getPatientSnapshotData(reviewIds, 14);
       const reviewSnapshots = (snapshots || [])
         .filter((snapshot) =>
           ["Review Recommended", "Needs Immediate Review"].includes(snapshot?.aseCategory)

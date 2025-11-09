@@ -4,7 +4,9 @@ import { useNavigate } from "react-router-dom";
 import "./DashboardPage.css";
 import EnrollmentOverview from "../components/reports/EnrollmentOverview.jsx";
 import ExpandedPatientSection from "../components/dashboard/ExpandedPatientSection.jsx";
-import { getPatientsList, getPatientSnapshots } from "../utils/fetchReportData";
+import { getPatientsList, getPatientSnapshotData } from "../utils/fetchReportData";
+import { db } from "../utils/firebaseConfig.js";
+import { collection, getDocs } from "firebase/firestore";
 
 const STATUS_KEYS = [
   "Stable",
@@ -40,8 +42,51 @@ export default function DashboardPage() {
       try {
         const allPatients = await getPatientsList();
         if (cancelled) return;
+        
+        // 🔹 Fetch check-in data from Firestore and merge into patients
+ const providerId =
+   localStorage.getItem("providerId") || sessionStorage.getItem("providerId");
+ if (!providerId) throw new Error("No providerId in storage");
+ const checkinSnap = await getDocs(
+   collection(db, `providers/${providerId}/checkins`)
+ );
+const checkins = Array.isArray(checkinSnap.docs)
+  ? checkinSnap.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
+  : [];
 
-        const activePatients = (allPatients || []).filter((patient) => {
+
+// 🔹 Map the most recent check-in per patient to their snapshot
+const latestByPatient = {};
+for (const entry of checkins) {
+  const id = entry.patientId;
+  if (!id) continue;
+  const current = latestByPatient[id];
+  if (!current || (entry.timestamp?.seconds ?? 0) > (current.timestamp?.seconds ?? 0)) {
+    latestByPatient[id] = entry;
+  }
+}
+
+// 🔹 Merge the latest check-in details into your patient records
+const mergedPatients = (allPatients || []).map((p) => {
+  const checkin = latestByPatient[p.id];
+  if (!checkin) return p;
+  return {
+    ...p,
+    lastCheckIn:
+      checkin.timestamp?.toDate?.().toISOString?.() ||
+      new Date(checkin.timestamp?.seconds * 1000).toISOString?.(),
+    aseCategory:
+      p.aseCategory ||
+      checkin.category ||
+      checkin.aseCategory ||
+      "Unknown",
+    sobLevel: checkin.sobLevel ?? checkin.sob ?? p.sobLevel,
+    edemaLevel: checkin.edemaLevel ?? checkin.edema ?? p.edemaLevel,
+    fatigueLevel: checkin.fatigueLevel ?? checkin.fatigue ?? p.fatigueLevel,
+  };
+});
+
+        const activePatients = (mergedPatients || []).filter((patient) => {
           const status = String(patient?.status || "").toLowerCase();
           return status === "active";
         });
@@ -84,7 +129,7 @@ export default function DashboardPage() {
           return;
         }
 
-        const snapshotData = await getPatientSnapshots(candidateIds, 30);
+        const snapshotData = await getPatientSnapshotData(candidateIds, 30);
         if (cancelled) return;
 
         let resolvedSnapshots = [];

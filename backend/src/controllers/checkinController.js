@@ -1,6 +1,6 @@
-import { db } from "../config/db.js";
+// src/controllers/checkinController.js
+import { adminDB } from "../../firebaseAdmin.js"; // ✅ two levels up
 
-// POST /api/checkins
 export const receiveCheckin = async (req, res) => {
   try {
     const { providerID, patientCode, ssi, category, summary, timestamp } =
@@ -12,13 +12,12 @@ export const receiveCheckin = async (req, res) => {
         .json({ error: "providerID and patientCode required" });
 
     const when = timestamp || new Date().toISOString();
-    const base = db
+    const base = adminDB
       .collection("providers")
       .doc(providerID)
       .collection("patients")
       .doc(patientCode);
 
-    // store new check-in
     await base.collection("checkins").add({
       ssi,
       category,
@@ -26,7 +25,6 @@ export const receiveCheckin = async (req, res) => {
       timestamp: when,
     });
 
-    // update patient’s top-level status
     await base.set(
       { category: category || "Green", updatedAt: when },
       { merge: true }

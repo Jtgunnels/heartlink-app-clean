@@ -9,7 +9,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import "./PatientsPage.css";
 import {
   getPatientsList,
-  getPatientSnapshots,
+  getPatientSnapshotData,
 } from "../utils/fetchReportData";
 import PatientSnapshotCard from "../components/patients/PatientSnapshotCard";
 import PatientDetailDrawer from "../components/patients/PatientDetailDrawer.jsx";
@@ -101,7 +101,7 @@ export default function PatientsPage() {
         return;
       }
 
-      const snapshots = await getPatientSnapshots(ids, 30);
+      const snapshots = await getPatientSnapshotData(ids, 30);
       setPatients(hydrateSnapshots(snapshots, activeMeta));
     } catch (err) {
       console.error("PatientsPage snapshot fetch error", err);

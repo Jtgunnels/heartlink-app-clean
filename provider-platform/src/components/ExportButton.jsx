@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./ExportButton.css";
 
-export default function ExportButton({ providerID = "demoProvider" }) {
+export default function ExportButton({ providerID }) {
   const [loading, setLoading] = useState(false);
   const [exportType, setExportType] = useState("csv");
   const [message, setMessage] = useState("");
@@ -16,9 +16,14 @@ export default function ExportButton({ providerID = "demoProvider" }) {
       setLoading(true);
       setMessage("");
 
+      // Determine providerID (prop takes precedence, then storage)
+      const provider =
+        providerID || localStorage.getItem("providerId") || sessionStorage.getItem("providerId");
+      if (!provider) throw new Error("No providerId available for export");
+
       // ✅ Live backend export call
       const response = await axios.get(
-        `http://localhost:5050/api/export?providerID=${providerID}&type=${exportType}`,
+        `http://localhost:5050/api/export?providerID=${encodeURIComponent(provider)}&type=${exportType}`,
         { responseType: "blob" }
       );
 

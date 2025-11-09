@@ -1,9 +1,9 @@
-// src/context/TierContext.jsx
-import React, { createContext, useEffect, useMemo, useState } from "react";
+// src/context/TierContext.jsx — Final Unified Version
+import React, { createContext, useContext, useEffect, useMemo, useState } from "react";
 import { doc, getDoc } from "firebase/firestore";
-import { db } from "../config/firebase";
+import { db } from "../utils/firebaseConfig";
+import { useAuth } from "./AuthProvider";
 
-// Create the context
 const DEFAULT_TIER = "Gold";
 const TierContext = createContext({ tier: DEFAULT_TIER });
 
@@ -15,39 +15,69 @@ const TIER_ALIASES = {
   diamond: "Diamond",
 };
 
+// Helper: normalize tier string
 function normalizeTier(rawTier) {
   const key = String(rawTier || "").trim().toLowerCase();
   return TIER_ALIASES[key] || DEFAULT_TIER;
 }
 
-// Provider component
 export const TierProvider = ({ children }) => {
+  const { user, loading } = useAuth();
   const [tier, setTier] = useState(DEFAULT_TIER);
-  const providerID = "demoProvider"; // Replace with dynamic ID if needed
 
+  // 🔹 Re-fetch tier when user or providerId changes
   useEffect(() => {
-    const fetchTier = async () => {
-      try {
-        const docRef = doc(db, "providers", providerID);
-        const docSnap = await getDoc(docRef);
+    if (loading) return;
 
-        if (docSnap.exists()) {
+    const providerId =
+      localStorage.getItem("providerId") || sessionStorage.getItem("providerId");
+
+    if (!user || !providerId) {
+      console.log("ℹ️ No user or providerId found; resetting tier to default");
+      setTier(DEFAULT_TIER);
+      return;
+    }
+
+    let isMounted = true;
+
+    async function fetchTier() {
+      try {
+        const docRef = doc(db, "providers", providerId);
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists() && isMounted) {
           const data = docSnap.data();
           const resolvedTier = normalizeTier(data.tier || data.planTier);
-          console.log("🏆 Provider tier fetched:", resolvedTier);
+          console.log(`✅ TierContext: Loaded tier '${resolvedTier}' for ${providerId}`);
           setTier(resolvedTier);
-        } else {
-          console.warn("⚠ No provider record found; defaulting to Bronze");
+        } else if (isMounted) {
+          console.warn(`⚠️ No provider record found for ${providerId}; defaulting to Gold`);
           setTier(DEFAULT_TIER);
         }
       } catch (err) {
         console.error("❌ Error fetching provider tier:", err);
-        setTier(DEFAULT_TIER);
+        if (isMounted) setTier(DEFAULT_TIER);
       }
-    };
+    }
 
     fetchTier();
-  }, [providerID]);
+
+    return () => {
+      isMounted = false;
+    };
+  }, [
+    user,
+    loading,
+    localStorage.getItem("providerId"),
+    sessionStorage.getItem("providerId"),
+  ]);
+
+  // 🔹 Reset to default when user logs out
+  useEffect(() => {
+    if (!user && !loading) {
+      console.log("ℹ️ User logged out; resetting tier to Gold");
+      setTier(DEFAULT_TIER);
+    }
+  }, [user, loading]);
 
   const value = useMemo(() => ({ tier }), [tier]);
 

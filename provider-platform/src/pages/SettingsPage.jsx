@@ -7,7 +7,7 @@ import React, {
 import { useSearchParams, useNavigate } from "react-router-dom";
 import "./SettingsPage.css";
 import { exportAsCSV } from "../utils/reportExports";
-import { db } from "../config/firebase";
+import { db } from "../utils/firebaseConfig.js";
 import { collection, getDocs } from "firebase/firestore";
 import { useAuth } from "../context/AuthProvider";
 
@@ -25,12 +25,12 @@ const PALETTE = [
   { name: "Ivory White", hex: "#FFFBF7" },
 ];
 
-const PROVIDER_ID = "demoProvider";
+// providerId is taken from sessionStorage/localStorage at runtime when needed
 
 export default function SettingsPage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
-  const { logout } = useAuth();
+  const { logout, user } = useAuth();
   const queryTab = (searchParams.get("tab") || "").toLowerCase();
   const initialTab = TABS.some((tab) => tab.key === queryTab) ? queryTab : "agency";
 
@@ -70,13 +70,29 @@ export default function SettingsPage() {
   const [teamError, setTeamError] = useState(null);
 
   useEffect(() => {
+    // Only attempt Firestore reads when a user is signed in.
+    if (!user) {
+      setTeam([]);
+      setTeamLoading(false);
+      setTeamError(null);
+      return;
+    }
+
     let cancelled = false;
     (async () => {
       try {
-        const providerRef = collection(db, "providers", PROVIDER_ID, "users");
-        let snap = await getDocs(providerRef);
+        const providerId = sessionStorage.getItem("providerId") || localStorage.getItem("providerId");
 
-        if (snap.empty) {
+        // If we have a providerId, attempt the provider-scoped users collection.
+        // Otherwise skip the provider-scoped query to avoid permission-denied noise.
+        let snap = null;
+        if (providerId) {
+          const providerRef = collection(db, "providers", providerId, "users");
+          snap = await getDocs(providerRef);
+        }
+
+        // If provider query returned no results, try a readonly fallback (may still be restricted by rules).
+        if ((!snap || snap.empty) && !cancelled) {
           const fallbackRef = collection(db, "users");
           const fallbackSnap = await getDocs(fallbackRef);
           if (!cancelled && !fallbackSnap.empty) {
@@ -84,13 +100,11 @@ export default function SettingsPage() {
           }
         }
 
-        if (cancelled) return;
+        if (cancelled || !snap) return;
 
         const rows = snap.docs.map((doc) => {
           const data = doc.data() || {};
-          const derivedStatus =
-            data.status ||
-            (data.active === false ? "Inactive" : "Active");
+          const derivedStatus = data.status || (data.active === false ? "Inactive" : "Active");
           return {
             id: doc.id,
             name: data.name || data.displayName || "Unnamed User",
@@ -114,7 +128,7 @@ export default function SettingsPage() {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [user]);
 
   const exportHistory = useMemo(
     () => [
