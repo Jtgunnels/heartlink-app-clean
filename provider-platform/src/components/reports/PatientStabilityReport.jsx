@@ -1,102 +1,72 @@
-// HeartLink Provider Platform — Stability Distribution Analysis (Final Compliance)
-
-import React, { useEffect, useState } from "react";
-import {
-  AreaChart,
-  Area,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-} from "recharts";
+import React, { useEffect, useState, useMemo } from "react";
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
 import ReportTableShell from "./ReportTableShell";
+import { getFourBandStabilityTrend } from "../../utils/fetchReportData";
 import { useContainerWidth } from "../../hooks/useContainerWidth";
 
 export default function PatientStabilityReport({
-  rowsProp = [],
   onExportData,
-  hideTable = true,
+  rowsProp,
+  hideTable = false,
 }) {
   const [rows, setRows] = useState([]);
+  const { ref: containerRef, width } = useContainerWidth(320);
 
-  // 🔁 Re-render when parent updates prop
+  const normalizeRows = (input = []) =>
+    Array.isArray(input)
+      ? input
+          .map((r) => ({
+            date: r?.date || null,
+            green: Number(r?.green ?? 0),
+            yellow: Number(r?.yellow ?? 0),
+            orange: Number(r?.orange ?? 0),
+            red: Number(r?.red ?? 0),
+          }))
+          .filter(Boolean)
+      : [];
+
   useEffect(() => {
-    setRows(Array.isArray(rowsProp) ? rowsProp : []);
+    if (Array.isArray(rowsProp) && rowsProp.length > 0) {
+      setRows(normalizeRows(rowsProp));
+    } else {
+      (async () => {
+        const fetched = await getFourBandStabilityTrend();
+        setRows(normalizeRows(fetched));
+      })();
+    }
   }, [rowsProp]);
 
+  const data = useMemo(() => rows, [rows]);
   const columns = [
     { key: "date", label: "Date" },
-    { key: "Green", label: "Stable (Green)" },
-    { key: "Yellow", label: "Minor Change (Yellow)" },
-    { key: "Orange", label: "Review Recommended (Orange)" },
-    { key: "Red", label: "Needs Immediate Review (Red)" },
+    { key: "green", label: "Stable (Green)" },
+    { key: "yellow", label: "Review Recommended (Yellow)" },
+    { key: "orange", label: "Minor Change (Orange)" },
+    { key: "red", label: "Immediate Review (Red)" },
   ];
-
-  const colors = {
-    Green: "#45B8A1",
-    Yellow: "#FFE58F",
-    Orange: "#FDBA74",
-    Red: "#F26868",
-  };
-
-  const { ref: containerRef, width } = useContainerWidth(320);
 
   return (
     <div>
       {!hideTable && (
-        <>
-          <h3 className="report-title">Stability Distribution Analysis</h3>
-          <p className="chart-desc">
-            Proportion of active participants in each stability category
-            (Green–Yellow–Orange–Red) throughout the selected period.
-          </p>
-        </>
-      )}
-
-      {!hideTable && (
         <ReportTableShell columns={columns} rows={rows} onExportData={onExportData} />
       )}
-
       <div className="chart-shell" ref={containerRef}>
-        {rows.length > 0 ? (
+        {data.length > 0 ? (
           <AreaChart
             width={width}
-            height={300}
-            data={rows}
-            margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
-            aria-label="Stability Distribution stacked trend"
+            height={280}
+            data={data}
+            stackOffset="expand"
+            margin={{ top: 12, right: 20, left: 0, bottom: 40 }}
           >
-            <defs>
-              <linearGradient id="colorGreen" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#45B8A1" stopOpacity={0.9} />
-                <stop offset="95%" stopColor="#45B8A1" stopOpacity={0.3} />
-              </linearGradient>
-              <linearGradient id="colorYellow" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#FFE58F" stopOpacity={0.9} />
-                <stop offset="95%" stopColor="#FFE58F" stopOpacity={0.3} />
-              </linearGradient>
-              <linearGradient id="colorOrange" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#FDBA74" stopOpacity={0.9} />
-                <stop offset="95%" stopColor="#FDBA74" stopOpacity={0.3} />
-              </linearGradient>
-              <linearGradient id="colorRed" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#F26868" stopOpacity={0.9} />
-                <stop offset="95%" stopColor="#F26868" stopOpacity={0.3} />
-              </linearGradient>
-            </defs>
-
-            <CartesianGrid strokeDasharray="3 3" strokeOpacity={0.15} />
-            <XAxis dataKey="date" tick={{ fontSize: 12 }} />
-            <YAxis domain={[0, 100]} tickFormatter={(v) => `${v}%`} tick={{ fontSize: 12 }} />
-            <Tooltip
-              formatter={(v, n) => [`${Number(v).toFixed(1)}%`, n]}
-              contentStyle={{ fontSize: 13 }}
-            />
-
-            <Area type="monotone" dataKey="Green" stackId="1" stroke={colors.Green} fill="url(#colorGreen)" />
-            <Area type="monotone" dataKey="Yellow" stackId="1" stroke={colors.Yellow} fill="url(#colorYellow)" />
-            <Area type="monotone" dataKey="Orange" stackId="1" stroke={colors.Orange} fill="url(#colorOrange)" />
-            <Area type="monotone" dataKey="Red" stackId="1" stroke={colors.Red} fill="url(#colorRed)" />
+            <CartesianGrid strokeOpacity={0.1} vertical={false} />
+            <XAxis dataKey="date" tick={{ fontSize: 11 }} angle={-45} height={60} />
+            <YAxis tickFormatter={(v) => `${(v * 100).toFixed(0)}%`} />
+            <Tooltip formatter={(v) => `${(v * 100).toFixed(1)}%`} />
+            <Area type="monotone" dataKey="green" stackId="1" stroke="#45B8A1" fill="#45B8A1" />
+            <Area type="monotone" dataKey="yellow" stackId="1" stroke="#FFD166" fill="#FFD166" />
+            <Area type="monotone" dataKey="orange" stackId="1" stroke="#F6AE2D" fill="#F6AE2D" />
+            <Area type="monotone" dataKey="red" stackId="1" stroke="#F26868" fill="#F26868" />
           </AreaChart>
         ) : (
           <p className="muted-text">No stability data available.</p>

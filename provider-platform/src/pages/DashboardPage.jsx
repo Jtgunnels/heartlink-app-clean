@@ -137,15 +137,21 @@ const mergedPatients = (allPatients || []).map((p) => {
         if (Array.isArray(snapshotData) && snapshotData.length > 0) {
           // ✅ Normalize Firestore 'category' → UI 'aseCategory'
           resolvedSnapshots = snapshotData.map((snapshot) => ({
-            ...snapshot,
-            aseCategory:
-              snapshot.aseCategory ||
-              snapshot.category || // <-- new check-in field
-              snapshot.aseStatus ||
-              snapshot.statusCategory ||
-              "Unknown",
-            detail: lookup.get(snapshot.id) || {},
-          }));
+  ...snapshot,
+  aseCategory:
+    snapshot.aseCategory ||
+    snapshot.category ||
+    snapshot.aseStatus ||
+    snapshot.statusCategory ||
+    "Unknown",
+  adherenceRate:
+    typeof snapshot.adherence === "number"
+      ? Math.round(snapshot.adherence)
+      : snapshot.adherenceRate ?? null,
+  lastCheckIn: snapshot.timestamp || snapshot.lastCheckIn || null,
+  detail: lookup.get(snapshot.id) || {},
+}));
+
           setUsingFallback(escalated.length === 0);
         } else {
           resolvedSnapshots = prioritized.slice(0, 6).map((patient) => ({

@@ -1,18 +1,9 @@
-// PatientsPage.jsx
-import React, {
-  useCallback,
-  useEffect,
-  useMemo,
-  useState,
-} from "react";
-import { useNavigate, useParams } from "react-router-dom";
+// src/pages/PatientsPage.jsx
+import React, { useCallback, useEffect, useMemo, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./PatientsPage.css";
-import {
-  getPatientsList,
-  getPatientSnapshotData,
-} from "../utils/fetchReportData";
-import PatientSnapshotCard from "../components/patients/PatientSnapshotCard";
-import PatientDetailDrawer from "../components/patients/PatientDetailDrawer.jsx";
+import "./DashboardPage.css";
+import { getPatientSnapshotData } from "../utils/fetchReportData";
 
 const ASE_FILTERS = [
   { label: "All", value: "ALL" },
@@ -24,17 +15,13 @@ const ASE_FILTERS = [
 
 export default function PatientsPage() {
   const navigate = useNavigate();
-  const { id: routePatientId } = useParams();
-
   const [patients, setPatients] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
   const [searchInput, setSearchInput] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [aseFilter, setAseFilter] = useState("ALL");
 
-  // Debounce search input
   useEffect(() => {
     const handle = setTimeout(() => {
       setSearchQuery(searchInput.trim().toLowerCase());
@@ -42,101 +29,62 @@ export default function PatientsPage() {
     return () => clearTimeout(handle);
   }, [searchInput]);
 
-  const hydrateSnapshots = useCallback((snapshots, sourceMeta) => {
-    const metaMap = new Map(
-      sourceMeta.map((patient) => [patient.id, patient])
-    );
-    return (snapshots || []).map((snapshot) => {
-      const meta = metaMap.get(snapshot.id) || {};
-      const name =
-        snapshot.name ||
-        meta.name ||
-        meta.displayName ||
-        meta.patientName ||
-        meta.patientCode ||
-        snapshot.id;
-      return {
-        ...snapshot,
-        name,
-        patientCode: meta.patientCode || snapshot.patientCode || snapshot.id,
-        status: meta.status || snapshot.status || "Active",
-        // ✅ Normalize Firestore 'category' → UI 'aseCategory'
-        aseCategory:
-          snapshot.aseCategory ||
-          snapshot.category || // <-- new check-in field
-          meta.aseCategory ||
-          "Stable",
-      };
-    });
-  }, []);
-
+  // 🔹 Fetch snapshots and normalize for table use
   const fetchSnapshots = useCallback(async () => {
     setLoading(true);
     setError(null);
     try {
-      const list = await getPatientsList();
-      const activeMeta = (list || [])
-        .filter(
-          (patient) =>
-            String(patient?.status || "").trim().toLowerCase() === "active"
-        )
-        .map((patient) => ({
-          id: patient.id,
-          patientCode: patient.patientCode || patient.code || patient.id,
-          status: patient.status || "Active",
-          name:
-            patient.name ||
-            patient.displayName ||
-            patient.patientName ||
-            patient.patientCode ||
-            patient.id,
-          aseCategory: patient.aseCategory || patient.aseStatus || null,
-        }));
-
-      const ids = activeMeta.map((patient) => patient.id).filter(Boolean);
-
-      if (!ids.length) {
+      const snapshotData = await getPatientSnapshotData();
+      if (!Array.isArray(snapshotData) || snapshotData.length === 0) {
         setPatients([]);
         setLoading(false);
         return;
       }
 
-      const snapshots = await getPatientSnapshotData(ids, 30);
-      setPatients(hydrateSnapshots(snapshots, activeMeta));
+      const normalized = snapshotData.map((s, idx) => ({
+        id: s.patientId || `patient-${idx}`,
+        patientCode: s.patientId || s.patientCode || `PAT-${idx}`,
+        name: s.name || `Patient ${idx + 1}`,
+        aseCategory:
+          s.aseCategory ||
+          s.category ||
+          s.aseStatus ||
+          "Unknown",
+        avgEngagement:
+          typeof s.adherence === "number"
+            ? Math.round(s.adherence)
+            : s.avgEngagement ?? null,
+        timestamp:
+          s.timestamp || s.lastCheckIn || null,
+      }));
+
+      console.table(normalized);
+      setPatients(normalized);
     } catch (err) {
-      console.error("PatientsPage snapshot fetch error", err);
-      setError(err?.message || "Unable to load patients.");
+      console.error("PatientsPage fetch error:", err);
+      setError("Unable to load patients.");
       setPatients([]);
     } finally {
       setLoading(false);
     }
-  }, [hydrateSnapshots]);
+  }, []);
 
   useEffect(() => {
     fetchSnapshots();
   }, [fetchSnapshots]);
 
   const filteredPatients = useMemo(() => {
-    return patients.filter((patient) => {
+    return patients.filter((p) => {
       const matchesFilter =
-        aseFilter === "ALL" ? true : patient.aseCategory === aseFilter;
-
+        aseFilter === "ALL" ? true : p.aseCategory === aseFilter;
       const matchesSearch = searchQuery
-        ? [patient.name, patient.patientCode]
+        ? [p.name, p.patientCode]
             .filter(Boolean)
-            .some((value) =>
-              String(value).toLowerCase().includes(searchQuery)
-            )
+            .some((v) => String(v).toLowerCase().includes(searchQuery))
         : true;
-
       return matchesFilter && matchesSearch;
     });
   }, [patients, aseFilter, searchQuery]);
-
-  const selectedPatient = useMemo(() => {
-    if (!routePatientId) return null;
-    return patients.find((patient) => patient.id === routePatientId) || null;
-  }, [patients, routePatientId]);
 
   const handleSelectPatient = useCallback(
     (patient) => {
@@ -146,10 +94,6 @@ export default function PatientsPage() {
     [navigate]
   );
 
-  const handleCloseDetail = useCallback(() => {
-    navigate("/patients", { replace: true });
-  }, [navigate]);
-
   return (
     <div className="patients-page">
       <div className="patients-inner">
@@ -157,7 +101,9 @@ export default function PatientsPage() {
           <div>
             <h1>Active Patient Directory</h1>
             <p>
-              All active patients in your program, displayed by current stability category.
+              Comprehensive list of all active patients in your program,
+              displaying their current ASE stability category and engagement
+              levels.
             </p>
           </div>
           <span className="patients-badge">
@@ -165,37 +111,27 @@ export default function PatientsPage() {
           </span>
         </header>
 
-        <section className="patients-controls" aria-label="Patient search and filters">
+        <section className="patients-controls">
           <div className="search-field">
-            <label htmlFor="patient-search" className="visually-hidden">
-              Search patients by name or ID
-            </label>
             <input
-              id="patient-search"
               type="search"
               placeholder="Search by name or ID"
               value={searchInput}
-              onChange={(event) => setSearchInput(event.target.value)}
+              onChange={(e) => setSearchInput(e.target.value)}
             />
           </div>
-
-          <div className="filter-group" role="tablist" aria-label="Filter patients by ASE category">
-            {ASE_FILTERS.map((filter) => (
+          <div className="filter-group">
+            {ASE_FILTERS.map((f) => (
               <button
-                key={filter.value}
-                type="button"
-                role="tab"
-                className={`filter-pill ${aseFilter === filter.value ? "active" : ""}`}
-                aria-selected={aseFilter === filter.value}
-                onClick={() => setAseFilter(filter.value)}
+                key={f.value}
+                className={`filter-pill ${aseFilter === f.value ? "active" : ""}`}
+                onClick={() => setAseFilter(f.value)}
               >
-                {filter.label}
+                {f.label}
               </button>
             ))}
           </div>
-
           <button
-            type="button"
             className="hl-btn ghost small"
             onClick={() => {
               setAseFilter("ALL");
@@ -206,44 +142,71 @@ export default function PatientsPage() {
           </button>
         </section>
 
-        <section className="patients-directory" aria-label="Active patients">
+        <section className="patients-directory">
           {loading ? (
             <div className="patients-state">Loading patients…</div>
           ) : error ? (
-            <div className="patients-error" role="alert">
-              {error}
-            </div>
+            <div className="patients-error">{error}</div>
           ) : filteredPatients.length === 0 ? (
-            <div className="patients-state">
-              No active patients found. All currently discharged or inactive.
-            </div>
+            <div className="patients-state">No active patients found.</div>
           ) : (
-            <div className="patients-grid">
-              {filteredPatients.map((patient) => (
-                <PatientSnapshotCard
-                  key={patient.id}
-                  patient={patient}
-                  context="directory"
-                  showTrend
-                  showReason
-                  onSelect={() => handleSelectPatient(patient)}
-                />
-              ))}
+            <div className="attention-table-wrapper">
+              <table className="attention-table">
+                <thead>
+                  <tr>
+                    <th>Patient ID</th>
+                    <th>Name</th>
+                    <th>ASE Category</th>
+                    <th>Avg Engagement (30 d)</th>
+                    <th>Last Check-In</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {filteredPatients.map((p) => (
+                    <tr
+                      key={p.id}
+                      className="attention-row expandable"
+                      onClick={() => handleSelectPatient(p)}
+                    >
+                      <td>{p.patientCode}</td>
+                      <td>{p.name}</td>
+                      <td>
+                        <span
+                          className={`ase-chip ${String(p.aseCategory || "")
+                            .toLowerCase()
+                            .replace(/\s+/g, "-")}`}
+                        >
+                          {p.aseCategory}
+                        </span>
+                      </td>
+                      <td>
+                        {p.avgEngagement != null
+                          ? `${p.avgEngagement}%`
+                          : "—"}
+                      </td>
+                      <td>
+                        {p.timestamp
+                          ? new Date(p.timestamp).toLocaleDateString("en-US", {
+                              month: "short",
+                              day: "numeric",
+                              year: "numeric",
+                            })
+                          : "—"}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           )}
         </section>
 
         <footer className="patients-footer">
-          HeartLink is a general wellness tool designed to support awareness of well-being and engagement. It does not
-          diagnose, monitor, or treat any medical condition.
+          HeartLink is a general wellness tool designed to support awareness of
+          well-being and engagement. It does not diagnose, monitor, or treat any
+          medical condition.
         </footer>
       </div>
-
-      <PatientDetailDrawer
-        patient={selectedPatient}
-        isOpen={Boolean(selectedPatient)}
-        onClose={handleCloseDetail}
-      />
     </div>
   );
 }

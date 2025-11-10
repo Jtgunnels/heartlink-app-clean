@@ -17,7 +17,6 @@ function providerCol(name) {
   return collection(db, `providers/${providerId}/${name}`);
 }
 
-
 /** Utility: safely convert Firestore Timestamp or date string → Date */
 function toDate(input) {
   if (!input) return null;
@@ -41,9 +40,8 @@ const catMap = {
   "Needs Immediate Review": "red",
 };
 
-/** ========== Core Fetch Functions ========== */
+/* =================== CORE FETCH =================== */
 
-/** Read all patients (provider scoped) */
 export async function getPatientsList() {
   try {
     const q = query(providerCol("patients"));
@@ -55,110 +53,74 @@ export async function getPatientsList() {
   }
 }
 
-/** Read check-ins for a patient (provider scoped) */
-export async function readPatientCheckins(patientId) {
+/* =================== ANALYTICS =================== */
+
+export async function getPopulationOverview(days = 30) {
   try {
-    // primary: top-level provider checkins
-    const q1 = query(
-      providerCol("checkins"),
-      where("patientId", "==", patientId),
-      orderBy("timestamp", "desc")
-    );
-    const snap1 = await getDocs(q1);
-    if (!snap1.empty) return snap1.docs.map((d) => ({ id: d.id, ...d.data() }));
+    const q = query(providerCol("checkins"));
+    const snap = await getDocs(q);
+    const all = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
 
-    // fallback: legacy nested collection under patients/{id}/checkins within the same provider
-    const q2 = query(
-      collection(
-        db,
-        `${providerCol("patients").path}/${patientId}/checkins`
-      ),
-      orderBy("timestamp", "desc")
-    );
-    const snap2 = await getDocs(q2);
-    return snap2.docs.map((d) => ({ id: d.id, ...d.data() }));
-  } catch (err) {
-    console.error("Error reading patient check-ins:", err);
-    return [];
-  }
-}
-
-/** ========== Analytics Functions ========== */
-
-/** Patient Overview (aggregates check-ins for a single patient) */
-export async function getPatientOverview(patientId) {
-  try {
-    const checkins = await readPatientCheckins(patientId);
-    const trend = [];
-
-    for (const c of checkins) {
-      const d = toDate(c.timestamp || c.date);
-      if (!d) continue;
-      const cat = c.aseCategory ?? c.category;
-      const mapped = catMap[cat] || "gray";
-      trend.push({
-        date: d,
-        aseCategory: cat,
-        mapped,
-        adherence: c.adherence ?? null,
-        wellnessIndex: c.ssi ?? c.wellnessIndex ?? null,
-      });
+    if (all.length === 0) {
+      return {
+        totalPatients: 0,
+        activePatients: 0,
+        stablePopulation: 0,
+        atRiskPopulation: 0,
+        avgEngagement: 0,
+        adherenceTrend: 0,
+      };
     }
 
-    return trend;
-  } catch (err) {
-    console.error("Error generating patient overview:", err);
-    return [];
-  }
-}
-
-/** Snapshot of multiple patients (used on dashboard) */
-export async function getPatientSnapshotData(patientIds = [], days = 30) {
-  try {
-    const allSnapshots = [];
-    for (const id of patientIds) {
-      const allCheckins = await readPatientCheckins(id);
-
-      const now = new Date();
-      const cutoff = new Date(now);
-      cutoff.setDate(now.getDate() - days);
-
-      const windowCheckins = allCheckins.filter((entry) => {
-        const d = toDate(entry.timestamp || entry.date);
-        return d && d >= cutoff;
-      });
-
-      const latest =
-        [...windowCheckins].reverse().find((entry) =>
-          toDate(entry.timestamp || entry.date)
-        ) || null;
-      const latestDate = latest
-        ? toDate(latest.timestamp || latest.date)
-        : null;
-
-      const aseCategory =
-        (latest && (latest.aseCategory ?? latest.category)) || "Unknown";
-
-      allSnapshots.push({
-        id,
-        lastCheckIn: latestDate ? latestDate.toISOString() : null,
-        aseCategory,
-        trend: windowCheckins.map((entry) => ({
-          date: toDate(entry.timestamp || entry.date),
-          aseCategory: entry.aseCategory ?? entry.category,
-          adherence: entry.adherence ?? null,
-          wellnessIndex: entry.ssi ?? entry.wellnessIndex ?? null,
-        })),
-      });
+    const counts = { green: 0, yellow: 0, orange: 0, red: 0 };
+    for (const c of all) {
+      const cat = (c.aseCategory || c.category || "").toLowerCase();
+      if (cat.includes("stable")) counts.green++;
+      else if (cat.includes("minor")) counts.yellow++;
+      else if (cat.includes("review")) counts.orange++;
+      else if (cat.includes("immediate")) counts.red++;
     }
-    return allSnapshots;
+
+    const total = Object.values(counts).reduce((a, b) => a + b, 0) || 1;
+    const stablePopulation = Math.round((counts.green / total) * 100);
+    const atRiskPopulation = Math.round(
+      ((counts.orange + counts.red) / total) * 100
+    );
+
+    const adherenceVals = all
+      .map((c) => Number(c.adherence))
+      .filter((v) => !isNaN(v));
+    const avgEngagement =
+      adherenceVals.length > 0
+        ? Math.round(
+            adherenceVals.reduce((a, b) => a + b, 0) / adherenceVals.length
+          )
+        : 0;
+
+    return {
+      totalPatients: total,
+      activePatients: total, // until discharged separation added
+      stablePopulation,
+      atRiskPopulation,
+      avgEngagement,
+      adherenceTrend: 0,
+    };
   } catch (err) {
-    console.error("Error building patient snapshot data:", err);
-    return [];
+    console.error("Error computing population overview:", err);
+    return {
+      totalPatients: 0,
+      activePatients: 0,
+      stablePopulation: 0,
+      atRiskPopulation: 0,
+      avgEngagement: 0,
+      adherenceTrend: 0,
+    };
   }
 }
 
-/** Population-level wellness data (provider scoped) */
+/* === POPULATION WELLNESS TREND ===
+   Returns average SSI (wellness index) per day across the cohort.
+*/
 export async function getPopulationWellnessData(days = 30) {
   try {
     const q = query(providerCol("checkins"), orderBy("timestamp", "desc"));
@@ -174,51 +136,37 @@ export async function getPopulationWellnessData(days = 30) {
       return d && d >= cutoff;
     });
 
+    // group by date and compute daily average SSI
     const byDate = {};
     for (const c of filtered) {
       const k = dateKey(c.timestamp || c.date);
       if (!k) continue;
-      const ssi = c.ssi ?? c.wellnessIndex ?? 0;
       if (!byDate[k]) byDate[k] = [];
-      byDate[k].push(ssi);
+      const ssiVal = typeof c.ssi === "number" ? c.ssi : c.wellnessIndex;
+      if (typeof ssiVal === "number") byDate[k].push(ssiVal);
     }
 
-    const trend = Object.keys(byDate)
+    const rows = Object.keys(byDate)
       .sort()
-      .map((k) => ({
-        date: k,
-        avgSSI:
-          byDate[k].reduce((sum, x) => sum + (x || 0), 0) /
-          (byDate[k].length || 1),
-      }));
+      .map((date) => {
+        const arr = byDate[date];
+        const avgSSI =
+          arr.length > 0
+            ? Number((arr.reduce((a, b) => a + b, 0) / arr.length).toFixed(2))
+            : 0;
+        return { date, wellnessIndex: avgSSI };
+      });
 
-    return trend;
+    console.log("🩺 getPopulationWellnessData returned:", rows.length, "rows");
+    if (rows.length < 10) console.table(rows);
+
+    return rows;
   } catch (err) {
-    console.error("Error fetching population wellness data:", err);
+    console.error("Error in getPopulationWellnessData:", err);
     return [];
   }
 }
 
-/** Population overview (counts by ASE category) */
-export async function getPopulationOverview() {
-  try {
-    const q = query(providerCol("checkins"));
-    const snap = await getDocs(q);
-    const all = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
-
-    const counts = { green: 0, yellow: 0, orange: 0, red: 0 };
-    for (const c of all) {
-      const mapped = catMap[c.aseCategory ?? c.category] || "gray";
-      if (counts[mapped] !== undefined) counts[mapped] += 1;
-    }
-    return counts;
-  } catch (err) {
-    console.error("Error computing population overview:", err);
-    return { green: 0, yellow: 0, orange: 0, red: 0 };
-  }
-}
-
-/** Enrollment Analytics (provider-scoped) */
 export async function getEnrollmentAnalytics() {
   try {
     const patients = await getPatientsList();
@@ -233,18 +181,12 @@ export async function getEnrollmentAnalytics() {
   }
 }
 
-/**
- * Enrollment Trend (provider-scoped)
- * Returns an array: [{ date: 'YYYY-MM-DD', active: <count> }, ...]
- * We approximate daily "active population" by counting unique patientIds
- * with a check-in on each date within the last N days.
- */
 export async function getEnrollmentTrend(days = 90) {
   try {
     const q = query(
       providerCol("checkins"),
       orderBy("timestamp", "desc"),
-      limit(2000) // safety cap
+      limit(2000)
     );
     const snap = await getDocs(q);
     const all = snap.docs.map((d) => d.data());
@@ -253,7 +195,6 @@ export async function getEnrollmentTrend(days = 90) {
     const cutoff = new Date(now);
     cutoff.setDate(now.getDate() - days);
 
-    // Group by date key and count unique patientIds
     const byDate = new Map();
     for (const c of all) {
       const d = toDate(c.timestamp || c.date);
@@ -264,101 +205,278 @@ export async function getEnrollmentTrend(days = 90) {
     }
 
     const dates = Array.from(byDate.keys()).sort();
-    return dates.map((k) => ({
+    const rows = dates.map((k) => ({
       date: k,
       active: byDate.get(k).size,
     }));
+
+    console.log("🩺 getEnrollmentTrend returned:", rows.length, "records");
+    if (rows.length < 10) console.table(rows);
+
+    return rows;
   } catch (err) {
     console.error("Error computing enrollment trend:", err);
     return [];
   }
 }
 
-/**
- * Check-in Adherence Data (provider-scoped)
- * Calculates each patient's check-in frequency over the last N days.
- * Returns [{ patientId, adherence: %, totalCheckIns, expectedCheckIns }]
- */
+/* === COHORT MEAN ADHERENCE ===
+   Returns one record per day showing mean adherence (%) across all active participants.
+*/
 export async function getCheckInAdherenceData(days = 30) {
   try {
-    const patients = await getPatientsList();
     const q = query(providerCol("checkins"), orderBy("timestamp", "desc"));
     const snap = await getDocs(q);
-    const all = snap.docs.map((d) => d.data());
+    const all = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
 
     const now = new Date();
     const cutoff = new Date(now);
     cutoff.setDate(now.getDate() - days);
 
-    // Group check-ins by patient
-    const counts = {};
-    for (const c of all) {
+    // Filter check-ins within range
+    const filtered = all.filter((c) => {
       const d = toDate(c.timestamp || c.date);
-      if (!d || d < cutoff) continue;
-      const id = c.patientId || "unknown";
-      if (!counts[id]) counts[id] = 0;
-      counts[id] += 1;
-    }
-
-    // Compute adherence relative to expected (one check-in per day)
-    const adherenceData = patients.map((p) => {
-      const totalCheckIns = counts[p.id] || 0;
-      const expectedCheckIns = days;
-      const adherence = Math.min(
-        100,
-        Math.round((totalCheckIns / expectedCheckIns) * 100)
-      );
-      return {
-        patientId: p.id,
-        name: p.name || p.fullName || "Unknown",
-        adherence,
-        totalCheckIns,
-        expectedCheckIns,
-      };
+      return d && d >= cutoff;
     });
 
-    return adherenceData;
+    // Group by date
+    const byDate = {};
+    for (const c of filtered) {
+      const k = dateKey(c.timestamp || c.date);
+      if (!k) continue;
+      if (!byDate[k]) byDate[k] = [];
+
+      // adherence is stored as numeric %, so include that directly
+      const adherenceVal = Number(c.adherence);
+      if (!isNaN(adherenceVal)) byDate[k].push(adherenceVal);
+    }
+
+    // Compute mean adherence per day
+    const rows = Object.keys(byDate)
+      .sort()
+      .map((date) => {
+        const vals = byDate[date];
+        const adherenceRate =
+          vals.length > 0
+            ? Math.round(vals.reduce((a, b) => a + b, 0) / vals.length)
+            : 0;
+        return { date, adherenceRate };
+      });
+
+    console.log("🩺 getCheckInAdherenceData (cohort mean) returned:", rows.length, "rows");
+    if (rows.length < 10) console.table(rows);
+
+    return rows;
   } catch (err) {
-    console.error("Error computing check-in adherence data:", err);
+    console.error("Error computing mean adherence:", err);
     return [];
   }
 }
-/**
- * Four-Band Stability Trend
- * Builds counts for each ASE category per day (Stable, Minor Change, Review Recommended, Needs Immediate Review)
- * → [{ date:'YYYY-MM-DD', stable:x, minor:y, review:z, critical:w }]
- */
+
+
+
+/* === FOUR-BAND STABILITY TREND (normalized to 100%) === */
+/* === FOUR-BAND STABILITY TREND (fractions 0..1 for stacked chart) === */
 export async function getFourBandStabilityTrend(days = 30) {
   try {
     const q = query(providerCol("checkins"), orderBy("timestamp", "desc"));
     const snap = await getDocs(q);
-    const all = snap.docs.map((d) => d.data());
+    const all = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
 
     const now = new Date();
     const cutoff = new Date(now);
     cutoff.setDate(now.getDate() - days);
 
+    // One stability state per patient per day
     const byDate = {};
     for (const c of all) {
       const d = toDate(c.timestamp || c.date);
       if (!d || d < cutoff) continue;
-      const k = d.toISOString().slice(0, 10);
-      if (!byDate[k])
-        byDate[k] = { stable: 0, minor: 0, review: 0, critical: 0 };
-      const cat = (c.aseCategory || c.category || "").toLowerCase();
-      if (cat.includes("stable")) byDate[k].stable++;
-      else if (cat.includes("minor")) byDate[k].minor++;
-      else if (cat.includes("review")) byDate[k].review++;
-      else if (cat.includes("immediate")) byDate[k].critical++;
+      const day = d.toISOString().slice(0, 10);
+      const pid = c.patientId || "unknown";
+      if (!byDate[day]) byDate[day] = {};
+      // last state of the day wins (overwrite is fine)
+      byDate[day][pid] = c.aseCategory || c.category || "";
     }
 
-    return Object.entries(byDate)
+    const rows = Object.entries(byDate)
       .sort(([a], [b]) => a.localeCompare(b))
-      .map(([date, v]) => ({ date, ...v }));
+      .map(([date, perPatient]) => {
+        const counts = { green: 0, yellow: 0, orange: 0, red: 0 };
+        const total = Object.keys(perPatient).length || 1;
+
+        for (const cat of Object.values(perPatient)) {
+          const s = (cat || "").toLowerCase();
+          if (s.includes("stable")) counts.green++;
+          else if (s.includes("minor")) counts.yellow++;
+          else if (s.includes("review")) counts.orange++;
+          else if (s.includes("immediate")) counts.red++;
+        }
+
+        // Return FRACTIONS 0..1 so the chart’s existing *100 formatter is correct
+        return {
+          date,
+          green: counts.green / total,
+          yellow: counts.yellow / total,
+          orange: counts.orange / total,
+          red: counts.red / total,
+        };
+      });
+
+    console.log("🩺 getFourBandStabilityTrend (fractions) rows:", rows.length);
+    if (rows.length < 10) console.table(rows);
+    return rows;
   } catch (err) {
     console.error("Error computing four-band stability trend:", err);
     return [];
   }
 }
+
+/* === DASHBOARD SNAPSHOT ===
+   Returns array of patient snapshot objects for dashboard tables
+   using latest ASE-processed check-ins.
+*/
+export async function getPatientSnapshotData() {
+  try {
+    const providerId =
+      localStorage.getItem("providerId") || sessionStorage.getItem("providerId");
+    if (!providerId) throw new Error("No providerId in storage");
+
+    // Fetch patients and check-ins
+    const patientSnap = await getDocs(collection(db, `providers/${providerId}/patients`));
+    const checkinSnap = await getDocs(collection(db, `providers/${providerId}/checkins`));
+
+    const patients = patientSnap.docs.map((d) => ({ id: d.id, ...d.data() }));
+    const checkins = checkinSnap.docs.map((d) => ({ id: d.id, ...d.data() }));
+
+    const results = patients.map((p) => {
+      const related = checkins
+        .filter((c) => c.patientId === p.id || c.patientCode === p.id)
+        .sort(
+          (a, b) =>
+            new Date(b.timestamp || b.date || 0) -
+            new Date(a.timestamp || a.date || 0)
+        );
+
+      const last = related[0];
+
+      // 🧩 Safe timestamp parsing — never throw
+      let lastDate = null;
+      if (last?.timestamp instanceof Date) {
+        lastDate = last.timestamp;
+      } else if (typeof last?.timestamp === "string" || typeof last?.date === "string") {
+        const parsed = new Date(last.timestamp || last.date);
+        lastDate = isNaN(parsed.getTime()) ? null : parsed;
+      }
+
+      // Baseline info
+      const baseline = p.baseline || {
+        shortnessOfBreath: p.shortnessOfBreath ?? null,
+        edema: p.edema ?? null,
+        fatigue: p.fatigue ?? null,
+        orthopnea: p.orthopnea ?? null,
+        weight: p.weight ?? null,
+      };
+
+      // Vitals (most recent values)
+      const vitals = {
+        weight: last?.weight ?? p.weight ?? null,
+        breathing: last?.breathing ?? null,
+        edema: last?.edema ?? null,
+        fatigue: last?.fatigue ?? null,
+      };
+
+      return {
+        patientId: p.id,
+        patientCode: p.patientCode || p.code || p.id,
+        name:
+          p.name ||
+          p.displayName ||
+          p.fullName ||
+          p.patientName ||
+          p.patientCode ||
+          p.id,
+        aseCategory: last?.aseCategory || p.aseCategory || "Stable",
+        adherence:
+          typeof last?.adherence === "number"
+            ? Math.round(last.adherence)
+            : p.adherence ?? null,
+        ssi:
+          typeof last?.ssi === "number"
+            ? last.ssi
+            : p.ssi ?? null,
+        wellnessIndex:
+          p.wellnessIndex ??
+          last?.wellnessIndex ??
+          (typeof last?.ssi === "number" ? Math.round(last.ssi * 20) : null),
+        timestamp: lastDate ? lastDate.toISOString() : null,
+        status: p.status || "Active",
+        ...vitals,
+        baseline,
+      };
+    });
+
+    console.log("🩺 getPatientSnapshotData normalized:", results.length, "records");
+    if (results.length < 10) console.table(results);
+    return results;
+  } catch (err) {
+    console.error("Error in getPatientSnapshotData:", err);
+    return [];
+  }
+}
+
+/* === PATIENT DETAIL OVERVIEW ===
+   Returns most recent ASE data + trend info for a given patient.
+*/
+export async function getPatientOverview(patientId, days = 30) {
+  try {
+    if (!patientId) throw new Error("No patientId provided");
+
+    const q = query(
+      providerCol("checkins"),
+      where("patientId", "==", patientId),
+      orderBy("timestamp", "desc"),
+      limit(50)
+    );
+    const snap = await getDocs(q);
+    const all = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
+
+    if (all.length === 0) return null;
+
+    const recent = all[0];
+    const now = new Date();
+    const cutoff = new Date(now);
+    cutoff.setDate(now.getDate() - days);
+
+    const recentCheckIns = all.filter((c) => {
+      const d = toDate(c.timestamp || c.date);
+      return d && d >= cutoff;
+    });
+
+    const trend = recentCheckIns.map((c) => ({
+      date: dateKey(c.timestamp || c.date),
+      ssi: c.ssi ?? null,
+      adherence: c.adherence ?? null,
+      aseCategory: c.aseCategory || c.category || "Unscored",
+    }));
+
+    const overview = {
+      patientId,
+      name: recent.name || recent.patientName || "Unknown",
+      lastCheckIn: toDate(recent.timestamp),
+      latestCategory: recent.aseCategory || recent.category || "Unscored",
+      ssi: recent.ssi ?? null,
+      adherence: recent.adherence ?? null,
+      trend,
+    };
+
+    console.log("🩺 getPatientOverview:", patientId, "->", overview);
+    return overview;
+  } catch (err) {
+    console.error("Error in getPatientOverview:", err);
+    return null;
+  }
+}
+
 
 export {};

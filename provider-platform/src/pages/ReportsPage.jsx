@@ -4,6 +4,7 @@
 import React, { useEffect, useMemo, useState, useCallback, Suspense } from "react";
 import "./ReportsPage.css";
 import DirectorView from "../components/reports/DirectorView.jsx";
+import ReportsSummaryCards from "../components/ReportsSummaryCards.jsx";
 import PatientReports from "../components/PatientReports.jsx";
 import {
   getPopulationOverview,
@@ -351,6 +352,7 @@ export default function ReportsPage() {
           </button>
         </div>
       </header>
+       <ReportsSummaryCards overview={popData?.overview || directorSummary} />
 
       <section className="director-section">
         <Suspense fallback={<div className="skeleton skeleton-director" />}>
@@ -387,12 +389,7 @@ export default function ReportsPage() {
                     rowsProp={Array.isArray(popData?.adherenceRows) ? popData.adherenceRows : []}
                     hideTable={true}
                   />
-                  {renderPatientHighlight(
-                    "Lowest Engagement",
-                    `Patients trending below target adherence over the past ${timeRange} days.`,
-                    lowAdherencePatients,
-                    "All monitored patients maintained target adherence during this period."
-                  )}
+                
                 </div>
 
                 <div className="card chart-card-wide">
@@ -402,15 +399,10 @@ export default function ReportsPage() {
                   </p>
                   <PopulationWellnessIndex
                     timeRange={timeRange}
-                    rowsProp={Array.isArray(popData?.adherenceRows) ? popData.adherenceRows : []}
+                    rowsProp={Array.isArray(popData?.wellnessRows) ? popData.wellnessRows : []}
                     hideTable={true}
                   />
-                  {renderPatientHighlight(
-                    "Wellness Improvement Leaders",
-                    `Participants with the strongest positive wellness momentum in the last ${timeRange} days.`,
-                    wellnessImprovementPatients,
-                    "No meaningful wellness improvements detected for this period."
-                  )}
+              
                 </div>
 
                 <div className="card chart-card-wide">
@@ -420,15 +412,10 @@ export default function ReportsPage() {
                   </p>
                   <PatientStabilityReport
                     timeRange={timeRange}
-                    rowsProp={Array.isArray(popData?.adherenceRows) ? popData.adherenceRows : []}
+                    rowsProp={Array.isArray(popData?.stabilityRows) ? popData.stabilityRows : []}
                     hideTable={true}
                   />
-                  {renderPatientHighlight(
-                    "Stability Watchlist",
-                    "Patients requiring additional review based on current ASE status and recent activity.",
-                    highRiskPatients,
-                    "No patients currently require escalated stability review."
-                  )}
+              
                 </div>
               </div>
             )}

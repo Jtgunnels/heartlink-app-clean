@@ -1,143 +1,96 @@
-// HeartLink Provider Platform — Average Daily Engagement Report (Line Chart Version)
-// Shows longitudinal adherence trend across Active participants (7 / 30 / 90 days)
-
-import React, { useEffect, useMemo, useState } from "react";
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  Area,
-} from "recharts";
+import React, { useEffect, useState, useMemo } from "react";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Area } from "recharts";
 import ReportTableShell from "./ReportTableShell";
 import { getCheckInAdherenceData } from "../../utils/fetchReportData";
 import { useContainerWidth } from "../../hooks/useContainerWidth";
 
 export default function CheckInAdherenceReport({
+  timeRange,          // ← use this to fetch the right window (cohort mean over time)
   onExportData,
-  rowsProp = [],
+  rowsProp,           // optional pre-aggregated rows from parent
   hideTable = false,
-  timeRange = "30d",
 }) {
-  const [rows, setRows] = useState(Array.isArray(rowsProp) ? rowsProp : []);
+  const [rows, setRows] = useState([]);
+  const { ref: containerRef, width } = useContainerWidth(320);
 
-  const numericRange = useMemo(() => {
-    if (typeof timeRange === "string") {
-      const parsed = parseInt(timeRange, 10);
-      if (!Number.isNaN(parsed)) return parsed;
-    }
-    const num = Number(timeRange);
-    return Number.isFinite(num) && num > 0 ? num : 30;
-  }, [timeRange]);
-
-  const windowSize = useMemo(() => {
-    if (numericRange <= 7) return 3;
-    if (numericRange <= 30) return 7;
-    return 30;
-  }, [numericRange]);
+  // Normalize to a single, consistent schema:
+  // [{ date: 'YYYY-MM-DD', adherenceRate: 0..100 }]
+  const normalizeRows = (input = []) =>
+    Array.isArray(input)
+      ? input
+          .map((r) => {
+            const date = r?.date || r?.day || null;
+            // accept either adherenceRate or adherence, but emit adherenceRate
+            const raw =
+              r?.adherenceRate ??
+              (typeof r?.adherence === "number" ? r.adherence : null);
+            // guard NaN and clamp to [0, 100]
+            const adherenceRate =
+              raw == null || Number.isNaN(Number(raw))
+                ? 0
+                : Math.max(0, Math.min(100, Number(raw)));
+            return date ? { date, adherenceRate } : null;
+          })
+          .filter(Boolean)
+      : [];
 
   useEffect(() => {
-    if (Array.isArray(rowsProp) && rowsProp.length) {
-      setRows(rowsProp);
+    // If parent provided rows, always prefer them (they’re already aggregated for the page)
+    if (Array.isArray(rowsProp) && rowsProp.length > 0) {
+      setRows(normalizeRows(rowsProp));
       return;
     }
-    (async () => setRows(await getCheckInAdherenceData(numericRange)))();
-  }, [rowsProp, numericRange]);
+    // Otherwise, fetch cohort mean adherence (longitudinal) for the selected time window
+    (async () => {
+      const days = typeof timeRange === "number" ? timeRange : undefined;
+      const fetched = await getCheckInAdherenceData(days);
+      setRows(normalizeRows(fetched));
+    })();
+    // re-run when either the provided rows change or the time window changes
+  }, [rowsProp, timeRange]);
 
   const data = useMemo(() => rows, [rows]);
-  const { ref: containerRef, width } = useContainerWidth(320);
 
   const columns = [
     { key: "date", label: "Date" },
-    { key: "adherenceRate", label: "Average Engagement (%)" },
+    { key: "adherenceRate", label: "Average Adherence (%)" }, // ← table matches chart key
   ];
-
-  const chartData = useMemo(() => {
-    const points = [...data]
-      .map((item) => ({
-        ...item,
-        adherenceRate: Number(item.adherenceRate ?? item.value ?? 0),
-      }))
-      .sort((a, b) => new Date(a.date) - new Date(b.date));
-
-    if (!points.length) return [];
-
-    const rolling = points.map((_, idx) => {
-      const start = Math.max(0, idx - windowSize + 1);
-      const slice = points.slice(start, idx + 1);
-      const mean =
-        slice.reduce((sum, item) => sum + (Number(item.adherenceRate) || 0), 0) /
-        (slice.length || 1);
-      return Number(mean.toFixed(1));
-    });
-
-    return points.map((pt, idx) => ({
-      ...pt,
-      rollingBaseline: rolling[idx],
-    }));
-  }, [data, windowSize]);
 
   return (
     <div>
       {!hideTable && (
-        <>
-          <h3 className="report-title">Average Daily Engagement Report</h3>
-          <p className="chart-desc">
-            Shows how overall daily check-in adherence across active participants changes over time.
-          </p>
-        </>
-      )}
-
-      {!hideTable && (
         <ReportTableShell columns={columns} rows={rows} onExportData={onExportData} />
-      )}
-      {hideTable && (
-        <div className="sr-only">
-          <ReportTableShell columns={columns} rows={rows} onExportData={onExportData} />
-        </div>
       )}
 
       <div className="chart-shell" ref={containerRef}>
-        {chartData.length > 0 ? (
+        {data.length > 0 ? (
           <LineChart
             width={width}
-            height={300}
-            data={chartData}
-            margin={{ top: 10, right: 20, left: 0, bottom: 10 }}
-            aria-label="Average Daily Engagement Trend"
+            height={280}
+            data={data}
+            margin={{ top: 12, right: 20, left: 0, bottom: 40 }}
           >
             <defs>
-              <linearGradient id="engagementGradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#45B8A1" stopOpacity={0.4} />
-                <stop offset="95%" stopColor="#45B8A1" stopOpacity={0} />
+              <linearGradient id="colorAdherence" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#19588F" stopOpacity={0.3} />
+                <stop offset="100%" stopColor="#19588F" stopOpacity={0} />
               </linearGradient>
             </defs>
 
-            <CartesianGrid strokeDasharray="3 3" vertical={false} strokeOpacity={0.1} />
-            <XAxis dataKey="date" tick={{ fontSize: 12 }} tickMargin={8} minTickGap={25} />
+            <CartesianGrid strokeOpacity={0.1} vertical={false} />
+            <XAxis dataKey="date" tick={{ fontSize: 11 }} angle={-45} height={60} />
             <YAxis domain={[0, 100]} tick={{ fontSize: 12 }} />
-            <Tooltip formatter={(v) => `${Number(v).toFixed(1)}%`} labelStyle={{ fontWeight: 600 }} />
-            <Legend wrapperStyle={{ fontSize: 12 }} />
-            <Area type="monotone" dataKey="adherenceRate" fill="url(#engagementGradient)" stroke="none" />
+            <Tooltip formatter={(v) => `${Number(v).toFixed(1)}%`} />
+
+            {/* Area + Line use the SAME key: adherenceRate */}
+            <Area type="monotone" dataKey="adherenceRate" fill="url(#colorAdherence)" stroke="none" />
             <Line
               type="monotone"
               dataKey="adherenceRate"
-              stroke="#45B8A1"
-              strokeWidth={2}
-              dot={false}
-              isAnimationActive
-            />
-            <Line
-              type="monotone"
-              dataKey="rollingBaseline"
-              name={`${windowSize}-Day Rolling Mean`}
-              stroke="#FDBA74"
-              strokeWidth={2}
-              strokeDasharray="5 4"
-              dot={false}
+              stroke="#19588F"
+              strokeWidth={2.4}
+              dot={{ r: 4 }}
+              activeDot={{ r: 6 }}
             />
           </LineChart>
         ) : (

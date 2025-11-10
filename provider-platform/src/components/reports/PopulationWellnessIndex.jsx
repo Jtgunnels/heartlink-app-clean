@@ -1,23 +1,46 @@
-// HeartLink Provider Platform — Population Wellness Trend (Final Compliance)
-// Displays average daily wellness index for active participants across the selected reporting period.
+// HeartLink Provider Platform — Population Wellness Index (Final Fix)
 
 import React, { useEffect, useMemo, useState } from "react";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Area } from "recharts";
-
 import ReportTableShell from "./ReportTableShell";
 import { getPopulationWellnessData } from "../../utils/fetchReportData";
 import { useContainerWidth } from "../../hooks/useContainerWidth";
 
-export default function PopulationWellnessIndex({ onExportData, rows: rowsProp, hideTable = false }) {
-  const [rows, setRows] = useState(Array.isArray(rowsProp) ? rowsProp : []);
+export default function PopulationWellnessIndex({
+  onExportData,
+  rowsProp,
+  hideTable = false,
+}) {
+  const [rows, setRows] = useState([]);
+  const { ref: containerRef, width } = useContainerWidth(320);
+
+  const normalizeRows = (input = []) =>
+    Array.isArray(input)
+      ? input
+          .map((r) => {
+            const date = r?.date || r?.day || null;
+            const raw =
+              r?.wellnessIndex ?? r?.avgSSI ?? r?.avg_wellness ?? r?.avg ?? null;
+            const wellnessIndex = raw == null ? null : Number(raw);
+            return date ? { date, wellnessIndex } : null;
+          })
+          .filter(Boolean)
+      : [];
 
   useEffect(() => {
-    if (Array.isArray(rowsProp)) return;
-    (async () => setRows(await getPopulationWellnessData()))();
+    if (Array.isArray(rowsProp) && rowsProp.length > 0) {
+      // sync whenever new prop data arrives
+      setRows(normalizeRows(rowsProp));
+    } else {
+      // fallback fetch if no prop data
+      (async () => {
+        const fetched = await getPopulationWellnessData();
+        setRows(normalizeRows(fetched));
+      })();
+    }
   }, [rowsProp]);
 
   const data = useMemo(() => rows, [rows]);
-  const { ref: containerRef, width } = useContainerWidth(320);
   const columns = [
     { key: "date", label: "Date" },
     { key: "wellnessIndex", label: "Average Wellness Index (0–5)" },
@@ -33,14 +56,9 @@ export default function PopulationWellnessIndex({ onExportData, rows: rowsProp, 
           </p>
         </>
       )}
-
-      {!hideTable && <ReportTableShell columns={columns} rows={rows} onExportData={onExportData} />}
-      {hideTable && (
-        <div className="sr-only">
-          <ReportTableShell columns={columns} rows={rows} onExportData={onExportData} />
-        </div>
+      {!hideTable && (
+        <ReportTableShell columns={columns} rows={rows} onExportData={onExportData} />
       )}
-
       <div className="chart-shell" ref={containerRef}>
         {data.length > 0 ? (
           <LineChart
@@ -48,7 +66,6 @@ export default function PopulationWellnessIndex({ onExportData, rows: rowsProp, 
             height={280}
             data={data}
             margin={{ top: 12, right: 20, left: 0, bottom: 40 }}
-            aria-label="Population Wellness Trend over time"
           >
             <defs>
               <linearGradient id="colorWellness" x1="0" y1="0" x2="0" y2="1">
@@ -56,7 +73,6 @@ export default function PopulationWellnessIndex({ onExportData, rows: rowsProp, 
                 <stop offset="100%" stopColor="#45B8A1" stopOpacity={0} />
               </linearGradient>
             </defs>
-
             <CartesianGrid strokeOpacity={0.1} vertical={false} />
             <XAxis
               dataKey="date"
@@ -68,7 +84,12 @@ export default function PopulationWellnessIndex({ onExportData, rows: rowsProp, 
             />
             <YAxis domain={[0, 5]} tick={{ fontSize: 12 }} />
             <Tooltip formatter={(v) => Number(v).toFixed(2)} />
-            <Area type="monotone" dataKey="wellnessIndex" stroke="none" fill="url(#colorWellness)" />
+            <Area
+              type="monotone"
+              dataKey="wellnessIndex"
+              fill="url(#colorWellness)"
+              stroke="none"
+            />
             <Line
               type="monotone"
               dataKey="wellnessIndex"
@@ -76,7 +97,6 @@ export default function PopulationWellnessIndex({ onExportData, rows: rowsProp, 
               strokeWidth={2.4}
               dot={{ r: 4 }}
               activeDot={{ r: 6 }}
-              isAnimationActive={true}
             />
           </LineChart>
         ) : (

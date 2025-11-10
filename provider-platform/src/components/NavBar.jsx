@@ -111,11 +111,7 @@ export default function NavBar() {
     { name: "Dashboard", to: { pathname: "/dashboard" }, badge: reviewCount },
     { name: "Patients", to: { pathname: "/patients" } },
     { name: REPORTS_LABEL, to: { pathname: "/reports" } },
-    {
-      name: "Clinical Review",
-      to: { pathname: "/dashboard", search: "?tab=review" },
-    },
-    { name: "System Insights", to: { pathname: "/insights" } },
+    
     { name: "Settings", to: { pathname: "/settings" } },
   ];
 

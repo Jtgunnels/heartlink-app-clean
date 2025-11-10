@@ -40,12 +40,20 @@ if (!PROVIDER_ID) {
 const now = new Date();
 const daysAgo = (n) => new Date(now.getTime() - n * 24 * 60 * 60 * 1000);
 
+// === ⬇️ Only this block is changed: more realistic home-health cohort ===
 const patients = [
-  { id: 'PAT001', name: 'Debbie Conn', status: 'Active', aseCategory: 'Minor Change' },
-  { id: 'PAT002', name: 'Andre Kuhn',  status: 'Active', aseCategory: 'Minor Change' },
-  { id: 'PAT003', name: 'Tina Bahringer', status: 'Active', aseCategory: 'Needs Immediate Review' },
-  { id: 'PAT004', name: 'Regina Schmidt', status: 'Active', aseCategory: 'Stable' },
-  { id: 'PAT005', name: 'Devin Ullrich', status: 'Active', aseCategory: 'Review Recommended' },
+  { id: 'PAT001', name: 'Debbie Conn',         status: 'Active', aseCategory: 'Minor Change' },
+  { id: 'PAT002', name: 'Andre Kuhn',          status: 'Active', aseCategory: 'Minor Change' },
+  { id: 'PAT003', name: 'Tina Bahringer',      status: 'Active', aseCategory: 'Needs Immediate Review' },
+  { id: 'PAT004', name: 'Regina Schmidt',      status: 'Active', aseCategory: 'Stable' },
+  { id: 'PAT005', name: 'Devin Ullrich',       status: 'Active', aseCategory: 'Review Recommended' },
+  { id: 'PAT006', name: 'Patricia Howell',     status: 'Active', aseCategory: 'Stable' },
+  { id: 'PAT007', name: 'Marcus Ortega',       status: 'Active', aseCategory: 'Minor Change' },
+  { id: 'PAT008', name: 'Elaine Navarro',      status: 'Active', aseCategory: 'Stable' },
+  { id: 'PAT009', name: 'Samuel Whitaker',     status: 'Active', aseCategory: 'Review Recommended' },
+  { id: 'PAT010', name: 'Brenda Holloway',     status: 'Active', aseCategory: 'Minor Change' },
+  { id: 'PAT011', name: 'Curtis McDaniel',     status: 'Active', aseCategory: 'Stable' },
+  { id: 'PAT012', name: 'Irene Blackburn',     status: 'Active', aseCategory: 'Needs Immediate Review' },
 ];
 
 const catCycle = ['Stable','Minor Change','Review Recommended','Needs Immediate Review'];
